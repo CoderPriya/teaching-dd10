@@ -1,0 +1,348 @@
+body, html {
+  height: 100%;
+  color: #333333;
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+  font-size: 18px;
+  line-height: 28px; 
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+
+}
+
+/* ========= NAVBAR ========== */
+/* Custom */
+@media (min-width: 767px) {
+    .navbar-nav.nav-justified > li{
+        float:none;
+    }
+}
+
+.navbar-custom {
+  background-color: white;
+  opacity: 0.95;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+  border-bottom-style: solid;
+  border-color: #333333;
+  border-width: 1px;
+}
+
+/* link */
+.navbar-custom .navbar-nav > li > a {
+  background-color: transparent;
+  color: #cccccc;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: #333333;
+}
+
+.navbar-custom .navbar-nav > .active > a, 
+.navbar-custom .navbar-nav > .active > a:hover, 
+.navbar-custom .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #333333;
+}
+
+/* mobile version */
+.navbar-toggle .icon-bar {
+    background-color: #333333;
+}
+
+.navbar-collapse {
+  background-color: white;
+}
+
+.navbar-collapse > li > a:hover,
+.navbar-collapse > li > a:focus {
+  background-color: transparent;
+  color: #333333;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  z-index:100;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* ========= HEADER VIDEO ========== */
+#bgvid { 
+  display: block;
+  position: absolute; right: 0; bottom: 0;
+  min-height: 100%; min-width: 100%;
+  width: auto; height: auto; 
+  z-index: -10; 
+  background: url(img/header.png) no-repeat;
+  background-size: cover; 
+  z-index: 0;
+  border: 0px;
+}
+
+#google {
+  display: block;
+  width: 100%; 
+  background: url(img/google.png) no-repeat;
+  background-size: cover; 
+}
+
+/* ========= SEZIONI ========== */
+#slide0 {
+  height: 100%;
+  z-index: 10; 
+}
+
+#slide6 {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f4f5f2;
+}
+
+#dizionario{
+  background-color: #f4f5f2;
+  z-index: 0;
+  margin-top: -30px;
+  padding-top: 130px;
+  padding-bottom: 115px; 
+}
+
+#start {
+  margin-top: 50px;
+}
+
+.row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* ========= FONT ========== */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+/* Titoli header */
+#titolo {
+  position: absolute;
+  z-index: 10;
+  top: 61%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+  font-size:64px;
+  color: #ffffff; 
+  text-align: center; 
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 12px #777;
+}
+
+/* Sottotitolo */
+h2 {
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+  font-size: 18px;
+  color: #ffffff; 
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 12px #777;
+}
+
+/* Aperture capitolo */
+h3 {
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+p {
+  -webkit-margin-before: 1.4em;
+  -webkit-margin-after: 1.4em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+ 
+#filetto {
+  padding-top: 15px;
+  border-color: #333333;
+  border-width: 1px;
+  border-top-style: solid;
+  margin-top: -1px
+} 
+
+#riquadro {
+  padding: 15px;
+  border-color: #999999;
+  border-width: 1px;
+  border-style: solid;
+  height: 100%;
+} 
+
+#dida {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #999999;
+}
+
+#didabold {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+#didaup {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+  text-transform:uppercase;
+}
+
+#focusbold {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #999999;
+}
+
+#quote {
+  display:block;
+  margin-bottom: 10px; 
+  padding-left:15px;
+  border-left-style: solid;
+  border-color: #333333;
+  border-width: 1px;
+}
+
+hr {
+    width: 10%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.dropcap { 
+  float: left; 
+  color: black; 
+  font-size: 56px; 
+  line-height: 40px; 
+  padding-top: 7px; 
+  padding-right: 20px; 
+  padding-left: 3px; 
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif; 
+  font-weight: 700;
+}
+
+.glyphicon {
+  color:#999999;
+  font-size:18px;
+}
+
+.glyphicon-book {
+  top: 4px;
+  margin-right: 4px;
+}
+
+.glyphicon-screenshot {
+  color:#999999;
+  top: 3px;
+    font-size:19px;
+}
+
+.glyphicon-volume-up {
+  color:#333333;
+  top: 8px;
+  margin-left: 9px;
+  font-size: 26px;
+}
+
+.glyphicon-volume-up:hover {
+  opacity: 0.8;
+  cursor: crosshair;
+}
+
+
+/* ========= IMMAGINI ========== */
+img {
+  max-width: 100%;
+  display: block;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+img#footer{
+  width: auto;
+}
+
+.merging1:hover, .merging2:hover, .merging3:hover {
+    cursor: crosshair;
+}}
+
+/* ========= LINK ========== */
+a {
+  color: #9BAAD5;
+}
+
+a:visited {
+    color: #9BAAD5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9BAAD5;
+    opacity: 0.8;
+    text-decoration: none;
+    cursor: crosshair;
+}
+
+a:active {
+    color: #9BAAD5;
+    text-decoration: none;
+
+}
+
+a#span {
+    color: #333333;
+}
+
+a#span:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+a#span:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+a#span:active {
+  opacity: 0.8;   
+  text-decoration: none;
+}

@@ -1,0 +1,316 @@
+/*
+* Elegance - Onepahe HTML Template
+* Author    : Carino Technologies
+* url       : https:// carinotech.com
+* versions  : v 1.0.0 
+*/
+
+/*******************************************
+* Import stylesheets
+*******************************************/
+
+
+@import url('shortcodes.css');
+@import url('normal.css');
+@import url('fontello.css');
+@import url('fontello-ie7.css');
+@import url('magnific-popup.css');
+
+
+.team-album-1 {
+  padding: 3em 0 4em;
+}
+
+.team-album-1 .tumbnail > a span {
+  position: absolute;
+  left: 0;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  bottom: 101px;
+  text-align: center;
+  line-height: 150px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+  font-size: 24px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  background-image:url('../images/avatar_robi_color.jpg');
+  background-size: 100%;
+  border-bottom: 6px solid rgb(1, 103, 141);
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  -ms-transition: opacity .7s;
+  transition: opacity .3s;
+}
+
+.team-album-1 .tumbnail > a:hover span {
+  opacity: 1;
+  filter: alpha(opacity=99);
+/* internet explorer */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+/*IE8*/
+}
+
+.team-album-2 {
+  padding: 3em 0 4em;
+}
+
+.team-album-2 .tumbnail > a span {
+  position: absolute;
+  left: 0;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  bottom: 101px;
+  text-align: center;
+  line-height: 150px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+  font-size: 24px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  background-image:url('../images/avatar_deppo_color.jpg');
+  background-size: 100%;
+  border-bottom: 6px solid rgb(1, 103, 141);
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  -ms-transition: opacity .7s;
+  transition: opacity .3s;
+}
+
+.team-album-2 .tumbnail > a:hover span {
+  opacity: 1;
+  filter: alpha(opacity=99);
+/* internet explorer */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+/*IE8*/
+}
+
+
+.team-album-3 {
+  padding: 3em 0 4em;
+}
+
+.team-album-3 .tumbnail > a span {
+  position: absolute;
+  left: 0;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  bottom: 101px;
+  text-align: center;
+  line-height: 150px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+  font-size: 24px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  background-image:url('../images/avatar_enrica_color.jpg');
+  background-size: 100%;
+  border-bottom: 6px solid rgb(1, 103, 141);
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  -ms-transition: opacity .7s;
+  transition: opacity .3s;
+}
+
+.team-album-3 .tumbnail > a:hover span {
+  opacity: 1;
+  filter: alpha(opacity=99);
+/* internet explorer */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+/*IE8*/
+}
+
+
+.team-album-4 {
+  padding: 3em 0 4em;
+}
+
+.team-album-4 .tumbnail > a span {
+  position: absolute;
+  left: 0;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  bottom: 101px;
+  text-align: center;
+  line-height: 150px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+  font-size: 24px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  background-image:url('../images/avatar_ludo_color.jpg');
+  background-size: 100%;
+  border-bottom: 6px solid rgb(1, 103, 141);
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  -ms-transition: opacity .7s;
+  transition: opacity .3s;
+}
+
+.team-album-4 .tumbnail > a:hover span {
+  opacity: 1;
+  filter: alpha(opacity=99);
+/* internet explorer */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+/*IE8*/
+}
+
+
+.team-album-5 {
+  padding: 3em 0 4em;
+}
+
+.team-album-5 .tumbnail > a span {
+  position: absolute;
+  left: 0;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  bottom: 101px;
+  text-align: center;
+  line-height: 150px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+  font-size: 24px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  background-image:url('../images/avatar_ceci_color.jpg');
+  background-size: 100%;
+  border-bottom: 6px solid rgb(1, 103, 141);
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  -ms-transition: opacity .7s;
+  transition: opacity .3s;
+}
+
+.team-album-5 .tumbnail > a:hover span {
+  opacity: 1;
+  filter: alpha(opacity=99);
+/* internet explorer */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+/*IE8*/
+}
+
+
+
+
+/****************************
+* Team section
+****************************/
+.team-album {
+  padding: 3em 0 4em;
+}
+
+.team-album .tumbnail > a span {
+  position: absolute;
+  left: 0;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  bottom: 86px;
+  text-align: center;
+  line-height: 150px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+  font-size: 24px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  background: rgba(1,103,141,0.4);
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  -ms-transition: opacity .7s;
+  transition: opacity .3s;
+}
+
+.team-album .tumbnail > a:hover span {
+  opacity: 1;
+  filter: alpha(opacity=99);
+/* internet explorer */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+/*IE8*/
+}
+
+.team-heading {
+  font-size: 60%;
+  font-weight: 700;
+  position: relative;
+  top: 70%;
+}
+
+.team-designation {
+  font-size: .6em;
+  font-weight: 100;
+  position: relative;
+  bottom: 60px;
+  margin-bottom: 0;
+}
+
+.team-des {
+  font-size: .6em;
+  font-weight: 100;
+  line-height: 24px;
+  position: relative;
+  bottom: 90px;
+  margin-bottom: 0;
+}
+
+.team-social {
+  border-top: 7px solid #01678D;
+  padding: 2.5em 0em 2em;
+}
+
+.tumbnail {
+  position: relative;
+  background: #06496C;
+}
+
+.thumbnail-img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.social-icons {
+  color: rgb(180,180,180);
+}
+
+.circule-info {
+  background: #27AE60;
+  padding: 1em 0 170px;
+  width: 50%;
+  max-height: 0;
+  margin: auto;
+}
+
+.info-strong {
+  font-size: 4em;
+}
+
+.info-x {
+  font-size: 1.95em;
+}
+
+.email {
+  font-weight: 200;
+  letter-spacing: .1em;
+  border-bottom: 1px dotted;
+}
+

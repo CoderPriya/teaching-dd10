@@ -1,0 +1,380 @@
+#scorrim{
+	margin-top: 200px;
+	margin-left: -20px;
+	position:absolute;
+	width: 9%;
+}
+
+#legend{
+	position:absolute;
+	margin-top: -10px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+#legpop{
+	background: url("../img/legendaRossa.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 300px;
+	margin-top: 70px;
+	opacity:0;
+	z-index: 1000;
+}
+
+#canvcont{
+	margin-top: -610px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#background{
+	position: relative;
+	margin-top:-30px;
+	margin-left: -50px;
+	z-index: 2; 
+	visibility:hidden;
+}
+
+@media screen and (max-width: 900px) { 
+#background{
+	position: relative;
+	margin-top:-30px;
+	margin-left: 5px;
+	z-index: 2; 
+	visibility:hidden;
+}
+
+#scorrim{
+	visibility: hidden;
+}
+
+#legend{
+	visibility: visible;
+}
+
+#legpop{
+	position: relative;
+	visibility:visible;
+	margin-top: 200px;
+
+}
+
+}
+
+#petri{
+	position:relative;
+	margin-top:10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height:700px;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+.scor{
+	opacity:0;
+}
+
+.scor_2{
+	opacity:0;
+}
+
+#scor98{
+	opacity: 1;
+}
+
+#scor98_2{
+	opacity: 1;
+}
+
+/*focus///////////////////////////////////////*/
+
+
+
+.focus{
+	position:relative;
+	float: right;
+	opacity:0;
+	margin-right: 0px;
+	height: 300px;
+	width: 300px;
+	
+}
+
+
+#focus2001{
+	background: url("../img/1_2001.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+
+}
+
+#focus2008{
+	background: url("../img/1_2008.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+}
+
+#focus2012{
+	background: url("../img/1_2012.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+}
+
+#focus2014{
+	background: url("../img/1_2014.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+}
+
+
+
+@media screen and (max-width: 900px) { 
+
+.focus{
+	height: 250px;
+	width: 250px;
+	}
+
+#focus2001{
+	margin-top:-700px;
+}
+
+#focus2008{
+	margin-top:-700px;
+}
+
+#focus2012{
+	margin-top:-700px;
+}
+
+#focus2014{
+	margin-top:-700px;
+}
+
+}
+
+/*-- SLIDER IPAD-------*/
+
+#navigipad{
+	width: 100%;
+	visibility: hidden;
+	height: 60px;
+	background-color: none;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+@media screen and (max-width: 900px) { 
+#navigipad{
+	visibility: visible;
+}
+}
+
+.navibut{
+	width: 10px;
+	height: 30px;
+	background-color: black;
+	float:left;
+	z-index: 1000;
+}
+
+#novotto{
+	background-color: #F85F55;
+	position:absolute;
+	margin-top: -45px;
+}
+
+
+
+/* seconda animazione, tutto con nome 2 *************/
+
+#scorrim2{
+	margin-top: 200px;
+	margin-left: -20px;
+	position:absolute;
+	width: 9%;
+}
+
+#legend2{
+	position:absolute;
+	margin-top: -10px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+#legpop2{
+	background: url("../img/legendaRossa.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 300px;
+	margin-top: 70px;
+	opacity:0;
+	z-index: 1000;
+}
+
+#canvcont2{
+	margin-top: -610px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#background2{
+	position: relative;
+	margin-top:-30px;
+	margin-left: -50px;
+	z-index: 2; 
+	visibility:hidden;
+}
+
+@media screen and (max-width: 900px) { 
+#background2{
+	position: relative;
+	margin-top:-30px;
+	margin-left: 5px;
+	z-index: 2; 
+	visibility:hidden;
+}
+
+
+#scorrim2{
+	visibility: hidden;
+}
+
+#legend2{
+	visibility: visible;
+}
+
+#legpop2{
+	position: relative;
+	visibility:visible;
+	margin-top: 200px;
+
+}
+
+}
+
+#petri2{
+	position:relative;
+	margin-top:10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height:700px;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+
+/*focus///////////////////////////////////////*/
+
+
+#focus2003_2{
+	background: url("../img/2_2011.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+
+}
+
+#focus2008_2{
+	background: url("../img/2_2003.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+}
+
+#focus2008_22{
+	background: url("../img/2_2008_1.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+}
+
+#focus2011_2{
+	background: url("../img/2_2008.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:-600px;
+	z-index: 2000; 
+}
+
+
+
+@media screen and (max-width: 900px) { 
+
+.focus{
+	height: 250px;
+	width: 250px;
+	}
+
+#focus2003_2{
+	margin-top:-700px;
+}
+
+#focus2008_2{
+	margin-top:-700px;
+}
+
+#focus2008_22{
+	margin-top:-700px;
+}
+
+#focus2011_2{
+	margin-top:-700px;
+}
+
+}
+
+/*-- SLIDER IPAD2-------*/
+
+#navigipad2{
+	width: 100%;
+	visibility: hidden;
+	height: 60px;
+	background-color: none;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+@media screen and (max-width: 900px) { 
+#navigipad2{
+	visibility: visible;
+}
+}
+
+
+#novotto2{
+	background-color: #F85F55;
+	position:absolute;
+	margin-top: -45px;
+}

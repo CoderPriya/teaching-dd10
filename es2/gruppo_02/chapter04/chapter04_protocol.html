@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../00_sito/introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+
+<li>
+<h4>Digital Measures</h4>
+</li>
+
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">See Also Analysis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Network</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Corpus Analysis</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Scatterplot</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Google Images</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Amazon Analysis</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Amazon Overview</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Books Covers</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Digital Detox</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Detox Holidays</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Images</a>
+</li>
+
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">Corpus Analysis</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Text Analysis</h3>
+<p>
+<br>
+
+Starting from the queries:
+<br>
+<br>
+- Internet Addiction<br>
+- Digital Addiction<br>
+- Social Media Addiction (cut out proceeding with the analysis) <br>
+<br>
+
+1. Google.com (only english pages) with incognito window navigation <br>
+<br>
+2. Google.com > settings > never show instant results > results per page > 100 <br>
+<br>
+
+3. Query > left-click > view page source > cmd-a, copy and paste on<a href="http://pgl.yoyo.org/urlex/" target="blank"> Yoyo </a> <br> > filter “google” > extract links <br>
+<br>
+4. Excel > double links cleaned (filters > advanced > unique records only)
+<br> > excel file cleaned validating each link by reading and tagging its nature in: <br>
+<br>
+		- Medical<br>
+		- Rehab<br>
+		- News<br>
+		- Blog<br>
+		- Education<br>
+		- Technology<br>
+		- Wiki<br>
+<br>
+5. Added information in the Excel dataset related to:<br>
+<br>
+		- Author <br>
+		- Latitude<br>
+		- Longitude<br>
+		- IP of the website <br>
+		- Short summary <br>
+		- Quotes<br>
+<br>
+6. <a href="http://dev.zup.densitydesign.org/" target="blank"> Zup </a> (user: gruppo_2; password: gruppo_2) > project rename 
+   > cmd-v <br>filtered excel links > start > when done, download results > zip files extracted 
+<br>
+<br>
+7. File .txt renamed with short names (01,02, n) not to make Sven crash
+<br>
+<br>
+8. <a href="http://dev.sven.densitydesign.org/login/" target="blank"> Sven </a>(user: gruppo_2; password: gruppo_2). It is necessary to log out from ZUP <br>or open it with another browser otherwise there might be identification problems  
+<br>> upload all the .txt related to a query and/or a specific tag
+<br>
+<br>
+9. TF and TFIDF (much slower) analysis and .csv download
+<br>
+<br>
+10. .csv cleaning on Excel
+<br>
+<br>
+11. <a href="https://code.google.com/p/google-refine/" target="blank"> Google Refine </a> for the Sven analysis 
+<br>
+<br>
+12. First 50 relevant words for each query and delta calculation between Excel frequencies<br>
+(TF Internet Addiction - TF Digital Addiction), in order to have a delta value for both queries
+<br>
+<br>
+13. Scatterplot creation using <a href="http://raw.densitydesign.org/" target="blank">Raw</a> and Illustrator
+</p>
+
+<img src="../img/diagrammi-08.png" width="100%">
+</div>
+</div>
+
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Images Analysis</h3>
+<p>
+<br>
+Starting from the queries:
+<br>
+<br>
+- Internet Addiction<br>
+- Digital Addiction<br>
+- Social Media Addiction (cut out proceeding with the analysis) <br>
+<br>
+1. Google.com (only english pages) with incognito window navigation<br> on Mozilla Firefox <br>
+<br>
+2. Google.com > google images > query > first 100 images download<br> with <a href="http://www.downthemall.net/ " target="blank"> DownThemAll </a><br>
+<br>
+3. Images put into a grid according to their appearance order and tags <br> (both with Illustrator and Excel) <br>
+<br>
+4. Images sorted in the grid according to the tags,<br> from the most common to the least common <br>
+<br>
+</p>
+<img src="../img/diagrammi-06.png" width="100%">
+</div>
+</div>
+
+
+<!-- Add As many steps as u want  -->
+
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>22/11/2014 - 12/12/2014</h4>
+<h4>Data source: <br> <a href="https://www.google.com" target="blank">Google</a>
+<h4>Tools: <br> <a href="http://dev.zup.densitydesign.org/" target="blank">Zup</a>, <a href="http://dev.sven.densitydesign.org/" target="blank">Sven</a>, <br> <a href="https://code.google.com/p/google-refine/" target="blank">Google Refine</a>, <br><a href="http://raw.densitydesign.org/" target="blank">Raw</a> </h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="../chapter04/chapter04_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/grafici-05.png">
+</div>
+<h4>Scatterplot</h4>
+</a>
+</div>
+
+<div>
+<div class="related-viz">
+<a href="../chapter04/chapter04_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/grafici-08.png">
+</div>
+<h4>Google Images</h4>
+
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Project by</h4>
+          <ul>
+            <li></li>
+            <li> <a class="one" href="http://www.nicoloarena.com/" target="_blank">Nicolò Arena</a> </li>
+            <li> <a class="one" href="http://www.claudiofabbro.com/" target="_blank">Claudio Fabbro</a> </li>
+            <li> <a class="one" href="https://www.behance.net/alessandro_malcotti" target="_blank">Alessandro Malcotti</a> </li>
+            <li> <a class="one" href="https://www.behance.net/martamandile" target="_blank">Marta Mandile</a> </li>
+            <li> <a class="one" href="https://www.behance.net/lanitari" target="_blank">Anita Righetto</a> </li>
+          </ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

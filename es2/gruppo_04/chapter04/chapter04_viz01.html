@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/d3.parcoords.css">
+<link rel="stylesheet" type="text/css" href="../css/style-parcoord.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>
+/* data table styles */
+/*#grid { height: 400px; }*/
+.row, .header { clear: left; font-size: 12px; line-height: 18px; height: 18px; }
+#viz > .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
+.header { font-weight: bold; text-transform: uppercase; margin-bottom: 10px; color: #c3442b;}
+.cell { float: left; overflow: hidden; white-space: nowrap; width: 90px; height: 18px; font-family: 'Karla', Arial, sans-serif;}
+.col-0 { width: 150px; padding-left: 10px;}
+.row {margin:0;}
+</style>
+
+</head>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/d3.parcoords.js"></script>
+<script src="../js/divgrid.js"></script>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4><strong>TITLE II</strong>
+<li><em>#NetNeutrality debate in the US</em></li>
+</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Set the basis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Chapter 1 Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Wikipedia speaks out loud</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">In between ethical and technical</a>
+</li>
+<li>
+<h5 class="text-uppercase">A well-established name</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Chapter 2 Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">News and Blog speak the same language</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Many terms, one meaning</a>
+</li>
+<li>
+<h5 class="text-uppercase">Speeches and reactions</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Chapter 3 Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Vloggers and showmen speak up for NN</a>
+</li>
+<li>
+<h5 class="text-uppercase">#NetNeutrality</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Chapter 4 Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Understanding users patterns</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Do they all speak the same?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Ethical CTAs push  people to share a lot</a>
+</li>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz parcoords">
+	<div id="example" class="parcoords" style="height:450px;"></div>
+<div id="grid" class="col-md-offset-2 col-md-4 col-md-offset-3 col-md-5"></div>
+<div id="legenda-parcoords" class="col-md-4">
+<!-- <h3>Introduction</h3> -->
+<div id="legenda-barra-colorata" class="col-md-6" style="float:left"></div>
+<div class="col-md-6" style="padding:0; float: left; clear: both;"><h6 style="float:right;">High Activity</h6><h6>Poor Activity</h6></div><div class="col-md-12" style="padding:0; top:65px;"><h6 style="font-size:12px; color: #c3442b;">HOW TO USE IT</h6><p>Scroll the list beside to highlight the correlated paths on the chart.
+In order to filter the users, drag the mouse on the axis to select ranges of data.</p></div></div>
+<script id="brushing">// quantitative color scale
+var blue_to_brown = d3.scale.linear()
+  .domain([9, 50])
+  .range(["steelblue", "brown"])
+  .interpolate(d3.interpolateLab);
+
+var color = function(d) { return blue_to_brown(d['Tweets']); };
+
+var parcoords = d3.parcoords()("#example")
+  .color(color)
+  .alpha(0.4);
+
+// load csv file and create the chart
+d3.csv('data/datiutenti.csv', function(data) {
+  parcoords
+    .data(data)
+    .render()
+    .brushMode("1D-axes");  // enable brushing
+
+  // create data table, row hover highlighting
+  var grid = d3.divgrid();
+  d3.select("#grid")
+    .datum(data.slice(0,400))
+    .call(grid)
+    .selectAll(".row")
+    .on({
+      "mouseover": function(d) { parcoords.highlight([d]) },
+      "mouseout": parcoords.unhighlight
+    });
+
+  // update data table on brush event
+  parcoords.on("brush", function(d) {
+    d3.select("#grid")
+      .datum(d.slice(0,400))
+      .call(grid)
+      .selectAll(".row")
+      .on({
+        "mouseover": function(d) { parcoords.highlight([d]) },
+        "mouseout": parcoords.unhighlight
+      });
+  });
+});
+</script>
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">#NetNeutrality</h5><!-- Title of the "chapter"  -->
+<h1>Understanding patterns: <br> low vs high activity users</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>Net Neutrality debate has been amplified a lot across social media, using the dedicated hashtag <span>#netneutrality</span>. In order to understand what people discussed about, what terms have been used and by who, we chose to observe twitter for two weeks—from Nov 25th to Dec 7th 2014—collecting all tweets containing the hashtag #netneutrality. Data have been obtained with the TCAT tool. 47852 tweets have been analyzed, with 7520 users involved (authors and\or mentions).</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>The graph shows the different patterns of the users involved in the debate, using three parameters: number of mentions, number of tweets posted and the number of followers. The parallel coordinates plot helps connecting these values in order to understand the different users patterns. The color of the paths changes from a cooler blue&mdash;meaning a low activity&mdash;to a warmer red, corresponding to a higher activity on twitter.</p>
+<p>Scroll the list beside to highlight the correlated paths on the chart.
+In order to filter the users, drag the mouse on the axis to select ranges of data.</p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>Users have been ordered by tweet activity, keeping only the top 500 results. Bot accounts have not been included in order to make the visualization more readable: some the most active users <span>(@All4NeutralNet, @RealNeutralNet)</span> are accounts which tweet automatically when someone signs up for a petition (about 1 tweet per minute), others <span>(@Jeff88Ho)</span> are bots who retweet everything with the #netneutrality hashtag.</p>
+<img src="../img/twitter-frequency.png" style="margin-bottom:4em;">
+<p>After that, the cleaned dataset has been plotted using an interactive parallel coordinates graph, a D3.js-based visual toolkit developed by Kai Chang.</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>At first glance the graph reveals a common trend: most mentioned users are the ones who tweet less. <span>@tomwheelerfcc</span> and <span>@barackobama</span> have respectively 17411 and 12834 mentions, though in the two weeks recorded they never posted any tweet with #netneutrality hashtag.
+Combining the three axes it’s possible—generally speaking—to identify some more specific clusters of users, usually identified by their category: News accounts <span>(@guardian, @repubblicait, @verge, @france24, @cnbc, @ariannahuff, @arstechnica, @gizmodo)</span> have 0-25 mentions, 0-1 tweets and 500k-3M followers; members of the US Congress (all the accounts starting with <span>@rep*</span>) have more than 700 mentions, 0-30k followers, no tweets.
+In order to investigate what people discussed about when dealing with #netneutrality — see the <a href="chapter04_protocol.html">protocol</a> and the <a href="chapter04_viz02.html">co-hashtag graphs</a> — users have been divided into 3 groups: most active, most influent and the inbetweeners.</p>
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 25/11/2014 - 7/12/2014</h4>
+<h4>Data source: <a href="http://digitalmethods.net">TCAT</a>, <a href="https://dev.twitter.com/">Twitter APIs</a></h4>
+<h4><a href="chapter04_protocol.html">Related Protocol</a></h4>
+<h4><a href="data/datiutenti.csv"><i class="fa fa-arrow-circle-o-down"></i> Download data (11Kb, CSV)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Nicoletta Bruno</li>
+<li>Martina Cocco</li>
+<li>Sara Perozzi</li>
+<li>Jacopo Pompilii</li>
+<li>Andrea Tagliabue</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+$("#grid").toggleClass("col-md-offset-2 col-md-4");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>WEB PERSONALIZATION</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Exploring the Web personalization</h5>
+</li>
+<li>
+<a href="chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter01_viz01.html">The Wikipedia survey</a>
+</li>
+<li>
+<h5 class="text-uppercase">Introducing the debate</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">The debate through the terms</a>
+</li>
+<li>
+<h5 class="text-uppercase">The academic side</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Focus on the debate in the academic field</a>
+</li>
+<li>
+<h5 class="text-uppercase">The journalistic side</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">The newspaper approach to the discussion</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz">
+<!-- Add your viz here -->
+<iframe src="index.html" style="width:100%; height: 600px; border-width: 0px;"></iframe>
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">Exploring the Web personalization</h5><!-- Title of the "chapter"  -->
+<h1>The Wikipedia survey</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>We decided to analyze the debate about the Web Personalization, but what is the Web Personalization? Which areas it involves? What are the different aspects of it? Starting from these questions we made a research on wikipedia, the largest free encyclopedia of the web, to find the most relevant pages. The most important of all is “Personalization” and we moved from this to others like “Personalized search” and “Filter bubble” thanks to the links in them and to the see also at the bottom of the pages. In order to create a web with all these pages we used Gephi to connect all the pages with a link between them, through the see also of each. </p>
+<img src="../img/g2.png" style="max-width:100%; margin-top:60px">
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>This chart shows the main areas involved in the topic of web personalization. The most important areas are society, technology, marketing and privacy.  <br>
+If you want, you can select each areas and see every ramifications, to understand the real debate range.<br>
+These areas were resulted very important through the protocol 2 and defined very well the debate.
+</p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>Were selected 5 important pages (seeds) of the Wikipedia.org database, then we filtered all the links that were in their respective seealso sections. We tried to maintain only the pages that we thought were relevant in the topic of web personalization. In addition, we considered a couple of more links that we wanted to see on the map so that we could know if they were actually relevant or not.  Using te tool Seealsology, these links were pasted and we obtained 2975 more nodes that we mapped using the tool Gephi. Then we simplified this view scraping manually from the Gephi file the most relevant pages, considered because of their indegree range.<br> Then we re-read those pages on Wikipedia and considered just the ones that were really relevant.</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>The main reason we decided to make this graph was to better understand the areas that were involved in this topic in order to be able to formulate a proper research question. We were able to identify 4 main clusters which are Society, Technology, Privacy & control and Marketing. In this way we understood that Society is most important part and it comprehends the social media aspect and the online identity with digital traces and digital identity. It also englobe the mass customization and collective intelligence with the relevance paradox, collaborative filtering and filter bubble. The technology side was mainly composed by the data mining, the predictive analysis and the simulated reality part. Another important aspect of Web Personalization is the one about the privacy and control, with a big part about control and the mass surveillance and a smaller part about the privacy on the internet. Last but not least the marketing side, with all its aspects of internet marketing. 
+This map gave us a general idea of the areas involved and was also useful to better comprehend which aspects were more important to investigate. <br>
+
+Finding 01
+
+In the analysis of the main page of our topic, we found out that a section about what are the advantages and the disadvantages of the theme were deleted in 2011, and moved to another page.<br> 
+The new page with this paragraph is “Personalized search” which includes, not only these important parts about the debate, but also a paragraph about the main debate of the Web Personalization, called “Filter Bubble”.
+
+</p>
+<img src="../img/wikihistory2.png" style="max-width:100%; margin-top:60px">
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 10/11/2014 - 27/11/2014</h4>
+<h4>Data source: <a href="http//:www.wikipedia.com">Wikipedia</a></h4>
+<h4><a href="chapter01_protocol.html">Related Protocol</a></h4>
+<h4><a href="../data/Data_01.rar"><i class="fa fa-arrow-circle-o-down"></i> Download data (4MB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Francesco Padovani</li>
+<li>Lucia Pellegrini</li>
+<li>Elisa Riva</li>
+<li>Rodolfo Riva</li>
+<li>Marco Saporiti</li>
+<li>Irene Tribuzio</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/gephi.map.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+
+<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+
+<!-- Fontawesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/style.sp.css" rel="stylesheet">
+<link href="../css/c3.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- START C3 IMPORTS -->
+<script src="../js/c3/d3.v3.min.js" charset="utf-8"></script>
+    <script src="../js/c3/c3.js"></script>
+<!-- END C3 IMPORTS -->
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4><strong>TITLE II</strong>
+<li><em>#NetNeutrality debate in the US</em></li>
+</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Set the basis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Chapter 1 Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Wikipedia speaks out loud</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">In between ethical and technical</a>
+</li>
+<li>
+<h5 class="text-uppercase">A well-established name</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Chapter 2 Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">News and Blog speak the same language</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Many terms, one meaning</a>
+</li>
+<li>
+<h5 class="text-uppercase">Speeches and reactions</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Chapter 3 Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Vloggers and showmen speak up for NN</a>
+</li>
+<li>
+<h5 class="text-uppercase">#NetNeutrality</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Chapter 4 Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Understanding users patterns</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Do they all speak the same?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Ethical CTAs push  people to share a lot</a>
+</li>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz-sara">
+	<div id="chart" class="c3"></div>
+	
+</div>
+	
+<!-- 	MACELLO SARA LISTA
+	<div class="ul-sara">
+		<ul>
+			<li class="col-md-1-sara"><strong>years</strong></li>
+			<li class="col-md-1-sara">2005</li>
+			<li class="col-md-1-sara">2006</li>
+			<li class="col-md-1-sara">2007</li>
+			<li class="col-md-1-sara">2008</li>
+			<li class="col-md-1-sara">2009</li>
+			<li class="col-md-1-sara">2010</li>
+			<li class="col-md-1-sara">2011</li>
+			<li class="col-md-1-sara">2012</li>
+			<li class="col-md-1-sara">2013</li>
+			<li class="col-md-1-sara">2014</li>
+			<li class="col-md-1-sara"></li>
+		</ul>
+	</div> -->
+</div>
+
+<!-- CONTAINER CHART -->
+
+
+
+
+<!-- End of Visualization -->
+
+<!-- ZOOM BUTTONS -->
+
+<!-- Main content  -->
+
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">Set the basis</h5><!-- Title of the "chapter"  -->
+<h1>Wikipedia<br>speaks out loud</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>
+    It’s been quite of an year for net neutrality, and the first step in studying the debate about it is to understand what we're really talking about. What we need to understand and, in some way, to demonstrate is that there's a debate going on.
+    Wikipedia, with its 500 million unique visitors each month and more than 22 million accounts seems to be the perfect "enviroment" to begin to study network neutrality.
+</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+</br>
+<p>This visualization shows the changes of the Net Neutrality Wikipedia page. From left to right we have a timeline going from January 2005 to December 2014. Every step of this timeline represent a month. In the upper part of the graph we can see the amount of Kb added (red) to the page and the total weight of the page (grey) changing throughout time. Back-to-front, in the lower part we see  the amount of Kb removed (black) from it.</p>
+
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>The starting point of this graph is the <a href="https://en.wikipedia.org/wiki/Net_neutrality" target="_blank">Net Neutrality Wikipedia page </a>. It isn’t the only one relevant for our research, but it’s, by far, the most complete: created in 2005, with 1539 distinct authors and more than 4000 edits represents a good starting point in studying the debate on <i> net neutrality </i>.</p> 
+
+<p>Using the Kimono tool we were able to obtain all the data from the history of this page, such as the author of the post, the total weight of the page and the date and time when the post was created. Focusing on the page weight, we were able to see every single change made throughout the last 10 years, calculating the amount of bytes added, removed and the total weight of the page every month. Starting from this data, we distributed them through the years in a timeline, creating the graph above.</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p> What we see from this graph is, for many aspects, quite interesting. At a first glance, we're able to see there's been a lot of people speaking on this page. As we can see there are a lot of climax throughout time which give us a lot of information. First of all we infer that net neutrality is a theme that make people speak about it. And we can also see net neutrality is not an issue as "new" as we tought, people talked a lot about it even before the latest goings-on.
+</p>
+
+<p>Another interesting point that come out from this graph is that people are not just talking about net neutrality, but there seems to be a real discussion going on. We can see that every time there is a big increase of the page dimension, there's also a similar and opposite decrease of it. As we're looking at a Wikipedia page this give us the proof that net neutrality is still the focus of open and maybe row discussion. 
+</p>
+
+<p>It's interesting to see that the highest peak is located in 2006, more precisly in June, and May also has a very high increase of Kb added. But why? Althoug the term net neutrality was conied years before, 2006 was the first time the term became public because in May of that year the Senate of the United States of America started to consider a Net Neutrality law. It is clear that 2006 was the very first year of the debate on net neutrality.</p>
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 13/12/2014 - 13/12/2014</h4>
+<h4>Data source: <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a></h4>
+<h4>Tools: <br> <a href="https://chrome.google.com/webstore/detail/kimono/deoaddaobnieaecelinfdllcgdehimih" target="_blank">Kimono</a>, <a href="https://itunes.apple.com/it/app/textwrangler/id404010395?mt=12" target="_blank">TextWrangler</a>, <a href="https://products.office.com/en-us/excel">Excel</a></h4>
+<h4><a href="chapter01_protocol.html">Related Protocol</a></h4>
+<h4><a href="data/chapter01_viz01_metadata.csv" download><i class="fa fa-arrow-circle-o-down"></i> Download data</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Nicoletta Bruno</li>
+<li>Martina Cocco</li>
+<li>Sara Perozzi</li>
+<li>Jacopo Pompilii</li>
+<li>Andrea Tagliabue</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+<script type="text/javascript">
+	var chart = c3.generate({
+    data: {
+        columns: [
+        	['Page_dimension',1.88,1.93,1.95,1.97,0.24,2.35,2.62,2.62,5.19,5.31,6.47,7.33,14.71,22.94,47.37,51.28,63.21,74.59,75.78,78.37,41.98,6.29,39.72,59.78,61.64,60.36,59.66,60.37,61.28,62.32,64.41,65.94,65.69,66.37,67.37,69.86,69.98,70.31,70.94,71.06,72.81,72.55,73.05,73.08,47.83,53.12,53.63,54.80,55.20,55.77,60.54,61.54,64.80,69.23,71.03,70.07,71.67,70.84,75.54,74.80,75.18,76.79,76.75,76.77,80.43,80.16,80.55,80.37,80.39,81.95,82.30,80.13,83.40,86.90,86.61,91.41,91.16,92.06,92.68,92.75,93.00,92.88,92.90,93.66,93.78,95.04,95.03,95.17,95.15,88.75,88.74,88.57,87.96,87.59,87.96,88.86,88.47,89.00,88.99,88.95,89.13,89.38,89.42,89.42,89.90,90.63,90.18,92.00,93.08,96.37,96.37,95.00,98.49,101.58,109.55,64.53],
+            ['Eng_Kb_added', 1.98,0.05,0.03,0.02,0.00,2.12,0.27,0.00,2.86,0.18,16.54,27.20,119.35,754.60,799.55,199.10,137.75,47.11,15.39,154.14,656.18,213.42,79.84,269.68,6.14,67.93,4.07,8.37,9.18,2.03,7.77,5.88,1.73,5.30,6.24,11.00,72.45,3.96,1.73,6.70,5.00,0.08,2.36,96.95,31.86,14.49,0.58,1.72,1.83,4.34,7.26,5.18,16.47,18.94,8.42,1.96,7.53,0.32,15.77,1.46,6.34,4.76,0.00,0.02,31.94,80.98,1.61,0.30,75.72,2.23,8.85,12.31,4.36,9.39,19.04,4.88,0.55,1.92,0.63,1.15,0.40,0.00,0.77,0.76,2.37,1.42,0.00,0.14,0.30,7.64,0.00,0.00,0.84,1.94,0.36,1.67,0.07,0.52,0.03,0.23,0.37,0.25,0.06,0.00,2.60,8.24,1.64,83.06,12.43,25.93,0.00,11.79,17.88,3.08,71.40,47.34],
+            ['Eng_Kb_removed', -0.101, -0, -0.01, -0, -1.735, -0.009, -0, -0.002, -0.283, -0.054, -15.393, -26.335, -111.975, -746.367, -775.118, -195.192, -125.822, -35.726, -14.203, -151.548, -692.578, -249.107, -46.413, -249.626, -4.28, -69.205, -4.77, -7.654, -8.275, -0.988, -5.675, -4.354, -1.979, -4.612, -5.244, -8.509, -72.333, -3.634, -1.106, -6.579, -3.244, -0.34, -1.852, -96.924, -57.112, -9.206, -0.068, -0.533, -1.44, -3.772, -2.479, -4.181, -13.21, -14.511, -6.621, -2.921, -5.925, -1.144, -11.071, -2.203, -5.953, -3.158, -0.035, -0, -28.271, -81.249, -1.214, -0.474, -75.699, -0.671, -8.496, -14.478, -1.091, -5.88, -19.332, -0.078, -0.796, -1.018, -0.01, -1.076, -0.163, -0.112, -0.759, -0, -2.25, -0.159, -0.013, -0.003, -0.324, -14.042, -0.013, -0.171, -1.446, -2.307, -0, -0.764, -0.454, -0, -0.034, -0.273, -0.188, -0, -0.027, -0, -2.12, -7.509, -2.093, -81.237, -11.359, -22.632, -1.793, -11.377, -14.382, -0, -63.431, -92.355],
+            //['Ita_Kb_added', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.37, 0, 0, 0, 0, 0, 0.075, 0.168, 0, 0.144, 0, 0.024, 0, 0.026, 0, 0.023, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.049, 0.061, 0, 0.002, 0, 0, 0, 0, 19.434, 0, 0.089, 0, 0.244, 0, 0, 0.042, 0.005, 0.018, 0.077, 0, 0.036, 0.001, 0, 0, 0, 0, 0.097, 0.028, 0, 0, 0, 0, 0.185, 0, 0, 0.083, 0.027, 0, 0.021, 0.078, 0.02, 0, 0, 0, 0.091, 0.07, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.016, 0, 0, 0, 1.335, 0, 0, 0, 0.042, 0, 0, 1.809, 0, 5.365, 0, 0, 0, 0, 0.967, 0],
+            //['Ita_Kb_removed', 0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0.009, -0, -0, -0, -0, -0.003, -0, -0, -0.048, -0, -0, -0, -0.007, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0.01, -0, -0, -0, -0, -0.192, -0, -0, -0.218, -0, -0, -0, -0, -0, -0, -0, -0.002, -0, -0.03, -0, -0, -0, -0, -0, -0.058, -0, -0.001, -0, -0, -0, -0, -0, -0.028, -0, -0, -0, -0, -0, -0.182, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0, -0.004, -0, -0, -0.597, -0, -0, -0, -0.158, -0, -0, -0, -0, -0, -0, -0, -0, -0.001, -0.004, -0.009, -0, -0.001, -0, -0]
+            ],
+         
+        colors: {
+            Eng_Kb_added:'#c3442b',
+            Eng_Kb_removed:'#000',
+            //Ita_Kb_added: '#000',
+            //Ita_Kb_removed: '#ccc'
+            Page_dimension:'#999'
+            
+        },
+       
+        types: {
+            Eng_Kb_added: 'area',
+            Eng_Kb_removed: 'area',
+            //Ita_Kb_added: 'area',
+            //Ita_Kb_removed: 'area'
+            Page_dimension: 'area'
+            // 'line', 'spline', 'step', 'area', 'area-step' are also available to stack
+        },
+        
+    },
+
+    axis: {
+        x: {
+        	label: {
+                text: 'Years',
+                position: 'inner-right'
+                // inner-right : default
+                // inner-center
+                // inner-left
+                // outer-right
+                // outer-center
+                // outer-left
+            },
+        	tick: {
+                count: 2
+            },
+        	type: 'category',
+        	categories: ['Jan2005','Feb2005','May2005','Jun2005','Aug2005','Sep2005','Oct2005','Nov2005','Dec2005','Jan2006','Feb2006','Mar2006','Apr2006','May2006','Jun2006','Jul2006','Aug2006','Sep2006','Oct2006','Nov2006','Dec2006','Jan2007','Feb2007','Mar2007','Apr2007','May2007','Jun2007','Jul2007','Aug2007','Sep2007','Oct2007','Nov2007','Dec2007','Jan2008','Feb2008','Mar2008','Apr2008','May2008','Jun2008','Jul2008','Aug2008','Sep2008','Oct2008','Nov2008','Dec2008','Jan2009','Feb2009','Mar2009','Apr2009','May2009','Jun2009','Jul2009','Aug2009','Sep2009','Oct2009','Nov2009','Dec2009','Jan2010','Feb2010','Mar2010','Apr2010','May2010','Jun2010','Jul2010','Aug2010','Sep2010','Oct2010','Nov2010','Dec2010','Jan2011','Feb2011','Mar2011','Apr2011','May2011','Jun2011','Jul2011','Aug2011','Sep2011','Oct2011','Nov2011','Dec2011','Jan2012','Feb2012','Mar2012','Apr2012','May2012','Jun2012','Jul2012','Aug2012','Sep2012','Oct2012','Nov2012','Dec2012','Jan2013','Feb2013','Mar2013','Apr2013','Jun2013','Jul2013','Aug2013','Sep2013','Oct2013','Nov2013','Dec2013','Jan2014','Feb2014','Mar2014','Apr2014','May2014','Jun2014','Jul2014','Aug2014','Sep2014','Oct2014','Nov2014','Dec2014']
+            },
+
+        y: {
+            label: {
+                text: 'Wikipedia page changes',
+                position: 'inner-top',
+                // inner-top : default
+                // inner-middle
+                // inner-bottom
+                // outer-top
+                // outer-middle
+                // outer-bottom
+            }   
+        }
+    },
+
+        
+    
+ 	
+ 	/* REGIONS -->
+    regions: [
+        {start:0, end:9, class:'timeline'}
+    ],
+
+    */
+    subchart: {
+    	show: true
+    },
+    point:{
+        show: false
+        },
+    legend: {
+    	position: 'right'
+    }
+
+        
+});
+
+</script>
+
+</body>
+
+</html>

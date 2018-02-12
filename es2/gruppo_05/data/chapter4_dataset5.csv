@@ -1,0 +1,67 @@
+position;serie;episode;nsa activity;scene;prisoner;phone;tie;conference;location
+1;24;Day 2: 8:00 a.m.-9:00 a.m.;security;tense;no;phone;no;no;car
+2;burn notice;Hard Out;security;calm;prisoner;no;no;no;outdoor
+3;numb3rs;Finders Keepers;security;calm;no;no;no;no;office
+4;chuck;Chuck versus the helicopter;security;tense;no;no;tie;no;indoor
+5;jake 2.0;Jerry 2.0;security;very agitated;no;phone;no;no;car
+6;24;Day 2: 8:00 a.m.-9:00 a.m.;security;calm;no;no;tie;conference;office
+7;ncis;Monsters and Men;security;calm;prisoner;no;no;no;indoor
+8;person of interest;No goog deed;surveillance;tense;prisoner;no;no;no;office
+9;alias;Second double;security;tense;no;no;tie;no;office
+10;numb3rs;Finders Keepers;security;calm;no;no;tie;no;office
+11;24;Day 2: 8:00 a.m.-9:00 a.m.;security;calm;no;no;no;conference;outdoor
+12;24;Day 2: 8:00 a.m.-9:00 a.m.;security;tense;no;no;tie;conference;office
+14;ncis: los angeles;Endgame;security;calm;prisoner;no;no;no;indoor
+15;burn notice;Hard Out;security;calm;prisoner;no;no;no;outdoor
+16;person of interest;No goog deed;surveillance;calm;no;no;no;no;office
+17;24;Day 2: 8:00 a.m.-9:00 a.m.;security;agitated;no;phone;tie;conference;office
+18;jake 2.0;Jerry 2.0;security;calm;no;no;no;no;indoor
+19;24;Day 2: 8:00 a.m.-9:00 a.m.;security;calm;no;phone;no;no;office
+20;burn notice;Hard Out;security;agitated;prisoner;no;no;no;outdoor
+21;jake 2.0;Jerry 2.0;security;calm;no;no;no;no;indoor
+22;ncis;Monsters and Men;security;tense;no;no;tie;no;outdoor
+23;24;Day 2: 8:00 a.m.-9:00 a.m.;security;tense;no;phone;tie;conference;office
+24;chuck;Chuck versus the helicopter;security;agitated;no;no;no;no;outdoor
+25;jake 2.0;Jerry 2.0;security;agitated;no;no;no;no;outdoor
+26;alias;Second double;security;tense;no;no;no;no;office
+27;numb3rs;Finders Keepers;security;agitated;no;no;no;no;office
+28;the west wings;Transition;surveillance;agitated;no;phone;tie;no;indoor
+29;person of interest;No goog deed;surveillance;calm;no;no;tie;no;office
+30;ncis;Monsters and Men;security;tense;no;no;no;no;office
+31;the west wings;Transition;surveillance;agitated;no;phone;no;no;indoor
+32;chuck;Chuck versus the helicopter;security;calm;no;no;no;no;indoor
+33;person of interest;No goog deed;surveillance;calm;no;no;tie;no;office
+34;ncis;Monsters and Men;security;calm;no;no;tie;no;office
+35;chuck ;Chuck versus the helicopter;surveillance;tense;no;no;no;no;indoor
+36;jake 2.0;Jerry 2.0;security;calm;no;no;no;no;indoor
+37;ncis;Monsters and Men;security;tense;no;no;no;no;office
+38;jake 2.0;Jerry 2.0;security;calm;no;no;no;no;indoor
+39;24;Day 2: 8:00 a.m.-9:00 a.m.;security;tense;no;no;tie;no;office
+40;chuck ;Chuck versus the helicopter;security;calm;no;no;no;no;outdoor
+41;jake 2.0;Jerry 2.0;security;very agitated;no;no;no;no;indoor
+42;jake 2.0;Jerry 2.0;security;very agitated;prisoner;no;no;no;indoor
+43;person of interest;No goog deed;surveillance;calm;no;no;no;no;office
+44;ncis: los angeles;Endgame;surveillance;calm;no;no;no;no;office
+45;numb3rs;Finders Keepers;security;calm;no;no;tie;no;office
+46;ncis;Monsters and Men;security;calm;no;no;tie;no;outdoor
+47;ncis;Monsters and Men;security;calm;no;no;no;no;indoor
+48;ncis;Monsters and Men;security;calm;no;no;tie;no;indoor
+49;the west wings;Transition;surveillance;agitated;no;no;no;no;indoor
+50;numb3rs;Finders Keepers;security;calm;no;no;no;no;outdoor
+51;alias;Second double;security;tense;no;no;no;no;office
+52;chuck ;Chuck versus the helicopter;security;calm;no;no;no;no;indoor
+53;the west wings;Transition;surveillance;calm;no;phone;no;conference;indoor
+54;ncis: los angeles;Endgame;surveillance;calm;no;phone;no;no;indoor
+55;person of interest;No goog deed;surveillance;tense;no;no;no;no;office
+56;ncis;Monsters and Men;surveillance;agitated;no;phone;no;no;indoor
+57;alias;Second double;security;tense;no;no;no;no;office
+58;person of interest;No goog deed;surveillance;agitated;prisoner;no;tie;no;office
+59;24;Day 2: 8:00 a.m.-9:00 a.m.;security;tense;no;no;no;no;office
+60;person of interest;No goog deed;surveillance;tense;no;no;tie;no;office
+61;ncis: los angeles;Endgame;surveillance;calm;prisoner;no;no;no;indoor
+62;numb3rs;Finders Keepers;security;tense;no;no;no;no;outdoor
+63;the west wings;Transition;surveillance;calm;no;phone;tie;no;office
+64;numb3rs;Finders Keepers;security;calm;no;no;no;no;outdoor
+65;numb3rs;Finders Keepers;security;calm;no;no;tie;no;outdoor
+66;ncis: los angeles;Endgame;security;calm;no;no;no;no;office
+67;chuck;Chuck versus the helicopter;security;very agitated;no;phone;tie;no;car

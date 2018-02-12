@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>digital literacy DENSITY X</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Load c3.css -->
+    <link href="css/c3.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Load scrolling-nav.css -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Google font -->
+    <link href='http://fonts.googleapis.com/css?family=Lekton:400,700|Gentium+Book+Basic:400italic,700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Load Tooltipster -->
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Load d3.js and c3.js --> 
+    <script src="js/d3.min.js" type="text/javascript"></script>
+    <script src="js/c3.min.js" type="text/javascript"></script>
+
+    <!-- Navbar
+    ================================================== -->
+     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav nav-justified">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a class="page-scroll" href="#slide2">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#slide3">Geography</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#slide6">Age</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#slide8">Gender</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#slide10">Overview</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Sezione Header
+    ================================================== -->
+    <section class="slide" id="slide1">
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682.5 768" enable-background="new 0 0 682.5 768" xml:space="preserve" height="100%" style="padding:100px;z-index:0;position:absolute" data-stellar-ratio="0.8">
+        <path fill="none" stroke="#141411" stroke-miterlimit="10" d="M96.5,67.4c0,2.6-2.1,4.6-4.6,4.6c-2.6,0-4.6-2.1-4.6-4.6
+          c0-2.6,2.1-4.6,4.6-4.6C94.4,62.8,96.5,64.8,96.5,67.4z"/>
+        <path fill="none" stroke="#141411" stroke-miterlimit="10" d="M70.5,67.4c0,2.6-2.1,4.6-4.6,4.6c-2.6,0-4.6-2.1-4.6-4.6
+          c0-2.6,2.1-4.6,4.6-4.6C68.4,62.8,70.5,64.8,70.5,67.4z"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="117.7" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.6" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.6" cy="43.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="273.1" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.9" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.8" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.8" cy="39.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="273.1" cy="39.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.9" cy="39.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="65.9" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="91.7" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="117.6" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="44.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="65.9" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="65.9" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="65.9" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="220.7" r="4.6"/>
+      </svg>
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682.5 768" enable-background="new 0 0 682.5 768" xml:space="preserve" height="100%" style="padding:100px;z-index:0;position:absolute" data-stellar-ratio="0.7">
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.3" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247.2" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="299" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.7" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.7" cy="39.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.6" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="299" cy="39.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="299" cy="14.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="67.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247.2" cy="44.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.2" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="93.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="91.7" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="117.6" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.2" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="14.1" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="40" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="91.7" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="117.6" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.2" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="40" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="91.7" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.2" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="40" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="91.7" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.2" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="40" cy="220.7" r="4.6"/>
+      </svg>
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682.5 768" enable-background="new 0 0 682.5 768" xml:space="preserve" height="100%" style="padding:100px;z-index:0;position:absolute" data-stellar-ratio="0.6">
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.7" cy="271.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.7" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.6" cy="271.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.6" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="348.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="118.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="144.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="117.6" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="169.6" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="65.9" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="117.6" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="65.9" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="65.9" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.8" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.8" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="271.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="271.7" r="4.6"/>
+      </svg>
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682.5 768" enable-background="new 0 0 682.5 768" xml:space="preserve" height="100%" style="padding:100px;z-index:0;position:absolute" data-stellar-ratio="0.5">
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="271.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="348.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="348.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="348.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="399.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="399.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="399.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="399.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="480" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="505.9" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="195.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="91.7" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="117.6" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.2" cy="220.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="221.2" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="246.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="271.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="272.9" cy="271.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="450.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="480" cy="450.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="505.9" cy="450.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="450.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="557.7" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="557.7" cy="450.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="475.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="480" cy="475.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="475.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="480" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="583.6" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="609.4" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="583.6" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="635.3" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="635.3" cy="552.4" r="4.6"/>
+      </svg>
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682.5 768" enable-background="new 0 0 682.5 768" xml:space="preserve" height="100%" style="padding:100px;z-index:0;position:absolute" data-stellar-ratio="0.4">
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="297.2" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="247" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="322.7" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="348.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="348.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="399.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="424.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="450.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="475.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="505.9" cy="475.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="557.7" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="557.7" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="609.4" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="557.7" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="583.6" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="577.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="577.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="557.7" cy="577.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="583.6" cy="577.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="603.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="557.7" cy="603.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="629" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="654.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="680" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="680" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="350.6" cy="705.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="705.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="661.2" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="661.2" cy="577.9" r="4.6"/>
+      </svg>
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682.5 768" enable-background="new 0 0 682.5 768" xml:space="preserve" height="100%" style="padding:100px;z-index:0;position:absolute" data-stellar-ratio="0.3">
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="348.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="373.8" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="298.8" cy="399.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="450.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="505.9" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="480" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="505.9" cy="526.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="195.3" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="20" cx="505.9" cy="552.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="20" cx="195.3" cy="577.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="20" cx="557.7" cy="629" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="20" cx="557.7" cy="654.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="20" cx="376.5" cy="680" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="20" cx="428.2" cy="680" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="20" cx="454.1" cy="680" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="480" cy="680" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="705.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="705.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="731.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="635.3" cy="577.9" r="4.6"/>
+      </svg>
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682.5 768" enable-background="new 0 0 682.5 768" xml:space="preserve" height="100%" style="padding:100px;z-index:0;position:absolute" data-stellar-ratio="0.2">
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="324.7" cy="399.3" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="501.4" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="577.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="143.5" cy="603.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="169.4" cy="603.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="583.6" cy="603.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="531.8" cy="680" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="376.5" cy="731.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="705.5" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="402.4" cy="731.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="428.2" cy="731.1" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="454.1" cy="754.9" r="4.6"/>
+        <circle fill="none" stroke="#141411" stroke-miterlimit="10" cx="480" cy="754.9" r="4.6"/>
+      </svg>
+
+      <!-- Titolo -->
+      <div class="container" style="z-index:999">
+        <div class="row">
+          <div class="cl-md-7 col-md-offset-5">
+            <h1>Digitalia</h1>
+            <h2>Documenting the digital literacy void in the Bel Paese</h2>
+            <p>“Becoming literate in how the technical world works is equivalent to reading, writing and maths. We need to look at this fourth literacy as mainstream.” (Paul Gilster, 1997)</p>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+
+    </section><!-- /#slide1 -->
+
+
+    <!-- Sezione Quattro categorie
+    ================================================== -->
+    <section class="slide" id="slide2">
+
+      <div class="container">
+
+        <div class="row">
+            <hr>
+          <div class="col-md-7" style="margin-top:-30px">
+
+            <h2>Half of the Italian population never used the Internet</h2>
+            </div> 
+          <div class="col-md-5">            
+            <p>> This is the shocking evidence that got us started in our research:
+            almost half of our fellow citizens never used the Internet and to better understand this alarming fact we sorted the population in four different categories, distinguish from frequency of Internet use and informatics skills (according to the <a href="http://ipts.jrc.ec.europa.eu/publications/pub.cfm?id=6359" target="_blank">Digicomp Framework</a>, an official document written by the European Parliament).</p>
+          </div>
+ 
+                    <div class="col-md-3" style="padding-top:30px">
+                    <img src="img/alfa_1.png">
+                    <h3>50,85%</h3>
+                    <h4>Totally digital illiterates</h4>
+                    <p>People who never used the Internet</p>
+                  </div>
+                  <div class="col-md-3" style="padding-top:30px">
+                    <img src="img/alfa_2.png">
+                    <h3>4,80%</h3>
+                    <h4>Partial digital illiterates</h4>
+                    <p>People who use the Internet but did not access it in the last 3 months</p>   
+                  </div>
+                  <div class="col-md-3" style="padding-top:30px">
+                    <img src="img/alfa_3.png">
+                    <h3>33,50%</h3>
+                    <h4>Functional digital literates</h4>
+                    <p>People who have been accessing the Internet in the last 3 months but can not use the most common services</p>
+                  </div>
+                  <div class="col-md-3" style="padding-top:30px">
+                    <img src="img/alfa_4.png">
+                    <h3>10,85%</h3>
+                    <h4>Totally digital </br>literates</h4>
+                    <p>People who have been accessing the Internet in the last 3 months and know how to use it</p>
+                  </div>
+
+
+            </div><!-- /.row -->
+      </div><!-- /.container -->
+             
+    </section><!-- /#slide3 -->
+
+
+    <!-- Sezione Geografia
+    ================================================== -->
+    <section class="slide" id="slide3">
+
+      <div class="container"><hr>
+        <div class="row quadrato">
+          <div class="col-md-7" style="margin-top:-30px">
+            <h2>The North-South divide</h2>
+        </div>
+        <div class="col-md-5">
+            <p>> We questioned ourselves about the relation between digital literacy and geographic location: are people actually more literate depending on the area in Italy they live in?
+            We considered each region and we compared the percentage of population belonging to each digital literacy level. What we noticed is a concentration of digitally literates in the North(2) and digitally illiterates in the South(1). 
+            </p>
+          </div>
+      </div><!-- /.row -->
+
+        <div class="row" style="margin-top:50px">
+
+        <div class="col-md-6">
+
+            <img src="img/sfondo-mappe.png" style="position:relative;display:inline">
+
+            <svg class="analfabeti" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 993.609 814.78" enable-background="new 0 0 993.609 814.78" xml:space="preserve" style="position:absolute;bottom:0;right:0;">
+            
+              <rect fill="transparent" width="993.609" height="814.781"/>
+
+              <circle class="tooltip" title="Trentino Alto Adige | 2%" id="trentino" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="455.09" cy="91.672" r="22.99"/>
+              
+              <circle class="tooltip" title="Friuli Venezia Giulia | 3%" id="friuli" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="538.552" cy="146.528" r="24.796"/>
+              
+              <circle class="tooltip" title="Veneto | 3%" id="veneto" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="482.91" cy="173.957" r="24.586"/>
+              
+              <circle class="tooltip" title="Lombardia | 2%" id="lombardia" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="399.449" cy="173.957" r="22.423"/>
+              
+              <circle class="tooltip" title="Liguria | 2%" id="liguria" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="315.764" cy="228.814" r="20.545"/>
+              
+              <circle class="tooltip" title="Emilia Romagna | 5%" id="emilia" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="427.27" cy="256.243" r="29.24"/>
+              
+              <circle class="tooltip" title="Umbria | 4%" id="umbria" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="510.713" cy="338.529" r="30.611"/>
+              
+              <circle class="tooltip" title="Marche | 5%" id="marche" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="594.193" cy="338.529" r="30.846"/>
+              
+              <circle class="tooltip" title="Lazio | 6%" id="lazio" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="538.552" cy="420.813" r="31.959"/>
+              
+              <circle class="tooltip" title="Campania | 5%" id="campania" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="622.015" cy="503.1" r="37.94"/>
+              
+              <circle class="tooltip" title="Basilicata | 6%" id="basilicata" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="705.476" cy="557.957" r="37.032"/>
+              
+              <circle class="tooltip" title="Calabria | 8%" id="calabria" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="705.476" cy="640.242" r="37.032"/>
+              
+              <circle class="tooltip" title="Sicilia | 8%" id="sicilia" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="622.015" cy="722.528" r="37.94"/>
+              
+              <circle class="tooltip" title="Sardegna | 7%" id="sardegna_1_" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="315.764" cy="557.957" r="34.492"/>
+              
+              <circle class="tooltip" title="Puglia | 10%" id="puglia" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="788.938" cy="530.528" r="43.091"/>
+              
+              <circle class="tooltip" title="Molise | 7%" id="molise" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="705.476" cy="475.671" r="32.788"/>
+              
+              <circle class="tooltip" title="Abruzzo | 6%" id="abruzzo" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="622.014" cy="420.813" r="35.601"/>
+              
+              <circle class="tooltip" title="Toscana | 5%" id="toscana" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="427.27" cy="338.529" r="31.055"/>
+              
+              <circle class="tooltip" title="Piemonte | 2%" id="piemonte" fill="none" stroke="#CE514A" stroke-width="3" stroke-miterlimit="10" cx="315.764" cy="146.528" r="24.328"/>
+
+              <style>.analfabeti circle:hover {fill: #CE514A; cursor: crosshair;} </style>
+
+            </svg>
+
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+
+            <img src="img/sfondo-mappe.png" style="position:relative;display:inline">
+
+            <svg class="alfabeti" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="100%" height="100%" viewBox="0 0 993.609 814.78" enable-background="new 0 0 993.609 814.78"
+            xml:space="preserve" style="position:absolute;bottom:0;right:0;">
+
+            <rect fill="transparent" width="993.609" height="814.781"/>
+
+            <circle class="tooltip" title="Trentino Alto Adige | 9%" id="trentino_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="455.802" cy="93.773" r="40.33"/>
+          
+            <circle class="tooltip" title="Friuli Venezia Giulia | 7%" id="friuli_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="539.229" cy="121.357" r="38.553"/>
+          
+            <circle class="tooltip" title="Veneto | 5%" id="veneto_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="483.613" cy="176.023" r="32.663"/>
+          
+            <circle class="tooltip" title="Lombardia | 10%" id="lombardia_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="400.386" cy="176.189" r="42.365"/>
+          
+            <circle class="tooltip" title="Piemonte | 7%" id="piemonte_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="316.762" cy="148.429" r="37.733"/>
+          
+            <circle class="tooltip" title="Liguria | 7%" id="liguria_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="316.762" cy="231.023" r="35.357"/>
+          
+            <circle class="tooltip" title="Emilia Romagna | 7%" id="emilia_3_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="427.996" cy="258.439" r="37.687"/>
+          
+            <circle class="tooltip" title="Toscana | 5%" id="toscana_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="427.996" cy="340.688" r="33.082"/>
+          
+            <circle class="tooltip" title="Umbria | 5%" id="umbria_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="511.421" cy="340.688" r="31.982"/>
+          
+            <circle class="tooltip" title="Marche | 5%" id="marche_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="595.005" cy="340.688" r="32.505"/>
+          
+            <circle class="tooltip" title="Lazio | 8%" id="lazio_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="539.229" cy="422.938" r="40.23"/>
+          
+            <circle clacarouselss="tooltip" title="Abruzzo | 3%" id="abruzzo_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="622.655" cy="422.938" r="27.65"/>
+          
+            <circle class="tooltip" title="Campania | 3%" id="campania_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="622.655" cy="505.189" r="27.65"/>
+          
+            <circle class="tooltip" title="Molise | 2%" id="molise_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="706.28" cy="477.539" r="24.356"/>
+          
+            <circle class="tooltip" title="Puglia | 3%" id="puglia_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="789.507" cy="532.061" r="26.281"/>
+          
+            <circle class="tooltip" title="Basilicata | 4%" id="basilicata_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="706.08" cy="560.342" r="27.964"/>
+          
+            <circle class="tooltip" title="Calabria | 2%" id="calabria_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="706.08" cy="642.104" r="24.737"/>
+          
+            <circle class="tooltip" title="Sicilia | 1%" id="sicilia_2_" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="623.178" cy="725.111" r="19.257"/>
+          
+            <circle class="tooltip" title="Sardegna | 7%" id="sardegna" fill="none" stroke="#4CCC4F" stroke-width="3" stroke-miterlimit="10" cx="316.762" cy="559.43" r="38.325"/>
+
+            <style>.alfabeti circle:hover {fill: #4CCC4F; cursor: crosshair;} </style>
+
+          </svg>
+
+        </div><!-- /.col-md-6 -->
+
+        <div class="col-md-6" style="margin-top:40px">
+            <h4>(1)Totally digital illiterates</h4>
+            <p>People who never used the Internet</p>
+        </div>
+        <div class="col-md-6" style ="margin-top:40px">
+            <h4>(2)Totally digital literates</h4>
+            <p>People who have been accessing the Internet in the last 3 months and know how to use it</p>
+        </div>
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+</section>
+
+    <!-- Sezione Education and Age
+    ================================================== -->
+    <section class="slide" id="slide6">
+
+      <div class="container"><hr>
+        <div class="row">
+          <div class="col-md-7" style="margin-top:-30px">
+            <h2>No country for old men (neither for young ones!)</h2>
+        </div>
+        <div class="col-md-5">
+        <p>> Comparing the digital literacy level related to people’s different range of age, we weren’t surprised to see that 15 to 50 year-old people are the most digitally literate. As expected, individuals younger than age 15 and older than age 50 tend to be thoroughly digitally illiterate (1).</p>
+        <p>> In the following steps, as thought, we noticed a correspondence between what we might define “traditional” literacy and digital one: a higher level of education corresponds to a higher level of digital literacy (2).</p>  
+        </div>      
+
+        <div class="col-md-6" style="margin-top:20px">
+        <img src="img/curva_01.png"><p>(1)</p></div>
+
+        <div class="col-md-6" style="margin-top:20px">
+        <img src="img/curva_02.png"><p>(2)</p></div>
+            
+        </div>
+            
+        </div><!-- /.row -->
+</div>
+</section>
+
+<section class="slide" id="slide7">
+    <div class="container">
+        <div class="row">
+
+          <div class="col-md-5">
+            <p>> The following infographics shows how digital literacy decreases at the age increment. However, we can notice a more gradual diminution of the digital literacy Level when education is higher.</p>
+          </div>  
+
+        </div><!-- /.row -->
+
+
+        <div class="row" style="margin-top:60px">
+         <div class="cl-md-12">
+          <!-- Contenitore Line Chart Education and age -->
+          <div id='linechart'>
+
+          <!-- Javascript Line Chart -->    
+          <script type="text/javascript">
+
+          // Genera dottorato o lauree 
+          var chart = c3.generate({
+          bindto: '#linechart',
+          // Dimensione chart
+            size: {
+              height: 450
+          },
+          // QUELLO CHE SI VEDE ALL'INIZIO 
+          data: {
+              columns: [
+                  ['Total illiterates',1295,21,83,332,1327],
+                  ['Partial illiterates',65,1,3,null,null],
+                  ['Functional literates',665,5,9,3,null],
+                  ['Total literates',1,null,1,null,null],
+              ],
+          },
+          // Assi xy
+              axis: {
+                  x: {
+                      label: 'Age',
+                      type: 'category',
+                      categories: ['6-14', '15-30', '31-50', '51-65', '66-93'],
+                  },
+                  y: {
+                      label: 'People',
+                      max: 3500,
+                      min: 0,
+                      ticks: 10,
+                  },
+              },
+
+          // Legenda
+          legend: {
+          position: 'bottom'
+          },
+
+          // Colori
+          color: {
+              pattern: ['#CE514A', '#D8746E', '#9FC79E', '#4CCC70']
+          },
+
+          // Griglia 
+          grid: {
+              x: {
+                  show: true
+              },
+              y: {
+                  show: true,
+              }
+          },
+
+          });// Fine Dottorato o dati
+
+          // Funzione carica Dottorato o lauree 
+          function dottorato() {
+              chart.load({
+                  columns: [
+                      ['Total illiterates',null,17,116,251,169],
+                      ['Partial illiterates',null,36,98,64,13],
+                      ['Functional literates',null,371,1027,571,53],
+                      ['Total literates',null,388,753,240,5],
+                  ]
+              });
+          }
+
+          // Funzione carica Licenza superiore
+          function licenzasuperiore() {
+              chart.load({
+                  columns: [
+                      ['Total illiterates',null,294,1317,1408,493],
+                      ['Partial illiterates',null,241,407,246,26],
+                      ['Functional literates',null,1964,2967,1190,59],
+                      ['Total literates',null,909,1258,337,11],
+                  ]
+              });
+          }
+
+          // Funzione carica Licenza Media
+          function licenzamedia() {
+              chart.load({
+                  columns: [
+                      ['Total illiterates',37,610,2789,2823,882],
+                      ['Partial illiterates',14,216,318,143,9],
+                      ['Functional literates',267,1966,1456,530,20],
+                      ['Total literates',6,257,314,95,3],
+                      
+                  ]
+              });
+          }
+
+          // Funzione carica Licenza Elementare
+          function licenzaelementare() {
+              chart.load({
+                  columns: [
+                      ['Total illiterates',318,50,433,3187,3374],
+                      ['Partial illiterates',86,9,15,25,5],
+                      ['Functional literates',931,37,46,98,8],
+                      ['Total literates',12,4,5,10,3],
+                  
+                  ]
+              });
+          }
+
+          // Funzione carica Nessun Titolo
+          function nessuntitolo() {
+              chart.load({
+                  columns: [
+                      ['Total illiterates',1295,21,83,332,1327],
+                      ['Partial illiterates',65,1,3,null,null],
+                      ['Functional literates',665,5,9,3,null],
+                      ['Total literates',1,null,1,null,null],
+                  ]
+              });
+          }
+
+              </script><!-- //Javascript Line Chart -->
+            </div><!-- .linechart -->
+          </div><!-- .col-md-12 -->
+                  </div><!-- /.row -->
+      </div><!-- /.container -->
+
+<div class="container" style="margin-top:-130px">
+    <div class="row">
+          <div class="col-md-2">     
+            <button class="linechart" onclick="nessuntitolo();">No title</button>
+          </div>
+          <div class="col-md-2">
+            <button class="linechart" onclick="licenzaelementare();">Primary school</button>
+          </div>
+          <div class="col-md-2">
+            <button class="linechart" onclick="licenzamedia();">Lower secondary</button>
+          </div> 
+          <div class="col-md-2">
+            <button class="linechart" onclick="licenzasuperiore();">Higher school</button>
+          </div>
+          <div class="col-md-2">
+            <button class="linechart" onclick="dottorato();">PhD - BA / MA degree</button>
+          </div>
+
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <!-- /Pulsanti -->
+  </section>
+
+
+    <!-- Sezione Sesso
+    ================================================== -->
+    <section class="slide" id="slide8">
+      <div class="container"><hr>
+        <div class="row">
+          <div class="col-md-7" style="margin-top:-30px">
+            <h2>Men vs. Women</h2>
+        </div>
+        <div class="col-md-5">
+            <p>> Generally, men are more digitally literate than women, independently of the geographic position. As you can see in the following images, a higher level of education decreases the gap while age increases it.</p>
+          </div>
+
+      </div>
+      <div class="container" style="padding-top:30px;margin-bottom:-100px">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/regioni-grande.gif">
+          </div>
+
+           <div class="col-md-4">
+            <img src="img/età-grande.gif">
+          </div>
+
+           <div class="col-md-4">
+            <img src="img/titolo-grande.gif">
+          </div>
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+  </section>
+
+  <section class="slide" id="slide9">
+
+        <div class="container">
+        <div class="row">
+                                  <div class="col-md-5 col-md-offset-7">
+            <p>> The difference of the concentration of men and women changes considering geographic location, education and age. In the columns can be seen the four digital literacy levels, while each row shows the different set of attributes (geographic location, education and age) for each level of digital literacy. When the square is pink, more women are considered in that level; if it’s blue more men.</p>
+          </div>
+
+          <div class="col-md-12" style="margin-top:50px">
+            <img src="img/sesso.png">
+          </div>
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+
+
+    <!-- Sezione conclusioni
+    ================================================== -->
+    <section class="slide" id="slide10">
+
+      <div class="container">
+
+        <div class="row">
+            <hr>
+          <div class="col-md-7" style="margin-top:-30px">
+            <h2>A European overview</h2>
+        </div>
+        <div class="col-md-5">
+            <p>> What our analyse highlights and confirms is a huge gap in the Italian population.
+            We can’t tell what the causes of the digital literacy void in Italy are, but what we are sure about is that Italy still doesn’t fit in a digital European scenery, appearing to be the third to last country in the <a href="http://noi-italia2014.istat.it/index.php?id=7&L=0&user_100ind_pi1%5Bid_pagina%5D=7&cHash=5bc64b8e6db0cec1fa1aeb231b61c312" target="_blank">Digital Literate European Countries Classification.</a></p>
+            </div> 
+
+          <div class="col-md-12" style="margin-top:40px">
+            <img src="img/europa.png">
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="http://www.densitydesign.org/"><img src="img/density_logo.png"></a>  
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="http://www.dipartimentodesign.polimi.it/"><img src="img/dip_logo.png"></a>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <h4>project by</h4>
+          <ul>
+            <li></li>
+            <li>Nicolò Arena</li>
+            <li>Claudio Fabbro</li>
+            <li>Alessandro Malcotti</li>
+            <li>Marta Mandile</li>
+            <li>Anita Righetto</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <h4>Faculty</h4>
+          <ul>
+            <li>Paolo Ciuccarelli</li>
+            <li>Marco Fattore</li>
+            <li>Stefano Mandato</li>
+            <li>Donato Ricci</li>
+            <li>Salvatore Zingale</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-2 col-xs-12">
+          <h4>Teaching Assistants</h4>
+          <ul>
+            <li>Matteo Azzi</li>
+            <li>Daniele Ciminieri</li>
+            <li>Michele Mauri</li>
+            <li>Azzurra Pini</li>
+            <li>Giorgio Uboldi</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- Tooltipster -->
+     <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+       <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
+
+     <!-- Stellar parallax -->
+    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+       $(window).stellar();
+      });
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

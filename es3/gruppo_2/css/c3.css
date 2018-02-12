@@ -1,0 +1,105 @@
+/*-- Chart --*/
+.c3 svg {
+  font: 12px 'PT Sans', sans-serif;
+  color: #333333;
+
+}
+.c3 path, .c3 line {
+  fill: none;
+  stroke: #333333;
+  stroke-width: 1px;
+}
+
+.c3 text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.c3-legend-item-tile,
+.c3-xgrid-focus,
+.c3-ygrid,
+.c3-event-rect,
+.c3-bars path {
+  shape-rendering: crispEdges;
+}
+
+/*-- Axis --*/
+.c3-axis-x .tick {
+  fill: #333333;
+}
+
+.c3-axis-x-label {
+  fill: #333333;
+}
+
+.c3-axis-y .tick {
+  fill: #333333;
+}
+
+.c3-axis-y-label {
+  fill: #333333;
+}
+
+/*-- Grid --*/
+.c3-grid line {
+  stroke: #eaebe6;
+  stoke-width: 1px;
+}
+
+.c3-grid text {
+  fill: #333333;
+}
+
+.c3-xgrid, .c3-ygrid {
+  stroke-dasharray: 3 3;
+}
+
+/*-- Bar --*/
+.c3-bar {
+  stroke-width: 0px;
+}
+
+.c3-bar._expanded_ {
+  fill-opacity: 0.75;
+}
+
+/*-- Tooltip --*/
+.c3-tooltip {
+  border-collapse:collapse;
+  border-spacing:0;
+  background-color:#EFF7F9;
+  empty-cells:show;
+  /*-webkit-box-shadow: 7px 7px 12px -9px rgb(119,119,119);
+     -moz-box-shadow: 7px 7px 12px -9px rgb(119,119,119);
+          box-shadow: 7px 7px 12px -9px rgb(119,119,119);*/
+  opacity: 0.9;
+}
+.c3-tooltip tr {
+  border:1px solid #CCC;
+}
+.c3-tooltip th {
+  background-color: #aaa;
+  font-family:'PT Sans', sans-serif;
+  font-size:14px;
+  padding:2px 5px;
+  text-align:left;
+  color:#282927;
+}
+.c3-tooltip td {
+  font-family:'PT Sans', sans-serif;
+  color:#282927;
+  font-size:13px;
+  padding: 3px 6px;
+  background-color:#fff;
+  border-left:1px dotted #999;
+}
+.c3-tooltip td > span {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+.c3-tooltip td.value{
+  text-align: right;
+  color:#282927;
+}

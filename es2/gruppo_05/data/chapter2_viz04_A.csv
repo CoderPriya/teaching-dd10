@@ -1,0 +1,171 @@
+who;polarization;word;tf value
+academic;against;NSA; 0.0638297872340425
+academic;against;report; 0.0627615062761506
+academic;against;constitution; 0.062015503875969
+academic;against;amendment; 0.062015503875969
+academic;against;bill; 0.0542635658914729
+academic;against;nsa document; 0.0535714285714286
+academic;against;warrantless; 0.0530679933665008
+academic;against;freedom; 0.0510204081632653
+academic;against;privacy; 0.0510204081632653
+academic;against;security; 0.0497835497835498
+academic;neutral; security; 0.0467625899280576
+academic;neutral; insight; 0.0454545454545455
+academic;neutral;public opinion; 0.0454545454545455
+academic;neutral;privacy surgeon; 0.0454545454545455
+academic;neutral;scary prospect; 0.0454545454545455
+academic;neutral; site; 0.0454545454545455
+academic;neutral; communication; 0.0454545454545455
+academic;neutral; medium; 0.0454545454545455
+academic;neutral;people; 0.0454545454545455
+academic;neutral;collection; 0.045045045045045
+academic;in favour;people; 0.0286885245901639
+academic;in favour;data; 0.0286885245901639
+academic;in favour;FISC; 0.0258186397984887
+academic;in favour;suspicionless; 0.0258186397984887
+academic;in favour;warrantless; 0.0258186397984887
+academic;in favour;governemt; 0.0229848866498741
+academic;in favour;collection; 0.0225409836065574
+academic;in favour;court; 0.0195214105793451
+academic;in favour;law; 0.017632241813602
+academic;in favour;secret; 0.0173173803526448
+activist;against; communications; 0.0605326876513317
+activist;against;EU; 0.0484261501210654
+activist;against; dragnet; 0.0414746543778802
+activist;against; president; 0.0414746543778802
+activist;against;NSA; 0.0414746543778802
+activist;against;program; 0.0411622276029056
+activist;against;privacy; 0.0401069518716578
+activist;against;government; 0.0374331550802139
+activist;against;global principles; 0.0374331550802139
+activist;against;warrantless; 0.0368663594470046
+contributor;against;people; 0.117647058823529
+contributor;against;debate; 0.0882352941176471
+contributor;against; power; 0.0677966101694915
+contributor;against; privacy; 0.0659340659340659
+contributor;against; drone; 0.0588235294117647
+contributor;against;conspiracy; 0.0588235294117647
+contributor;against;argument; 0.0588235294117647
+contributor;against;law; 0.0540540540540541
+contributor;against;government; 0.053921568627451
+contributor;against;US; 0.053921568627451
+contributor;neutral;people; 0.117647058823529
+contributor;neutral;debate; 0.0882352941176471
+contributor;neutral;argument; 0.0588235294117647
+contributor;neutral;conspiracy; 0.0588235294117647
+contributor;neutral;law; 0.0540540540540541
+contributor;neutral;government; 0.0405405405405405
+contributor;neutral;issue; 0.0378378378378378
+contributor;neutral;phone; 0.0365853658536585
+contributor;neutral;bill; 0.0346534653465347
+contributor;neutral;warrantless; 0.0344827586206897
+contributor;in favour;FISA; 0.0455580865603645
+contributor;in favour; sunstein; 0.0455580865603645
+contributor;in favour;opportunity; 0.0239179954441913
+contributor;in favour; government; 0.0227790432801822
+contributor;in favour;NSA; 0.0159453302961276
+contributor;in favour; bush; 0.0159453302961276
+contributor;in favour;conspiracy; 0.0159453302961276
+contributor;in favour;program; 0.0148063781321185
+contributor;in favour; committee; 0.0136674259681093
+contributor;in favour;abuse; 0.0125284738041002
+journalist;against; snowden; 0.0683229813664596
+journalist;against; government; 0.0643776824034335
+journalist;against;US; 0.0634920634920635
+journalist;against;Day Against Mass Surveillance; 0.0616438356164384
+journalist;against;NSA; 0.0547945205479452
+journalist;against;company; 0.0538922155688623
+journalist;against;protest; 0.0502283105022831
+journalist;against; drone; 0.0481283422459893
+journalist;against;report; 0.0462962962962963
+journalist;against;data; 0.0461215932914046
+journalist;neutral;large-scale;0.0576923076923077
+journalist;neutral;US;0.0569395017793594
+journalist;neutral;government;0.0569395017793594
+journalist;neutral;computer;0.0480769230769231
+journalist;neutral;company;0.044806517311609
+journalist;neutral;data;0.0446650124069479
+journalist;neutral;access;0.0440340909090909
+journalist;neutral;snowden;0.0410094637223975
+journalist;neutral;digital;0.0384615384615385
+journalist;neutral;ASIO;0.0384615384615385
+journalist;in favour;program;0.0345454545454545
+journalist;in favour;data;0.0345454545454545
+journalist;in favour;GCHQ;0.0321285140562249
+journalist;in favour;warrantless;0.0319634703196347
+journalist;in favour;government;0.0312035661218425
+journalist;in favour;communication;0.0279329608938547
+journalist;in favour;NSA;0.0273972602739726
+journalist;in favour;judge;0.0266666666666667
+journalist;in favour;law;0.0228310502283105
+journalist;in favour;access;0.0223463687150838
+organization;against;Eben Moglen;0.0598290598290598
+organization;against;Snowden;0.0512820512820513
+organization;against;company;0.0500424088210348
+organization;against;government;0.05
+organization;against;privacy;0.0470588235294118
+organization;against;program;0.045
+organization;against;activity;0.045
+organization;against;superstructure;0.045
+organization;against;right;0.0411764705882353
+organization;against;law;0.0407124681933842
+organization;neutral;access;0.0523648648648649
+organization;neutral;internet;0.0523648648648649
+organization;neutral;security;0.0467625899280576
+organization;neutral;freedom;0.0422297297297297
+organization;neutral;privacy;0.0377697841726619
+organization;neutral;national;0.0323741007194245
+organization;neutral;society;0.032258064516129
+organization;neutral;government;0.0308555399719495
+organization;neutral;personal;0.0301542776998597
+organization;neutral;digital;0.0301542776998597
+political sphere;against;possible uses;0.0585365853658537
+political sphere;against;power;0.0585365853658537
+political sphere;against;freedom;0.0536585365853659
+political sphere;against;Writers Against Mass Surveillance;0.0487804878048781
+political sphere;against;privacy;0.0387096774193548
+political sphere;against;citizen;0.0376344086021505
+political sphere;against;right;0.0354838709677419
+political sphere;against;online;0.0354838709677419
+political sphere;against;EU;0.0352480417754569
+political sphere;against;arbitrary;0.0341463414634146
+political sphere;neutral;effect;0.0378787878787879
+political sphere;neutral;society;0.0321969696969697
+political sphere;neutral;technology ;0.03125
+political sphere;neutral;Kreissl;0.0303030303030303
+political sphere;neutral;people;0.0265151515151515
+political sphere;neutral;research;0.0240384615384615
+political sphere;neutral;user;0.0224358974358974
+political sphere;neutral;right;0.0216346153846154
+political sphere;neutral;issue;0.0192307692307692
+political sphere;neutral;possible uses;0.0192307692307692
+political sphere;in favour;assurance;0.0267857142857143
+political sphere;in favour;agency;0.0267857142857143
+political sphere;in favour;security;0.0208333333333333
+political sphere;in favour;proivacy;0.0148809523809524
+political sphere;in favour;Helen Clark;0.0133928571428571
+political sphere;in favour;justice system;0.0133928571428571
+political sphere;in favour;welfare system;0.0133928571428571
+political sphere;in favour;Kim Dotcom;0.0133928571428571
+political sphere;in favour;David Cunliffe;0.0119047619047619
+political sphere;in favour;issue;0.00892857142857143
+tech expert;against;violation;0.0666666666666667
+tech expert;against;report;0.0666666666666667
+tech expert;against;rights;0.0611111111111111
+tech expert;against;government;0.06
+tech expert;against;access;0.06
+tech expert;against;terms;0.0590631364562118
+tech expert;against;privacy;0.0523690773067332
+tech expert;against;possible uses;0.0468431771894094
+tech expert;against;digital;0.0399002493765586
+tech expert;against;reform;0.0386666666666667
+tech expert;neutral;government;0.0753424657534247
+tech expert;neutral;sata;0.0643044619422572
+tech expert;neutral;US;0.0522193211488251
+tech expert;neutral;request;0.0522193211488251
+tech expert;neutral;actions;0.0522193211488251
+tech expert;neutral;collection;0.0396981627296588
+tech expert;neutral;intelligence;0.0370734908136483
+tech expert;neutral;practices;0.0365296803652968
+tech expert;neutral;reform;0.0342465753424658
+tech expert;neutral;meaningful;0.0328083989501312

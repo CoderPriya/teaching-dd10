@@ -1,0 +1,977 @@
+[{
+	"percentuale": [
+		["CP", 0],
+		["GOV", 7],
+		["HOC", 0],
+		["ISPs", 9],
+		["PETITION", 10]
+    ],
+    	"conteggio": [
+		["CP", 0],
+		["GOV", 7],
+		["HOC", 0],
+		["ISPs", 3],
+		["PETITION", 5]
+    ],
+    "name": "Ability"
+}, {
+    "percentuale": [
+		["CP", 3],
+		["GOV", 40],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 41]
+    ],
+    "conteggio": [
+		["CP", 1],
+		["GOV", 40],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 21]
+    ],
+    "name": "Access"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 9],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 3],
+		["PETITION", 0]
+    ],
+    "name": "Actions"
+}, {
+    "percentuale": [
+		["CP", 31],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 10],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Comcast"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 21]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 11]
+    ],
+    "name": "Comments"
+}, {
+    "percentuale": [
+		["CP", 60],
+		["GOV", 0],
+		["HOC", 52],
+		["ISPs", 0],
+		["PETITION", 19]
+    ],
+    "conteggio": [
+		["CP", 19],
+		["GOV", 0],
+		["HOC", 27],
+		["ISPs", 0],
+		["PETITION", 10]
+    ],
+    "name": "Companies"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 25],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 8],
+		["PETITION", 0]
+    ],
+    "name": "Competition"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 17]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 9]
+    ],
+    "name": "Congress"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 10],
+		["HOC", 0],
+		["ISPs", 41],
+		["PETITION", 12]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 10],
+		["HOC", 0],
+		["ISPs", 13],
+		["PETITION", 6]
+    ],
+    "name": "Consumers"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 50],
+		["ISPs", 38],
+		["PETITION", 46]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 26],
+		["ISPs", 12],
+		["PETITION", 24]
+    ],
+    "name": "Content"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 19],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 19],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Court"
+}, {
+    "percentuale": [
+		["CP", 28],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 47],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 9],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 15],
+		["PETITION", 0]
+    ],
+    "name": "Customers"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 14],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 14],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Discrimination"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 10]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 5]
+    ],
+    "name": "Email"
+}, {
+    "percentuale": [
+		["CP", 13],
+		["GOV", 8],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 4],
+		["GOV", 8],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Everyone"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 10],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 5],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Facts"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 14]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 7]
+    ],
+        "name": "Fast lane"
+}, {
+    "percentuale": [
+		["CP", 60],
+		["GOV", 60],
+		["HOC", 70],
+		["ISPs", 85],
+		["PETITION", 110]
+    ],
+	"conteggio": [
+		["CP", 19],
+		["GOV", 60],
+		["HOC", 36],
+		["ISPs", 27],
+		["PETITION", 57]
+	],
+        "name": "FCC"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 37]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 19]
+    ],
+    "name": "Free Internet"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 10],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 5],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Free Speech"
+}, {
+    "percentuale": [
+		["CP", 13],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 4],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Future"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 12],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 6],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Gatekeepers"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 13],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 4],
+		["PETITION", 0]
+    ],
+    "name": "Growth"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 25]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 13]
+    ],
+    "name": "Information"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 14],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 14],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Innovation"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 54],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 17],
+		["PETITION", 0]
+    ],
+    "name": "Interconnection"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 10],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 5],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Internet Connection"
+}, {
+    "percentuale": [
+		["CP", 88],
+		["GOV", 16],
+		["HOC", 46],
+		["ISPs", 79],
+		["PETITION", 44]
+    ],
+    "conteggio": [
+		["CP", 28],
+		["GOV", 16],
+		["HOC", 24],
+		["ISPs", 25],
+		["PETITION", 23]
+    ],
+    "name": "ISPs"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 9],
+		["HOC", 0],
+		["ISPs", 13],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 9],
+		["HOC", 0],
+		["ISPs", 4],
+		["PETITION", 0]
+    ],
+    "name": "Issue"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 10],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 10],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Law"
+}, {
+    "percentuale": [
+		["CP", 9],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 3],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Letter"
+}, {
+    "percentuale": [
+		["CP", 6],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+	"conteggio": [
+		["CP", 2],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Level playing field"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 41],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 13],
+		["PETITION", 0]
+    ],
+    "name": "Market"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 19],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 10],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Millions"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 25],
+		["ISPs", 3],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 13],
+		["ISPs", 1],
+		["PETITION", 0]
+    ],
+    "name": "Needs"
+}, {
+    "percentuale": [
+		["CP", 76],
+		["GOV", 25],
+		["ISPs", 22],
+		["HOC", 97],
+		["PETITION", 83]
+    ],
+    "conteggio": [
+		["CP", 24],
+		["GOV", 25],
+		["ISPs", 7],
+		["HOC", 50],
+		["PETITION", 43]
+    ],
+    "name": "Net Neutrality"
+}, {
+    "percentuale": [
+		["CP", 19],
+		["GOV", 0],
+		["HOC", 23],
+		["ISPs", 44],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 6],
+		["GOV", 0],
+		["HOC", 12],
+		["ISPs", 14],
+		["PETITION", 0]
+    ],
+    "name": "Network"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 33],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 33],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Obama"
+}, {
+    "percentuale": [
+		["CP", 57],
+		["GOV", 30],
+		["HOC", 56],
+		["ISPs", 25],
+		["PETITION", 50]
+    ],
+    "conteggio": [
+		["CP", 18],
+		["GOV", 30],
+		["HOC", 29],
+		["ISPs", 8],
+		["PETITION", 26]
+    ],
+    "name": "Open Internet"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 14],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 7],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Openness"
+}, {
+    "percentuale": [
+		["CP", 3],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 12]
+    ],
+    "conteggio": [
+		["CP", 1],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 6]
+    ],
+    "name": "Part"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 31],
+		["ISPs", 0],
+		["PETITION", 25]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 16],
+		["ISPs", 0],
+		["PETITION", 13]
+    ],
+    "name": "People"
+}, {
+    "percentuale": [
+		["CP", 6],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 2],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Plans"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 8],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 8],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Principles"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 35],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 11],
+		["PETITION", 0]
+    ],
+    "name": "Regulation"
+}, {
+    "percentuale": [
+		["CP", 25],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 8],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Report"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 10]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 5]
+    ],
+    "name": "Response"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 17],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 9],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Right"
+}, {
+    "percentuale": [
+		["CP", 47],
+		["GOV", 34],
+		["HOC", 35],
+		["ISPs", 0],
+		["PETITION", 42]
+    ],
+    "conteggio": [
+		["CP", 15],
+		["GOV", 34],
+		["HOC", 18],
+		["ISPs", 0],
+		["PETITION", 22]
+    ],
+    "name": "Rules"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 44],
+		["ISPs", 51],
+		["PETITION", 41]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 23],
+		["ISPs", 16],
+		["PETITION", 21]
+    ],
+    "name": "Services"
+}, {
+    "percentuale": [
+		["CP", 19],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 6],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Stand"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 15],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 15],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Time"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 9],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 9],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Title II"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 24],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 24],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Today"
+}, {
+    "percentuale": [
+		["CP", 38],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 54],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 12],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 17],
+		["PETITION", 0]
+    ],
+    "name": "Traffic"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 22],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 7],
+		["PETITION", 0]
+    ],
+    "name": "Transit"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 6],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 2],
+		["PETITION", 0]
+    ],
+    "name": "Two-speed Internet"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 39],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 20],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Users"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 15],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 0],
+		["GOV", 0],
+		["HOC", 8],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Video"
+}, {
+    "percentuale": [
+		["CP", 13],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "conteggio": [
+		["CP", 4],
+		["GOV", 0],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+    ],
+    "name": "Voices"
+}, {
+    "percentuale": [
+		["CP", 0],
+		["GOV", 34],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+	],
+	"conteggio": [
+		["CP", 0],
+		["GOV", 34],
+		["HOC", 0],
+		["ISPs", 0],
+		["PETITION", 0]
+	],
+	"name": "World"
+}]

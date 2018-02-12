@@ -1,0 +1,322 @@
+#radar {
+	padding-left: 40px;
+	padding-right: 40px;
+ }
+
+#chart {
+  position: relative;
+  top: 40px;
+  margin: auto;
+} 
+
+
+/************IMMAGINI DELLE OPINIONI***************/
+.opblu {
+    position: relative;
+	height: 500px;
+	margin-right: 0px;
+	opacity: 0;
+}
+
+#opb03{
+	background: url("../img/radar/2003.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#opb04{
+	background: url("../img/radar/2004b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb05{
+	background: url("../img/radar/2005b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb06{
+	background: url("../img/radar/2006b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb07{
+	background: url("../img/radar/2007b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb08{
+	background: url("../img/radar/2008b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb09{
+	background: url("../img/radar/2009b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb10{
+	background: url("../img/radar/2010b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb11{
+	background: url("../img/radar/2011b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb12{
+	background: url("../img/radar/2012b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb13{
+	background: url("../img/radar/2013b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opb14{
+	background: url("../img/radar/2014b.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+
+
+
+.oprosso {
+    position: relative;
+	height: 500px;
+	margin: auto;
+	opacity: 0;
+}
+
+#opr02{
+	background: url("../img/radar/2002.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#opr04{
+	background: url("../img/radar/2004r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr05{
+	background: url("../img/radar/2005r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr06{
+	background: url("../img/radar/2006r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr07{
+	background: url("../img/radar/2007r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr08{
+	background: url("../img/radar/2008r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr09{
+	background: url("../img/radar/2009r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr10{
+	background: url("../img/radar/2010r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr11{
+	background: url("../img/radar/2011r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr12{
+	background: url("../img/radar/2012r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr13{
+	background: url("../img/radar/2013r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+#opr14{
+	background: url("../img/radar/2014r.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -500px;
+}
+
+
+
+
+
+
+
+
+#radarbutt{
+  /*margin-top: 3%;*/
+  width: 600px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  top: -20px;
+  font-family: 'Europa', sans-serif;
+}
+
+.radarret{
+  opacity: 0;
+  -webkit-transition : opacity 0.1s ease-in;
+  -moz-transition : opacity 0.1s ease-in;
+  -ms-transition : opacity 0.1s ease-in;
+  transition : opacity 0.1s ease-in;
+}
+
+.radarpoint{
+	cursor:pointer;
+}
+
+
+#radarprot{
+	width: 120px;
+	float: right;
+	margin-top: -135px;
+	margin-right: -120px;
+}
+
+#prot{
+	background: url("../img/Protocol.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 300px;
+	height: 400px;
+	margin-top: -400px;
+	opacity:1;
+	z-index: 1000;
+	opacity: 0;
+}
+
+@media screen and (max-width: 900px) { 
+
+.chart {
+	margin-top: -55px;
+}
+
+#radarbutt{
+  margin-top: -40px;
+}
+
+#radarprot{
+    position: relative;
+	z-index: 1000;
+	width: 120px;
+	float: right;
+	margin-top: -180px;
+	margin-right: -30px;
+}
+
+#prot{
+	background: url("../img/Protocol.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 230px;
+	height: 330px;
+	margin-left: -60px;
+	margin-top: -330px;
+	opacity:1;
+	z-index: 1000;
+	opacity: 0;
+}
+
+}
+
+@media screen and (max-width: 1030px) { 
+
+#prot{
+	background: url("../img/Protocol.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 230px;
+	height: 330px;
+	margin-left: -60px;
+	margin-top: -330px;
+	opacity:1;
+	z-index: 1000;
+	opacity: 0;
+}
+
+}

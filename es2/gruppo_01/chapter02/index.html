@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Biforce example</title>
+  <meta name="description" content="Biforce example">
+  <meta name="author" content="Django">
+
+  <style>
+  </style>
+
+</head>
+
+<body>
+
+	<div id="bforce">
+	</div>
+
+  <!--import delle librerie necessarie al funzionamento dello script
+  Se già presenti nel template non reimportare! -->
+  <script src="js/jquery-1.11.1.min.js"></script> 	
+  <script src="js/d3.min.js"></script>
+
+  <!-- lo script per la generazione del grafico -->
+  <script src="js/biforce.js"></script>
+  <script>
+
+  //lettura del file json
+  d3.json("data.json",function(data){
+
+  	//*******************************************************************
+  	//
+  	// questa funzione richiama il gafico. Gli argomenti da passare sono:
+  	//
+  	// - l'array di dati (data)
+  	// - un array di due colori in formato esadecimale
+  	// - larghezza della visualizzazione
+  	// - altezza della visualizzazione
+  	// - contenitore in cui visualizzare il grafico
+  	// - massima dimensione del raggio dei pallozzi (se omesso, è uguale a larghezza/8)
+  	//
+  	//********************************************************************
+
+  	biforce(data,['#51bdce','#FD7865'],1920,600,"#bforce",90);
+
+  })
+
+  </script>
+</body>
+</html>

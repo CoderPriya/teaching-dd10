@@ -1,0 +1,1 @@
+Il sito non funziona perfettamente su Safari (grafici e scritte collidono), si consiglia l'utilizzo di Google Chrome per la fruizione.

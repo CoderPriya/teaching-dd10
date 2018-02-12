@@ -1,0 +1,33 @@
+.footer{
+	background-color: #f85f55;
+	color:#fff;
+	font-family: 'Europa', sans-serif;
+	margin-bottom:0;
+	position: absolute;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+.footer h4{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+	margin-top: 0px;
+	font-weight: 400;
+}
+
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+@media only screen and (max-width : 420px) {
+.footer h4{
+	margin-top: 30px;
+}    
+}

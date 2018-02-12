@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="ch-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1190.6 841.9" enable-background="new 0 0 1190.6 841.9" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+
+<defs>
+    <pattern id="basicPattern" x="0" y="0" width="1190.6" height="841.9" patternUnits="userSpaceOnUse">
+        <image xlink:href="img/bubblejour.png" x="0" y="0" width="1190.6" height="841.9" />
+    </pattern>
+    
+</defs> <!--define pattern -->
+
+
+
+<g id="ch-11"><!-- group journalist -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-11" fill="url(#basicPattern)" cx="925" cy="280.7" r="245.3"/><!-- circle -->
+		<circle id="ch-item-11-shad" fill="#DD002A" fill-opacity="0.3" cx="925" cy="280.7" r="245.3"/><!-- circle hover-->
+	</g>
+	<g id="ch-info_12_"><!-- info -->
+		<text id="ch-info" transform="matrix(1 0 0 1 870 278)" fill="#FFFFFF" font-size="22" font-weight="700">Journalist</text>
+		<text transform="matrix(1 0 0 1 902.5455 325.9032)" fill="#FFFFFF" font-size="20">35,5%</text>
+		<rect x="906" y="295.4" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-10"><!-- group contributor -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-10" fill="url(#basicPattern)" cx="737.3" cy="634.7" r="145.3"/><!-- circle -->
+		<circle id="ch-item-10-shad" fill="#DD002A" fill-opacity="0.3" cx="737.3" cy="634.7" r="145.3"/><!-- circle hover-->
+	</g>
+	<g class="ch-info" id="ch-info_11_"><!-- info -->
+		<text id="ch-info_2_" transform="matrix(1 0 0 1 678 634.666)" fill="#FFFFFF" font-size="22" font-weight="700">contributor</text>
+		<text transform="matrix(1 0 0 1 715.9922 681.325)" fill="#FFFFFF" font-size="20">12,5%</text>
+		<rect x="719.4" y="650.8" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-9"><!-- group academic -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-9" fill="url(#basicPattern)" cx="488.4" cy="389" r="194.4"/><!-- circle -->
+		<circle id="ch-item-9-shad" fill="#DD002A" fill-opacity="0.3" cx="488.4" cy="389" r="194.4"/><!-- circle hover -->
+	</g>
+	<g class="ch-info" id="ch-info_10_"><!-- info -->
+		<text transform="matrix(1 0 0 1 445 389.0275)" fill="#FFFFFF" font-size="22" font-weight="700">academic</text>
+		<text transform="matrix(1 0 0 1 467.1528 434.337)" fill="#FFFFFF" font-size="20">22,3%</text>
+		<rect x="470.6" y="403.8" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-8"><!-- group activist -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-8" fill="url(#basicPattern)" cx="488.4" cy="694" r="100.5"/><!-- circle -->
+		<circle id="ch-item-8-shad" fill="#DD002A" fill-opacity="0.3" cx="488.4" cy="694" r="100.5"/><!-- circle hover -->
+	</g>
+	<g class="ch-info" id="ch-info_9_"><!-- info -->
+		<text transform="matrix(1 0 0 1 445 693.9988)" fill="#FFFFFF" font-size="22" font-weight="700">activist</text>
+		<text transform="matrix(1 0 0 1 480.6528 740.3611)" fill="#FFFFFF" font-size="20">6%</text>
+		<rect x="470.6" y="709.9" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-7"><!-- group wikipedia -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-7" fill="url(#basicPattern)" cx="335.1" cy="607.9" r="62.9"/><!-- circle -->
+		<circle id="ch-item-7-shad" fill="#DD002A" fill-opacity="0.3" cx="335.1" cy="607.9" r="62.9"/><!-- circle hover -->
+	</g>
+	<g class="ch-info" id="ch-info_8_"><!-- info -->
+		<text transform="matrix(1 0 0 1 286 607.9576)" fill="#FFFFFF" font-size="22" font-weight="700">wikipedia</text>
+		<text transform="matrix(1 0 0 1 318.3463 656.4033)" fill="#FFFFFF" font-size="20">2,3%</text>
+		<rect x="317.3" y="625.9" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-6"><!-- group tv -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-6" fill="url(#basicPattern)" cx="291.2" cy="515.1" r="29.7"/><!-- circle -->
+		<circle id="ch-item-6-shad" fill="#DD002A" fill-opacity="0.3" cx="291.2" cy="515.1" r="29.7"/><!-- circle hover-->
+	</g>
+	<g class="ch-info" id="ch-info_7_"><!-- info -->
+		<text transform="matrix(1 0 0 1 279 513.1484)" fill="#FFFFFF" font-size="22" font-weight="700">tv*</text>
+		<text transform="matrix(1 0 0 1 274.397 533.0929)" fill="#FFFFFF" font-size="20">0,4%</text>
+		<text transform="matrix(1 0 0 1 40 810)" fill="#FFFFFF" font-size="18">*TV PERSONALITY</text>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-5"><!-- group tech expert -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-5" fill="url(#basicPattern)" cx="155.8" cy="414.2" r="129.2"/><!-- circle -->
+		<circle id="ch-item-5-shad" fill="#DD002A" fill-opacity="0.3" cx="155.8" cy="414.2" r="129.2"/><!-- circle hover -->
+	</g>
+	<g class="ch-info" id="ch-info_6_"><!-- info -->
+		<text transform="matrix(1 0 0 1 97 414.2141)" fill="#FFFFFF" font-size="22" font-weight="700">tech expert</text>
+		<text transform="matrix(1 0 0 1 139.0416 460.0178)" fill="#FFFFFF" font-size="20">9,8%</text>
+		<rect x="138" y="429.5" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-4"> <!-- group political sphere -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-4" fill="url(#basicPattern)" cx="256.5" cy="209.5" r="88.9"/><!-- circle -->
+		<circle id="ch-item-4-shad" fill="#DD002A" fill-opacity="0.3" cx="256.5" cy="209.5" r="88.9"/><!-- circle hover -->
+	</g>
+	<g class="ch-info" id="ch-info_5_"><!-- info -->
+		<text transform="matrix(1 0 0 1 171 209.4231)" fill="#FFFFFF" font-size="21.5" font-weight="700">political sphere</text>
+		<text transform="matrix(1 0 0 1 239.7328 253.6073)" fill="#FFFFFF" font-size="20">4,7%</text>
+		<rect x="238.7" y="223.1" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-3"> <!-- group org -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-3" fill="url(#basicPattern)" cx="399.1" cy="140.8" r="59.2"/><!-- circle -->
+		<circle id="ch-item-3-shad" fill="#DD002A" fill-opacity="0.3" cx="399.1" cy="140.8" r="59.2"/><!-- circle -->
+	</g>
+	<g class="ch-info" id="ch-info_4_"><!-- info -->
+		<text transform="matrix(1 0 0 1 380 137.8582)" fill="#FFFFFF" font-size="22" font-weight="700">org*</text>
+		<text transform="matrix(1 0 0 1 381.2783 183.6742)" fill="#FFFFFF" font-size="20">2,1%</text>
+		<text transform="matrix(1 0 0 1 40 810)" fill="#FFFFFF" font-size="18">*ORGANIZATION</text>
+		<rect x="380.2" y="153.2" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-2"><!-- group nonprofit org -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-2" fill="url(#basicPattern)" cx="541.7" cy="114.2" r="75.5"/><!-- circle -->
+		<circle id="ch-item-2-shad" fill="#DD002A" fill-opacity="0.3" cx="541.7" cy="114.2" r="75.5"/><!-- circle -->
+	</g>
+	<g class="ch-info" id="ch-info_3_"><!-- info -->
+		<text transform="matrix(1 0 0 1 490 91.4282)" enable-background="new    "><tspan x="0" y="0" fill="#FFFFFF" font-size="22" font-weight="700">nonprofiT</tspan><tspan x="-15" y="24" fill="#FFFFFF" font-size="22" font-weight="700">organization</tspan></text>
+		<text transform="matrix(1 0 0 1 522.0714 159.214)" fill="#FFFFFF" font-size="20">3,4%</text>
+		<rect x="521" y="128.7" fill="#FFFFFF" width="40" height="4"/>
+	</g>
+</g>
+
+<g class="ch-item" id="ch-1"><!-- group leak source -->
+	<g class="ch-item-circle">
+		<circle id="ch-item-1" fill="url(#basicPattern)" cx="640.3" cy="195" r="41.9"/><!-- circle -->
+		<circle id="ch-item-1-shad" fill="#DD002A" fill-opacity="0.3" cx="640.3" cy="195" r="41.9"/><!-- circle -->
+	</g>
+	<g class="ch-info" id="ch-info_1_"><!-- info -->
+		<text transform="matrix(1 0 0 1 618 177.9989)" enable-background="new    "><tspan x="0" y="0" fill="#FFFFFF" font-size="22" font-weight="700">leak</tspan><tspan x="-10" y="24" fill="#FFFFFF" font-size="22" font-weight="700">source</tspan></text>
+		<text transform="matrix(1 0 0 1 632.515 228.1002)" fill="#FFFFFF" font-size="20">1%</text>
+	</g>
+</g>
+
+</svg>

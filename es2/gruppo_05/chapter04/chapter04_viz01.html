@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<script src="../js/d3.min.js"></script>
+<!--JS for tip-->
+<script src="../js/tooltip.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Metadata in exchange for security</h4> <!--Title of the group work-->
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">See also network</h5><!--Chapter01 title-->
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Delineation of the operating area</a><!--Title of the viz01-->
+</li>
+<li>
+<h5 class="text-uppercase">Queries Analysis</h5><!--Chapter02 title-->
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Main speakers</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Focus on people</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Polarizations</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz04.html">Speaker and relevant words</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz05.html">Where the debate is</a>
+</li>
+<li>
+<h5 class="text-uppercase">A Technical Viewpoint</h5><!--Chapter03 title-->
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">About speakers: who, where and how</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Different viewpoints and possible solutions</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz03.html">Who talks about who</a>
+</li>
+<li>
+<h5 class="text-uppercase">NSA in Tv Series</h5><!--Chapter04 title-->
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">First look</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Genres and years</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Speech context</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz04.html">Visual context</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz6">	
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">NSA in the Tv Series</h5><!-- Title of the "chapter"  -->
+<h1>A first look at the TV series which mention the National Security Agency</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>This interactive map offers a wide view of all the TV series that mention the NSA, the American National Security Angency. The bubble chart enables us to see quickly the TV shows in which the Security Agency is an important actor and those that name it only one time. The analysis also shows that in some TV series the NSA appears in many episodes and not so frequently, by contrast in others it appears in few episodes and many times.</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>The bubble chart presents the importance of each series in the  setting of our analysis. Each TV series is defined by the number of episodes which name "NSA" and the number of sentences with "NSA" inside. The size represents the number of episodes while the color represents the number of sentences. For example, the TV show <i>NCIS</i> is represented by a big bubble but it is colored in blue, therefore the NSA is named in many episodes but not so frequently. On the other hand the bubble of <i>Jake 2.0</i> is small but colored in red, so "NSA" is named in few episodes but very frequently, maybe because there are some episodes of the series mainly centered on this topic. The bubbles are sorted according to the number of episodes: in the centre of the chart there are the TV series in which the Security Agency is a main actor.</p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>Our corpus is built from the website <a href="http://http://www.subzin.com/">Subzin</a> which is a database containing all the subtitles of a large basin of both films and TV series. To keep close to the mass surveillance dimension, three queries were initially used: "NSA", "surveillance" and "privacy". These queries are serched in all the subtitles of the TV series of the database. However the latest two provided results that were too wide, both in terms of quantity and quality, so they are eliminated. Moreover it is necessary to specify that: if "surveillance" and "privacy" take care of a quite wide scenery, the "NSA" delimits this scenery with precision and in a univocal way. Through the employment of <a href="https://www.kimonolabs.com">Kimono</a> for Google Chrome, it is possible to turn the list of episodes realised by Subzin into a structured dataset, which is made of:</br>
+-the title of all the series that mention the NSA;</br>
+-the title of the episodes;</br>
+-the sentence containing the word "NSA".</br></p>
+<p>At this point the episodes and the sentences with the word "NSA" for every TV shows are counted, that is each TV show owns two numbers: the first one is the number of its own episodes that mention the Security Agency, the second one is the number of times that the NSA is named.
+</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>Looking at the bubble chart one will immediately notice that there is a bigger bubble at the centre, that is <i>24</i>, a serial drama which stars Kiefer Sutherland as Jack Bauer, focusing on the efforts of the fictional Counter Terrorist Unit, and on their efforts to protect USA from the terrorism plots. This Terrorist Unit collaborates both in the second and the eighth season with the NSA.
+</p> 
+<p>Generally speaking there are two different groups, one colored in blue-shades, located at the border of this cloud, and the other one in red-shades, at the centre. The first one is bigger and contains all the series in whitch NSA is mentioned less than 30 times. On the other hand the red group show the significant basin of the TV series in our analysis. The light blue bubbles are not so important and probably the NSA isn't a key subject of these TV series. The anchor group between the red bubbles and the blue ones is violet and it is heterogeneous since there are series that mention NSA in more than 25 episodes, like the famous drama <i>NCIS</i>, and others that mention the Agency only in 6 episodes, like <i>The Good Wife</i>.
+</p>
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 24/11/2014 - 5/12/2014</h4>
+<h4>Data source: <a href="http://www.subzin.com">Subzin</a></h4>
+<h4><a href="../chapter04/chapter04_protocol.html">Related Protocol</a></h4>
+<h4><a href="../data/chapter4_dataset1.csv"><i class="fa fa-arrow-circle-o-down"></i> Download data (5KB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Marianna Caserta</li>
+<li>Francesca Casnati</li>
+<li>Chiara Cingottini</li>
+<li>Giulia Sonzogni</li>
+<li>Ilaria Tedoldi</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+<script src="../js/viz1.js"></script>
+
+</body>
+
+</html>

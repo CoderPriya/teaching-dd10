@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>D3 TUTORIAL</title>
+    
+    <script src="d3/d3.js"></script>
+    <script src="d3/d3.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+</head>
+
+<body>
+<div id="option">
+    
+</div>
+<div style="height:750px; background-color:red; position:relative" id="no" onmouseover="pallozzi()">
+<script>
+
+
+    
+
+	var canvas2 = d3.select("#no")
+				.append("svg")
+				.attr("width", 1000)
+				.attr("height", 1000)
+
+	var palla = canvas2.append("circle")
+				.attr("cx", 100)
+				.attr("cy", 200)
+				.attr("r", 33);
+
+	var palla2 = canvas2.append("circle")
+			.attr("cx", 100)
+			.attr("cy", 200)
+			.attr("r", 100);
+
+	var palla3 = canvas2.append("circle") 
+			.attr("cx", 100)
+			.attr("cy", 200)
+			.attr("r", 45);
+
+var testopalla = canvas2.append("text")
+				.attr("x", 80)
+				.attr("y", 205)
+				.text("100%")
+				.attr("font-family", "sans-serif")
+				.attr("font-size", "20px")
+				.attr("fill", "none");
+
+var testopalla2 = canvas2.append("text") 
+				.attr("x", 80)
+				.attr("y", 205)
+				.text("100%")
+				.attr("font-family", "sans-serif")
+				.attr("font-size", "20px")
+				.attr("fill", "red");
+
+var testopalla3 = canvas2.append("text") 
+				.attr("x", 80)
+				.attr("y", 205)
+				.text("100%")
+				.attr("font-family", "sans-serif")
+				.attr("font-size", "20px")
+				.attr("fill", "none");
+
+
+
+
+	function pallozzi() {
+
+	palla.transition()
+		.duration(1500)
+		.attr("cy", 110)
+		.ease("elastic")
+		.attr("fill", "yellow")
+		.attr("stroke", "black")
+		.attr("stroke-width", 5);
+
+testopalla.transition()
+		.duration(1500)
+		.ease("elastic")
+		.attr("y", 110)
+		.text("33%")
+		.attr("fill", "black");
+
+
+
+	palla2.transition()
+		.duration(1500)
+		.attr("r", 22)
+		.ease("elastic")
+		.attr("fill", "green")
+		.attr("stroke", "blue")
+		.attr("stroke-width", 5);
+
+	testopalla2.transition()
+		.duration(1500)
+		.text("22%")
+		.attr("fill", "black");
+	
+	palla3.transition()
+		.duration(1500)
+		.attr("cy", 310)
+		.ease("elastic")
+		.attr("fill", "blue")
+		.attr("stroke", "black")
+		.attr("stroke-width", 5);
+
+testopalla3.transition()
+		.duration(1500)
+		.ease("elastic")
+		.attr("y", 310)
+		.text("45%")
+		.attr("fill", "black");
+
+
+
+}
+
+			</script>
+
+
+</div>
+<div style="height:700px; background-color:yellow; position:relative" id="inizio" onmouseover="updateData()"><input name="updateButton" 
+                 type="button" 
+                value="Update" 
+                 /></div>
+    <script>
+
+
+    var data = [10]; //[10, 20]; (da mettere al posto di quello che c'è ora)
+
+	var canvas = d3.select("#inizio")
+				.append("svg")
+				.attr("width", 700)
+				.attr("height", 700)
+
+	var circle = canvas.append("circle") //orecchio
+				.attr("cx", 50)
+				.attr("cy", 50)
+				.attr("r", 25);
+
+	var circle2 = canvas.append("circle") //orecchio
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+	var circle3 = canvas.append("circle") //corpo
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+	var circle8 = canvas.append("circle") //testa
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+	var circle4 = canvas.append("circle") //occhio
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+	var circle9 = canvas.append("circle") //occhio
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+	var circle5 = canvas.append("circle") //naso
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+	var circle6 = canvas.append("circle") //piede
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+	var circle7 = canvas.append("circle") //piede
+			.attr("cx", 50)
+			.attr("cy", 50)
+			.attr("r", 25);
+
+
+function updateData() {
+
+	circle.transition() //orecchio
+		.duration(1500)
+		.attr("cx", 150)
+		.transition()
+		.duration(1000)
+		.attr("cy", 200)
+		.transition()
+		.duration(1000)
+		//.attr("cx", 210); //con MouseOver se si mettono più di 1 coordinata poi continua a spostarsi...
+
+	circle2.transition() //orecchio
+		.duration(1500)
+		//.attr("cx", 150)
+		.transition()
+		.duration(1000)
+		.attr("cy", 210)
+		.transition()
+		.duration(1000)
+		.attr("cx", 300);
+
+
+	circle3.transition() //corpo
+		.duration(1500)
+		.attr("cx", 250)
+		.transition()
+		.duration(1000)
+		.attr("cy", 310)
+		.transition()
+		.duration(1000)
+		//.attr("cx", 225)
+		.attr("r", 70)
+		.ease("elastic")
+		.attr("fill", "blue")
+		.attr("stroke", "black")
+		.attr("stroke-width", 5);
+		
+
+	circle8.transition() //testa
+		.duration(1500)
+		.attr("cx", 350)
+		.each("end", function() { d3.select(this).attr("fill", "red"); });
+
+	circle4.transition() //occhio
+		.duration(1500)
+		.attr("cx", 450)
+		.each("end", function() { d3.select(this).attr("fill", "red"); });
+
+	circle9.transition() //occhio
+		.duration(1500)
+		.attr("cx", 450)
+		.each("end", function() { d3.select(this).attr("fill", "red"); });
+
+	circle5.transition() //naso
+		.duration(1500)
+		.attr("cx", 550)
+		.each("end", function() { d3.select(this).attr("fill", "red"); });
+
+	circle6.transition() //piede
+		.duration(1500)
+		.attr("cx", 650)
+		.each("end", function() { d3.select(this).attr("fill", "red"); });
+
+	circle7.transition() //piede
+		.duration(1500)
+		.attr("cx", 650)
+		.each("end", function() { d3.select(this).attr("fill", "red"); });
+
+
+
+}
+
+
+    </script>
+
+
+
+</body>
+</html>

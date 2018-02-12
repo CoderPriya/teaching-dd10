@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>A trip into the Deep</h4>
+</li>
+<li>
+<a href="../index.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Scanning the knowledge</h5><h5 class="text-uppercase" style="padding-top:0px">(Wikipedia analysis)</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">"See also" network</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">Building and vandalizing</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz03.html">Geolocalizing vandals</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz04.html">Author's map</a>
+</li>
+<li>
+<h5 class="text-uppercase">The Onion core </h5><h5 class="text-uppercase" style="padding-top:0px">(Gitweb’s Tor analysis)</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html"> Tor Project's main actors</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Best actors' activities</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Mapping the Onion</a>
+</li>
+<li>
+<h5 class="text-uppercase">Words matter </h5><h5 class="text-uppercase" style="padding-top:0px">(Google queries text analysis)</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Queries composition and results</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz03.html">Distribution of terms between queries</a>
+</li>
+<li>
+<h5 class="text-uppercase">People’s contribution </h5><h5 class="text-uppercase" style="padding-top:0px">(Youtube analysis)</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Between quantity and activity</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Between typology, category and language</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz04.html">The “hot topics” </a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz05.html">Supporter, opponent or neutral?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz06.html">Deep Web and Tor Browser imaginary</a>
+</li>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">People’s contribution (Youtube analysis)</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>Following the analysis realized on the articles (see Protocol 3), we tried to understand the controversy actors behavior in a totally different channel: Youtube. The goal is to analyze their level of information about the two different queries’ meaning: Deep Web and Tor Browser. We tried to understand: first of all if Youtube could be a tool used by the actors to express their deployment within the controversy and later what were the "hot topics" discussed and supported by the protagonists of the scene.</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>First step</h3>
+<p>The first step was to build a solid dataset to work on.
+We selected the first 500 videos of each query, in order to structure a large and reliable corpus. Using Kimono and Google Refine  we have acquired a large amount of data about the number of like and dislike, the number of views, number of comments, the date they were uploaded, the average rating, title and its description, the url of thumbnails and the url of the video. Using the urls, we could analize the videos and clean up our dataset from those irrelevant or those whose content was blocked or deleted. In the end of this procedure, we had a total number of 250 videos for each query.
+The second step was more analytical: understand how to use the available data and whether they are enough to support our goals. We immediately notice a gap between our goals and data provided, so that we decide to integrate them adding the following information:
+<ul>
+<li><p style="margin-bottom:0px">Video language</p></li>
+<li><p style="margin-bottom:0px">Video typology.</br>Examples of tipologies:<a href="https://www.youtube.com/watch?v=6yAsuEX1gGw">Tutorial</a>, <a href="https://www.youtube.com/watch?v=FABbOAg0UsM">Vlog</a>, <a href="https://www.youtube.com/watch?v=Ok1M5pRZBUw">Amateur Documentary</a>, <a href="https://www.youtube.com/watch?v=vim8Mr8615k">Professional Documentary</a>, <a href="https://www.youtube.com/watch?v=vI4H5ym14jM">Talk</a>, <a href="https://www.youtube.com/watch?v=PgGVIcGN-Ps">Other</a></p></li>
+<li><p style="margin-bottom:0px">Video category selected by the uploader of the video</p></li>
+</ul></p>
+<img src="Protocol/Pro_1.jpg">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+<p>The third and final step consisted in understanding Youtube users’ position and to know the most supported topic by the controversy actors. At this stage we considered only the English videos to get a good level understanding of the data we collected.
+We therefore realized a data augmentation:
+<ul>
+<li><p style="margin-bottom:0px"> Topics covered in the videos. The previous analysis allowed us to realize the existence of <i>hot topics</i> in our theme (<b>anonimity, censorship, legality, crime, freedom, security, technology</b>) and which are discussed in a positive or negative way depending on the actors opinion. The goal is to understand how Youtube users behave in relation to these topics. </p></li>
+</ul>
+
+</p>
+<img src="Protocol/Pro_2.jpg">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>20/11/2014 - 18/12/2014</h4>
+<h4>Data source: <br> <a href="https://www.youtube.com">Youtube</a></h4>
+<h4>Tools: <br> <a href="https://www.kimonolabs.com/">Kimono</a>, <a href="http://openrefine.org/">Open Refine</a>, <a href="http://products.office.com/it-IT/excel">Microsoft Excel</a>, <a href="http://raw.densitydesign.org/">RAW</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Differences between queries</h3>
+<a href="chapter04_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="img/Img/Img01.svg">
+</div>
+<h4>Between quantity and activity</h4>
+</div>
+</a>
+<a href="chapter04_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="img/Img/Img02.svg">
+</div>
+<h4>Between typology, category and language</h4>
+</div>
+</a>
+<a href="chapter04_viz03.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="img/Img/Img03.svg">
+</div>
+<h4>The “hot topics”</h4>
+</div>
+</a>
+<a href="chapter04_viz04.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="img/Img/Img04.svg">
+</div>
+<h4>Supporter, opponent or neutral?</h4>
+</div>
+</a>
+<a href="chapter04_viz05.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="img/Img/Img05.svg">
+</div>
+<h4>Deep Web and Tor Browser imaginary</h4>
+</div>
+</a>
+<a href="chapter04_viz06.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="img/Img/Img06.svg">
+</div>
+<h4>Deep Web and Tor Browser imaginary</h4>
+</div>
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Alessio Candido</li>
+<li>Susanna Castelli</li>
+<li>Marco Colombo</li>
+<li>Agnese Cunsolo</li>
+<li>Giorgia Volinia</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>A trip into the Deep</h4>
+</li>
+<li>
+<a href="../index.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Scanning the knowledge</h5><h5 class="text-uppercase" style="padding-top:0px">(Wikipedia analysis)</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">"See also" network</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">Building and vandalizing</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz03.html">Geolocalizing vandals</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz04.html">Author's map</a>
+</li>
+<li>
+<h5 class="text-uppercase">The Onion core </h5><h5 class="text-uppercase" style="padding-top:0px">(Gitweb’s Tor analysis)</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html"> Tor Project's main actors</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Best actors' activities</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Mapping the Onion</a>
+</li>
+<li>
+<h5 class="text-uppercase">Words matter </h5><h5 class="text-uppercase" style="padding-top:0px">(Google queries text analysis)</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Queries composition and results</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz03.html">Distribution of terms between queries</a>
+</li>
+<li>
+<h5 class="text-uppercase">People’s contribution </h5><h5 class="text-uppercase" style="padding-top:0px">(Youtube analysis)</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Between quantity and activity</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Between typology, category and language</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz04.html">The “hot topics” </a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz05.html">Supporter, opponent or neutral?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz06.html">Deep Web and Tor Browser imaginary</a>
+</li>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">Scanning the knowledge (Wikipedia analysis)</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>This protocol aims to discover links between Wikipedia pages inherent our topic, in order to find out connections, clustering and alignments of themes around a specific area of knowledge.
+Besides we wanted to discover the behaviour of the authors of the main pages about our topic, highlighting the creation of contents, the groth of the articles and the acts of vandalism and whether there are patterns about authors and vandals.</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>First step</h3>
+<p>We picked 5 pages of Wikipedia that best represent our theme:</br>
+<i>Deep Web, Tor (anonymity network), Silk Road, Internet privacy</i> and <i>Anonymous web browsing</i>.</br>
+Then we chose some first level "see also" from those five initials seeds considered relevant:</br>
+<i>Tor2web, The Hidden Wiki, Anonymous P2P, Crypto-anarchism, Freedom of Information, GlobaLeaks, Internet censorship, Internet privacy, Anonymity, Anonymous blogging, Anonymous web browsing, Information Policy, Internet censorship circumvention, Privacy law, Information privacy law, Data Protection Directive, Privacy laws of the United States, Surveillance, Computer and network surveillance, Mass surveillance, Mass surveillance in the United States, Data privacy, HTTP tunnel, Internet privacy, OpenVPN, Privacy software, Privacy-enhancing technologies, Onion routing , Agorism, Bitcoin protocol, Crypto-anarchism, Operation Web Tryp, The Hidden Wiki, War on Drugs</i> and <i>Sheep Marketplace.</i>
+Imported the list of selected URLs in <a href=http://labs.densitydesign.org/seealsology>Seealsology </a> and launched the crawl with depth 3, we exported the GEFX file and opened it in Gephi with "graph type" as "directed".
+After having exported a CSV file of the edges, we edit and standardization of Id of double nodes (different for capitals, brackets...).</br>
+Then we imported the edges table cleaned up in Gephi (in a new project), forcing the creation of new nodes. After the calculation dell'Average Degree all nodes with Degree equal to 1 were eliminated and the remaining were resized according to their In-Degree.
+We did a spatialization by Force Atlas 2 (<i>LinLog mode</i>, <i>Scaling</i> 0.35 , <i>Gravity</i> 0.25) and then applied <i>Prevent Overlap</i>.
+At last we made Gephi <i>Calculate Modularity</i> and assign colors to the nodes according to it.</p>
+<img src="protocol/Pro_1.jpg">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Second step</h3>
+<p>We chose two main pages related to our subject: <i>Deep Web</i> and <i>Tor (anonymity network)</i> and scraped the whole History of the two pages using Kimono and Wikipedia2geo.
+So we made a visualization of the size of the two pages in relation to time since creation.</br>
+
+We kept the changes only until the beginning of 2010 (the period when Google Trends shows a significant increase in research related to the topic) and eliminated all changes bigger than 900 bytes (negative vandalism and positive reversals) and smaller than 50 bytes (insignificant changes of few words).
+</p>
+<img src="protocol/Pro_2.jpg">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Third step</h3>
+<p>After having calculated the changes to pages in absolute value and created a Pivot Table to count changes and calculate the total size of the changes for each author, we selected top 50 biggest authors (based on absolute change, regardless positive/negative) and eliminated bots from the list.
+Then we scraped using Kimono the History of changes to Wikipedia Articles by these authors back to January 2010.
+After that we eliminated all changes with motivation <i>Reverted</i> or <i>Undid</i> and removed changes in absolute value smaller than 50 bytes (insignificant changes of a few words).
+We created an Edges Table connecting the authors (<i>Source</i>) to the pages they modified (<i>Target</i>) and the total bytes modified for each page (<i>Weight</i>).
+We also created a Nodes Table assigning to author from which Wikipedia page the Protocol started ("null" for nodes of the pages).
+So we proceeded to create a network graph of the selected authors of both the main pages and the pages they modified.
+First we eliminated the nodes of <i>Deep Web</i> and <i>Tor (anonymity network)</i> pages. Then, after having calculated the <i>Average Degree</i>, we eliminated the nodes with <i>Degree</i> less than or equal to 1, more time until we complete cleaned up the network and its graph.
+We resized the nodes of the pages based on their <i>In-Degree</i>. Then, after having showed only the nodes of the authors through filter <i>Partition</i>, we made a <i>Spatialization</i> by <i>Circular Layout</i>, locked the nodes, standardize the size and unhide the filter.
+In the end we spatialize node pages by <i>Force Atlas 2</i> (<i>LinLog Mode</i>, <i>Scaling</i> 0.35, <i>Gravity</i> 0.25) and at last applying <i>Prevent Overlap</i>.</p><img src="protocol/Pro_3.jpg">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Fourth step</h3>
+<p>Starting from the end of the Second Step, we created a Pivot Table to calculate the number of changes and the total size of the changes for each author (not in absolute value).
+We selected the authors who have deleted 900 bytes or more (vandals) and geocalized every IPv4 by GeoIP and IPV6 by IPv6Locator.
+At last we created a Pivot Table to count how many vandals there are in each country and visualized their position and number using CartoDB.</p>
+<img src="protocol/Pro_4.jpg">
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>17/11/2014 - 26/11/2014</h4>
+<h4>Data source: <br> <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></h4>
+<h4>Tools: <br> <a href="labs.densitydesign.org/seealsology">Seealsology</a>, <a href="http://gephi.github.io/">Gephi</a>, <a href="http://products.office.com/it-IT/excel">Microsoft Excel</a>, <a href="https://tools.digitalmethods.net/beta/wikipedia2geo">Wikipedia2geo</a>
+, <a href="https://www.kimonolabs.com/">Kimono</a>, <a href="https://tools.digitalmethods.net/beta/geoIP">GeoIP</a>, <a href="http://ipv6locator.net">IPv6Locator</a>, <a href="http://cartodb.com">Cartodb</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="chapter01_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="Img/Img/img02.svg">
+</div>
+<h4>"See also" network</h4>
+</div>
+</a>
+<a href="chapter01_viz03.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="Img/Img/img03.svg">
+</div>
+<h4>Building and vandalizing</h4>
+</div>
+</a>
+<a href="chapter01_viz04.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="Img/Img/img04.svg">
+</div>
+<h4>Geolocalizing vandals</h4>
+</div>
+</a>
+<a href="chapter01_viz05.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="Img/Img/img05.svg">
+</div>
+<h4>Author's map</h4>
+</div>
+</a>
+</div>
+
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Alessio Candido</li>
+<li>Susanna Castelli</li>
+<li>Marco Colombo</li>
+<li>Agnese Cunsolo</li>
+<li>Giorgia Volinia</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

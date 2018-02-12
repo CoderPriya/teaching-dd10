@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4><strong>TITLE II</strong>
+<li><em>#NetNeutrality debate in the US</em></li>
+</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Set the basis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Chapter 1 Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Wikipedia speaks out loud</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">In between ethical and technical</a>
+</li>
+<li>
+<h5 class="text-uppercase">A well-established name</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Chapter 2 Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">News and Blog speak the same language</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Many terms, one meaning</a>
+</li>
+<li>
+<h5 class="text-uppercase">Speeches and reactions</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Chapter 3 Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Vloggers and showmen speak up for NN</a>
+</li>
+<li>
+<h5 class="text-uppercase">#NetNeutrality</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Chapter 4 Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Understanding users patterns</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Do they all speak the same?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Ethical CTAs push  people to share a lot</a>
+</li>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz-spenta">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">#NetNeutrality</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>Net Neutrality debate has been amplified a lot across social media, using the dedicated hashtag <span>#netneutrality</span>. In order to understand what people discussed about, what terms have been used and by who, we chose to observe twitter for two weeks&mdash;from Nov 25th to Dec 7th 2014&mdash;collecting all tweets containing the hashtag #netneutrality. Data have been obtained with the TCAT tool. 47852 tweets have been analyzed, with 7520 users involved (authors and\or mentions).</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Step #1 &mdash; Understanding users patterns</h3>
+<p>Twitter Data have been downloaded from the TCAT tool, including number of mentions, tweets and followers of every user who tweeted #netneutrality in the two weeks analyzed. Since many users have been mentioned, but didn’t post any tweet (i.e.: <span>@BarackObama</span>, <span>@TomWheelerFCC</span>), the missing number of followers data have been filled using Twitter APIs. Due to the very strict limits of the APIs, most of the task has been completed by manually checking the number of followers via Twitter Website. Bot accounts have been excluded from the final visualization in order to easily compare data.</p>
+<img src="../img/protocollo-n-6.png">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+<h3>Step #2 &mdash; Do they all speak the same?</h3>
+<p>TCAT tool features a Bipartite hashtag-user graph, based on co-occurence of hashtags and users. Since the high number of users and sub-topics, twitter users have been divided into three sub-groups basing on their activity and influence (see below). For this reason the initial graph has been divided into three sub-graphs, by filtering the nodes and edges in Gephi.</p>
+<img src="../img/protocollo-n-7.png">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+<div class="section-content-protocol">
+<div> 
+<h3>Step #3 &mdash; Most shared URLs</h3>
+<p>To find out the most shared contents via Twitter, we finally focused on the tweets containing URLs, corresponding to the 23% of the total tweets. Links have been extracted using regular expressions matching. The most 30 shared short URLs (invalid links have been not included) have been expanded using URLEX.org, resulting in a list of 21 unique links. Then we chose a qualitative approach to analyze the content of each URL, in order to classify them at a later stage.</p>
+<img src="../img/protocollo-n-8.png">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>25/11/2014 - 7/12/2014</h4>
+<h4>Data source: <br> <a href="https://twitter.com/search?q=%23NetNeutrality&src=tyah">Twitter</a></h4>
+<h4>Tools: <br> <a href="http://digitalmethods.net">TCAT</a>, <a href="https://dev.twitter.com/">Twitter APIs</a>, <a href="http://openrefine.org/">OpenRefine</a>, <a href="http://d3js.org/">D3.js</a>, <a href="http://gephi.github.io/">Gephi</a>, <a href="http://sigmajs.org/">Sigma.js</a>, <a href="http://raw.densitydesign.org">RAW</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="chapter04_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/thumb-viz6.jpg">
+</div>
+<h4>Understanding users patterns</h4>
+</div>
+</a>
+<br>
+<a href="chapter04_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/thumb-viz7.jpg">
+</div>
+<h4>Do they all speak the same?</h4>
+</div>
+</a>
+<br>
+<a href="chapter04_viz03.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/thumb-viz8.jpg">
+</div>
+<h4>Top shared URLs</h4>
+</div>
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Nicoletta Bruno</li>
+<li>Martina Cocco</li>
+<li>Sara Perozzi</li>
+<li>Jacopo Pompilii</li>
+<li>Andrea Tagliabue</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

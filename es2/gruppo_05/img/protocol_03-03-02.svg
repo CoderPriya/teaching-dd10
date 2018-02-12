@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1272.29px" height="768px" viewBox="0 0 1272.29 768" enable-background="new 0 0 1272.29 768" xml:space="preserve">
+<rect fill="#333333" width="1272.29" height="768"/>
+<text transform="matrix(1 0 0 1 555.4395 100.04)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="22">About speakers:</tspan><tspan x="-20.174" y="26.4" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="22">who, where and how</tspan><tspan x="-24.793" y="52.8" fill="#AD1C36" font-family="'Karla-Regular'" font-size="22">[References network]</tspan></text>
+<g>
+	<text transform="matrix(1 0 0 1 250.1523 431.2822)" opacity="0.3" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">paper dataset</text>
+	<text transform="matrix(1 0 0 1 665.5352 431.2822)" opacity="0.3" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">dataset creation</text>
+	<rect x="216.07" y="289.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" width="141" height="26"/>
+	<rect x="653.07" y="289.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" stroke-dasharray="3,3" width="127" height="26"/>
+	<text transform="matrix(1 0 0 1 223.4854 306.2822)" opacity="0.3" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">source: Scholar Google</text>
+	<rect x="379.07" y="414.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" width="143" height="26"/>
+	<text transform="matrix(1 0 0 1 388.7285 431.54)" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">References extraction</text>
+	<rect x="966.07" y="451.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" width="70" height="26"/>
+	<rect x="966.07" y="380.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" width="70" height="26"/>
+	<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="940.07" y1="381" x2="940.07" y2="480"/>
+	<text transform="matrix(1 0 0 1 831.0508 399.209)" fill="#AD1C36" font-family="'Karla-Regular'" font-size="12">Gephi</text>
+	<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="892.57" y1="429.5" x2="939.57" y2="429.5"/>
+	<rect x="831.07" y="415.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" width="62" height="26"/>
+	
+		<rect x="819.07" y="465.5" opacity="0.3" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-dasharray="3,3" width="86" height="48"/>
+	<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="779.57" y1="429.5" x2="830.57" y2="429.5"/>
+	<text transform="matrix(1 0 0 1 837.6445 432.2822)" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">network</text>
+	<text transform="matrix(1 0 0 1 845.7314 486.04)" opacity="0.3"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">filters</tspan><tspan x="-11.274" y="14.399" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">attributes</tspan></text>
+	<text transform="matrix(1 0 0 1 976.0625 396.54)" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">relations</text>
+	<text transform="matrix(1 0 0 1 976.0625 468.2822)" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">actors</text>
+	
+		<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-dasharray="3,3" x1="862.07" y1="465" x2="862.07" y2="442"/>
+	<text transform="matrix(1 0 0 1 665.1455 306.2822)" opacity="0.3" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">source: 55 papers</text>
+	<rect x="653.07" y="353.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" stroke-dasharray="3,3" width="127" height="26"/>
+	<text transform="matrix(1 0 0 1 665.415 370.2822)" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">target: references</text>
+	<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="286.969" y1="315.5" x2="286.969" y2="405.5"/>
+	<g opacity="0.3">
+		<text transform="matrix(1 0 0 1 428.0518 548.334)" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">manually</text>
+	</g>
+	
+		<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-dasharray="3,3" x1="450.969" y1="530.04" x2="450.969" y2="440.04"/>
+	<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="379.469" y1="427.5" x2="351.305" y2="427.5"/>
+	<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="719.23" y1="379.5" x2="719.23" y2="407.666"/>
+	<rect x="583.07" y="414.5" fill="none" stroke="#AD1C36" stroke-miterlimit="10" width="43" height="26"/>
+	<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="521.57" y1="427.5" x2="582.57" y2="427.5"/>
+	<text transform="matrix(1 0 0 1 595.2324 431.5)" fill="#FFFFFF" font-family="'Karla-Regular'" font-size="12">1172</text>
+	
+		<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" stroke-dasharray="3,3" x1="357.395" y1="302.5" x2="653.395" y2="302.5"/>
+	<polyline fill="none" stroke="#AD1C36" stroke-miterlimit="10" stroke-dasharray="3,3" points="604.895,414.5 604.895,366.166 
+		653.395,366.166 	"/>
+	<g>
+		<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="713.57" y1="334.5" x2="724.57" y2="334.5"/>
+		<line fill="none" stroke="#AD1C36" stroke-miterlimit="10" x1="719.07" y1="340" x2="719.07" y2="329"/>
+	</g>
+	<polyline fill="none" stroke="#AD1C36" stroke-miterlimit="10" stroke-dasharray="3,3" points="1036.395,393.583 1055.895,393.583 
+		1055.895,464.5 1036.395,464.5 	"/>
+</g>
+</svg>

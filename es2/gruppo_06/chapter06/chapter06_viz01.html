@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>NEVER-ENDING SHARING</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">WIKIPEDIA "SEE ALSO" ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">WEB PAGES ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">TF-IDF ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">GEONAMES FREQUENCE MAP</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">WEB PAGES ANALYSIS VS CASE LAW</h5>
+</li>
+<li>
+<a href="../chapter05/chapter05_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter05/chapter05_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">NAME ENTITIES CONNECTION</h5>
+</li>
+<li>
+<a href="../chapter06/chapter06_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter06/chapter06_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">NEWSPAPERS' API ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter07/chapter07_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter07/chapter07_viz01.html">Visualisation</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz">
+<img src="../img/GEPHIattori-rete.png" width='100%'/>
+
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">Named entities connections</h5><!-- Title of the "chapter"  -->
+<h1>Don't sneak inside opponents' barricade</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>The aim of the graph is to show if there are simple and <b>basic connections</b> between the main named entities, so the main actors, in the web pages analysis. Specifically, to check if our <b>qualitative division of the actors</b> in File Sharing Enemies, Neutral, Friends has real meaning based on inbound links on the web.</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>The actors are divided into <b>three categories</b>: the greens are the ones who don’t find anything negative in on-line file sharing; the orange ones don’t have a strong opinion or don’t comment about the theme; the red ones are strongly against file sharing. The outbound links that were found with <a href="http://dev.densitydesign.org/hyphe/index.php">Hyphe</a> have a low-opacity stroke.</p>
+
+<img src="../img/Attori_vizEx.png" width='100%'/>
+</br>
+
+
+<p>When one node (one actor) links to another node (another actor), a line is drawn. If the line is really green, the connection is on the side of the pro-file sharing faction; if the line is really red, the connection is on the side of the anti-file sharing faction. A light red or light green line means a less extreme connection.</p>
+
+<p>The size of the nodes and the labels depends on how many links enter inside the node itself. Bigger node means more links. </p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>A choice for this graph was made: it follows a qualitative and selective path to see every <b>actor's personal network</b>, starting from their most representative web pages. The aim is to dig into the most basic and direct web relationship of controversy’s personalities, and to find, thanks to crawling, more of them from this research. </p>
+
+<p>The initial result was really messy: some web pages had hundreds out bounding links (IFPI), and some had almost none, but that didn’t tell if these actors were relevant. The cleaning phase was essential because, after that, the graph showed just shared connections, and revealed the missing pieces that gave sense to this selective network.</p>
+
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>First of all, there is a <b>strong division</b> in the network: on the top, the file sharing enemies actors, with all the majors close to each other; on the bottom-center, the file sharing friends actors, mixed with various media and newspapers.</p><p>On the left side there is the “academic” cluster, with online libraries and the most important independent professors who wrote articles about the controversy. On the extreme left, out of the main connections, there is the group of Movie majors and software main actors.</p><p>On the right there is a more strange and heterogeneous group, with blogs and technical entities. </p><p>As single nodes, on the top left, there are several actors, who are quite relevant for the controversy but, apparently, have really small in common with the main connections. Especially, a first role actor like Lamar Smith, the politician who proposed SOPA law, is not connected with any other entity: this means that, on the web, he has no direct connections with the ones who pushed for the law, RIAA and MPAA, and that this link is probably private and/or personal, due to commercial or, probably, lobbying factors.  </p>
+<img src="../img/ATTORI_cluster.png" width='100%'/>
+
+
+<p>Another finding, taken from the first one, is that there are <b>few connections overall</b>, especially between the two main sides: the controversy is really polarized. Moreover, the most important interconnections are mainly Neutral actors. The graph shows that the Enemies side is really "public" and common inside webpages talking about the controversy: Enemies are a very solid network, some kind of army who fights for one goal, in which everyone has strong relationship with everyone else. On the other side, though, the Friends cluster is solid too. <b>The connections between the two sides are always Neutrals</b>, but the interesting thing is that the Friends cluster is made but heterogeneous actors, with different interests and visions. There are free culture ambassadors, professors, legal entities, bloggers, all united by the sympathy for file sharing, but not the real file sharing entities: no P2P services apart from the lonely BitTorrent, no trackers, no torrent blogs apart from the small node of TorrentFreak. Eventually, the real file sharing side, against which the Enemies are fighting, are not visible through web pages analysis.    </p>
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 4/12/2014 – 15/12/2014</h4>
+<h4>Data source: <a href="https://www.google.com">Google</a>, <a href="http://dev.densitydesign.org/hyphe/index.php">Hyphe</a></h4>
+<h4><a href="../chapter06/chapter06_protocol.html">Related Protocol</a></h4>
+<h4><a href="https://drive.google.com/open?id=0B5BdEJEgidq8SU1uZGZJdUpTTXc&authuser=0" target="_blank"><i class="fa fa-arrow-circle-o-down"></i> Download data (4MB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Francesco Bianchi</li>
+<li>Luca Bonfanti</li>
+<li>Luca Ferrario</li>
+<li>Roberta Rosina</li>
+<li>Giulia Zoccarato</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

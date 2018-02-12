@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+.footer{
+	background-color: #999999;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	bottom:0;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footer h4{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+	margin-top: 0px;
+	font-weight: 700;
+	text-align: left; 
+}
+
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+@media only screen and (max-width : 420px) {
+.footer h4{
+	margin-top: 30px;
+}    
+}
+
+/* normale */
+
+.footer a {
+  color: #333333;
+}
+
+.footer a:visited {
+    color: #333333;
+}
+
+.footer a:hover {
+    color: #333333;
+    opacity: 0.8;
+    text-decoration: none;
+    cursor: crosshair;
+}
+
+.footer a:active {
+    color: #333333;
+}

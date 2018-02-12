@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>N-grams</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Right to be forgotten</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">01 | Wiki connections</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Gephi wiki net</a>
+</li>
+<li>
+<h5 class="text-uppercase"> 02 | Googling the controversy</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Which side are you on?</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">N-grams</a>
+</li>
+<li>
+<h5 class="text-uppercase">03 | World wide wiki</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Wiki evolution</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Wiki editors</a>
+</li>
+<li>
+<h5 class="text-uppercase">04 | Streisand effect</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">The other side of the coin</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Costeja in the limelight</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz" style="background-color: #fff">
+<!-- Add your viz here -->
+
+<div class="container-fluid" style="z-index: 20; padding-top: 4%; height:700px;  overflow-y: scroll;">
+
+  <div class="container-fluid" style="background-color:rgba(255, 255, 255, 0.8); width:100%; position: absolute; left: 0px; top: 0px; padding-top: 2%; padding-bottom: 10px;">
+    <row>
+  
+      <div class="col-md-2" style="padding-left:5%">
+        <h4 class="center" style="color: #01678d">TAG | <span style="color: #878787">PRO</span></h4>
+      </div>
+      
+      <div class="col-md-4"></div>
+      <div class="col-md-2" style="padding-left:4%">
+        <h4 class="center" style="color: #01678d">TAG | <span style="color: #878787">AGAINST</span></h4>
+      </div>
+    </row>
+
+
+    <row class="btn-group" style="width:100%;">
+      <div class="col-md-2">
+
+      	<button id="option1" class="btn btn-primary active center" type="submit" style="">DISTRIBUTION</button>
+        
+      </div>    	
+      <div class="col-md-2">
+    		
+        <button id="option2" class="btn btn-primary center" type="submit" style="">TF</button>
+      </div> 
+      <div class="col-md-2">
+    		<button id="option3" class="btn btn-primary center" type="submit" style="">TF-IDF</button>
+    	 
+      </div>    
+      <div class="col-md-2">
+
+      	<button id="option4" class="btn btn-primary active center" type="submit" style="">DISTRIBUTION</button>
+    
+      </div>
+      <div class="col-md-2">
+
+    		<button id="option5" class="btn btn-primary center" type="submit" style="">TF
+        </button>
+      </div>
+      <div class="col-md-2">
+    		<button id="option6" class="btn btn-primary center" type="submit" style="">TF-IDF</button>
+
+    	</div>
+
+    </row>
+  </div><!--testata-->
+
+
+
+  <img id="sven_1" style="width: 100%; z-index: 10; margin-top: 70px;"  src="../img/SVEN-finale-1.svg" />
+
+  <img id="sven_2" style="width: 100%; z-index: 10; margin-top: 70px;"  src="../img/SVEN-finale-2.svg" hidden />
+
+  <img id="sven_3" style="width: 100%; z-index: 10; margin-top: 70px;"  src="../img/SVEN-finale-3.svg" hidden />
+
+</div>
+
+
+
+
+
+
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">Googling the controversy</h5><!-- Title of the "chapter"  -->
+<h1>N-grams</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>This study considers the most distributed n-grams, taking into account the results of the queries providing pro or against quotes.<br>
+Once obtained the most distributed n-grams in the sub-corpus pro and against, they can be compared with different parameters, such as frequency and relevance.</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>The visualization compares the hundred most distributed n-grams in the sub-corpora of pro and against results. By selecting the buttons TF and TF-IDF, which refer respectively to the frequency and relevance, the n-grams can be compared with these additional parameters to see in which order they redeploy.</p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>We took the articles that provided only pro or against quotes out of the total corpus of results, thus creating two sub-corpora.<br>
+Using the tool Zup, we extracted the texts of the articles, while with the tool Sven we extracted and analyzed the n-grams. Afterwards we selected the most distributed hundred n-grams of both the sub-corpora and then we checked how they redeployed when ordered by frequency or relevance. We created a visualization by means of the tool Raw.</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>In relation to the PRO sub-corpus, after organizing the n-grams according to the distribution, it is clear how the concepts are more connected to privacy, personal data protection and fundamental rights themes. Regarding the AGAINST sub-corpus, on the other hand, the distribution follows themes such as free information, censorship, justice. Also n-grams such as “Guardian” and “Wikipedia” refers to de-indexing cases and removal of online information. All of the found n-grams refer to the same area of interest, namely internet, politics, legislation.</p>
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp:14/11/2014 - 05/12/2014</h4>
+<h4>Data source: <a href="https://www.google.com">Google</a></h4>
+<h4><a href="../chapter02/chapter02_protocol.html">Related Protocol</a></h4>
+<h4><a href="../data/PRO_AGAINST_ngrams_g7.zip"><i class="fa fa-arrow-circle-o-down"></i> Download data (455KB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+	<hr style="border-top-width: 1px; border-top-style: solid; border-top-color: #c6c5c5; margin-bottom: 40px">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo3.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo3.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Roberto Catanese</li>
+<li>Daniele De Pietri</li>
+<li>Enrica Lo Cicero</li>
+<li>Ludovica Lorenzelli</li>
+<li>Cecilia Nuñez</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+Menu Toggle Script 
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<script>
+$("#option1").on('click',function(){
+  
+  $("#sven_1").show();
+  $("#sven_2").hide();
+  $("#sven_3").hide();
+  $("#option1").css("background","#01678d");
+  $("#option2").css("background","#d7d7d6");
+  $("#option3").css("background","#d7d7d6");
+  $("#option4").css("background","#01678d");
+  $("#option5").css("background","#d7d7d6");
+  $("#option6").css("background","#d7d7d6");
+  console.log("clicked 1");
+
+});
+</script>
+
+<script>
+$("#option2").on('click',function(){
+  
+  $("#sven_1").hide();
+  $("#sven_2").show();
+  $("#sven_3").hide();
+  $("#option1").css("background","#d7d7d6");
+  $("#option2").css("background","#01678d");
+  $("#option3").css("background","#d7d7d6");
+  $("#option4").css("background","#d7d7d6");
+  $("#option5").css("background","#01678d");
+  $("#option6").css("background","#d7d7d6");
+  console.log("clicked 2");
+
+});
+</script>
+
+<script>
+$("#option3").on('click',function(){
+  
+  $("#sven_1").hide();
+  $("#sven_2").hide();
+  $("#sven_3").show();
+  $("#option1").css("background","#d7d7d6");
+  $("#option2").css("background","#d7d7d6");
+  $("#option3").css("background","#01678d");
+  $("#option4").css("background","#d7d7d6");
+  $("#option5").css("background","#d7d7d6");
+  $("#option6").css("background","#01678d");
+  console.log("clicked 3");
+
+});
+</script>
+
+
+<script>
+$("#option4").on('click',function(){
+  
+  $("#sven_1").show();
+  $("#sven_2").hide();
+  $("#sven_3").hide();
+  $("#option1").css("background","#01678d");
+  $("#option2").css("background","#d7d7d6");
+  $("#option3").css("background","#d7d7d6");
+  $("#option4").css("background","#01678d");
+  $("#option5").css("background","#d7d7d6");
+  $("#option6").css("background","#d7d7d6");
+  console.log("clicked 1");
+
+});
+</script>
+
+
+<script>
+$("#option5").on('click',function(){
+  
+  $("#sven_1").hide();
+  $("#sven_2").show();
+  $("#sven_3").hide();
+  $("#option1").css("background","#d7d7d6");
+  $("#option2").css("background","#01678d");
+  $("#option3").css("background","#d7d7d6");
+  $("#option4").css("background","#d7d7d6");
+  $("#option5").css("background","#01678d");
+  $("#option6").css("background","#d7d7d6");
+  console.log("clicked 2");
+
+});
+</script>
+
+<script>
+$("#option6").on('click',function(){
+  
+  $("#sven_1").hide();
+  $("#sven_2").hide();
+  $("#sven_3").show();
+  $("#option1").css("background","#d7d7d6");
+  $("#option2").css("background","#d7d7d6");
+  $("#option3").css("background","#01678d");
+  $("#option4").css("background","#d7d7d6");
+  $("#option5").css("background","#d7d7d6");
+  $("#option6").css("background","#01678d");
+  console.log("clicked 3");
+
+});
+</script>
+
+
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+<script>
+
+
+</script>
+
+
+</body>
+
+</html>

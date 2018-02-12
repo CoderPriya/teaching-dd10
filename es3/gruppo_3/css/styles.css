@@ -1,0 +1,45 @@
+
+
+.footer h6{
+	text-transform: uppercase !important;
+
+	font-size: 11px !important;
+	font-family: "Anonymous pro";
+	color:white;
+	margin-top: 10px;
+	
+}
+
+.footer ul{
+	list-style: none !important;
+	padding-left: 0 !important;
+	font-size: 11px !important;
+
+	font-weight: 400 !important;
+}
+
+.footer li{
+
+	font-size: 11px !important;
+	font-family: "Anonymous pro";
+	color:white;
+}
+
+.footer img{
+	padding-top: 10%;
+}
+
+.footer a{
+	background-color: transparent!important;
+}
+
+.footer a:hover{
+	text-decoration: transparent!important;
+}
+
+
+@media only screen and (max-width : 420px) {
+.footer h6{
+	margin-top: 30px !important;
+}    
+}

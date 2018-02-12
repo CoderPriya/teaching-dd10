@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+  <script src="js/sigma.min.js"></script>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Gephi wiki net</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Right to be forgotten</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">01 | Wiki connections</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Gephi wiki net</a>
+</li>
+<li>
+<h5 class="text-uppercase"> 02 | Googling the controversy</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Which side are you on?</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">N-grams</a>
+</li>
+<li>
+<h5 class="text-uppercase">03 | World wide wiki</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Wiki evolution</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Wiki editors</a>
+</li>
+<li>
+<h5 class="text-uppercase">04 | Streisand effect</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">The other side of the coin</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Costeja in the limelight</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz">
+<!-- Add your viz here -->
+ 
+
+<iframe src="index.html" style="width:100%; height: 650px; border-width: 0px;"></iframe>
+
+  
+  
+  
+  	
+
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">Wiki connections</h5><!-- Title of the "chapter"  -->
+<h1>Gephi wiki net</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>In order to have an initial overview on the topic we explored it on Wikipedia, picking five pages that we thought were the most relevant ad inherent to the Right to be forgotten discussion.</p>
+
+<p>This way we discovered the most relevant topics linked to it and their weight on the whole controversy.</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>You can move through and explore the vizualization by cliking and dragging. If you want to zoom you can either click on the button or use the mouse zoom.
+The panel on your left gives you more information on this visualization in addition to a search function.
+By clicking on one of the nodes a panel on your right will appear with the node’s attributes and related content.</p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>The first tool used was extractlinkurl.com in order to extract easily all the urls of the See Also we needed. Once we decided which were relevant and which were not by reading them all, we used Seealsology to crawl them and get a .gexf file to get started with Gephi.</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>Looking at the graph it becomes immediately evident that the main clusters are those related to Freedom of information (dark purple), Internet censorship (blue) and Digital rights (red).
+Little, but of no less imprtance, is the cluster related to the Streisand effect (pink), connected to the Freedom of information cluster.</p>
+
+<p>On the upper right of the visualization there’s an other major cluster, containing two relevant topics (Data and information privacy, in light purple, and Privacy and Mass surveillance in orange) with the ideal center in the Internet privacy node (orange), and one topic less relevant to our research (Tor and anonimity, in dark purple) linked to the Freedom of information cluster.</p>
+
+<p>On the left side are those minor cluster of less importance to our topic, such as Open source, Open society and Opennes (dark green).
+
+In the bottom-right of the visualization there’s a cluster inherent to the legal aspects of the topic, such as International human right law or Public international law, along with the Human and Minority rights (yellow).</p>
+
+<p>Two bridges, Copyleft and Pirate Party, connect the main central cluster to one of less importance and relevance to us, regarding Internet security and Intellectual property (red).
+Another bridge, United Nations (red), can be found in the bottom-left of the network, connecting the Digital Rights cluster (red), to that of the Human and Minority rights (yellow).</p>
+
+<p>The main authorities in this network are Internet Censorship, Freedom of Information and, in a minor way, Internet privacy, which are also the main themes in the Right to be forgotten controversy.</p>
+
+<p>The most important finding of this visualization is that the majority of the most relevant topics of discussion of this controversy are situated in the central cluster: Internet censorship, Freedom of information and Digital rights, having the ideal center of the whole graph in the Internet censorship node, which is also the main objection to the right to be forgotten discussion.</p>
+
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 14/12/2014 - 15/12/2014</h4>
+<h4>Data source: <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></h4>
+<h4><a href="../chapter01/chapter01_protocol.html">Related Protocol</a></h4>
+<h4><a href="../data/see_also_g7.csv"><i class="fa fa-arrow-circle-o-down"></i> Download data (4KB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+  <hr style="border-top-width: 1px; border-top-style: solid; border-top-color: #c6c5c5; margin-bottom: 40px">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo3.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo3.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Roberto Catanese</li>
+<li>Daniele De Pietri</li>
+<li>Enrica Lo Cicero</li>
+<li>Ludovica Lorenzelli</li>
+<li>Cecilia Nuñez</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

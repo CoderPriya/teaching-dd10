@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "A",
+    "file": "",
+    "link": ""
+  },
+  "text": {
+    "title": "Viz_1",
+    "more": "This graph is a more legible version of the Gephi map of all the Wikipedia topics involved in Web Personalization.",
+    "intro": "Synthesized version of the Gephi overall map."
+  },
+  "legend": {
+    "edgeLabel": "Subcategories",
+    "colorLabel": "nothing",
+    "nodeLabel": "Topics"
+  },
+  "features": {
+    "search": false,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "imageAttribute": "Id",
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 30,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 3
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}

@@ -1,0 +1,80 @@
+/* Typography */
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+/*!
+DON'T MODIFY THIS AND THE OTHER CSS/JS
+ */
+body{
+    background-color: #fff; /* Palette */
+    color: #333; /* Palette */
+    font-family:'Karla', sans-serif;
+}
+
+/* nico */
+#chart{
+    padding-top: 62px;
+} 
+
+
+/* SARA */
+
+
+.my-viz-sara {
+    padding-bottom: 50px;
+}
+
+.my-viz-gephi {
+    padding-top: 62px;
+    padding-bottom: 30px;
+}
+
+#viz{
+    /*background-color: #ece7cf !important;*/ 
+    min-height:  650px;
+    margin-top: 0px;
+    /*border:0 #ccc solid;
+    border-bottom-width: 3px;*/
+} 
+
+
+#chart.c3 {
+  /*margin-top: 50px;*/
+  margin-left: 5%;
+  margin-right: 3%;
+  min-height: 650px;
+  /*background-color: #ece7cf;*/
+}
+
+.ul-sara {
+    min-height: 50px;
+    margin: 0px 0px 0px 0px;
+}
+
+.col-md-1-sara {
+    float: left;
+    list-style-type: none;
+    width: 8.1%;
+    text-align: center;
+}
+.sara{
+  /*margin-left: 7.5%;
+  margin-right: 7.5%;*/
+  max-width: 100%;
+}
+.li-sp{
+  font-size: 1.1em;
+  font-family:'Merriweather', serif!important;
+}
+
+.sp-strong {
+  color: #c3442b;
+}
+
+a:focus, a:hover {
+color: brown; /* Palette */
+text-decoration: none;
+}
+
+
+/* SARA */

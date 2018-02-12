@@ -1,0 +1,524 @@
+body {
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F9FAFA;
+}
+
+b {
+	font-weight: 500;
+}
+
+.top {
+	background-color: #84266A;
+	height: 50px;
+}
+
+.copertina {
+	max-width: 100%;
+}
+
+.col-md-4 span {
+	font-weight: 500;
+}
+
+
+/*-----------INTRODUCTION-------------*/
+
+.introduction h3{
+	margin-top:100px;
+	margin-bottom:20px;
+	text-align: center;
+	font-weight: 500;
+	font-size:30px;
+}
+
+.filetto1{
+	max-width: 100%;
+	margin: auto;
+	height: 7px;
+}
+
+.introduction p{
+	font-weight:300;
+	font-size: 14px;
+	color: #000;
+	text-align: justify;
+	margin-top: 40px;
+}
+
+#imgel{
+	margin-top:20px;
+	max-width: 100%;
+}
+
+
+
+/*----------PART 1-----------*/
+
+
+.part1 {
+	text-align:center;
+}
+
+.imageplaceholder1 {
+	margin-top: 30px;
+    max-width: 100%;
+}
+
+.part1 h3 {
+	margin-top:60px;
+	margin-bottom:20px;
+	font-size:30px;
+}
+
+.filetto2{
+	max-width: 100%;
+	margin: auto;
+	height: 7px;
+	margin-bottom: 30px;
+}
+
+.part1 h4 {
+	margin-top:60px;
+	margin-bottom:20px;
+	font-size:24px;
+	text-align: left;
+	line-height: 29px;
+}
+
+.part1 p{
+	font-weight: 300;
+	text-align: left;
+}
+
+.button {
+	background-color:#F9FAFA;
+	font-weight: 300;
+	font-size: 12px;
+	border-radius: 0px;
+	width: 120px;
+}
+
+.button1 {
+	background-color:#F9FAFA;
+	font-weight: 300;
+	font-size: 12px;
+	border-radius: 0px;
+	width: 80px;
+}
+
+img#g1_2 {
+	display: none;
+}
+
+
+/*--------PART 3-----------*/
+
+.part3 {
+	margin-top:60px;
+}
+
+.part3 p{
+	font-weight: 300;
+	margin-bottom: 20px;
+	margin-top:20px;
+	text-align: center;
+}
+
+.part3 h3{
+	text-align:center;
+}
+
+.part3 small{
+	font-weight: 300;
+	margin-left: 9px;
+}
+
+.imageplaceholder3 {
+	max-width: 100%;
+	margin-top:60px;
+}
+
+.imageplaceholder3a {
+    max-width: 100%;
+    margin-top:20px;
+}
+
+.imageplaceholder3b {
+    max-width: 100%;
+    margin-top:30px;
+}
+
+.imageplaceholder3c {
+    max-width: 100%;
+    margin-top:30px;
+}
+
+.legendapart3{
+	margin-top: 30px;
+	margin-left:70px;
+	margin-bottom:10px;
+}
+
+#circle {
+    background-color: #CCC;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    display: inline-block;
+    float: left;
+}
+
+#rectangle {
+    background-color: #CCC;
+    width: 30px;
+    height: 5px;
+    display: inline-block;
+    margin-left:20px;
+}
+
+
+
+/*-----------PART 4-----------*/
+
+.part4 {
+	margin-top: 60px;
+}
+
+.part4 h1 {
+	font-weight: 500;
+}
+
+.part4 p {
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+.part4 button{
+	margin-top:20px;
+}
+
+.imageplaceholder4 {
+	max-width:100%;
+	padding-top:40px;
+}
+
+img#g4a {
+	display: none;
+}
+
+.part4 h3{
+	margin-top:40px;
+}
+
+#graph4{
+	margin-top: 55px;
+}
+
+
+
+/* ---------{Parte Conclusiva}-------*/
+
+.conclusion {
+		margin-top: 20px;
+}
+
+.conclusion h3{
+	font-weight: 500;
+	text-align: center;
+	font-size:30px;
+	margin-bottom:20px;
+}
+
+.filetto3{
+	max-width: 100%;
+	margin: auto;
+	height: 7px;
+
+}
+
+.conclusion p {
+	font-weight: 300;
+	text-align: left;
+	margin-bottom:55px;
+}
+
+.imageplaceholderConclusion {
+    max-width: 100%;
+}
+
+.imageplaceholderA{
+	max-width: 100%;
+}
+
+.imageplaceholderB{
+	max-width: 100%;
+}
+
+.imageplaceholderC{
+	max-width: 100%;
+}
+
+img#g_f {
+	display: block;
+}
+
+img#g_f1 {
+	display: none;
+}
+
+img#g_f-a1{
+	display: none;
+}
+
+img#g_f-b1{
+	display: none;
+}
+
+img#g_f-c1{
+	display: none;
+}
+
+#user{
+	margin-top:20px;
+}
+
+
+
+/*-------PART 5 / Scheda approfondimento----------*/
+
+.part5 {
+	margin-top: 60px;
+	background-color: #878786;
+}
+
+#titprincipale {
+	text-align:center;
+	font-size: 30px;
+}
+
+#titintro{
+	text-align:center;
+	font-size: 20px;
+	color: #FFF;
+	font-weight: 300;
+	padding-top:100px;
+	margin-bottom:-50px;
+}
+
+.part5 h3 {
+	color: #F9FAFA;
+	font-weight: 500;
+	margin-top: 60px;
+	margin-bottom:20px;
+}
+
+.filetto4{
+	max-width: 100%;
+	margin: auto;
+	height: 7px;
+	margin-bottom: 30px;
+}
+
+.imageplaceholder5 {
+	max-width: 100%;
+	padding-top: 40px;
+}
+
+.part5  p{
+	color:#FFFFFF;
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+.part5 span {
+	color:#E2CC00;
+}	
+
+#didascalia5 {
+	font-size: 10px;
+	font-weight: 300;
+	color: #FFF;
+}
+
+.imageplaceholder5 {
+	margin-top: 20px;
+    max-width: 100%;
+    margin-left: -20px;
+}
+
+.part5 .h3c{
+	padding-top: 15px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.imageplaceholder6 {
+	margin-top: 50px;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.imageplaceholder7 {
+	margin-top: 5px;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+
+
+/*--------END / Foto finali----------*/
+
+.end {
+	margin-top:10px;
+	margin-bottom: 90px;
+	margin-top:20px;
+}
+
+.end h5{
+	font-weight: 500;
+	font-size:13px;
+	text-align:center;
+}
+
+.end p{
+	font-weight: 300;
+	font-size: 11px;
+	text-align:center;
+	margin-top:30px;
+}
+
+.end h4{
+	margin-top:120px;
+	font-size:18px;
+	text-align: center;
+	color: #84266A;
+	margin-bottom:20px;
+	font-weight: 500;
+}
+
+#work{
+	font-weight: 300;
+	text-align:center;
+	margin-top:70px;
+	font-size: 12px;
+}
+
+
+.didascalia6{
+	margin-bottom:100px;
+}
+
+img#M {
+	display: none;
+}
+
+img#M_b {
+	display: block;
+}
+
+img#F {
+	display: none;
+}
+
+img#F_b {
+	display: block;
+}
+
+img#C {
+	display: none;
+}
+
+img#C_b {
+	display: block;
+}
+
+img#G {
+	display: none;
+}
+
+img#G_b {
+	display: block;
+}
+
+img#I {
+	display: none;
+}
+
+img#I_b {
+	display: block;
+}
+
+@media screen and (max-width: 1000px) {
+ .disappear { display: none; }
+  /*.names {display: block;}*/
+}
+
+
+/*------Legenda laterale--------*/
+
+.legenda{
+	position:fixed;
+	width:70px;
+	bottom:0.5%;
+	left:1%;
+	display:none;
+}
+
+.leg {
+	max-width: 100%;
+	margin:0px;
+}
+
+@media screen and (max-width:900px) {
+	.leg {display:none;}
+}
+
+/*---------Stile bottone premuto--------*/
+.btn-group .active {
+	background-color: #eee;
+}
+
+
+/*-----------Footer----------*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+.footer{
+	background-color: #333;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom:0px;
+	/*position: absolute;
+	width: 100%;*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+.footer h4{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+	margin-top: 0px;
+	font-weight: 400;
+}
+
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+@media only screen and (max-width : 420px) {
+.footer h4{
+	margin-top: 30px;
+}    
+}
+
+.row {
+	margin: 0 auto;
+}

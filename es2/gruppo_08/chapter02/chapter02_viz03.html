@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>A trip into the Deep</h4>
+</li>
+<li>
+<a href="../index.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Scanning the knowledge</h5><h5 class="text-uppercase" style="padding-top:0px">(Wikipedia analysis)</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">"See also" network</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">Building and vandalizing</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz03.html">Geolocalizing vandals</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz04.html">Author's map</a>
+</li>
+<li>
+<h5 class="text-uppercase">The Onion core </h5><h5 class="text-uppercase" style="padding-top:0px">(Gitweb’s Tor analysis)</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html"> Tor Project's main actors</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Best actors' activities</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Mapping the Onion</a>
+</li>
+<li>
+<h5 class="text-uppercase">Words matter </h5><h5 class="text-uppercase" style="padding-top:0px">(Google queries text analysis)</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Queries composition and results</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz03.html">Distribution of terms between queries</a>
+</li>
+<li>
+<h5 class="text-uppercase">People’s contribution </h5><h5 class="text-uppercase" style="padding-top:0px">(Youtube analysis)</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Between quantity and activity</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Between typology, category and language</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz04.html">The “hot topics” </a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz05.html">Supporter, opponent or neutral?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz06.html">Deep Web and Tor Browser imaginary</a>
+</li>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz">
+<iframe width='100%' height='600' frameborder='0' src='http://unoi90.cartodb.com/viz/4815203a-8785-11e4-bbbe-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">The Onion core</h5><!-- Title of the "chapter"  -->
+<h1>Mapping the Onion</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>The majority of people who made commits on the repository had a nickname or a personal name so it was easy to search, using Google search engine, from where they were coding. We have 
+geolocalized the work of every coder who worked on the <a href="https://gitweb.torproject.org/">Tor repository </a> on Gitweb. We have crossed the data with the number of Tor's exit node 
+in a determinate nation (<a href="https://www.dan.me.uk/tornodes">dan.meu </a>), looking for some link between the two dataset. </p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>It is possible to see, using Cartodb, how much is the Index of Activity (IoA) of a single nation (sum of all the IoA of every coder of that nation, from the beginning of the Tor Project) 
+seeing the width of the circle: nations with bigger IoA, bigger circle. The saturation of the color of the nation is used to determine the quantity of Tor Browser's exit node in it. </p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>We have downloaded all the commits done in the Tor repository (the main repository of the project) on the <a href="https://gitweb.torproject.org/">Tor Project repository browser </a> on 
+Gitweb. Using Google search engine we have geolocalized the majority of coders who worked in the repository and we have summed same-nations IoA using Microsoft Excel. Thanks to Cartodb we 
+created an interactive map showing the quantity of IoA in every nation. We have downloaded from <a href="https://www.dan.me.uk/tornodes">dan.meu</a> the quantity of Tor Browser's exit 
+nodes in a single minute of a day, and we checked the result sometimes: the number of exit nodes per region was always nearly the same. Using cartodb we added this information to the 
+previously created map. </p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>As was easy to foresee, the nations with the highest IoA are the United States of America and Germany (the two nations from where the first three coder are coding), and every other nation 
+is less than them. It is more interesting to see where are the majority of exit nodes: United States of America and Germany. So we can say there is a link between the nations where Tor 
+Browser has born, and the nations where there are more Tor Browser's exit nodes. </p>
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>28/11/2014 - 02/12/2014</h4>
+<h4>Data source: <br> <a href="https://gitweb.torproject.org/tor.git/">Gitweb.torproject</a>, <a href="https://www.google.com">Google, <a href="https://www.dan.me.uk/tornodes">Dan.me.uk</a></a></h4>
+<h4><a href="chapter02_protocol.html">Related Protocol</a></h4>
+<h4><a href="../data/Chapter02/Chapter02_Viz03.zip"><i class="fa fa-arrow-circle-o-down"></i> Download data (593 KB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Alessio Candido</li>
+<li>Susanna Castelli</li>
+<li>Marco Colombo</li>
+<li>Agnese Cunsolo</li>
+<li>Giorgia Volinia</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

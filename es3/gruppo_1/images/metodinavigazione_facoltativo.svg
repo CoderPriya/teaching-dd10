@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="156.922px" height="58.896px" viewBox="-1.464 0 156.922 58.896" enable-background="new -1.464 0 156.922 58.896"
+	 xml:space="preserve">
+<rect x="-6.129" y="-5.568" fill="#78C5D4" width="165.617" height="71.039"/>
+<g>
+	<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="137.741" cy="18.842" r="5.269"/>
+	<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="137.741" cy="18.842" r="2.634"/>
+	<path fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M135.654,20.447
+		c-0.816-1.16-0.488-2.16-0.488-2.16c0.645-2.181,2.575-2.08,2.575-2.08s2.11-0.119,2.584,2.119c0,0,0.19,1.189-0.498,2.121"/>
+	<path fill="#78C5D4" stroke="#FFFFFF" stroke-miterlimit="10" d="M126.326,31.33c0,0-0.648,0.845,0,2.146
+		c0.65,1.301,0.845,3.707,1.105,4.619c0.26,0.908,1.81,4.161,2.395,5.853c0.566,1.636,1.084,5.284,5.188,8.585
+		c0.135,0.107,0.387,0.236,0.418,0.517v3.45h13.527v-2.514c0,0-0.016-0.332,0.137-0.5c0.565-0.627,2.574-3.389,2.855-8.954
+		c0,0,0.131-3.644-1.887-3.902c0,0-1.17-4.942-4.553-4.942c0,0-0.455-3.643-5.139-3.643l-0.391-11.512c0,0-0.193-2.082-1.95-2.082
+		c-2.731,0-2.276,3.447-2.276,4.097c0,0.652,0,14.115,0,14.115s-0.131,1.95-2.212,1.95c-2.082,0-2.86-4.553-3.315-5.397
+		C129.773,32.369,128.212,29.833,126.326,31.33z"/>
+</g>
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M81.053,56.5c9.584,0,12.221-6.441,12.819-10.543
+		c0.601-4.102,0.601-17.227,0.601-31.13c0-13.903-13.42-13.327-13.42-13.327h-2.584c0,0-13.421-1.146-13.421,12.757
+		c0,13.903,0,27.622,0.601,31.724c0.6,4.103,3.235,10.521,12.82,10.521L81.053,56.5L81.053,56.5z"/>
+	<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M80.5,16.5c0,1.104-0.896,2-2,2l0,0c-1.104,0-2-0.896-2-2v-5
+		c0-1.104,0.896-2,2-2l0,0c1.104,0,2,0.896,2,2V16.5z"/>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M34.5,32.618c0,2.696-2.186,4.882-4.881,4.882h-5.237
+			c-2.696,0-4.881-2.186-4.881-4.882v-5.236c0-2.696,2.186-4.882,4.881-4.882h5.237c2.696,0,4.881,2.186,4.881,4.882V32.618z"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		24.109,30.805 27.567,27.346 31.026,30.805 	"/>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M34.5,51.618c0,2.696-2.186,4.882-4.881,4.882h-5.237
+			c-2.696,0-4.881-2.186-4.881-4.882v-5.236c0-2.696,2.186-4.882,4.881-4.882h5.237c2.696,0,4.881,2.186,4.881,4.882V51.618z"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M53.5,51.618c0,2.696-2.186,4.882-4.881,4.882h-5.237
+			c-2.696,0-4.881-2.186-4.881-4.882v-5.236c0-2.696,2.186-4.882,4.881-4.882h5.237c2.696,0,4.881,2.186,4.881,4.882V51.618z"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M15.5,51.618c0,2.696-2.186,4.882-4.881,4.882H5.381
+			c-2.696,0-4.881-2.186-4.881-4.882v-5.236c0-2.696,2.186-4.882,4.881-4.882h5.237c2.696,0,4.881,2.186,4.881,4.882L15.5,51.618
+			L15.5,51.618z"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		24.109,47.441 27.567,50.9 31.026,47.441 	"/>
+</g>
+</svg>

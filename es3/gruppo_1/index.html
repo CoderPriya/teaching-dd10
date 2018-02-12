@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html id="iem7" lang="it" class="no-js no-document-ready iem7"> <![endif]-->
+<!--[if lt IE 7 ]><html id="ie6" lang="it" class="no-js no-document-ready ie ie6 lt-ie7 lt-ie8 lt-ie9"><![endif]-->
+<!--[if IE 7 ]><html id="ie7" lang="it" class="no-js no-document-ready ie ie7 lt-ie8 lt-ie9"><![endif]-->
+<!--[if IE 8 ]><html id="ie8" lang="it" class="no-js no-document-ready ie ie8 lt-ie9"><![endif]-->
+<!--[if IE 9 ]><html id="ie9" lang="it" class="no-js no-document-ready ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="it" class="no-js no-document-ready"><!--<![endif]-->
+<head>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Web-Isolation</title>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta property="og:title" content="web personalization">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Considered all these analysis, the society doesn’t have much influence on the development of the web personalization. But as this system is going to be more and more present and influent in our everyday life, society can not permit that its own view isolated." >
+	<meta property="og:url" content="http://www.marcosaporiti.com/web-isolation">
+	<meta property="og:site_name" content="web-isolation" />
+	<meta property="og:image" content="">
+
+	<!-- Head common stuff and CSS -->
+
+
+
+
+	<!--include virtual="inc/head.html"--> 
+					<!-- Mobile meta - Device width and scale -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+
+<!--meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,minimal-ui' name='viewport' -->
+
+<meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,minimal-ui' name='viewport'>
+
+<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+
+<!-- APP: Configuring web applications. Delete if not needed  -->
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+<meta name="apple-mobile-web-app-title" content="web navigation">
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="application-name" content="web navigation">
+
+<!-- TAB: http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android  -->
+
+<meta name="theme-color" content="#77C4D3">
+<link rel="icon" sizes="192x192" href="crome favicon.png">
+
+<!-- ICO: Configuring web applications  -->
+<link rel="apple-touch-icon-precomposed" href="icon/apple-touch-icon">
+<!-- ICO: Specifying a webpage icon for web clip / remove "-precomposed" from rel attr for icon standard Apple gloss -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png" />
+<link rel="icon" href="icon/favicon.png">
+<!--[if IE]>
+<link rel="shortcut icon" href="icon/favicon.ico">
+<![endif]-->
+
+<!-- for IE10 win or Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileColor" content="#77C4D3">
+<meta name="msapplication-TileImage" content="icon/apple-touch-icon-144x144.png">
+
+<!-- Default CSS by WIP -->
+<link rel="stylesheet" media="screen" href="css/style.min.css" />
+<!--[if (lt IE 9)&(!IEMobile)]>
+	<link rel="stylesheet" href="css/desktop.min.css" media="screen">
+<![endif]-->
+
+
+	<!--include virtual="inc/head_js.html"--> 
+
+				<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+<!-- HTML5 elements to be styled and contain children while being printed in IE 6-8. - https://github.com/aFarkas/html5shiv/archive/master.zip -->
+<!--[if lt IE 9]>
+	<script src="js/vendor/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+<!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+<script>
+	 (function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")
+</script>
+
+<!-- modernizr-2.7.1.min load before body -->
+<script type="text/javascript" src="js/vendor/modernizr-2.7.1.min.js"></script>
+
+<!-- jquery-1.11.0.min load before body -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+
+
+
+</head>
+
+
+<body>
+	<div id="wrapper" class="wrap">
+		<!--include virtual="inc/header.html"--> 
+
+					<header id="masthead" role="banner">
+	<hgroup>
+		<h1 id="logo"></h1>
+		<h2 id="description"></h2>
+	</hgroup>
+</header>
+
+
+
+		
+
+		<div role="main" id="main" class="clearfix">
+
+			<a id="trigger_menu" href="javascript:void(0)"> nav </a>
+
+			<nav id="force_nav">
+				<ul class="inner-nav">
+					<li><a href="/web-isolation/#step1" onClick="location.reload();">Chapter 1</a></li>
+					<li><a href="/web-isolation/#step2" onClick="location.reload();">Chapter 2</a></li>
+					<li><a href="/web-isolation/#step3" onClick="location.reload();">Chapter 3</a></li>
+					<li><a href="/web-isolation/#step4" onClick="location.reload();">Chapter 4</a></li>
+				</ul>
+			</nav>
+
+			<nav id="main_nav">
+				<a id="ff" href="javascript:void(0)"><img src="images/freccia_navigazione.svg"></a>
+				<a class="ascheda" data-scheda="dentro1" title"protocolli" href="javascript:void(0)"><img src="images/protocolli.svg"></a>
+				<a class="ascheda" data-scheda="dentro2" title"digital methods" href="javascript:void(0)"><img src="images/digitalmethods.svg"></a>
+				<figure id="suggestions">
+					<img src="images/metodinavigazione_facoltativo.svg">
+				</figure>
+			</nav>
+
+			<section id="slide_0" class="slide">
+				<h1 class="main-title">Web isolation</h1>
+				<h2 class="main-subtitle">The Web Personalization influences our knowledge, but do we influence the Web Personalization?</h2>
+			</section>
+
+			<section id="slide_1" class="slide">
+				<article>
+					<div class="testo-wrap">
+						<div class="testo" id="testo1">
+							<p>On the web there are a lot of data, that is increasing every day, so the search and navigation must be guided. In order to do that, web personalization has been developed. </p>
+						</div>
+						<div class="testo" id="testo2">
+							<p>Web personalization uses algorithms to process information collected about the user (digital traces) with or without his assent in order to provide more relevant results.</p>
+						</div>
+						<div class="testo" id="testo3">
+							<p>This system, by prioritizing and filtering some results, it affects our knowledge.  Google, Facebook, Amazon, Yahoo! and many other companies use this system every day.</p>
+						</div>
+					</div>
+				</article>
+				<div id="tutteboe">
+					<div id="nave1" class="nave">
+						<img class="fianco" src="images/nave_lato_1.svg">
+						<img class="fronte" src="images/nave_fronte_1.svg">
+					</div>
+					<div id="nave2" class="nave">
+						<img class="fianco" src="images/nave_lato_2.svg">
+						<img class="fronte" src="images/nave_fronte_2.svg">
+					</div>
+					<div id="nave3" class="nave">
+						<img class="fianco" src="images/nave_lato_3.svg">
+						<img class="fronte" src="images/nave_fronte_3.svg">
+					</div>
+
+					<img id="pt1" class="porto dietro" src="images/porto_1_dietro.svg">
+					<img id="pt1a" class="porto davanti" src="images/porto_tutti_davanti.svg">
+					<img id="pt2" class="porto dietro" src="images/porto_2_dietro.svg">
+					<img id="pt2a" class="porto davanti" src="images/porto_tutti_davanti.svg">
+					<img id="pt3" class="porto dietro" src="images/porto_3_dietro.svg">
+					<img id="pt3a" class="porto davanti" src="images/porto_tutti_davanti.svg">
+
+					<!-- boe RIGA 1 -->
+					<div id="boa1" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa2" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa3" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa4" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa5" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa6" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa7" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa8" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+
+					<!-- boe RIGA 2 -->
+					<div id="boa9" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa10" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa11" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa12" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa13" class="boa d2 d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa14" class="boa d2 d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa15" class="boa d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa16" class="boa d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+
+					<!-- boe RIGA 3 -->
+					<div id="boa17" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa18" class="boa d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa19" class="boa d1 d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa20" class="boa d2 d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa21" class="boa d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa22" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa23" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa24" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+
+					<!-- boe RIGA 4 -->
+					<div id="boa25" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa26" class="boa d2 d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa27" class="boa d1 d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa28" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa29" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa30" class="boa d1 d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa31" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa32" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+
+					<!-- boe RIGA 5 -->
+					<div id="boa33" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa34" class="boa d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa35" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa36" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa37" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa38" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa39" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa40" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+
+					<!-- boe RIGA 6 -->
+					<div id="boa41" class="boa d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa42" class="boa d2">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa43" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa44" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa45" class="boa d1">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa46" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa47" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa48" class="boa d3">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<!-- boe RIGA 7 -->
+					<div id="boa49" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa50" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa51" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa52" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa53" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa54" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa55" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+					<div id="boa56" class="boa">
+						<img class="sopra" src="images/boa.svg">
+						<img class="sotto" src="images/boa-sotto.svg">
+					</div>
+				</div>
+			</section>
+
+			<section id="slide_2" class="slide">
+				<article>
+					<div class="testo-wrap clean-text">
+						<p class="big-num">1</p>
+						<p>In order to comprehend the perception of the web about this topic, we considered two kind of sources: one identifiable as society (information news, posts on blog) and one identifiable as academy (scientific papers). From the analysis it came out that the perception is influenced by some problems of the web personalization.
+						</p>
+					</div>
+				</article>
+			</section>
+
+			<section id="slide_3" class="slide">
+				<section id="testi_isole">
+
+					<article id="t1" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">Need more data</h3>
+							<p class="subtitle">
+								<span class="num">14%</span>
+								<span class="legenda">total level of concern</span></p>
+						</hgroup>
+						<div class="col contenuto">
+							<p>A problem that has been found is that the personalization system is not so effective because a lack of data about the user. In fact it would be more effective if the algorithms had access to more data about the user: his location, context, past history and interactions.</p>
+							
+						</div>
+					</article>
+
+					<article id="t2" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">Efficiency</h3>
+							<p class="subtitle">
+								<span class="num">22%</span>
+								<span class="legenda">total level of concern</span></p>
+						</hgroup>
+						<div class="col contenuto">
+							<p>The efficiency of web personalization has been crticized due to several issues: accuracy, the first result is not always the most important; diversity, the results are often too similar; cold start, hard to track down the latest information; there is a lack of serendipity; scalability, inability to index the newest data; data sparsity, the pages are not properly indexed.</p>
+						</div>
+					</article>
+
+					<article id="t3" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">Language</h3>
+							<p class="subtitle">
+								<span class="num">11%</span>
+								<span class="legenda">total level of concern</span></p>
+						</hgroup>
+						<div class="col contenuto">
+							<p>An important aspect of web personalization that has not been developed yet, concerns the language. In fact the language of Web Personalization should embrace the notions of semantic web to no longer be limited to simple text.</p>
+						</div>
+					</article>
+
+					<article id="t4" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">Filter bubble</h3>
+							<p class="subtitle">
+								<span class="num">29%</span>
+								<span class="legenda">total level of concern</span></p>
+						</hgroup>
+						<div class="col contenuto">
+							<p>One of the most recognized problem is the one introducted by activist Eli Pariser. Filter Bubble aims to determine the effect on users of Web Personalization: it hides some information considered in contrast with his own point of view and by doing so it sets apart the user in his own bubble of contents.</p>
+						</div>
+					</article>
+
+					<article id="t5" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">Privacy</h3>
+							<p class="subtitle">
+								<span class="num">15%</span>
+								<span class="legenda">total level of concern</span></p>
+						</hgroup>
+						<div class="col contenuto">
+							<p>The Web Companies acquire and manage users' personal data gathered from their usage of the web. Often some of this data is out of the user’s control, who doesn’t know these data, who owns them and for which purpose.</p>
+						</div>
+					</article>
+
+					<article id="t6" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">User centered</h3>
+							<p class="subtitle">
+								<span class="num">9%</span>
+								<span class="legenda">total level of concern</span></p>
+						</hgroup>
+						<div class="col contenuto">
+							<p>With the term User centered is meant that the user should have full control of the web personalization. He should be able to set his own level of customization, or at least be concious of the processes of the system. </p>
+						</div>
+					</article>
+
+					<!-- FINE PRIMO GIRO -->
+
+					<article id="t7" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">The gap between<br>visions</h3>
+						</hgroup>
+						<div class="col contenuto">
+							<p>The distance between the islands shows the different perception of each problem. The distance is less for technological problems such as Need more data, efficiency, and language; instead increases for ethical problems such as Filter bubble, privacy, and User centered.
+</p>
+						</div>
+					</article>
+
+					<!-- TESTO AEREI -->
+					<article id="t8" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">The number<br>of suggestions</h3>
+						</hgroup>
+						<div class="col contenuto">
+							<p>The number of reccomendations by academy decreases as the distance between the islands increases.
+That could be read as the society is being left alone with its problem. In fact not only there is a bigger gap on the ethical problems, but also the suggestions that come from academy are really few. 
+</p>
+						</div>
+					</article>
+
+					<!-- TESTO ISOLISSIMA -->
+					<article id="t9" class="testo-isola">
+						<hgroup class="col">
+							<h3 class="title">Academic<br>composition</h3>
+						</hgroup>
+						<div class="col contenuto">
+							<p>The analysis of the composition shows a great disparity between the scientical-technical side and the more social one. This could explain why society is so far from academy about the ethical problems, in fact there are only few academics who are involved in this topic who are interested in the opinion of society. </p>
+						</div>
+					</article>
+
+				</section>
+
+				<div class="arcipelago">
+
+					<img class="marone sx" src="images/mare_completo_sx.svg">
+					<img class="marone dx" src="images/mare_completo_dx.svg">
+
+					<!-- ISOLA 1 -->
+					<figure id="isola1_sx" class="isola sx" data-index="1">
+						<img class="strade" src="images/isole/isola_1_sx_edi.svg">
+						<img class="base" src="images/isole/isola_1_sx_terra.svg">
+						<img class="mare" src="images/isole/isola_1_sx_mare.svg">
+						<img class="wire" src="images/isole/isola_1_sx_wire.svg">
+					</figure>
+					<figure id="isola1_dx" class="isola dx" data-index="1">
+						<img class="strade" src="images/isole/isola_1_dx_edi.svg">
+						<img class="base" src="images/isole/isola_1_dx_terra.svg">
+						<img class="mare" src="images/isole/isola_1_dx_mare.svg">
+						<img class="wire" src="images/isole/isola_1_dx_wire.svg">
+					</figure>
+
+					<!-- ISOLA 2 -->
+					<figure id="isola2_sx" class="isola sx" data-index="2">
+						<img class="strade" src="images/isole/isola_2_sx_edi.svg">
+						<img class="base" src="images/isole/isola_2_sx_terra.svg">
+						<img class="mare" src="images/isole/isola_2_sx_mare.svg">
+						<img class="wire" src="images/isole/isola_2_sx_wire.svg">
+					</figure>
+					<figure id="isola2_dx" class="isola dx" data-index="2">
+						<img class="strade" src="images/isole/isola_2_dx_edi.svg">
+						<img class="base" src="images/isole/isola_2_dx_terra.svg">
+						<img class="mare" src="images/isole/isola_2_dx_mare.svg">
+						<img class="wire" src="images/isole/isola_2_dx_wire.svg">
+					</figure>
+
+					<!-- ISOLA 3 -->
+					<figure id="isola3_sx" class="isola sx" data-index="3">
+						<img class="strade" src="images/isole/isola_3_sx_edi.svg">
+						<img class="base" src="images/isole/isola_3_sx_terra.svg">
+						<img class="mare" src="images/isole/isola_3_sx_mare.svg">
+						<img class="wire" src="images/isole/isola_3_sx_wire.svg">
+					</figure>
+					<figure id="isola3_dx" class="isola dx" data-index="3">
+						<img class="strade" src="images/isole/isola_3_dx_edi.svg">
+						<img class="base" src="images/isole/isola_3_dx_terra.svg">
+						<img class="mare" src="images/isole/isola_3_dx_mare.svg">
+						<img class="wire" src="images/isole/isola_3_dx_wire.svg">
+					</figure>
+
+					<!-- ISOLA 4 -->
+					<figure id="isola4_sx" class="isola sx" data-index="4">
+						<img class="strade" src="images/isole/isola_4_sx_edi.svg">
+						<img class="base" src="images/isole/isola_4_sx_terra.svg">
+						<img class="mare" src="images/isole/isola_4_sx_mare.svg">
+						<img class="wire" src="images/isole/isola_4_sx_wire.svg">
+					</figure>
+					<figure id="isola4_dx" class="isola dx" data-index="4">
+						<img class="strade" src="images/isole/isola_4_dx_edi.svg">
+						<img class="base" src="images/isole/isola_4_dx_terra.svg">
+						<img class="mare" src="images/isole/isola_4_dx_mare.svg">
+						<img class="wire" src="images/isole/isola_4_dx_wire.svg">
+					</figure>
+
+					<!-- ISOLA 5 -->
+					<figure id="isola5_sx" class="isola sx" data-index="5">
+						<img class="strade" src="images/isole/isola_5_sx_edi.svg">
+						<img class="base" src="images/isole/isola_5_sx_terra.svg">
+						<img class="mare" src="images/isole/isola_5_sx_mare.svg">
+						<img class="wire" src="images/isole/isola_5_sx_wire.svg">
+					</figure>
+					<figure id="isola5_dx" class="isola dx" data-index="5">
+						<img class="strade" src="images/isole/isola_5_dx_edi.svg">
+						<img class="base" src="images/isole/isola_5_dx_terra.svg">
+						<img class="mare" src="images/isole/isola_5_dx_mare.svg">
+						<img class="wire" src="images/isole/isola_5_dx_wire.svg">
+					</figure>
+
+					<!-- ISOLA 6 -->
+					<figure id="isola6_sx" class="isola sx" data-index="6">
+						<img class="strade" src="images/isole/isola_6_sx_edi.svg">
+						<img class="base" src="images/isole/isola_6_sx_terra.svg">
+						<img class="mare" src="images/isole/isola_6_sx_mare.svg">
+						<img class="wire" src="images/isole/isola_6_sx_wire.svg">
+					</figure>
+					<figure id="isola6_dx" class="isola dx" data-index="6">
+						<img class="strade" src="images/isole/isola_6_dx_edi.svg">
+						<img class="base" src="images/isole/isola_6_dx_terra.svg">
+						<img class="mare" src="images/isole/isola_6_dx_mare.svg">
+						<img class="wire" src="images/isole/isola_6_dx_wire.svg">
+					</figure>
+
+					<!-- LINEE -->
+					<div id="lw1" class="line-wrap zoomed">
+						<img class="linea" src="images/linee/prob_1_linee.svg">
+					</div>
+					<div id="iw1" class="info-wrap zoomed">
+						<img class="info-box sx" src="images/linee/prob_1_box_sx.svg">
+						<img class="info-box dx" src="images/linee/prob_1_box_dx.svg">
+					</div>
+
+					<div id="lw2" class="line-wrap zoomed">
+						<img class="linea" src="images/linee/prob_2_linee.svg">
+					</div>
+					<div id="iw2" class="info-wrap zoomed">
+						<img class="info-box sx" src="images/linee/prob_2_box_sx.svg">
+						<img class="info-box dx" src="images/linee/prob_2_box_dx.svg">
+					</div>
+					
+					<div id="lw3" class="line-wrap zoomed">
+						<img class="linea" src="images/linee/prob_3_linee.svg">
+					</div>
+					<div id="iw3" class="info-wrap zoomed">
+						<img class="info-box sx" src="images/linee/prob_3_box_sx.svg">
+						<img class="info-box dx" src="images/linee/prob_3_box_dx.svg">
+					</div>
+					
+					<div id="lw4" class="line-wrap zoomed">
+						<img class="linea" src="images/linee/prob_4_linee.svg">
+					</div>
+					<div id="iw4" class="info-wrap zoomed">
+						<img class="info-box sx" src="images/linee/prob_4_box_sx.svg">
+						<img class="info-box dx" src="images/linee/prob_4_box_dx.svg">
+					</div>
+					
+					<div id="lw5" class="line-wrap zoomed">
+						<img class="linea" src="images/linee/prob_5_linee.svg">
+					</div>
+					<div id="iw5" class="info-wrap zoomed">
+						<img class="info-box sx" src="images/linee/prob_5_box_sx.svg">
+						<img class="info-box dx" src="images/linee/prob_5_box_dx.svg">
+					</div>
+					
+					<div id="lw6" class="line-wrap zoomed">
+						<img class="linea" src="images/linee/prob_6_linee.svg">
+					</div>
+					<div id="iw6" class="info-wrap zoomed">
+						<img class="info-box sx" src="images/linee/prob_6_box_sx.svg">
+						<img class="info-box dx" src="images/linee/prob_6_box_dx.svg">
+					</div>
+
+					<!-- LINEE ARCIP 1 -->
+
+					<div id="distanze">
+						<img id="dist1" src="images/linee/dist_1.svg">
+						<img id="dist2" src="images/linee/dist_2.svg">
+						<img id="dist3" src="images/linee/dist_3.svg">
+						<img id="dist4" src="images/linee/dist_4.svg">
+						<img id="dist5" src="images/linee/dist_5.svg">
+						<img id="dist6" src="images/linee/dist_6.svg">
+					</div>
+
+					<!-- AEREI -->
+
+					<div id="air1" class="aereo-wrap">
+						<img class="aereo" src="images/aereo.svg">
+						<img class="ombra" src="images/aereo_ombra.svg">
+					</div>
+					<div id="air2" class="aereo-wrap">
+						<img class="aereo" src="images/aereo.svg">
+						<img class="ombra" src="images/aereo_ombra.svg">
+					</div>
+					<div id="air3" class="aereo-wrap">
+						<img class="aereo" src="images/aereo.svg">
+						<img class="ombra" src="images/aereo_ombra.svg">
+					</div>
+					<div id="air4" class="aereo-wrap">
+						<img class="aereo" src="images/aereo.svg">
+						<img class="ombra" src="images/aereo_ombra.svg">
+					</div>
+					<div id="air5" class="aereo-wrap">
+						<img class="aereo" src="images/aereo.svg">
+						<img class="ombra" src="images/aereo_ombra.svg">
+					</div>
+					<div id="air6" class="aereo-wrap">
+						<img class="aereo" src="images/aereo.svg">
+						<img class="ombra" src="images/aereo_ombra.svg">
+					</div>
+
+					<div id="pack1" class="pacco">
+						<img src="images/pacchi_1.svg">
+					</div>
+					<div id="pack2" class="pacco">
+						<img src="images/pacchi_2.svg">
+					</div>
+					<div id="pack3" class="pacco">
+						<img src="images/pacchi_3.svg">
+					</div>
+					<div id="pack4" class="pacco">
+						<img src="images/pacchi_4.svg">
+					</div>
+					<div id="pack5" class="pacco">
+						<img src="images/pacchi_5.svg">
+					</div>
+					<div id="pack6" class="pacco">
+						<img src="images/pacchi_6.svg">
+					</div>
+
+				</div> <!-- fine arcipelago -->
+
+				<!-- box esterni per evitare scale -->
+
+				<!-- problemi -->
+
+				<div id="iw1special" class="info-special sx">
+					<img class="info-box sx" src="images/linee/dist_probl_boxTech.svg">
+				</div>
+				<div id="iw2special" class="info-special dx">
+					<img class="info-box dx" src="images/linee/dist_probl_boxEthic.svg">
+				</div>
+
+				<div id="iw1a" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_probl_1_box_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_probl_1_box_dx.svg">
+				</div>
+
+				<div id="iw2a" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_probl_2_box_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_probl_2_box_dx.svg">
+				</div>
+
+				<div id="iw3a" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_probl_3_box_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_probl_3_box_dx.svg">
+				</div>
+
+				<div id="iw4a" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_probl_4_box_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_probl_4_box_dx.svg">
+				</div>
+
+				<div id="iw5a" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_probl_5_box_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_probl_5_box_dx.svg">
+				</div>
+
+				<div id="iw6a" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_probl_6_box_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_probl_6_box_dx.svg">
+				</div>
+
+				<!-- proposte -->
+
+				<div id="iw1b" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_proposte_1_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_proposte_1_dx.svg">
+				</div>
+
+				<div id="iw2b" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_proposte_2_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_proposte_2_dx.svg">
+				</div>
+
+				<div id="iw3b" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_proposte_3_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_proposte_3_dx.svg">
+				</div>
+
+				<div id="iw4b" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_proposte_4_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_proposte_4_dx.svg">
+				</div>
+
+				<div id="iw5b" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_proposte_5_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_proposte_5_dx.svg">
+				</div>
+
+				<div id="iw6b" class="info-wrap outer">
+					<img class="info-box sx" src="images/linee/dist_proposte_6_sx.svg">
+					<img class="info-box dx" src="images/linee/dist_proposte_6_dx.svg">
+				</div>
+
+				<!-- ISOLISSIMA -->
+
+				<figure id="isolissima" class="isola">
+					<img id="g1" data-index="1" class="grigio" src="images/isole/isola_piena_grigio_1.svg">
+					<img id="g2" data-index="2" class="grigio" src="images/isole/isola_piena_grigio_2.svg">
+					<img id="g3" data-index="3" class="grigio" src="images/isole/isola_piena_grigio_3.svg">
+					<img id="g4" data-index="4" class="grigio" src="images/isole/isola_piena_grigio_4.svg">
+					<img id="g5" data-index="5" class="grigio" src="images/isole/isola_piena_grigio_5.svg">
+					<img id="g6" data-index="6" class="grigio" src="images/isole/isola_piena_grigio_6.svg">
+					<img class="base" src="images/isole/isola_piena_terra.svg">
+					<img class="mare" src="images/isole/isola_piena_mare.svg">
+
+					<!-- linee isolissima -->
+
+					<div id="lw1tot" class="line-wrap unito">
+						<img class="linea" src="images/linee/comp_linea_1.svg">
+					</div>
+					<div id="iw1tot" class="info-wrap unito">
+						<img class="info-box dx" src="images/linee/comp_box_1.svg">
+					</div>
+					
+					<div id="lw2tot" class="line-wrap unito">
+						<img class="linea" src="images/linee/comp_linea_2.svg">
+					</div>
+					<div id="iw2tot" class="info-wrap unito">
+						<img class="info-box dx" src="images/linee/comp_box_2.svg">
+					</div>
+					
+					<div id="lw3tot" class="line-wrap unito">
+						<img class="linea" src="images/linee/comp_linea_3.svg">
+					</div>
+					<div id="iw3tot" class="info-wrap unito">
+						<img class="info-box dx" src="images/linee/comp_box_3.svg">
+					</div>
+					
+					<div id="lw4tot" class="line-wrap unito">
+						<img class="linea" src="images/linee/comp_linea_4.svg">
+					</div>
+					<div id="iw4tot" class="info-wrap unito">
+						<img class="info-box dx" src="images/linee/comp_box_4.svg">
+					</div>
+					
+					<div id="lw5tot" class="line-wrap unito">
+						<img class="linea" src="images/linee/comp_linea_5.svg">
+					</div>
+					<div id="iw5tot" class="info-wrap unito">
+						<img class="info-box dx" src="images/linee/comp_box_5.svg">
+					</div>
+					
+					<div id="lw6tot" class="line-wrap unito">
+						<img class="linea" src="images/linee/comp_linea_6.svg">
+					</div>
+					<div id="iw6tot" class="info-wrap unito">
+						<img class="info-box dx" src="images/linee/comp_box_6.svg">
+					</div>
+					
+				</figure>
+				
+
+
+			</section>
+
+			<section id="fake_slide_1" class="slide">
+				<article>
+					<div class="testo-wrap clean-text">
+						<p class="big-num">2</p>
+						<p>A possible interpretation of the dataset to get an idea of what the future of the web personalization could be, and also to have another point of view of the topic, is related  to the possible solutions to these problems. These suggestions fewer from society, which doesn’t have the needed skills, and more from academy, which is better prepared to respond. </p>
+				</article>
+			</section>
+
+			<section id="fake_slide_2" class="slide">
+				<article>
+					<div class="testo-wrap clean-text">
+						<p class="big-num">3</p>
+						<p>Which could be the reasons to this trend? A possibile answer  could be found in the composition of the academic side. </p>
+					</div>
+				</article>
+			</section>
+
+			<section id="slide_4" class="slide">
+				<article>
+					<div class="testo-wrap clean-text">
+						<p class="big-num">4</p>
+						<h3>Final thoughts</h3>
+						<p>Considered all these analysis, the society doesn’t have much influence on the development of the web personalization. But as this system is going to be more and more present and influent in our everyday life, society can not permit that its own view isolated.
+						</p>
+					</div>
+				</article>
+			</section>
+
+			<section id="slide_5" class="slide">
+				<div class="inner-footer">
+					<img src="images/footer.svg">
+				</div>
+			</section>
+
+		</div><!-- /main -->
+
+	</div><!-- /wrap -->
+
+
+	<div id="approfondimenti">
+		<article id="scheda1" class="scheda">
+			<a class="chiudi" href="javascript:void(0)">[close]</a>
+			<ul>
+				<li><img src="images/protocollo_academy_clean.svg"></li>
+				<li><img src="images/protocollo_society_clean.svg"></li>
+			</ul>
+		</article>
+
+		<article id="scheda2" class="scheda">
+			<a class="chiudi" href="javascript:void(0)">[close]</a>
+			<img id="data1" class="data" src="images/data-01.svg">
+			<img id="data2" class="data hidden" src="images/data-02.svg">
+			<img id="data3" class="data hidden" src="images/data-03.svg">
+			<img id="data4" class="data hidden" src="images/data-04.svg">
+		</article>
+	</div>
+
+	<div aria-hidden="true" id="maretta">
+		<img id="o1" src="images/ondina.gif">
+		<img id="o2" src="images/ondina.gif">
+		<img id="o3" src="images/ondina.gif">
+		<img id="o4" src="images/ondina.gif">
+		<img id="o5" src="images/ondina.gif">
+	</div>
+	<div aria-hidden="true" id="loader"></div>
+</div>
+
+	<!-- script javascript libray -->
+
+
+
+	<!--include virtual="inc/scripts.html"--> 
+			<!-- modernizr-2.6.2.min AND jquery-1.11.0.min / load before body tag -->
+
+<!--SCRIPTS ASSETS SHOULD BE LOADED HERE AFTER BODY ENDS-->
+
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+<!-- script src="js/vendor/jquery/jquery-fancyapp/source/jquery.fancybox-2.1.5-0.js"></script -->
+<script src="js/vendor/tweenmax/TweenMax.min.js"></script>
+<script src="js/vendor/tweenmax/easing/EasePack.min.js"></script>
+<script src="js/vendor/jquery/jquery.scrollstop.min.js"></script>
+<script src="js/vendor/jquery/jquery.mousewheel.min.js"></script>
+<script src="js/vendor/jquery/jquery.resizestop.min.js"></script>
+<script src="js/vendor/jquery/jquery.touchSwipe.min.js"></script>
+
+<!-- custom scripts -->
+<script src="js/utils.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+	$(document).ready(function (){
+		// here only the common script 4 every page
+		wip.container.init();
+	});
+</script>
+
+
+
+
+</body>
+</html>

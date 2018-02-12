@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Forget me, net</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Right to be forgotten</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">01 | Wiki connections</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Gephi wiki net</a>
+</li>
+<li>
+<h5 class="text-uppercase"> 02 | Googling the controversy</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Which side are you on?</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">N-grams</a>
+</li>
+<li>
+<h5 class="text-uppercase">03 | World wide wiki</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Wiki evolution</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Wiki editors</a>
+</li>
+<li>
+<h5 class="text-uppercase">04 | Streisand effect</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">The other side of the coin</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Costeja in the limelight</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">Googling the controversy</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>After choosing the theme of our study, as a first step we analyzed the topic in order to understand its issues and controversies.<br>
+To do so we studied how this topic is debated on the web, reading and analyzing the webpages obtained with a research on two research environments: Wikipedia and search engine of Google.<br>
+We investigated the results so that we could bring out and indentify the actors, the different opinions and the main issues of the debate.</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Step of the procotol</h3>
+<p>As a first step we selected the five more relevant Wikipedia pages for the topic “Right to be forgotten”. For each of these, we analyzed the Wikipedia pages linked (in the See Also sections) and the external webpages we found in the References sections.
+We organized the information in a chart, dividing it in different columns: people taking part in the debate, their positions and the main issues, contextualizing these pieces of information by date, geographic area and environment of the speakers. 
+Once understood these things, we were then able to identify the main issues of the debate and we managed to pick those which caused most of the controversities, so we decided to focus on them for a further in-depth analysis. </p>
+<p>Investigating the debate we found the keywords related to the topic, and we managed to select five different queries, chosen in order to easily bring out speakers with a position in the debate. </p>
+<p>We entered the queries on google and for each of them we selected the first hundred results, we then reduced them by selecting only the most important twenty-five ones for each query.
+We then filled in a new chart, with the following classifications: speakers, positions, issues, contexts.</p>
+<p>We decided to create a visualization to show speakers, positions and issues of the debate, to do so we used an alluvial diagram by means of the tool Raw. 
+With the same dataset we created also a host net, in order to find out the hosts shared by different queries.</p>
+<p>To do so we used the tools Harvester and Gephi, with the following process:
+input all the urls from the 125 articles selected (Harvester), flag "Only return host names", than download the .csv file (tools.digitalmethods.net/beta/harvestUrls);
+Generation a dataset with SOURCE (QUERY), TARGET (HOST); Import the .csv file in Gephi and create the network with the given parameters
+visualization
+ </p>
+<img src="../protocol_jpg/googling-01.jpg">
+</div>
+</div>
+
+
+<div class="section-content-protocol">
+<div> 
+<h3>Step of the procotol</h3>
+<p>At a later stage, we also did an investigation using the N-grams: we indentified the most recurring ones in the pages pro or against the Right to be forgotten.<br>
+We then selected the results related only to pro or against quotes, then we used the tool Zup to extract the texts.<br>
+Afterwards we entered the texts in the tool Sven in order to extract those words. We then picked the hundred most recurring n-grams of the sub-corpus pro and against, eventually we compared them with the parameters of frequency and relevance.</p>
+<img src="../protocol_jpg/googling-02.jpg">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>14/11/2014 - 05/12/2014</h4>
+<h4>Data source: <br> <a href="https://www.google.com">Google</a></h4>
+<h4>Tools: <br> <a href="http://gephi.github.io/">Gephi</a>, <a href="http://www.websundew.com/web-harvester">Harvester</a>, <a href="http://raw.densitydesign.org/">Raw</a>, <a href="http://www.densitydesign.org/">Sven</a>, <a href="http://www.densitydesign.org/">Zup</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="../chapter02/chapter02_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/query_cover2.jpg">
+</div>
+<h4>Which side are you?</h4>
+</div>
+</a>
+<a href="../chapter02/chapter02_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/query_cover2.jpg">
+</div>
+<h4>Which side are you?</h4>
+</div>
+</a>
+<a href="../chapter02/chapter02_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/query_cover2.jpg">
+</div>
+<h4>Which side are you?</h4>
+</div>
+</a>
+<a href="../chapter02/chapter02_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/query_cover2.jpg">
+</div>
+<h4>Which side are you?</h4>
+</div>
+</a>
+<a href="../chapter02/chapter02_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/query_cover2.jpg">
+</div>
+<h4>Which side are you?</h4>
+</div>
+</a>
+<a href="../chapter02/chapter02_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/sven_cover.jpg">
+</div>
+<h4>N-grams</h4>
+</div>
+</a>
+
+
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+	<hr style="border-top-width: 1px; border-top-style: solid; border-top-color: #c6c5c5; margin-bottom: 40px">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo3.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo3.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Roberto Catanese</li>
+<li>Daniele De Pietri</li>
+<li>Enrica Lo Cicero</li>
+<li>Ludovica Lorenzelli</li>
+<li>Cecilia Nuñez</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

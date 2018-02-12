@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>A trip into the Deep</h4>
+</li>
+<li>
+<a href="index.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Scanning the knowledge</h5><h5 class="text-uppercase" style="padding-top:0px">(Wikipedia analysis)</h5>
+</li>
+<li>
+<a href="chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter01/chapter01_viz01.html">"See also" network</a>
+</li>
+<li>
+<a href="chapter01/chapter01_viz02.html">Building and vandalizing</a>
+</li>
+<li>
+<a href="chapter01/chapter01_viz03.html">Geolocalizing vandals</a>
+</li>
+<li>
+<a href="chapter01/chapter01_viz04.html">Author's map</a>
+</li>
+<li>
+<h5 class="text-uppercase">The Onion core </h5><h5 class="text-uppercase" style="padding-top:0px">(Gitweb’s Tor analysis)</h5>
+</li>
+<li>
+<a href="chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter02/chapter02_viz01.html"> Tor Project's main actors</a>
+</li>
+<li>
+<a href="chapter02/chapter02_viz02.html">Best actors' activities</a>
+</li>
+<li>
+<a href="chapter02/chapter02_viz03.html">Mapping the Onion</a>
+</li>
+<li>
+<h5 class="text-uppercase">Words matter </h5><h5 class="text-uppercase" style="padding-top:0px">(Google queries text analysis)</h5>
+</li>
+<li>
+<a href="chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter03/chapter03_viz01.html">Queries composition and results</a>
+</li>
+<li>
+<a href="chapter03/chapter03_viz02.html">Differences between queries</a>
+</li>
+<li>
+<a href="chapter03/chapter03_viz03.html">Distribution of terms between queries</a>
+</li>
+<li>
+<h5 class="text-uppercase">People’s contribution </h5><h5 class="text-uppercase" style="padding-top:0px">(Youtube analysis)</h5>
+</li>
+<li>
+<a href="chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter04/chapter04_viz01.html">Differences between queries</a>
+</li>
+<li>
+<a href="chapter04/chapter04_viz02.html">Between quantity and activity</a>
+</li>
+<li>
+<a href="chapter04/chapter04_viz03.html">Between typology, category and language</a>
+</li>
+<li>
+<a href="chapter04/chapter04_viz04.html">The “hot topics” </a>
+</li>
+<li>
+<a href="chapter04/chapter04_viz05.html">Supporter, opponent or neutral?</a>
+</li>
+<li>
+<a href="chapter04/chapter04_viz06.html">Deep Web and Tor Browser imaginary</a>
+</li>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-cover">
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container introduction">
+<div class="row">
+<!-- Text  -->
+<div class="col-md-12">
+<!-- Authors the project  -->	
+<h5 class="text-center"><em>By</em> Alessio Candido, Susanna Castelli, Marco Colombo, Agnese Cunsolo, Giorgia Volinia</h5>
+<!-- Title of the project  -->
+<h1 class="text-center">A trip into the Deep</h1>
+<div class="section-content-protocol">
+<div class="section-text-introduction"> 
+<p>The Deep Web (also called, not always properly, Dark Web, Invisible Web, Hidden Web Dark Net…) is the portion of the World Wide Web that is not indexed by standard search engines: in particular we worked on the portion of the Deep Web that is browsable with the Tor Browser and that have a .onion domain.
+Tor Browser is a free software, developed by the Tor Project group, for enabling online anonymity and resisting censorship. It is designed to make it possible for users to surf the Internet anonymously, so their activities and location cannot be discovered by government agencies, corporations, or anyone else.
+There is still a lot of terminological confusion speaking of the Deep Web and the Tor, because it is a growing and unclear phenomenon, often the term Dark Web is used with a bad sense to influence public opinion.
+Tor Browser is used by a wide variety of people for both licit and illicit purposes. The Tor Project says Tor's users include "normal people" who want to keep their internet activities private from websites and advertisers, people concerned about cyber-spying, users who are evading censorship such as activists and journalists, and military professionals.
+Tor is used for matters that are, or may be, illegal in some countries, to gain access to censored information, to organize political activities, or to circumvent laws against criticism of heads of state.
+Lately an operation called Operation Onymous, that involved the police forces of 17 countries, shuts down a lot of online drug markets such as Silk Road 2.0, bringing to the fore the illegal activities that are conducted into the Deep Web.
+</p>
+</div>
+</div>
+</div>
+<div id="1" style="text-align:center; width:700px; margin-left:auto; margin-right:auto">
+<img src="img/schema_home.svg"></img>
+</div>
+<div class="col-md-12">
+</div>
+</div>
+<h3 class="text-center">chapters</h3>
+<div class="row chapters">
+<div class="col-md-4 chapters-thumb">
+<img src="img/Intro1.jpg">
+</div>
+<div class="col-md-8">
+<h1>Scanning the knowledge (Wikipedia analysis)</h1>
+<h2>This protocol aims to discover links between Wikipedia pages inherent our topic, in order to find out connections, clustering and alignments of themes around a specific area of knowledge. In addition we tried out people’s activity in Deep Web and Tor network Wikipedia pages.</h2>
+<ul>
+	<li><a href="chapter01/chapter01_protocol.html"><i class="fa fa-arrow-circle-o-right"></i> Protocol</a></li>
+	<li style="display:inline-block; width:50%; float:right"><a href="chapter01/chapter01_viz03.html"><i class="fa fa-arrow-circle-o-right"></i> Geolocalizing vandals</a></li>
+	<li style="display:inline-block; width:50%"><a href="chapter01/chapter01_viz01.html"><i class="fa fa-arrow-circle-o-right"></i> "See also" network</a></li>
+	<li style="display:inline-block; width:50%; float:right"><a href="chapter01/chapter01_viz04.html"><i class="fa fa-arrow-circle-o-right"></i> Author's map</a></li>
+	<li style="display:inline-block; width:50%"><a href="chapter01/chapter01_viz02.html"><i class="fa fa-arrow-circle-o-right"></i> Building and vandalizing</a></li>
+</ul>
+</div>
+</div>
+<div class="row chapters">
+<div class="col-md-4 chapters-thumb">
+<img src="img/Intro2.jpg">
+</div>
+<div class="col-md-8">
+<h1>The Onion core (Gitweb’s Tor analysis)</h1>
+<h2>The aim of this research protocol was to
+understand who and how is developing the
+Tor Project, to catch beliefs and values promoted
+by the project itself.</h2>
+<ul>
+	<li><a href="chapter02/chapter02_protocol.html"><i class="fa fa-arrow-circle-o-right"></i> Protocol</a></li>
+	<li><a href="chapter02/chapter02_viz01.html"><i class="fa fa-arrow-circle-o-right"></i> Tor Project's main actors</a></li>
+	<li><a href="chapter02/chapter02_viz02.html"><i class="fa fa-arrow-circle-o-right"></i> Best actors' activities</a></li>
+	<li><a href="chapter02/chapter02_viz03.html"><i class="fa fa-arrow-circle-o-right"></i> Mapping the Onion</a></li>
+</ul>
+</div>
+</div>
+<div class="row chapters">
+<div class="col-md-4 chapters-thumb">
+<img src="img/Intro3.jpg">
+</div>
+<div class="col-md-8"> 	
+<h1>Words matter (Google queries text analysis)</h1>
+<h2>The aim of this research protocol was to bring
+out the most used words and terms about the
+Deep Web, in order to understand how people
+talk about the topic.</h2>
+<ul>
+	<li><a href="chapter03/chapter03_protocol.html"><i class="fa fa-arrow-circle-o-right"></i> Protocol</a></li>
+	<li><a href="chapter03/chapter03_viz01.html"><i class="fa fa-arrow-circle-o-right"></i> Queries composition and results</a></li>
+	<li><a href="chapter03/chapter03_viz02.html"><i class="fa fa-arrow-circle-o-right"></i> Differences between queries</a></li>
+	<li><a href="chapter03/chapter03_viz03.html"><i class="fa fa-arrow-circle-o-right"></i> Distribution of terms between queries</a></li>
+</ul>
+</div>
+</div>
+<div class="row chapters">
+<div class="col-md-4 chapters-thumb">
+<img src="img/Intro4.jpg">
+</div>
+<div class="col-md-8">
+<h1>People’s contribution (Youtube analysis)</h1>
+<h2>With this protocol we wanted to investigate
+how users deal with the Deep web and the Tor
+Browser by videos. This research provide many
+results to see people activity and imaginary.</h2>
+<ul>
+	<li><a href="chapter04/chapter04_protocol.html"><i class="fa fa-arrow-circle-o-right"></i> Protocol</a></li>
+	<li style="display:inline-block; width:50%"><a href="chapter04/chapter04_viz01.html"><i class="fa fa-arrow-circle-o-right"></i> Differences between queries</a></li>
+	<li style="display:inline-block; width:50%; float:right"><a href="chapter04/chapter04_viz04.html"><i class="fa fa-arrow-circle-o-right"></i> The “hot topics”</a></li>
+	<li style="display:inline-block; width:50%"><a href="chapter04/chapter04_viz02.html"><i class="fa fa-arrow-circle-o-right"></i> Between quantity and activity</a></li>
+	<li style="display:inline-block; width:50%; float:right"><a href="chapter04/chapter04_viz05.html"><i class="fa fa-arrow-circle-o-right"></i> Supporter, opponent or neutral?</a></li>
+	<li style="display:inline-block; width:50%"><a href="chapter04/chapter04_viz03.html"><i class="fa fa-arrow-circle-o-right"></i> Between typology, category and language</a></li>
+	<li style="display:inline-block; width:50%; float:right"><a href="chapter04/chapter04_viz06.html"><i class="fa fa-arrow-circle-o-right"></i> Deep Web and Tor Browser imaginary</a></li>
+</ul>
+</div>
+</div>
+<div class="row chapters">
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Alessio Candido</li>
+<li>Susanna Castelli</li>
+<li>Marco Colombo</li>
+<li>Agnese Cunsolo</li>
+<li>Giorgia Volinia</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="js/scroll.js"></script>
+<script src="js/sidemenu.js"></script>
+
+</body>
+
+</html>

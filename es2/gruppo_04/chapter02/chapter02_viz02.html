@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/style.nb.css" rel="stylesheet">
+
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/scripts.js"></script>
+
+<style type="text/css">
+
+.axis path,.axis line {fill: none;stroke:#b6b6b6;shape-rendering: crispEdges;}
+/*.tick line{fill:none;stroke:none;}*/
+.tick text{fill:#999;}
+g.journal.active{cursor:pointer;}
+text.label{font-size:12px;font-weight:bold;cursor:pointer;text-anchor:start;text-transform: uppercase;}
+text.value{font-size:12px;font-weight:bold;}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4><strong>TITLE II</strong>
+<li><em>#NetNeutrality debate in the US</em></li>
+</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Set the basis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Chapter 1 Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Wikipedia speaks out loud</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">In between ethical and technical</a>
+</li>
+<li>
+<h5 class="text-uppercase">A well-established name</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Chapter 2 Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">News and Blog speak the same language</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Many terms, one meaning</a>
+</li>
+<li>
+<h5 class="text-uppercase">Speeches and reactions</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Chapter 3 Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Vloggers and showmen speak up for NN</a>
+</li>
+<li>
+<h5 class="text-uppercase">#NetNeutrality</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Chapter 4 Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Understanding users patterns</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Do they all speak the same?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Ethical CTAs push  people to share a lot</a>
+</li>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div id="etichettatop">
+<ul>
+<li><p class="primo">ISPs</p></li>
+<li><p>CP</p></li>
+<li><p>Activism</p></li>
+<li><p>Politics</p></li>
+<li><p>Petitons</p></li>
+</ul>
+</div>
+<div class="my-viz palliniquery" style="position:relative">
+<div id="espandi">
+<input type="button" data-name="show" data-toggle="button" value="Show" id="toggle" class="btn btn-outlined btn-primary"></input>
+</div>
+<!-- Add your viz here -->
+<script type="text/javascript">
+//aggancia barra al top
+var expand = false;
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 50) {
+    	if ($(window).scrollTop() > 580) {
+    		
+    		
+    		if (expand){
+		        $('#etichettatop').animate({
+		        	display: 'block'
+		        	
+		        })
+		        $('#etichettatop').css('top', $(window).scrollTop());
+		        
+		        if($(window).scrollTop() > 2225) {
+		        	$('#etichettatop').css('display', 'none')
+		        }
+		        else {
+		        	$('#etichettatop').css("display","block")
+		        }
+		    } else {
+		    	$('#etichettatop').animate({
+		        	display: 'none'	
+		        })    
+		    }
+    } else {
+    	$('#etichettatop').css('top', $(window).scrollTop()).css('display', 'block');
+    } 
+    }
+
+}
+);
+//mostra nascondi viz
+		$(document).ready(function () {
+		    $("#toggle").click(function () {
+		        if (!expand) {
+		        	expand = true;
+		            // $(".my-viz").animate({
+		            //     height: '100%'
+		            // }).hide()
+		            $(".my-viz").animate({
+		                height: '2400px'
+		            });
+		            $('#toggle').data('name', 'hide');
+		            $("#toggle").attr("value","Hide")
+		        } else {
+		        	expand = false;
+		            // $("#sidebar").animate({
+		            //     width: '19%'
+		            // }).show()
+		    		$('#etichettatop').css('top', 0);
+
+		            $(".my-viz").animate({
+		                height: '650px'
+		            });
+		            $('#toggle').data('name', 'show');
+		            $("#toggle").attr("value","Show")
+		        }
+		    });
+		});
+
+// $(function() {
+//   $("#toggle").toggle(function (){
+//     $("#etichettatop").animate({opacity: '0'}, 'slow')
+//     $("#toggle").value("Acceso")
+//       .stop();
+//   }, function(){
+//     $("#etichettatop").animate({opacity: '1'}, 'slow')
+//     $("#toggle").value("Spento")
+//       .stop();
+//   });
+// });
+
+function truncate(str, maxLength, suffix) {
+	if(str.length > maxLength) {
+		str = str.substring(0, maxLength + 1); 
+		str = str.substring(0, Math.min(str.length, str.lastIndexOf(" ")));
+		str = str + suffix;
+	}
+	return str;
+}
+
+var margin = {top: 50, right: 200, bottom: 0, left: 20},
+	width = 400,
+	height = 2500;
+
+var start_year = 2009,
+	end_year = 2013;
+
+var c = d3.scale.ordinal().range(["#00a1cb","#61ae24","#f18d05","#d0d102","#616161"]);
+
+var x = d3.scale.linear()
+	.range([0, width]);
+
+	var xScale = d3.scale.ordinal() //ordinal
+		xScale.domain(["ISP", "CP", "HOC", "GOV", "PETITION"]) //cambiare categorie
+		.range([0, width/4, width*(2/4), width*(3/4), width]);
+
+var xAxis = d3.svg.axis()
+	.scale(xScale) //xscale
+	.orient("top");
+
+// var formatYears = d3.format("0000");
+// xAxis.tickFormat(formatYears);
+
+var svg = d3.select(".my-viz").append("svg")
+	.attr("width", width + margin.left + margin.right)
+	.attr("height", height + margin.top + margin.bottom)
+	.style("margin", "0 auto")
+	.style("display", "block")
+	.append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// var dataset = [[ [2002, 8], [2003, 1], [2004, 1], [2005, 1], [2006, 3], [2007, 3], [2009, 3], [2013, 3]], [ [2004, 5], [2005, 1], [2006, 2], [2010, 20], [2011, 3] ] ,[ [2001, 5], [2005, 15], [2006, 2], [2010, 20], [2012, 25] ]];
+// var dataset = [ [2001, 5], [2005, 15], [2006, 2], [2010, 20], [2012, 25] ];
+
+d3.json("data/occorrenzaquery.json", function(data) {
+	//x.domain(["CP", "GOV", "HOC", "ISP", "PETITION"]);
+	console.log(data);
+
+	// svg.append("g")
+	// 	.attr("class", "x axis")
+	// 	.attr("transform", "translate(0," + 0 + ")")
+	// 	.call(xAxis);
+
+	for (var j = 0; j < data.length; j++) {
+		console.log(data.length);
+		var g = svg.append("g").attr("class","journal");
+
+		var circles = g.selectAll("circle")
+			.data(data[j]['percentuale'])
+			.enter()
+			.append("circle");
+
+		var text = g.selectAll("text")
+			.data(data[j]['conteggio'])
+			.enter()
+			.append("text");
+
+		var rScale = d3.scale.linear()
+			// .domain([0, d3.max(data[j]['percentuale'], function(d) { return d[1]; })])
+			.domain([0, 110]) //valore massimo impostato statico
+			.range([1, 20]);
+
+		circles
+			.attr("cx", function(d, i) { return xScale(d[0]); })
+			.attr("cy", j*37+20)
+			.attr("r", function(d) { return rScale(d[1]); })
+			.style("fill", function(d) { 
+				// if(d=2010) {
+				// 	var colore1="#333"
+			 //        return colore1;
+				// 	}
+				return c(d[0]); 
+			});
+
+		text //numeri mouseover
+			.attr("y", j*37+25)
+			.attr("x",function(d, i) { return xScale(d[0])-5; })
+			.attr("class","value")
+			.text(function(d){ return d[1]; })
+			.style("fill", function(d) { return c(d[0]); })
+			.style("display","none");
+
+		g.append("text") //etichette destra
+			.attr("y", j*37+25)
+			.attr("x",width+60)
+			.attr("class","label")
+			.text(truncate(data[j]['name'],30,"..."))
+			.style("fill", "#333")
+			.on("mouseover", mouseover)
+			.on("mouseout", mouseout);
+	};
+
+	function mouseover(p) {
+		var g = d3.select(this).node().parentNode;
+		d3.select(g).selectAll("circle").style("display","none");
+		d3.select(g).selectAll("text.value").style("display","block");
+	}
+
+	function mouseout(p) {
+		var g = d3.select(this).node().parentNode;
+		d3.select(g).selectAll("circle").style("display","block");
+		d3.select(g).selectAll("text.value").style("display","none");
+	}
+});
+</script>
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">A well-established name</h5><!-- Title of the "chapter"  -->
+<h1>Many terms,</br>one meaning</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>While we were trying to understand how the Internet talk about Net Neutrality we decide to categorize all the websites that we found, in seven different category (check the <a href="../chapter02/chapter02_viz01.html">News and Blog</a> visualization).</p>
+
+<p>This map shows which are the specific terms used by Internet service providers (ISPs), content providers (CP), ad hoc websites (Activism), governative websites (Politic) and petition websites (Petitions) to talk about this debate.</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>The visualization displays which are the used terms in this discussion and shows which are the shared words between those categories.</p>
+
+<p>On the y-axis we can find the top 20 most interesting n-grams of each sections in alphabetical order. Each bubble shows the connection between words and categories and their size are proportional to the terms frequency. With a simple mouse over on each n-gram is it possible to see the number of their incidence.</p>
+
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>As we can see on the barchart below, the data related to “ISPs”, “CP”, “Activism”, “Petitions” and “Politics” are less than the the first two, so unlike the <a href="../chapter02/chapter02_viz01.html">the first part</a>, in this case we decide to analyze those categories without keeping the distinction between the queries. 
+We used Zup to obtain .txt files from websites and than we analyzed them with Sven.</p>
+
+ <div id="chart"></div>
+
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>Observing the dots chart we can clearly see that, like in <a href="../chapter02/chapter02_viz01.html">News and Blog</a> graph, there are some words that recur always like <span style="font-weight:bold">FCC, ISPs and Internet.</span> Furthermore we have terms that are specific for each category: for example “Activism” use words like <span style=" font-weight:bold">Free speech</span> or <span style="font-weight:bold">Gatekeepers;</span> “ISPs” has vocables like <span style="font-weight:bold">Backbone</span> or <span style="font-weight:bold">Competition,</span> etcetera. </p>
+
+<p>Really interesting are words like <span style="font-weight:bold">Net Neutrality</span> or <span style="font-weight:bold">Open Internet</span> which are used by all of the categories but in a really small quantity from “ISPs”. Another fascinating difference comes out with terms like <span style="ffont-weight:bold">People,</span> and <span style="font-weight:bold">Users</span> that are used only by “Activism” and “Petitions”; “CP” and “ISPs” to refer at this genre prefer to use words like <span style="font-weight:bold">Customer</span> and <span style="font-weight:bold">Consumer.</span> </p>
+
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 6/12/2014 - 7/12/2014</h4>
+<h4>Data source: <a href="https://www.google.com/">Google Search</a></h4>
+<h4><a href="../chapter02/chapter02_protocol.html">Related Protocol</a></h4>
+<h4><a href="../chapter02/data/many_terms.zip"><i class="fa fa-arrow-circle-o-down"></i> Download data (39 KB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Nicoletta Bruno</li>
+<li>Martina Cocco</li>
+<li>Sara Perozzi</li>
+<li>Jacopo Pompilii</li>
+<li>Andrea Tagliabue</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<!-- <script src="../js/jquery.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+<!-- C3/D3 -->
+<link href="../c3-d3/c3.css" rel="stylesheet" type="text/css">
+<script src="../c3-d3/d3.min.js" charset="utf-8"></script>
+    <script src="../c3-d3/c3.js"></script>
+<script>
+    var chart = c3.generate({
+    data: {
+        columns: [
+            ['News', 19, 33, 18, 11, 20],
+            ['Blog', 30, 27, 23, 20, 26],
+            ['ISPs', 0, 0, 1, 2, 0],
+            ['Politics', 2, 1, 3, 1, 3],
+            ['Activism', 7, 5, 10, 0, 4],
+            ['Petitions', 1, 2, 6, 0, 3],
+            ['CP', 1, 1, 2, 0, 1]
+        ],
+
+        type: 'bar',
+        colors: {
+            News: '#000',
+            Blog: '#333',
+            ISPs: '#4d4d4d',
+            Politics: '#666',
+            Activism: '#808080',
+            Petitions: '#999',
+            CP: '#b3b3b3'
+        },
+    },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        },
+        // or
+        //width: 100 // this makes bar width 100px
+    },
+    axis: {
+        x: {
+            type: 'category',
+            categories: ['"Net Neutrality"', '"Open Internet" + "Against"', '"Open Internet" + "Stand For"', '"Pay to play Internet"', '"Two speed Internet"']
+        },
+    },
+
+            legend: {
+             position: 'right'     //     show: false
+         }
+    
+});
+
+    </script>
+
+
+</body>
+
+</html>

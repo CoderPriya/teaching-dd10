@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Forget me, net</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Right to be forgotten</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">01 | Wiki connections</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Gephi wiki net</a>
+</li>
+<li>
+<h5 class="text-uppercase"> 02 | Googling the controversy</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Which side are you on?</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">N-grams</a>
+</li>
+<li>
+<h5 class="text-uppercase">03 | World wide wiki</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Wiki evolution</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Wiki editors</a>
+</li>
+<li>
+<h5 class="text-uppercase">04 | Streisand effect</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">The other side of the coin</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Costeja in the limelight</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">World wide wiki</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>The second analysis unfolds other aspects related to our Wikipedia environment, indeed it tries to locate our topic, the right to be forgotten, by mapping the Wikipedia pages containing a link to the Right to be forgotten page. 
+<p>We operated a quantity-quality investigation on these pages, combining the quantity of bytes of each page with the content of the texts. Our aim was to verificate if there were common topics, and which page was the best updated.</p>
+<p>This relation becomes very interesting once we added informations about the date and authorship of the link, giving us an overview of the closest topics and how the discussion was carried on before the creation of its own page.</p>
+</div>
+</div>
+
+
+<div class="section-content-protocol">
+<div> 
+<h3>Step of the procotol - create a dataset</h3>
+<p>This research is divided in three parts. Each phase has a main dataset, it has been done extracting data from wikipedia.</p>
+
+<p>We opened a browser searched for the page of wikipedia "Right to be forgotten". From that page we connected to the pages about right to be forgotten in the languages: Italian, French, Spanish, German, (these languages has been chosen because them are the most relevant for which events occurred in their countries).<br>
+Then, we clicked on view history in each page and using the software kimono, we extracted these elements: Date, User, Bytes of the page in that moment.<br>
+<p>After that, we transported the data set into an excel page, and generating a formula we calculate the difference of bytes for each edit.</p> 
+<p>As result, we had a dataset that can generate the next three graphs.</p>
+<img src="../protocol_jpg/protocol_wiki-01.jpg">
+</div>
+</div>
+
+
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Step of the procotol - Wiki history events</h3>
+<p>The first step was to generate the graph that we called "Wiki history events" posted on the page Wiki evolution.</p>
+<p>We went on the pages of wikipedia about "Right to be forgotten" for our five languages.<br>
+Then, we used the page "View History" to see the evolution of the page for each language. During the analysis, we checked the differences between the different versions, and we took note of all the most important events.<br>
+As conclusion, we looked for connections and similarities between the most relevant cases.<br>
+In the end, we integrate on illustrator (single point for national facts, and double point for common international events).</p>
+<img src="../protocol_jpg/protocol_wiki-02.jpg">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+<h3>Step of the procotol - Wiki history flow</h3>
+<p>Using the same dataset, we create the second graph called "Wiki history flow" posted on the same page Wiki evolution.</p>
+
+<p>We eliminated the row when the edit was less than 50 bytes.<br>
+After that, we generated a pivot tab on Excel. In x axis was data, and y axis was users.<br>
+Than, we created a stacked area chart. <br> 
+In the end, we integrated the result in illustrator, using a different color for each language.</p>
+<img src="../protocol_jpg/protocol_wiki-03.jpg">
+<!-- Add As many steps as u want  -->
+
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+<h3>Step of the procotol - Wiki editors</h3>
+<p>For each page we opened the History View and started the tool “Revision history statistics”, from which we extracted a list of the main authors, only those who contributed with more than 50 bytes of text, and wrote them down in a datasheet.</p>
+
+<p>Back to the five different pages in different languages, for each of them we opened the page from the left menu “What links here”, obtaining a list of Wikipedia pages containing a link to the main topic page. From this list we discarded the pages which are not real articles (User pages, discussion, etc), then for each one of them  we opened the History View and from there started the tool “Wikiblame” searching the article revision in which first appeared the terms “right to be forgotten” and wrote down in a separate dataset the date, the author of the edit and the presence of a link, since it might be present only a discussion of the topic, without link.<br>
+If so, we ran again the Wikiblame tool, this time giving as imput: “[[right to be forgotten]]
+</p>
+<p>By matching the two datasets we created a visualization showing in which date, inside a page linking to the Right to be forgotten page, started to appear the term “right to be forgotten” and whether this was a link to the main page or if it was part of a paragraph.</p>
+<img src="../protocol_jpg/protocol_wiki-04.jpg">
+<!-- Add As many steps as u want  -->
+
+</div>
+</div>
+
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>26/11/2014 - 3/12/2014</h4>
+<h4>Data source: <br> <a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></h4>
+<h4>Tools: <br> <a href="http://www.microsoft.com/mac/excel">Excel</a>, <a href="https://www.kimonolabs.com/">Kimono</a>, <a href="#">Revision history statistics</a>, <a href="http://en.wikipedia.org/wiki/Wikipedia:WikiBlame">Wikiblame</a></h4> 
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="../chapter03/chapter03_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/wiki_cover2.jpg">
+</div>
+<h4>Wiki evolution</h4>
+</div>
+</a>
+
+<a href="../chapter03/chapter03_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/wiki_cover3.jpg">
+</div>
+<h4>Wiki evolution</h4>
+</div>
+</a>
+
+<a href="../chapter03/chapter03_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/wiki_cover4.jpg">
+</div>
+<h4>Wiki editors</h4>
+</div>
+</a>
+
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+	<hr style="border-top-width: 1px; border-top-style: solid; border-top-color: #c6c5c5; margin-bottom: 40px">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo3.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo3.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Roberto Catanese</li>
+<li>Daniele De Pietri</li>
+<li>Enrica Lo Cicero</li>
+<li>Ludovica Lorenzelli</li>
+<li>Cecilia Nuñez</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

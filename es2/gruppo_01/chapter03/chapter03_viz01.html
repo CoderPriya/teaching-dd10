@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>WEB PERSONALIZATION</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Exploring the Web personalization</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">The Wikipedia survey</a>
+</li>
+<li>
+<h5 class="text-uppercase">Introducing the debate</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">The debate through the terms</a>
+</li>
+<li>
+<h5 class="text-uppercase">The academic side</h5>
+</li>
+<li>
+<a href="chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter03_viz01.html">Focus on the debate in the academic field</a>
+</li>
+<li>
+<h5 class="text-uppercase">The journalistic side</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">The newspaper approach to the discussion</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz">
+	<img src="../img/Principale01.jpg" style="max-width:80%; margin-left:9%; margin-top:2%; margin-bottom:5%">
+<!-- Add your viz here -->
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">The academic side</h5><!-- Title of the "chapter"  -->
+<h1>Focus on the debate in the academic field</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>After the definition of the main actors involved, we decided to focus on the debate in the academic field. This was mainly motivated by two reason: the fact that both from the gephi map, than from the Sven analysis we encountered many terms related to scientific, psychological and technical field, and the second reason was the fact that Google itself suggests to look for the academic results when we searched for our queries.<br>
+So we focused on two main scientific database: Google Scholar and Scopus. <br>
+We tried to use the same queries that we used on the second protocol,  we filtered them by relevance reading the abstracts and, when possible, introductions and conclusion, and we collected some information about every single paper (name, author, year, university, country of publication, position in the debate, category, type of paper and number of citations), for a total of 63 paper. <br>
+We decided to expand the number of paper by considering also all the papers that cited the book “The Filter Bubble”, after having verified the central role of the book in the debate. The total of paper was 109.
+</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>In the main chart we confronted the different themes of the papers with the year of publication. The idea was to see if there has been a shift in the academic field among the themes in these years. The different color were used to differentiate the position about the debate of the papers: red is against the Web Personalization, blue is pro, and dark grey is neutral. The size of the circles is proportional to the number of the paper published that year .</p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>Using the dataset extracted by Google scholar and scopus, we took the information about the year of publication, the position about the debate, number of paper published and the typology of each debate.  We tried combining them in a two axis graph, with years on the x axis and typology on the y one.</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>As the graph shows the number of papers increase in an important way from 2012, one year after the pubblication of the book “The Filter Bubble”. As we can see, papers not only increase in number but also change in position, going from a pro-neutral one to a contrarious-neutral. Particular attention needs the society typology which has a lot of papers in these latest years in opposition to the the oldest years, showing how the debate about the effects of the web personalization on the society is becoming more and more important. 
+
+<img src="../img/Chapter3_Findings1.png" style="max-width:100%; margin-top:60px; margin-bottom:60px">
+<img src="../img/Chapter3_Focus.png" style="max-width:50%; margin-top:60px; margin-bottom:60px"> <br>
+
+In the first finding we use an alluvial graph to show the continent more involved in the debate and their respective position and the position of the different typology of papers. As wexpected, America has the higher number of paper, followed by Europe, where there is the higher percentage of paper that see some issues involved in the web personalization. On the other side of the graph it’s shown how almost half of the research papers are neutral. <br>Particular attention must be given to the research and case study papers, where the biggest part is contrarious. This is an important data since these papers have made several experiment about the topic and they tested the real situation different times. 
+
+<img src="../img/Chapter3_Findings3.png" style="max-width:100%; margin-top:60px; margin-bottom:60px">
+
+In this graph we can see the different partition of the opinion for every typology. As we can see the first thing to notice is that in privacy the pro position is totally gone, no paper talks about web personalization in a positive way about the privacy. Another interesting fact is that in society and information the contrarious are more than the neutral.
+
+<img src="../img/Chapter3_Findings5.png" style="max-width:100%; margin-top:60px; margin-bottom:60px">
+
+To better understand where the academic debate is leaning, we decided to try to expand the number of analyzed papers. We started from the one that we considered in the last section and we decided to try to map them by starting from the one with a much more defined position in the debate.
+
+The highlighted dots define the papers with most explicit position about our research question, while all the grey dots are all the rest of the papers, connected in relation of how many times they cite themselves.  It is possible to see where all these papers are positioned in the debate, like for example we see that there are much more papers in the middle-moderate area.
+
+This chart has been realized with a overall corpus of 3028 papers, obtained from the 63 papers that we initially analyzed from the queries. We created an excel file with two columns, source and target. In the first one we pasted every one of the 63 papers as many times as they were cited on Scholar of Scopus, and in the second column we pasted the citing documents. Once completed this file we opened it in Gephi and we locked on four different positions on the opposite sides the paper with the most radical and moderated opinion about the web personalization.  We paid attention to balance their respective weight (in term of connection) in order to avoid mistakes in the forces involved. Then we decided to clear all the nodes that had just one connection with another node (1 degree), rank their dimensions in relation to their degree range and finally let Gephi map all the remaining nodes.
+
+It’s evident that the great number of papers is collocated in the moderated area of the chart, lightly leaning to the PRO section. This is probably due to the fact that there are many papers which belong to the much more technological/neutral category.
+</p>
+
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 30/11/2014 - 19/12/2014</h4>
+<h4>Data source: <a href="http://www.scopus.com">Scopus</a>, <a href="http://www.scholar.google.it">Google Scholar</a></h4>
+<h4><a href="chapter03_protocol.html">Related Protocol</a></h4>
+<h4><a href="../data/Data_03.zip"><i class="fa fa-arrow-circle-o-down"></i> Download data (4MB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Francesco Padovani</li>
+<li>Lucia Pellegrini</li>
+<li>Elisa Riva</li>
+<li>Rodolfo Riva</li>
+<li>Marco Saporiti</li>
+<li>Irene Tribuzio</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

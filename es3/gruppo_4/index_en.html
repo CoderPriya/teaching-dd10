@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>A matter of interest</title>
+    <link href="assets/css/get-shit-done.css" rel="stylesheet" />  
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/presentazione.css" rel="stylesheet" />
+    <link href="assets/css/examples.css" rel="stylesheet" />    
+
+    
+    <!--     Font Awesome     -->
+    <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700|Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <!-- START D3 IMPORTS -->
+    <script src="assets/js/c3/d3.v3.min.js" charset="utf-8"></script>
+<!-- END D3 IMPORTS -->
+</head>
+
+
+<!--
+Viz cheatsheet
+
+viz01 = Google Trends
+viz02 = Wikipedia
+viz03 = Tag Cloud Video Obama
+viz04 = Schieramenti politici
+viz05 = Terminologia news\blog
+viz06 = Grafo Gephi Twitter
+
+-->
+
+<body data-spy="scroll" data-target=".navbar">
+<aside>
+    <div id="nav-icon4">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="list-group navbar" id="sidebar">
+                <ul class="nav" id="mynav" data-spy="affix" data-offset-top="280">
+                    <li><a href="#copertina" class="list-group-item">
+                          <i class="fa fa-home" style="margin-right:15px;"></i> Home
+                        </a>
+                    </li>
+                    <li><a href="#timefase1" class="list-group-item">
+                          <i class="fa fa-archive" style="margin-right:15px;"></i> Le tappe principali
+                        </a>
+                    </li>
+<!--                     <li> <a href="#timefase5" class="list-group-item" contenteditable="false"> <i class="fa fa-glass" style="margin-right:15px;"></i> La ricerca
+                        </a>
+                    </li> -->
+                    <li> <a href="#protagonisti" class="list-group-item" contenteditable="false"><i class="fa fa-comments" style="margin-right:15px;"></i> I protagonisti
+                        </a>
+                    </li>
+                    <li> <a href="#svolta" class="list-group-item" contenteditable="false"><i class="fa fa-money" style="margin-right:15px;"></i> Gli interessi
+                        </a>
+                    </li>
+                </ul>
+            </div>
+</aside>
+    <div class="main container-fluid">
+    <div class="inutile">
+    	<section id="copertina">
+            <div id="cover">
+                <div class="col-md-offset-1 col-md-10">
+                <h1>A matter<br>of interest</h1>
+                <h3>It is been quite of an year for Net Neutrality.<br>On February 26, 2015 the <a href="#sblamb" data-toggle="tooltip" data-original-title="Federal Communication Commission" class="ciccio">FCC</a> will decide on the Internet’s fate.<br>But is a law enough to solve every problem? </h3>
+                <!-- <img src="images/1.png" class="imglarga"> -->
+                </div>
+            </div>
+        </section>
+        <section id="timeline">
+            <div id="containerfase1" class="col-md-12 col-sm-12">         
+                <div id="timefase1" class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10"><!--2005-->
+                    <span class="label label-default">2003</span>
+                    <h2><em>Net Neutrality</em> is the principle that data should be treaten equally on the internet.</h2>
+                    <p>The term, which was coined by Columbia University media law professor Tim Wu, has now become the official expression to talk about data packet discrimination.</p>
+                </div>
+            </div>
+               <!--  <br style="clear:both" /> -->
+                <div id="pacchettiwrapper"> <!-- So dirty! -->
+                    <div class="wrappersxdx"> 
+                        <div class="col-sm-offset-1 col-sm-2">
+                            <div id="primopacchetto">
+                                <div id="primopacchetto2">
+                                    <div id="primopacchetto3">
+                                        <img src="images/paccotorrent.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div id="secondopacchetto">
+                                <div id="secondopacchetto2">
+                                    <div id="secondopacchetto3">
+                                        <img src="images/paccoskype.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wrappercentro">   
+                        <div class="col-sm-2">
+                            <div id="prescelto">
+                                <div id="prescelto2">
+                                    <div id="prescelto3">
+                                        <div id="prescelto4">
+                                            <img src="images/pacconetflix.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrappersxdx"> 
+                        <div class="col-sm-2">
+                            <div id="quartopacchetto">
+                                <div id="quartopacchetto2">
+                                    <div id="quartopacchetto3">
+                                        <img src="images/paccoyoutube.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div id="quintopacchetto">
+                                <div id="quintopacchetto2">
+                                    <div id="quintopacchetto3">
+                                        <img src="images/paccotwitter.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div id="containerfase2" class="col-md-12 col-sm-12 col-lg-12">
+                <div id="comcast" class="col-md-offset-1 col-md-4 hidden-sm col-lg-offset-1 col-lg-4">
+                    <img src="images/ominocomcast.png">  
+                </div>          
+                <div id="timefase2" class="col-md-6 col-sm-offset-1 col-sm-10 col-lg-5 col-lg-offset-0"><!--2005-->
+                    <span class="label label-default">2005</span>
+                    <h2>Some ISP restrict the traffic depending on the data type.</h2>
+                    <p>In 2005 the <a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Provider" class="ciccio">ISP</a> Madison River Communications prevents its subscribers from using a VoIP services, such as Skype; in 2007 Comcast, one of the biggest USA provider, blocks Bittorrent traffic on its network.</p>
+                </div>
+            </div>
+            <br style="clear:both;">
+            <div id="containerfase3" class="col-md-12 col-sm-12 col-lg-12">         
+                <div id="timefase3" class="col-sm-offset-1 col-md-offset-1 col-md-6 col-sm-10 col-lg-offset-1 col-lg-5"><!--2005-->
+                    <span class="label label-default">2008</span>
+                    <h2>The FCC has always expressed its position in favor of Net Neutrality.</h2>
+                    <p>In 2008 the <a href="#sblamb" data-toggle="tooltip" data-original-title="Federal Communication Commission" class="ciccio">FCC</a> opens an investigation into Comcast's treatment of Bittorrent traffic and orders to stop every discrimination.</p>
+                </div>
+                <div id="fcc" class="col-md-4 hidden-sm col-lg-offset-1">
+                    <img src="images/ominofcc.png">  
+                </div> 
+            </div>
+            <div id="containerfase4" class="col-md-12 col-sm-12 col-lg-12">         
+                <div id="timefase4">
+                    <div class="col-sm-offset-1 col-md-offset-1 col-md-9 col-sm-9 col-lg-offset-2 col-lg-8">
+                        <span class="label label-default">2008</span><!--OGGI-->
+                        <h2>Comcast wins against the FCC.</h2>
+                        <p>Comcast sue the <a href="#sblamb" data-toggle="tooltip" data-original-title="Federal Communication Commission" class="ciccio">FCC</a> to the US Court, who  asserts that the Federal Commission, according to the actual regulation, doesn’t have the authority to influence the way <a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Providers" class="ciccio">ISPs</a> control the internet traffic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ricerca">
+            <div id="timefase5" class="col-md-12 col-sm-12 col-lg-12">
+                <div class="col-sm-offset-1 col-md-offset-1 col-md-9 col-sm-9 col-lg-offset-2 col-lg-8">
+                    <span class="label label-default">TODAY</span><!--OGGI-->
+                    <h2>Users ask for a law which clearly defines roules and limits to respect.</h2>
+                    <p>On February 26, 2015 the <a href="#sblamb" data-toggle="tooltip" data-original-title="Federal Communication Commission" class="ciccio">FCC</a> has to reclassify the Title II of the Communication Act, a law that regulate the telecommunication system.
+                    By redefining <a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Providers" class="ciccio">ISPs</a> like <em>common carriers</em>, they will be obligated to treat all the data equally.</p>
+                </div>
+            </div>
+            <div id="googletrends" class="col-md-12 col-sm-12 col-lg-12 titoloviz">
+                <div class="row">
+                    <div class="col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-lg-offset-3 col-lg-6">
+                        <h2>On the web everyone talk about Net Neutrality</h2>
+                        <p class="approfondimento">Google Trends data shows how Net Neutrality query has grown a lot in the last 12 months. Blogs, news websites and other web media talked a lot about this issue captured the public attention. </p>
+                    </div>
+                    <div id="viz01" class="col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10"></div>
+                </div>
+            </div>
+        </section>
+        <section id="fazioni">
+                <div id="protagonisti" class="col-md-12 col-sm-12 col-lg-12">
+                <hr style="margin-left:16.666666666666664%; width:66.666666666666%;">
+                	<div class="col-sm-offset-1 col-md-offset-2 col-md-8 col-sm-10 col-lg-offset-3 col-lg-6">
+                    		<h2>Everyone believe in Net Neutrality, but things are more complicated.</h2>
+                            <p>Politics, news websites, activists, content providers and internet service providers expressed different opinions about the issue.</p>
+                    		<p>We analyzed the debate on the web starting with Google researches and we found out that  there are two ways of talking about Net Neutrality: on one hand who use technical terms (es.: how the Internet works) and on the other hand who use ethicla terms (es.: Internet freedom).</p>
+                    </div>
+                <br style="clear:both;">
+                <div class="row indice">
+                    <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1"><a href="#attivisti"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem; margin-bottom:2px;">activist</p><span class="freccia"></span></a></div>
+                    <div class="col-md-2 col-sm-2"><a href="#politica"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem; margin-bottom:2px;">politics</p><span class="freccia"></span></a></div>
+                    <div class="col-md-2 col-sm-2"><a href="#isp"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem; margin-bottom:2px;">isp</p><span class="freccia"></span></a></div>
+                    <div class="col-md-2 col-sm-2"><a href="#news"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem; margin-bottom:2px;">media</p><span class="freccia"></span></a></div>
+                    <div class="col-md-2 col-sm-2"><a href="#isp"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem; margin-bottom:2px;">big company</p><span class="freccia"></span></a></div>
+                </div>
+                </div>
+                <div id="politica" class="col-md-12 col-sm-12">
+                	<div class="col-sm-offset-1 col-md-offset-1">
+                		<div class="col-sm-11 col-md-8 col-lg-7">
+                	        <h2>Obama declared his support to Net Neutrality, pushing the <a href="#sblamb" data-toggle="tooltip" data-original-title="Federal Communication Commission" class="ciccio">FCC</a> to take measures.</h2>
+                	    </div>
+                	    <div>
+                	    <p class="col-sm-8 col-md-8 col-lg-7">On November 10th, 2014 Obama shared a video revealing his aim to protect internet freedom, starting an online petition sustained by all democrat senators. On the other side republican reported this behaviour as an unjustified political interference with economic issues, defining it as the <em>Internet Obamacare</em>.</p>
+	                	    <div class="col-sm-4 col-md-4 col-lg-3 col-lg-offset-1">
+	                	    	<!-- <button href="#fakelink" class="btn btn-block btn-lg btn-info"><i class="fa fa-play"></i>Default Button</button> -->
+	                	    	<!-- <p class="strillo">L'80% dei tweet analizzati sono rivolti ai politici degli USA</p> -->
+	                	    	<ul class="fa-ul">
+                                    <li><a href="http://www.jacopompilii.com/netneutrality/chapter03/chapter03_protocol.html" target="_blank"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem;"><i class="fa-li fa fa-bookmark"></i>Read the research</p></a></li>
+								  <li><a href="https://www.youtube.com/watch?v=uKcjQPVwfDk" target="_blank"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem;"><i class="fa-li fa fa-play"></i>watch the video</p></a></li>
+								  <!-- <li><p style="text-transform:uppercase; font-weight:bold; font-size:1rem;"><i class="fa-li fa fa-plus-square"></i>Il mosaico dei politici</p></li> -->
+								</ul>
+	                	    </div>
+                	    </div>
+                	</div>
+                </div>
+                    <!-- <img src="images/6.png" class="imglarga"> -->
+                    <!--PLACEHOLDER-->
+   <!--  </div> -->
+                <div id="tagcloud" class="col-md-12 col-sm-12 col-lg-12 titoloviz">
+                <div class="col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-lg-offset-3 col-lg-6">
+                	<h2>Obama used more tecnical terms</h2>
+                    <p style="margin-bottom:3rem;" class="approfondimento">The tag cloud shows the most used words during the President Obama's video published on November 10th, 2014. It is clear that in this graph there are more technical words rather than sentimental.</p>
+                </div>
+	            <img id="imgtagcloud" src="images/tagcloud.png" style="width:60%; margin: 0 auto; display:block; outline: 2px solid #e35176; outline-offset: 15px;">
+                <!-- LEGENDA  -->
+                            <div class="col-md-offset-2 col-sm-offset-2 col-sm-8 col-md-6">
+                                <div class="col-sm-4">
+                                    <ul class="ulnico" style="padding-top:3rem; color:#999">
+                                         <li class="a" style="color:#e35176">Ethical terms</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="ulnico" style="padding-top:3rem; color:#999">
+                                         <li class="b" style="color:#2e5262">Tecnical terms</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="ulnico" style="padding-top:3rem; color:#999">
+                                        <!-- <li>*CC= Common Carriers</li> -->
+                                        <li class="c" style="color:#999">Neutral terms</li>
+                                    </ul>
+                                </div>
+                            </div> <!-- FINE LEGENDA  -->
+                </div>
+
+                <div id="news" class="col-md-12 col-sm-12">
+                	<div class="col-sm-offset-1 col-md-offset-1">
+                		<div class="col-sm-11 col-md-8 col-lg-7">
+                	        <h2>News and information websites described the situation in a neutral and non partisan way.</h2>
+                	    </div>
+                	    <div>
+                	    <p class="col-sm-8 col-md-8 col-lg-7">In our research blog and news website represent the biggest part of our results. Articles merely describe the actual situation and the development of facts without using words to strong with the purpose of influencing public’s opinion.</p>
+	                	    <div class="col-sm-4 col-md-4 col-lg-offset-1 col-lg-3">
+	                	    	<!-- <button href="#fakelink" class="btn btn-block btn-lg btn-info"><i class="fa fa-play"></i>Default Button</button> -->
+	                	    	<p class="strillo">Blog and News are the 80% of the results of out research on Google.com</p>
+	                	    	<ul class="fa-ul">
+                                  <li><a href="http://www.jacopompilii.com/netneutrality/chapter02/chapter02_viz02.html#sec2" target="_blank"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem;"><i class="fa-li fa fa-bookmark"></i>Read the research</p></a></li>
+								  <li><a href="https://flipboard.com/topic/netneutrality" target="_blank"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem;"><i class="fa-li fa fa-newspaper-o"></i>Latest news</p></a></li>
+								</ul>
+	                	    </div>
+                	    </div>
+                	</div>
+                </div>
+                    <!-- <img src="images/6.png" class="imglarga"> -->
+                    <!--PLACEHOLDER-->
+   <!--  </div> -->
+                <div id="speakthesame" class="col-md-12 col-sm-12 col-lg-12 titoloviz">
+	                <div class="col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-lg-offset-3 col-lg-6">
+	                	<h2>News and Blog speak the same</h2>
+	                    <p style="margin-bottom:3rem;" class="approfondimento">The graph shows how the terms of the debate change depending on the different queries. There’s a general predominance of technical terms that report the facts as they are.</p>
+	                </div>
+	                	<div class="row"> 
+		            		<div id="viz05" class="col-md-offset-1 col-sm-12 col-md-11">
+	                            <div class="col-sm-4 col-md-4">
+	                            	<h5 class="nome-query">"Net Neutrality"<span class="invisibile"><br></span></h5>
+	                                <div class="row">
+	                                    <div class="col-sm-6 col-md-6">
+	                                    	<!-- /Net Neutrality -->
+	                                    	<h5 class="text-uppercase">News</h5>
+	                                    	<ul class="ulnico">
+	                                        <li class="comp1 grafico colonna1"><div class="content tecnico">ISPs</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp16 grafico colonna1"><div class="content tecnico">Obama</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp3 grafico colonna1"><div class="content tecnico">Service</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp4 grafico colonna1"><div class="content tecnico" onclick="">Companies</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp2 grafico colonna1"><div class="content tecnico">FCC</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp21 grafico colonna1"><div class="content tecnico">Rules</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp5 grafico colonna1"><div class="content tecnico">Netflix</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp22 grafico colonna1"><div class="content sentimentale">Fast lane</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp23 grafico colonna1"><div class="content sentimentale">Idea</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp24 grafico colonna1"><div class="content tecnico">Tom Wheeler</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp25 grafico colonna1"><div class="content tecnico">Agency</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp26 grafico colonna1"><div class="content sentimentale">Interest</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp27 grafico colonna1"><div class="content tecnico">Obamacare</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp18 grafico colonna1"><div class="content tecnico">Comcast</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp28 grafico colonna1"><div class="content tecnico">Verizon</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp9 grafico colonna1"><div class="content tecnico">Traffic</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp29 grafico colonna1"><div class="content tecnico">Videos</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp30 grafico colonna1"><div class="content sentimentale">Speed</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp8 grafico colonna1"><div class="content tecnico">Network</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp13 grafico colonna1"><div class="content tecnico">Content</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                    </ul>
+	                                    </div>
+	                                    <div class="col-sm-6">
+	                                    	<!-- /Net Neutrality -->
+	                                    	<h5 class="text-uppercase">Blog</h5>
+	                                    	<ul class="ulnico">
+	                                        <li class="comp1 grafico colonna2"><div class="content tecnico">ISPs</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp2 grafico colonna2"><div class="content tecnico">FCC</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp3 grafico colonna2"><div class="content tecnico">Service</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp4 grafico colonna2"><div class="content tecnico">Companies</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp5 grafico colonna2"><div class="content tecnico">Netflix</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp6 grafico colonna2"><div class="content tecnico">Principle</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp7 grafico colonna2"><div class="content tecnico">People</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp8 grafico colonna2"><div class="content tecnico">Network</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp9 grafico colonna2"><div class="content tecnico">Traffic</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp10 grafico colonna2"><div class="content tecnico">Regulation</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp11 grafico colonna2"><div class="content tecnico">Technology</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp12 grafico colonna2"><div class="content tecnico">Customer</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp13 grafico colonna2"><div class="content tecnico">Content</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp14 grafico colonna2"><div class="content tecnico">Broadband</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp15 grafico colonna2"><div class="content tecnico">Authority</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp16 grafico colonna2"><div class="content tecnico">Obama</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp17 grafico colonna2"><div class="content tecnico">Data</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp18 grafico colonna2"><div class="content tecnico">Comcast</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp19 grafico colonna2"><div class="content tecnico">Website</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp20 grafico colonna2"><div class="content sentimentale">Debate it</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                    </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-sm-4 col-md-4">
+	                            	<h5 class="nome-query">"Open Internet" + "Against"<span class="invisibile"><br></span></h5>
+	                                <div class="row">    
+	                                    <div class="col-md-6 col-sm-6">
+	                                    	<!-- /Open Internet Against -->
+	                                    	<h5 class="text-uppercase">News</h5>
+	                                    	<ul class="ulnico">
+	                                       <li class="comp2 grafico colonna3"><div class="content tecnico">FCC</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp40 grafico colonna3"><div class="content sentimentale">Open Internet</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp1 grafico colonna3"><div class="content tecnico">ISPs</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp41 grafico colonna3"><div class="content sentimentale">Freedom</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp24 grafico colonna3"><div class="content tecnico">Tom Wheeler</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp16 grafico colonna3"><div class="content tecnico">Obama</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp3 grafico colonna3"><div class="content tecnico">Service</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp4 grafico colonna3"><div class="content tecnico">Companies</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp31 grafico colonna3"><div class="content tecnico">Consumers</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp10 grafico colonna3"><div class="content tecnico">Regulation</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp13 grafico colonna3"><div class="content tecnico">Content</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp28 grafico colonna3"><div class="content tecnico">Verizon</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp22 grafico colonna3"><div class="content sentimentale">Fast lane</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp25 grafico colonna3"><div class="content tecnico">Agency</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp32 grafico colonna3"><div class="content tecnico">Innovation</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp42 grafico colonna3"><div class="content tecnico">Proposal</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp8 grafico colonna3"><div class="content tecnico">Network</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp5 grafico colonna3"><div class="content tecnico">Netflix</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp15 grafico colonna3"><div class="content tecnico">Authority</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp38 grafico colonna3"><div class="content tecnico">CC*</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                    	</ul>
+	                                    </div>
+	                                    <div class="col-md-6 col-sm-6">
+	                                    	<!-- /Open Internet Against -->
+	                                    	<h5 class="text-uppercase">Blog</h5>
+	                                    	<ul class="ulnico">
+	                                        <li class="comp2 grafico colonna4"><div class="content tecnico">FCC</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp1 grafico colonna4"><div class="content tecnico">ISPs</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp21 grafico colonna4"><div class="content tecnico">Rules</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp31 grafico colonna4"><div class="content tecnico">Consumers</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp4 grafico colonna4"><div class="content tecnico">Companies</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp18 grafico colonna4"><div class="content tecnico">Comcast</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp32 grafico colonna4"><div class="content tecnico">Innovation</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp16 grafico colonna4"><div class="content tecnico">Obama</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp13 grafico colonna4"><div class="content tecnico">Content</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp3 grafico colonna4"><div class="content tecnico">Service</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp28 grafico colonna4"><div class="content tecnico">Verizon</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp25 grafico colonna4"><div class="content tecnico">Agency</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp33 grafico colonna4"><div class="content tecnico">Americans</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp34 grafico colonna4"><div class="content tecnico">Issue</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp35 grafico colonna4"><div class="content tecnico">Title II</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp36 grafico colonna4"><div class="content tecnico">Time</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp37 grafico colonna4"><div class="content sentimentale">Information</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp38 grafico colonna4"><div class="content tecnico">CC*</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp39 grafico colonna4"><div class="content sentimentale">Future</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp6 grafico colonna4"><div class="content tecnico">Principle</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                    	</ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-sm-4 col-md-4">
+	                            	<h5 class="nome-query">"Open Internet" + "Stand For"</h5>
+	                                <div class="row">
+	                                    <div class="col-md-6 col-sm-6">
+	                                    	<!-- /Open Internet Stand For -->
+	                                    	<h5 class="text-uppercase">News</h5>
+	                                    	<ul class="ulnico">
+	                                        <li class="comp2 grafico colonna5"><div class="content tecnico">FCC</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp40 grafico colonna5"><div class="content sentimentale">Open Internet</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp16 grafico colonna5"><div class="content tecnico">Obama</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp41 grafico colonna5"><div class="content sentimentale">Freedom</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp1 grafico colonna5"><div class="content tecnico">ISPs</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp3 grafico colonna5"><div class="content tecnico">Service</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp46 grafico colonna5"><div class="content tecnico">World</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp32 grafico colonna5"><div class="content tecnico">Innovation</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp13 grafico colonna5"><div class="content tecnico">Content</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp21 grafico colonna5"><div class="content tecnico">Rules</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp42 grafico colonna5"><div class="content tecnico">Proposal</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp43 grafico colonna5"><div class="content sentimentale">Stand</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp47 grafico colonna5"><div class="content tecnico">Platform</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp7 grafico colonna5"><div class="content tecnico">People</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp48 grafico colonna5"><div class="content sentimentale">Power</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp39 grafico colonna5"><div class="content sentimentale">Future</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp31 grafico colonna5"><div class="content tecnico">Consumers</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp49 grafico colonna5"><div class="content tecnico">Court</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp33 grafico colonna5"><div class="content tecnico">Americans</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp50 grafico colonna5"><div class="content tecnico">Nation</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                    </ul>
+	                                    </div>
+	                                    <div class="col-md-6 col-sm-6">
+	                                   		<!-- /Open Internet Stand For -->
+	                                    	<h5 class="text-uppercase">Blog</h5>
+	                                    	<ul class="ulnico">
+	                                        <li class="comp40 grafico colonna6"><div class="content sentimentale">Open Internet</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp2 grafico colonna6"><div class="content tecnico">FCC</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp16 grafico colonna6"><div class="content tecnico">Obama</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp21 grafico colonna6"><div class="content tecnico">Rules</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp43 grafico colonna6"><div class="content sentimentale">Stand</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp6 grafico colonna6"><div class="content tecnico">Principle</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp26 grafico colonna6"><div class="content sentimentale">Interest</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp4 grafico colonna6"><div class="content tecnico">Companies</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp13 grafico colonna6"><div class="content tecnico">Content</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp41 grafico colonna6"><div class="content sentimentale">Freedom</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp32 grafico colonna6"><div class="content tecnico">Innovation</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp44 grafico colonna6"><div class="content tecnico">Comments</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp7 grafico colonna6"><div class="content tecnico">People</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp37 grafico colonna6"><div class="content sentimentale">Information</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp24 grafico colonna6"><div class="content tecnico">Tom Wheeler</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp45 grafico colonna6"><div class="content sentimentale">Rights</div><div class="value v-sentimentale" style="height:2px;"></div></li>
+	                                        <li class="comp1 grafico colonna6"><div class="content tecnico">ISPs</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp35 grafico colonna6"><div class="content tecnico">Title II</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp3 grafico colonna6"><div class="content tecnico">Service</div><div class="value v-tecnico" style="height:2px;"></div></li>
+	                                        <li class="comp22 grafico colonna6"><div class="content sentimentale">Fast lane</div><div class="value v-sentimentale" style="height:2px;"></div> </li>
+	                                    	</ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- LEGENDA  -->
+	                        <div class="col-md-offset-1 col-sm-offset-1 col-sm-11 col-md-11">
+	                            <div class="col-sm-3">
+	                                <ul class="ulnico" style="padding-top:30px; color:#999">
+	                                     <li class="a" style="color:#e35176">Ethical terms</li>
+	                                </ul>
+	                            </div>
+	                            <div class="col-sm-3">
+	                                <ul class="ulnico" style="padding-top:30px; color:#999">
+	                                     <li class="b" style="color:#2e5262">Tecnical terms</li>
+	                                </ul>
+	                            </div>
+	                            <div class="col-sm-3">
+	                                <ul class="ulnico" style="padding-top:30px; color:#999">
+	                                    <li>*Common Carriers</li>
+	                                </ul>
+	                            </div> 
+                                <div class="col-sm-3" id="rimuovifiltri">
+                                    <ul class="ulnico" style="padding-top:30px; color:#999">
+                                        <!-- <li>*CC= Common Carriers</li> -->
+                                        <li onclick="void(0)"><i class="fa fa-remove"></i> Reset filter</li>
+                                    </ul>
+                                </div> 
+	                        </div> <!-- FINE LEGENDA  -->
+	                    </div><!--chiudi viz05-->
+                </div>
+                <div id="attivisti" class="col-md-12 col-sm-12">
+                	<div class="col-sm-offset-1 col-md-offset-1">
+                		<div class="col-sm-11 col-md-8 col-lg-7">
+                	        <h2>Many people protested to preserve their freedom on the web.</h2>
+                	    </div>
+                	    <div>
+                	    <p class="col-sm-8 col-md-8 col-lg-7">Activist websites collected many petitions, accusing <a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Providers" class="ciccio">ISPs</a> of mining the freedom on the Internet and operating following their own interests. The <a href="#sblamb" data-toggle="tooltip" data-original-title="Federal Communication Commission" class="ciccio">FCC</a> recieved more than 800K comments for the Net Neutrality public consultation.</p>
+	                	    <div class="col-sm-4 col-md-4 col-lg-offset-1 col-lg-3">
+	                	    	<!-- <button href="#fakelink" class="btn btn-block btn-lg btn-info"><i class="fa fa-play"></i>Default Button</button> -->
+	                	    	<p class="strillo">Each signed petition generated a tweet, 1364 per day &mdash; about 1 per minute.</p>
+	                	    	<ul class="fa-ul">
+                                <li><a href="http://www.jacopompilii.com/netneutrality/chapter04/chapter04_viz01.html#sec2" target="_blank"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem;"><i class="fa-li fa fa-bookmark"></i>read the research</p></a></li>
+								  <li><a href="http://sunlightfoundation.com/blog/2014/09/02/what-can-we-learn-from-800000-public-comments-on-the-fccs-net-neutrality-plan/" target="_blank"><p style="text-transform:uppercase; font-weight:bold; font-size:1rem;"><i class="fa-li fa fa-pie-chart"></i>FCC comments analysis</p></a></li>
+								</ul>
+	                	    </div>
+                	    </div>
+                	</div>
+                </div>
+                    <!-- <img src="images/6.png" class="imglarga"> -->
+                    <!--PLACEHOLDER-->
+   <!--  </div> -->
+                <!-- SARA AGGIUNGI -->
+                <div id="grafo" class="col-md-12 col-sm-12 col-lg-12 titoloviz">
+                <div class="col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-lg-offset-3 col-lg-6">
+                    <h2>The most active users on twitter associated the hastag #NetNeutrality to ethicla hashtags.</h2>
+                    <p style="margin-bottom:3rem;" class="approfondimento">#Telecomprom refers to the annual FCBA dinner, where all the telecommunication lobbyists are invited. It is often used, from activists, as the symbol of the ISPs’ monopoly over the Internet. There is also another group of co-hastags that have a stronger sentimental meaning and that refer to the many protests against police violence: #ICANTBREATHE, #FERGUSON, #BLACKLIVESMATTER.</p>
+                </div>
+                <div class="row"> 
+                            <div id="viz05" class="col-sm-12 col-md-12 col-lg-12">
+                                <div id="spiega-twitter" class="col-md-offset-2 col-sm-offset-1 col-sm-5 col-md-4 col-lg-offset-3 col-lg-3">
+
+                                    <h5 class="twitter-h5">#NetNeutrality</h5>
+                                    <p class="twitter-p">We analyzed <b>47852 tweet</b> with hashtag #NetNeutrality from 25\11 to 7\12 2014, isolating the most active users. Here on the side we can see the 20 co&#8209;hashtaga most used arranged for ethical and tecnical aim. The line below shows their frequence.
+</p>
+                                    <img class="img-twitter" src="images/tweet-attivi-03.png">
+
+
+                                </div>
+                                <div class="col-md-offset-1 col-sm-6 col-md-4 col-lg-3 col-lg-offset-0">
+                                    
+                                    <h5 class="twitter-h5">Top 20 co-hashtags</h5>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6">
+                                            <!-- /Net Neutrality -->
+                                            <!-- <h5 class="twitter-h5">Termini tecnici</h5> -->
+                                            <ul class="ulnico twitter-tecnico">
+                                            <li><div class="twitter-li">#Internet</div><div style="height:2px; width: 130px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#tcot</div><div style="height:2px; width: 122px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#tlot</div><div style="height:2px; width: 110px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#pjnet</div><div style="height:2px; width: 81px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#fcc</div><div style="height:2px; width: 41px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#obama</div><div style="height:2px; width: 15px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#roaming</div><div style="height:2px; width: 14px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#igfitalia2014</div><div style="height:2px; width: 14px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#titleii</div><div style="height:2px; width: 13px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#eu</div><div style="height:2px; width: 13px; background-color: #2e5262;"></div></li>
+
+                                            <li><div class="twitter-li">#digitalsinglemarket</div><div style="height:2px; width: 8px; background-color: #2e5262;"></div></li>
+                                        </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <!-- /Net Neutrality -->
+                                            <!-- <h5 class="twitter-h5">Termini etici</h5> -->
+                                            <ul class="ulnico twitter-etico">
+                                            <li><div class="twitter-li">#telecomprom</div><div style="height:2px; width: 38px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#savetheinternet</div><div style="height:2px; width: 21px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#givingtuesday</div><div style="height:2px; width: 20px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#taxes</div><div style="height:2px; width: 19px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#opopeninternet</div><div style="height:2px; width: 9px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#billofrights</div><div style="height:2px; width: 8px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#tax</div><div style="height:2px; width: 8px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#projectcensored</div><div style="height:2px; width: 7px; background-color: #e35176;"></div></li>
+
+                                            <li><div class="twitter-li">#ferguson</div><div style="height:2px; width: 5px; background-color: #e35176;"></div></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                <!-- <img src="images/tagcloud.png" style="width:60%; margin: 0 auto; display:block; outline: 2px solid #e35176; outline-offset: 15px;"> -->
+            </div>
+            <div id="isp" class="col-md-12 col-sm-12 col-lg-12">
+                <div class="col-sm-offset-1 col-md-offset-1">
+                	<div class="col-sm-8 col-md-8 col-lg-7">
+                	    <h2>In the meanwhile Netflix and Comcast keep try to play up to users while they make war.</h2>
+                	    <p>Conten Providers (such as Google or Netflix) fear that <a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Providers" class="ciccio">ISPs</a> can create a two speed Internet, forcing users to pay for their content. On the other side the Internet Service Providers reject such an imaginary assumption, pointing out that their only interest is to guarantee the best service for their customers.</p>
+                	 </div>
+                	 <div class="col-sm-4 col-md-4 col-lg-offset-1 col-lg-3" style="margin-top:2rem;">
+	                	<p class="strillo">«A stronger net neutrality to avoid blackouts that plague the cable industry and harms consumers.» <span style="text-align:right; float: right; padding-right:1.5rem;">&mdash; Netflix</span></p>
+	                	<p class="strillo">«The public discourse has reached a fever pitch: emotion and hyperbole are substituting for fact.»<span style="text-align:right; float: right; padding-right:1.5rem;">&mdash; Comcast</span></p>
+	                </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12"><img id="handshake" src="images/handshake.png"></div>
+            </div>
+        </div>
+        </section>
+        <section id="svolta" class="scuro">
+                <div id="cambio" class="col-md-12 col-sm-12 col-lg-12">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-3">
+                        <h2>But the real focus of this debate has nothing to do with any ideological hue.</h2>
+                        <p>Net Neutrality debate seem to be based on a strong ideological mold: the protection of the Open Internet, the fear of the two speed Interenet, the right to Internet Access. These are all very strong topics, suitable to attract a large number of people.</p>
+                        <p>But the actual cornerstone of Net Neutality is strictly connected to economic issues.</p>
+                    </div>                   
+                    <div id="money">
+                        <!-- <img src="images/money.png" > -->
+                    </div>
+                </div>
+
+                <div id="cambio2" class="col-md-12 col-sm-12">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-3">
+                        <h2><a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Provider" class="ciccio">ISP</a> e <a href="#sblamb" data-toggle="tooltip" data-original-title="Content Provider" class="ciccio">CP</a> want to redefine the economic agreements which regulate the web.</h2>
+                        <p>Internet Providers such as Comcast, AT&T and Verizon want to have more control on the online content, in order to obtain more profits.</p>
+                        <p>Content Providers, on the other hand, complain the increasing prices charged by the ISP; they don't want to pay more to reach their users.</p>
+                    </div>
+                </div>
+
+
+        </section>
+        <section id="schema" class="scuro">
+
+                <div class="col-md-12 col-sm-12 percorso2">
+                    <div class="col-sm-offset-1 col-md-offset-1">
+                        <div class="col-sm-11 col-md-6 col-lg-4 col-lg-offset-0">
+                            <h2>Internet traffic comes from Content Providers.</h2>
+                             <p class="">When you watch a streaming movie the Content Provider send the data on the Internet, which is managed by <a href="#sblamb" data-toggle="tooltip" data-original-title="Content Delivery Network" class="ciccio">CDNs</a> and Internet Service Providers, that control the last mile of tubes.</p>
+                        </div>
+                        <div>
+                            <div class="col-sm-10 col-md-5 col-sm-offset-0 col-md-offset-1 col-lg-4 col-lg-offset-1">
+                                <!-- <button href="#fakelink" class="btn btn-block btn-lg btn-info"><i class="fa fa-play"></i>Default Button</button> -->
+                                <img id="tortaanno" src="images/svolta1b.png" class="col-sm-12 col-md-12 alluvionale torte" style="margin-bottom:1.2rem;" />
+                            </div>
+                            <div class="didadate col-sm-8 col-md-5 col-sm-offset-0 col-md-offset-1 col-lg-offset-0 col-lg-3">
+                            <div id="duemilatredici" class="col-sm-offset-0 col-sm-2 col-md-4 anno attivo"><p>2013</p></div>
+                                <div id="duemiladiciotto" class="col-sm-offset-2 col-sm-2 col-md-4 anno col-sm-offset-1 col-md-offset-1"><p>2018</p></div>
+                                <div id="vuotoportrait" class="col-md-0 col-lg-0 col-sm-9"><p>placeholder</p></div>
+                                <p class="strillo torte"><span style="text-transform:uppercase; font-weight:bold; font-size:1rem; font-style:normal;"><br>Composition of the internet traffic<br></span>The HD and 4K streaming video is growing, year after year, for volume and for traffic percentage.<a href="http://webcast.softbank.co.jp/en/press/20140311/"><em> (Cisco Forecast)</em></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="partiqui">
+                        <div id="prima" class="immagine"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-lg-12 percorso">
+                    <div class="col-sm-offset-1 col-md-offset-1">
+                        <div class="col-sm-11 col-md-6 col-lg-4 col-lg-offset-0">
+                            <h2><a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Providers" class="ciccio">ISPs</a> and <a href="#sblamb" data-toggle="tooltip" data-original-title="Content Providers" class="ciccio">CPs</a> entrust the management of the internet traffic to <a href="#sblamb" data-toggle="tooltip" data-original-title="Content Delivery Network" class="ciccio">CDNs</a> in order to optimize it.</h2>
+                            <p class="">Content Delivery Networks are well trained companies that distribute the internet contents. They are able to store big amount of data in servers all around the world in order to reduce the distance between providers and final user.</p>
+                        </div>
+                        <div>
+                        </div>
+                            <div class="col-sm-10 col-md-5 col-sm-offset-0 col-md-offset-1 col-lg-4">
+                            <!-- <button href="#fakelink" class="btn btn-block btn-lg btn-info"><i class="fa fa-play"></i>Default Button</button> -->
+                                <img src="images/svolta2.png" id="tortacdn" class="torte col-md-12 col-sm-12" />
+                            </div>
+                            <div class="didacdn col-sm-8 col-md-5 col-sm-offset-0 col-md-offset-1 col-lg-offset-0 col-lg-3"><p class="strillo torte"><br><span style="text-transform:uppercase; font-weight:bold; font-size:1rem; font-style:normal;">CDN's market in USA<br></span>In USA the the 91% of the CDN's market is managed by only three companies.<a href="http://www.deepfield.com/2012/06/first-data-on-changing-netflix-and-cdn-market-share/"><em> (Deepfield Report)</em></a></p></div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-lg-12 percorso">
+                    <div class="col-sm-offset-1 col-md-offset-1">
+                        <div class="col-sm-11 col-md-7 col-lg-4 col-lg-offset-0">
+                            <h2>Some Content Providers want to be independent.</h2>
+                            <p class="">Netflix and other Content Providers are building their own Content Delivery Networks to avoid traditional CDN's fees, bypassing the current economic system.</p>
+                        </div>
+                        <div>
+                            <div class="col-sm-10 col-sm-offset-0 col-md-5 col-lg-4 col-lg-offset-1">
+                                <img src="images/svolta3.png" id="alluviograph" class="col-sm-12 col-md-12" />
+                            </div>
+                            <div class="didanetflix col-sm-9 col-sm-offset-0 col-md-5 col-lg-3 col-lg-offset-0">
+                                <p class="strillo torte alluvionale"><br><span style="text-transform:uppercase; font-weight:bold; font-size:1rem; font-style:normal;">Mutation of CDN Netflix traffic<br></span>From 2012 Netflix revolutionized the traffic managment by building its own CDN.<a href="http://www.deepfield.com/2012/06/first-data-on-changing-netflix-and-cdn-market-share/"><em> (Deepfield Report)</em></a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 percorso">
+                    <div class="col-sm-offset-1 col-md-offset-1">
+                        <div class="col-sm-11 col-md-7 col-lg-4 col-lg-offset-0">
+                            <h2>But anyway their data have to go through <a href="#sblamb" data-toggle="tooltip" data-original-title="Internet Service Providers" class="ciccio">ISP</a> to arrive to us.</h2>
+                            <p class="">ISPs make commercial agreements with the traditional <a href="#sblamb" data-toggle="tooltip" data-original-title="Content Delivery Network" class="ciccio">CDN</a>. The new shortcuts, external to those agreements, make the internet traffic difficult to be managed.
+                        That's why when you try to watch a streaming film or make a videocall everything get stuck.</p>
+                        </div>
+                        <div>
+                            <div class="col-sm-10 col-sm-offset-0 col-md-5 col-lg-4 col-lg-offset-1">
+                                <!-- <button href="#fakelink" class="btn btn-block btn-lg btn-info"><i class="fa fa-play"></i>Default Button</button> -->
+                                <img src="images/svolta4.png" class="col-sm-12 col-md-12" id="distribuzione" />
+                            </div>
+                            <div class="didadistribuzione col-sm-11 col-sm-offset-0 col-md-5 col-lg-3 col-lg-offset-0"><!-- -->
+                            <p class="strillo torte ultimatorta"><br><span style="text-transform:uppercase; font-weight:bold; font-size:1rem; font-style:normal;">ISP in USA<br></span>The 67% of Americans can choose between only two internet provider.<br><a href="http://webcast.softbank.co.jp/en/press/20140311/"><em>(SoftBank Group Anaysis)</em></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <section class="col-md-12 col-sm-12 col-lg-12"id="chiusura">
+                <div class="col-md-offset-1 col-md-10 fasi centrotesto">
+                    <h2 id="centrotestob"><!-- Perché non basterà una legge a cambiare le cose. -->Is a law really able to change the scenario?</h2>
+
+                    <h3 id="centrotestoa"><!-- Il dibattito pubblico negli USA sulla Net Neutrality è molto incentrato sul piano ideologico. Per comprendere meglio le questioni a monte è necessario approfondire il lato economico del problema. -->
+                    The Net Neutrality debate is strictly connected to ideological issues. But to understand the real cornerstones it is important to examine the economic interests.
+                    </h3>
+                    
+                </div>
+        </section> 
+
+        <section>
+            <div id="foot">
+                <div class="col-md-2 col-sm-2 col-xs-6 col-sm-offset-1 col-md-offset-1">
+                  <a href="http://www.densitydesign.org/"><img src="images/density_logo.png"></a>  
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6">
+                  <a href="http://www.dipartimentodesign.polimi.it/"><img src="images/dip_logo.png"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6">
+                  <h4>project by</h4>
+                  <ul>
+                  <li><a href="http://brrunico.com/" target="_blank">Nicoletta Bruno</a></li>
+                  <li><a href="http://cargocollective.com/martinacocco" target="_blank">Martina Cocco</a></li>
+                  <li><a href="http://saraperozzi.com/" target="_blank">Sara Perozzi</a></li>
+                  <li><a href="http://www.jacopompilii.com" target="_blank">Jacopo Pompilii</a></li>
+                  <li><a href="http://www.andreatagliab.ue" target="_blank">Andrea Tagliabue</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6">
+                  <h4>Faculty</h4>
+                  <ul>
+                    <li>Paolo Ciuccarelli</li>
+                    <li>Marco Fattore</li>
+                    <li>Stefano Mandato</li>
+                    <li>Donato Ricci</li>
+                    <li>Salvatore Zingale</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                  <h4>Teaching Assistants</h4>
+                  <ul>
+                    <li>Matteo Azzi</li>
+                    <li>Daniele Ciminieri</li>
+                    <li>Michele Mauri</li>
+                    <li>Azzurra Pini</li>
+                    <li>Giorgio Uboldi</li>
+                  </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+    <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/gsdk-checkbox.js"></script>
+	<script src="assets/js/gsdk-radio.js"></script>
+	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="assets/js/get-shit-done.js"></script>
+    <script type="text/javascript" src="assets/js/_examples/modernizr.custom.min.js"></script>
+	
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+        //preload images
+    $.fn.preload = function() {
+        this.each(function(){
+            $('<img/>')[0].src = this;
+        });
+    }
+
+    // Usage:
+
+    $(['images/paccotorrent.png','images/paccoskype.png','images/paccotwitter.png', 'images/pacconetflix.png', 'images/paccoyoutube.png', 'images/provapalazzi1.png', 'images/provapalazzi2.png', 'images/provapalazzi3.png', 'images/provapalazzi4.png', ]).preload();
+
+        //mostra nascondi navbar
+var expand = false
+        $(document).ready(function () {
+            $('aside').css("visibility","visible");
+            $("#nav-icon4").click(function () {
+                if (!expand) {
+                    expand = true;
+                    $("#nav-icon4").toggleClass('open');
+                    $("aside").animate({
+                        width: '300px'
+                    });
+                    $(".nav li a").css({
+                        backgroundColor: '#e25176',
+                        color: 'white'
+                    });
+                    console.log('CIAONE')
+                } else {
+                    expand = false;
+                    $("#nav-icon4").toggleClass('open');
+                    $("aside").animate({
+                        width: '55px'
+                    });
+                    $(".nav li a").toggleClass('muoridelay');
+                    $(".nav li a").removeAttr('style')
+                                  }
+
+            });
+        });
+
+// scrollspy
+
+
+if (Modernizr.touch) {
+    // var destinazione = $(".main");
+    var destinazione = $("body");
+    // var offsetsmooth = $('body').scrollTop() + target.offset().top;
+} else {
+    var destinazione = $("body");
+    // var offsetsmooth = target.offset().top;
+};
+
+destinazione.scrollspy({ target: '#sidebar', offset:80 });
+
+var clicked = false;
+$('#mynav li a').click(
+function(){
+    $('#mycontent > div > h2').css('padding-top',0);
+    $($( this ).attr('href') + ' > h2').css('padding-top','50px');
+    clicked = true;
+    }
+); 
+
+
+
+destinazione.on('activate.bs.scrollspy', function () {
+  console.log('scrolling...');
+  if(!clicked)$('#mycontent > div > h2').css('padding-top',0);
+  clicked = false;
+})
+
+    // smooth
+
+    // touch = scrollTop: $('body').scrollTop() + target.offset().top
+    // non touch = scrollTop: target.offset().top
+
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (Modernizr.touch) {
+        // var offsetsmooth = $('body').scrollTop() + target.offset().top;
+        var offsetsmooth = target.offset().top;
+        } else {
+            var offsetsmooth = target.offset().top;
+        }
+          if (target.length) {
+            destinazione.animate({
+              // scrollTop: target.offset().top
+              scrollTop: offsetsmooth //guarda l'if in alto per capire cos'è offsetsmooth
+            }, 1000);
+            return false;
+          }
+    }
+  });
+});
+
+$('body').bind('touchstart', function() {});
+
+$("#duemilatredici").on('click',function(){
+    $('#tortaanno').attr("src","images/svolta1b.png");
+    $('#duemilatredici p').css("color","#333333");
+    $('#duemilatredici').css("backgroundColor","#edd778");
+    $('#duemiladiciotto p').css("color","#edd778");
+    $('#duemiladiciotto').css("backgroundColor","#333333");
+  })
+
+$("#duemiladiciotto").on('click',function(){
+    $('#tortaanno').attr("src","images/svolta1.png");
+    $("#duemiladiciotto p").css("color","#333333");
+    $("#duemiladiciotto").css("backgroundColor","#edd778");
+    $('#duemilatredici p').css("color","#edd778");
+    $('#duemilatredici').css("backgroundColor","#333333");
+  })
+    </script>
+<!-- script nicoletta -->
+<script type="text/javascript" src="assets/js/newsblog.js"></script>
+<!-- scroll magic inizio -->
+<script type="text/javascript" src="assets/js/_dependent/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="assets/js/_examples/general.js"></script>
+<script type="text/javascript" src="assets/js/_examples/highlight.pack.js"></script>
+<script type="text/javascript" src="assets/js/_mobile/iscroll-probe.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollmagic.js"></script>
+<!-- <script type="text/javascript" src="assets/js/jquery.scrollmagic.debug.js"></script> -->
+<!-- animazione pacchetti -->
+<script type="text/javascript" src="assets/js/animazione.js"></script>
+<!-- script d3 google trends -->
+<script type="text/javascript" src="assets/js/googletrends.js"></script>
+<script type="text/javascript" src="assets/js/animazione_finale.js"></script>
+<!-- fine script d3 google trends -->
+<script type="text/javascript">
+    $(function(){
+       $('a').tooltip();
+    });
+</script>
+
+</html>

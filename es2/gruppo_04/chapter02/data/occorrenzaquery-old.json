@@ -1,0 +1,514 @@
+[{
+    "articles": [
+        ["CP", 0],
+        ["GOV", 5],
+        ["HOC", 0],
+        ["ISP", 2],
+        ["PETITION", 4]
+    ],
+    "name": "Ability"
+}, {
+    "articles": [
+        ["CP", 5],
+        ["GOV", 0],
+        ["HOC", 3],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Access the internet"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 6],
+        ["PETITION", 0]
+    ],
+    "name": "Backbone"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 2],
+        ["PETITION", 0]
+    ],
+    "name": "Both parties"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 4],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Choices"
+}, {
+    "articles": [
+        ["CP", 2],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Comcast"
+}, {
+    "articles": [
+        ["CP", 3],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 3]
+    ],
+    "name": "Comments"
+}, {
+    "articles": [
+        ["CP", 2],
+        ["GOV", 0],
+        ["HOC", 9],
+        ["ISP", 0],
+        ["PETITION", 4]
+    ],
+    "name": "Companies"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 2],
+        ["PETITION", 0]
+    ],
+    "name": "Competition"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 2],
+        ["PETITION", 0]
+    ],
+    "name": "Consumer demand"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 9],
+        ["HOC", 0],
+        ["ISP", 3],
+        ["PETITION", 6]
+    ],
+    "name": "Consumers"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 6],
+        ["ISP", 0],
+        ["PETITION", 4]
+    ],
+    "name": "Content"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 2],
+        ["PETITION", 0]
+    ],
+    "name": "Controversial"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 5],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Court"
+}, {
+    "articles": [
+        ["CP", 2],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 4],
+        ["PETITION", 0]
+    ],
+    "name": "Customers"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 6],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Discrimination"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 4]
+    ],
+    "name": "Email"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 4]
+    ],
+    "name": "Fast lane"
+}, {
+    "articles": [
+        ["CP", 9],
+        ["GOV", 15],
+        ["HOC", 11],
+        ["ISP", 9],
+        ["PETITION", 15]
+    ],
+    "name": "FCC"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 5],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Free speech"
+}, {
+    "articles": [
+        ["CP", 3],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 2],
+        ["PETITION", 0]
+    ],
+    "name": "Future"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 3],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Gatekeepers"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 4]
+    ],
+    "name": "Information"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 7],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 3]
+    ],
+    "name": "Innovation"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 6],
+        ["PETITION", 0]
+    ],
+    "name": "Interconnection"
+}, {
+    "articles": [
+        ["CP", 8],
+        ["GOV", 9],
+        ["HOC", 10],
+        ["ISP", 5],
+        ["PETITION", 10]
+    ],
+    "name": "Internet"
+}, {
+    "articles": [
+        ["CP", 10],
+        ["GOV", 12],
+        ["HOC", 10],
+        ["ISP", 10],
+        ["PETITION", 15]
+    ],
+    "name": "ISPs"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 4],
+        ["HOC", 0],
+        ["ISP", 3],
+        ["PETITION", 0]
+    ],
+    "name": "Issues"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 5],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Laws"
+}, {
+    "articles": [
+        ["CP", 3],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Letter"
+}, {
+    "articles": [
+        ["CP", 2],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Level playing field"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 4],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Millions"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 2],
+        ["PETITION", 0]
+    ],
+    "name": "Model"
+}, {
+    "articles": [
+        ["CP", 6],
+        ["GOV", 8],
+        ["HOC", 10],
+        ["ISP", 2],
+        ["PETITION", 12]
+    ],
+    "name": "Net Neutrality"
+}, {
+    "articles": [
+        ["CP", 3],
+        ["GOV", 5],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 4]
+    ],
+    "name": "Network"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 8],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Obama"
+}, {
+    "articles": [
+        ["CP", 11],
+        ["GOV", 14],
+        ["HOC", 7],
+        ["ISP", 0],
+        ["PETITION", 12]
+    ],
+    "name": "Open Internet"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 6],
+        ["HOC", 3],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "People"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 6]
+    ],
+    "name": "Person"
+}, {
+    "articles": [
+        ["CP", 3],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Plans"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 2],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Practices"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 5],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Principles"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 3],
+        ["PETITION", 0]
+    ],
+    "name": "Regulation"
+}, {
+    "articles": [
+        ["CP", 3],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Report"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 4]
+    ],
+    "name": "Response"
+}, {
+    "articles": [
+        ["CP", 10],
+        ["GOV", 2],
+        ["HOC", 6],
+        ["ISP", 0],
+        ["PETITION", 11]
+    ],
+    "name": "Rules"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 3],
+        ["ISP", 4],
+        ["PETITION", 3]
+    ],
+    "name": "Service"
+}, {
+    "articles": [
+        ["CP", 2],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Stand"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 3],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Their right"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 3],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "This video"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 5],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Time"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 4],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 3]
+    ],
+    "name": "Title II"
+}, {
+    "articles": [
+        ["CP", 7],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 3],
+        ["PETITION", 0]
+    ],
+    "name": "Traffic"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 6],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Users"
+}, {
+    "articles": [
+        ["CP", 3],
+        ["GOV", 0],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "Voices"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 0],
+        ["HOC", 2],
+        ["ISP", 0],
+        ["PETITION", 3]
+    ],
+    "name": "Websites"
+}, {
+    "articles": [
+        ["CP", 0],
+        ["GOV", 5],
+        ["HOC", 0],
+        ["ISP", 0],
+        ["PETITION", 0]
+    ],
+    "name": "World"
+}]

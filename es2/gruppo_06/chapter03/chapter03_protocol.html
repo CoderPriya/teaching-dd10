@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>NEVER-ENDING SHARING</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">WIKIPEDIA "SEE ALSO" ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">WEB PAGES ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">TF-IDF ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">GEONAMES FREQUENCE MAP</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">WEB PAGES ANALYSIS VS CASE LAW</h5>
+</li>
+<li>
+<a href="../chapter05/chapter05_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter05/chapter05_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">NAME ENTITIES CONNECTION</h5>
+</li>
+<li>
+<a href="../chapter06/chapter06_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter06/chapter06_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">NEWSPAPERS' API ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter07/chapter07_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter07/chapter07_viz01.html">Visualisation</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">TF-IDF ANALYSIS</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>The graph shows the results of TD-IDF analysis made on the texts taken from the <b>first 200 web pages</b> taken from Google. It shows which are the more pertinent concepts divided for area of interest (economic, ethical and legal) and for taken position about file sharing (friends, neutral and enimies).
+</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>SCRAPING</h3>
+<p>Google.com set in Incognito Mode.</p>
+<p>Scraping of first 200 results from Google, with the 4 queries:
+<ul class="ourlist"><li>“File Sharing” + Effects;</li>
+<li>“File Sharing” + Consequences;</li>
+<li>Piracy + Effects;</li>
+<li>Piracy + Consequences.</li></ul></p>
+<p><a href="http://pgl.yoyo.org/">URL extraction</a> and text cleaning, to exclude Social Networks and non-text results.</p>
+<p>Text extraction, from the results, with <a href="http://dev.zup.densitydesign.org/">Zup</a>, and cleaning of empty or off topic files.</p>
+<p>Results divided into areas of interest (economic, ethical and legal) and positions(File Sharing Enemies, File Sharing Neutral, File Sharing Friends) in order to divide the texts in 9 corpus:</p>
+<img src="../img/SVENprotocol1.png">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>ANALYSIS OF THE CONCEPTS</h3>
+<p>Uploading of the txt in <a href="http://dev.sven.densitydesign.org/"> SVEN </a> to have 9 csv files with the TF, TF-IDF and distribution analisys. </p>
+<p>Reading of the datasets: the most interesting thing is to show the TF-IDF analisys’ results, so that column was cleaned and organise by Open Refine.</p>
+<img src="../img/SVENprotocol2.png">
+</div>
+</div>
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>FINALISATION OF THE DATASET</h3>
+<p>Uploading in Microsoft Excel to finalise the dataset: 
+<ul class="ourlist"><li>Selection of the first 200 concepts</li>
+	<li><b>Union</b> manually of double concepts or synonymous</li>
+	<li>Extraction of the <b>first 13 results concept</b> in every corpus</li>
+	<li><b>Organization</b> of the dataset: calculation of the TF-IDF average for every concept and sort them descending</li>
+	<li>Visualisation in <a href="http://raw.densitydesign.org/">Raw</a> (Scutter Plot) to <b>compare</b> how much important is a concept in the different corpus</li>
+</ul>
+<p>Data visualisation. </p>
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>24/11/14 - 12/12/14</h4>
+<h4>Data source: <br> <a href="https://www.google.com/">Google</a>
+<h4>Tools: <br> <a href="http://pgl.yoyo.org/urlex/">URL Extractor</a>, <a href="http://dev.zup.densitydesign.org/">Zup</a>, <a href="http://dev.sven.densitydesign.org/">Sven</a>, Open Refine, Microsoft Excel, <a href="http://raw.densitydesign.org">Raw</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="../chapter03/chapter03_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/SVENthumb.png" width='100%'>
+</div>
+<h4>Tf-idf analisys</h4>
+</div>
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Francesco Bianchi</li>
+<li>Luca Bonfanti</li>
+<li>Luca Ferrario</li>
+<li>Roberta Rosina</li>
+<li>Giulia Zoccarato</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+#timeline{
+	width: 100%;
+	max-width: 841.89px;
+	max-height: 227px;
+	min-width: 700px;
+}
+
+#cit{
+	cursor: pointer;
+}
+
+.cits{
+	margin-right: auto;
+	margin-left: auto;
+	height: 400px;
+	opacity: 0;
+}
+
+.citaltre{
+	margin-top: -400px;
+
+}
+
+#Cit01{
+	background: url("../img/citaz/Cit01.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit02{
+	background: url("../img/citaz/Cit02.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit03{
+	background: url("../img/citaz/Cit03.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit04{
+	background: url("../img/citaz/Cit04.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit05{
+	background: url("../img/citaz/Cit05.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit06{
+	background: url("../img/citaz/Cit06.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit07{
+	background: url("../img/citaz/Cit07.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit08{
+	background: url("../img/citaz/Cit08.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit09{
+	background: url("../img/citaz/Cit09.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit10{
+	background: url("../img/citaz/Cit10.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+#Cit11{
+	background: url("../img/citaz/Cit11.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+
+}
+
+@media screen and (max-width: 900px) { 
+
+#Cit01{
+
+	width: 90%;
+
+}
+
+#Cit02{
+	width: 90%;
+
+
+}
+
+#Cit03{
+	width: 90%;
+
+
+}
+
+#Cit04{
+	width: 90%;
+
+
+}
+
+#Cit05{
+	width: 90%;
+
+
+}
+
+#Cit06{
+	width: 90%;
+
+
+}
+
+#Cit07{
+	width: 90%;
+
+
+}
+
+#Cit08{
+	width: 90%;
+
+
+}
+
+#Cit09{
+	width: 90%;
+
+
+}
+
+#Cit10{
+	width: 90%;
+
+
+}
+
+#Cit11{
+	width: 90%;
+
+
+}
+
+}

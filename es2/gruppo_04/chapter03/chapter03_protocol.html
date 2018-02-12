@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4><strong>TITLE II</strong>
+<li><em>#NetNeutrality debate in the US</em></li>
+</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Set the basis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Chapter 1 Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Wikipedia speaks out loud</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">In between ethical and technical</a>
+</li>
+<li>
+<h5 class="text-uppercase">A well-established name</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Chapter 2 Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">News and Blog speak the same language</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Many terms, one meaning</a>
+</li>
+<li>
+<h5 class="text-uppercase">Speeches and reactions</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Chapter 3 Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Vloggers and showmen speak up for NN</a>
+</li>
+<li>
+<h5 class="text-uppercase">#NetNeutrality</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Chapter 4 Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Understanding users patterns</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Do they all speak the same?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Ethical CTAs push  people to share a lot</a>
+</li>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">speeches and reactions</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>We analysed the controversy on the most visited video-sharing social network in the world.</p><p>
+Knowing that the user base would lean towards pro-net neutrality, we wanted to dive into the debate that was happening inside and outside the videos: we scraped speeches and dialogues recorded on video, and the relative comments and reactions of those who watched and shared them.
+</p><p>
+We started from a sample of 20 videos, obtained filtering the whole database by view count during 2014 under the "net neutrality" keyword. We watched them and removed 3 misleading results, due to inflated view count or deceptive content, replacing them with subsequents videos on the ranking.
+Videos were manually classified into 4 macro-areas based on their production scale:</p>
+<p><i class="fa fa-tag"></i>video blogs</p>
+<p><i class="fa fa-tag"></i>web shows</p>
+<p><i class="fa fa-tag"></i>talk shows</p>
+<p><i class="fa fa-tag"></i>politics</p>
+<p>Youtube thus allowed us to examine the controversy on two layers: on one side the voice of authors who strive to spread knowledge, on the other side thoughts and concerns of users looking for enlightenment or willing to share their point of view.
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Step #1 — comments </h3>
+<p>For each video we loaded comments, ordered them by popularity and scraped 800 to 2000 of them along with the username, depending on the whole number available, with Kimono. We cleaned the formatting, removing new lines inside comments and misleading symbols, with Sublime Text in order to produce a suitable CSV table.
+</p><p>With Sven's TF analysis we obtained the frequency of the most recurring words and, after grouping similar concepts, we defined 10 keywords. Finally, we went through the keywords and classified them as ethical or technical.
+</p>
+<img src="../img/protocollo_03_01.png">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+<h3>Step #2 — Speech</h3>
+<p>In order to analyze the content of the selected videos, we downloaded English subtitles with Google2srt and cleaned the results in Sublime Text removing timestamps and typos.</p><p>The analysis was then comparable to the one made for comments: Sven's TF results were used again, grouped, classified, and organized in a CSV database along comments.
+</p>
+<img src="../img/protocollo_03_02.png">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 11/12/2013 - 11/12/2014</h4>
+<h4>Data source: <a href="https://www.youtube.com/results?search_query=net+neutrality&filters=year&search_sort=video_view_count">Youtube</a></h4>
+<h4>Tools: <br> <a href="https://www.kimonolabs.com/">Kimono</a>, <a href="http://openrefine.org/">Open Refine</a>, <a href="http://google2srt.sourceforge.net/en/">Google2srt</a>, <a href="http://www.sublimetext.com/">Sublime Text</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="chapter03_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/thumb-03_01.png">
+</div>
+<h4>Vloggers and showmen speak up for NN</h4>
+</div>
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Nicoletta Bruno</li>
+<li>Martina Cocco</li>
+<li>Sara Perozzi</li>
+<li>Jacopo Pompilii</li>
+<li>Andrea Tagliabue</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

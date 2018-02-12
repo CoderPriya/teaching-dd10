@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>NEVER-ENDING SHARING</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">WIKIPEDIA "SEE ALSO" ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">WEB PAGES ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">TF-IDF ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">GEONAMES FREQUENCE MAP</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">WEB PAGES ANALYSIS VS CASE LAW</h5>
+</li>
+<li>
+<a href="../chapter05/chapter05_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter05/chapter05_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">NAME ENTITIES CONNECTION</h5>
+</li>
+<li>
+<a href="../chapter06/chapter06_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter06/chapter06_viz01.html">Visualisation</a>
+</li>
+<li>
+<h5 class="text-uppercase">NEWSPAPERS' API ANALYSIS</h5>
+</li>
+<li>
+<a href="../chapter07/chapter07_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter07/chapter07_viz01.html">Visualisation</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz">
+<iframe width='100%' height='800' frameborder='0' src='../chapter04/Geonames.html' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+</div>
+</div>
+<!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">GEONAMES FREQUENCE MAP</h5><!-- Title of the "chapter"  -->
+<h1>Hot spots</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>The map shows the result of geonames analysis based on the texts extract from the first 200 Google results using the queries “file sharing” + effects, “file sharing” + consequences, piracy effects and piracy consequences.
+In particular it’s shown the <b>frequency</b> of each geoname, found out by counting how many web pages mention every single name.
+Those geonames have been also divided in 3 categories: universities, cities and countries.
+</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>As mentioned, markers on the map are divided in <b>3 categories</b> (countries, cities, universities) and are recognizable by a <b>chromatic code</b>.
+The <b>dimension</b> of the markers is in relation with the <b>amount of web pages</b> in which it’s mentioned that specific geo name.</p>
+<p>By using buttons it’s possible to filter the visualization by geoname’s category.
+It’s also possible to visualize each geo entity’s name by clicking on the marker.</p>
+<img src="../img/Colors_geonames.png" width="100%">
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>From the first 200 Google results was extracted all the entities; after that it has done a second phase of cleaning to obtain a list of only geonames.
+Subsequently, this list was further refined: if in a single web page a geoname appeared repeatedly, all the duplications were eliminated. In this way there were a maximum of only one mention per page for every geoname. This has been done to avoid that very long articles in which the same geoname is repeated many times could affect the final result.
+The csv file was imported in CartoDB; in map view, the visualization has been set with two different filters: by dimension and by color code.
+The first one related to “times” column of the dataset (frequency of the geoname), the second one related to “category” column (type of geoname).
+An infowindow has been added to show the geoname by clicking on a marker.
+By clicking on the buttons it’s also possible to filter the visualization by categories.
+</p>
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>The geo entities that are mentioned in the web pages are <b>spread all over the world</b> and not just in Europe and USA as you might think. In particular, we can point out the presence of many universities that are those who care more about the subject because of safety reasons and they are also those who are studying it .
+Most of the articles about this topic are written by academics of american and english universities indeed.</p>
+<p>Another thing to note is the presence of countries like <b>Sweden</b>, that is very relevant because of Pirate Bay and the whole question about it, or the <b>area of California</b> where there are the locations of the majors.
+</p>
+<p>Looking at the amount of geonames for each category it’s evident that university entities are significantly more than the geonames of the other 2 categories.
+However considering the <b>amount of mentions</b> the gap between university geonames and country geonames is greatly reduced. </br>
+This reflects the fact that mentioned universities are numerous but each one of them is nominated only a few times; mentioned countries are less than universities but they are nominated many times.
+This happens because universities are small entities scattered around the world and their voice can be hardly heard in the debate; therefore the authors of the articles prefer to talk referring to big entities like countries which are certainly more obvious.
+</p>
+<img src="../img/Geonames_tab.png" width="100%">
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 24/11/14 - 12/12/14</h4>
+<h4>Data source: <a href="https://www.google.com/">Google</a></h4>
+<h4><a href="../chapter04/chapter04_protocol.html">Related Protocol</a></h4>
+<h4><a href="https://drive.google.com/open?id=0B5BdEJEgidq8RVpCMVVNRDJla1U&authuser=0" target="_blank"><i class="fa fa-arrow-circle-o-down"></i> Download data (4MB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Francesco Bianchi</li>
+<li>Luca Bonfanti</li>
+<li>Luca Ferrario</li>
+<li>Roberta Rosina</li>
+<li>Giulia Zoccarato</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

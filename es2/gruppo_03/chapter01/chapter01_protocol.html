@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Anonymity</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">The encyclopedic point of view</h5>
+</li>
+<li>
+<a href="chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter01_viz01.html">Wikipedia network</a>
+</li>
+<li>
+<h5 class="text-uppercase">The battlefield of the debate</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Who are the debaters?</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Tetris: combining topics and speakers</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Simultaneous appearance of the topics</a>
+</li>
+<li>
+<h5 class="text-uppercase">Playing cards of an online social life</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Which name do you choose 
+online?</a>
+</li>
+<li>
+<h5 class="text-uppercase">Anonymous faces</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Disassembling and rebuilding</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Thiefs, question marks and revolutioners</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">The encyclopedic point of view</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>Wikipedia is one of the largest encyclopedia of the world. It contains everything you need. That’s why one of the first steps of this research has been to explore online anonymity inside Wikipedia and to understand how this theme is treated from an encyclopedic point of view. The purpose of this exploration is to understand how online anonymity places itself in a encyclopedic level and what themes are linked to it.</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>exploring wikipedia through 'Seealsology'</h3>
+<p>At the beginning five initial Wikipedia articles related to online anonymity have been chosen. These articles were the most suitable for describing our theme and they were: "Anonymity", "Anonymous post", "Online identity", "Anonymizer", "Anonymous web browsing". Thereafter, by using Seealsology tool, the "see also" of first level have been extracted from these five pages and they have been united to the main articles in order to create a new list. This new list has been uploaded again, setting the depth to 3 and after the crawl, the file has been downloaded in .gexf. The file obtained from Seealsology has been opened with the open source program Gephi. To get started, the "Graph type" has been set to "Direct" and the Average degree, in "Statistics"  section, has been calculated. After that, all the nodes with "Degree" 1 have been removed by selecting the "Degree Range Setting" from 2 to 93 in "Filters" section under the heading "Topology", "Degree range". All the nodes have been scaled for their "InDegree" in the "Ranking section". This operation has been very useful to understand which Wikipedia articles were the most important inside this network. Thereafter, it has been necessary to arrange the nodes of the network in the space by giving the graph a spazialization using "Force Atlas 2" in the "Layout section", with "LinLog" mode activated and "Prevent overlap" selected after a first stabilization of the network. Later, it has been necessary to calculate the "Modularity class" and to give to every single cluster a color for recognizing it.
+</p>
+<img src="../img/protocols/scheme-01.png">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>20/11/2014</h4>
+<h4>Data source: <br> <a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia.org</a></h4>
+<h4>Tools: <br><a href="Labs.densitydesign.org/seealsology">Seealsology</a>, <a href="http://gephi.github.io/">Gephi</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="chapter01_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/thumbnails/thumb-viz01-01.png">
+</div>
+<h4>Wikipedia network: anonymity and its neighbourhood</h4>
+</div>
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Luca Alberton</li>
+<li>Marta Ambrosetti</li>
+<li>Giulia De Rossi</li>
+<li>Cecilia Della Longa</li>
+<li>Valeria Quircio</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

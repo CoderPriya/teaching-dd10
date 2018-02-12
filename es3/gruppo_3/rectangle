@@ -1,0 +1,19 @@
+rectangle
+
+
+
+
+<div class= "row">
+  <div class="col-md-6 col-md-offset-3"><p style="position:absolute;z-index:2">Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p></div>
+
+<!--first emendment document icon *******************--> 
+<!--first emendment document icon [border]***********--> 
+<div class= "row">
+  <div class="col-md-6 col-md-offset-3" id="up"> 
+    <span style="display: inline-block; width: 500px; height: 150px"><span style="position: relative; display: inline-block; width: 500px; height: 150px"><i style="position: absolute;display:inline-block;width:500.00000000000006px;height:146.55172413793105px; border-bottom: 2px solid #34feb5; border-left: 2px solid #34feb5;border-right: 2px solid #34feb5;left:0px;top:43.10344827586207px"></i><i style="position: absolute;display:inline-block;width:0;height:0;line-height:0;border:21.551724137931036px solid transparent;border-left:21.551724137931036px solid #34feb5;border-bottom:21.551724137931036px solid #34feb5;left:456.89655172413796px;top:0px"></i><i style="position: absolute;display:inline-block;width:456.89655172413796px;height:43.10344827586207px;border-top: 2px solid #34feb5;border-left: 2px solid #34feb5;left:0px;top:0px"></i></span></span>
+  </div>
+</div>
+<!--first emendment document icon [white rect]--> 
+  <div class="row">  <div class="col-md-6 col-md-offset-3" > 
+    <i style="position: absolute;display:inline-block;width: 500px; height: 190px; background-color: white; margin-top: 10px; margin-left: 10px"></i>
+  </div></div>

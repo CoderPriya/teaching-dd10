@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Anonymity</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">The encyclopedic point of view</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Wikipedia network</a>
+</li>
+<li>
+<h5 class="text-uppercase">The battlefield of the debate</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Who are the debaters?</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Tetris: combining topics and speakers</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Simultaneous appearance of the topics</a>
+</li>
+<li>
+<h5 class="text-uppercase">Playing card of an online social life</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Which name do you choose 
+online?</a>
+</li>
+<li>
+<h5 class="text-uppercase">Anonymous faces</h5>
+</li>
+<li>
+<a href="chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="chapter04_viz02.html">Disassembling and rebuilding</a>
+</li>
+<li>
+<a href="chapter04_viz01.html">Thiefs, question marks and revolutioners</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz" id="black">
+<!-- Add your viz here -->
+<!-- start of filter -->
+  <label>Filter:</label>
+  
+<div class="controls">
+  
+  <ul>
+   <li><button class="filter" data-filter="all">_ALL</button></li>
+  </ul>
+
+  <ul>
+   <li> <button class="filter" data-filter=".person">[ Person ]</button></li>
+   <li> <button class="filter" data-filter=".icon">[ Icon ]</button></li>
+   <li> <button class="filter" data-filter=".animal">[ Animal ]</button></li>
+   <li> <button class="filter" data-filter=".robot">[ Robot ]</button></li>
+  </ul>
+
+  <ul>
+   <li> <button class="filter" data-filter=".covered">[ Covered face ] </button></li>
+   <li> <button class="filter" data-filter=".deleted">[ Deleted ]</button></li>
+   <li> <button class="filter" data-filter=".headless">[ Headless ]</button></li>
+  </ul>
+
+  <ul>
+   <li> <button class="filter" data-filter=".mask">[ Mask ]</button></li>
+   <li> <button class="filter" data-filter=".carneval">[ Carnival mask ]</button></li>
+   <li> <button class="filter" data-filter=".theatral">[ Theatre mask ]</button></li>
+   <li> <button class="filter" data-filter=".guy">[ Guy Fawkes mask ]</button></li>
+  </ul>
+
+  <ul>
+    <li> <button class="filter" data-filter=".bag">[ Shopping bag ]</button></li>
+   <li> <button class="filter" data-filter=".sheet">[ Paper sheet ]</button></li>
+   <li> <button class="filter" data-filter=".fabric">[ Fabric ]</button></li>
+   <li> <button class="filter" data-filter=".balaclava">[ Balaclava ]</button></li>
+  </ul>
+
+  <ul>
+   <li> <button class="filter" data-filter=".faceless">[ Faceless ]</button></li>
+   <li> <button class="filter" data-filter=".blur">[ Blur ]</button></li>
+   <li> <button class="filter" data-filter=".pixel">[ Pixelate ]</button></li>
+   <li> <button class="filter" data-filter=".bar">[ Black bar ]</button></li>
+  </ul>
+
+  <ul>
+   <li> <button class="filter" data-filter=".question">[ Question mark ]</button></li>
+   <li> <button class="filter" data-filter=".computer">[ Computer ]</button></li>
+   <li> <button class="filter" data-filter=".fingerprint">[ Fingerprint ]</button></li>
+   <li> <button class="filter" data-filter=".text">[ Text ]</button></li>
+  </ul>
+
+  <ul>
+   <li><button class="filter" data-filter=".graphic">[ Graphic ]</button></li>
+   <li><button class="filter" data-filter=".photo">[ Photo ]</button></li>
+  </ul>
+
+    <ul>
+   <li><button onclick="$('#container').mixItUp('filter','')">RESET_</button></li>
+   </ul>
+</div>
+
+<div id="container" class="cont">
+  <div class="fail-message"><span>No items were found matching the current filters!</span></div>
+  
+  <div class="mix all graphic person covered bag computer">
+    <img src="../img/imgfilters/graphic_person_covered_bag_computer.jpg"/></div>
+  <div class="mix all photo person headless">
+    <img src="../img/imgfilters/photo_person_headless.jpg"/></div>
+  <div class="mix all graphic icon">
+    <img src="../img/imgfilters/graphic_icon.jpg"/></div>
+  <div class="mix all photo person covered sheet">
+    <img src="../img/imgfilters/photo_person_covered_sheet.jpg"/></div>
+  <div class="mix all graphic icon question">
+    <img src="../img/imgfilters/graphic_icon_question.jpg"/></div>
+  <div class="mix all photo person covered mask theatral computer">
+    <img src="../img/imgfilters/photo_person_covered_mask_theatric_computer.jpg"/></div>
+  <div class="mix all computer fingerprint question">
+    <img src="../img/imgfilters/computer_fingerprint_question.jpg"/></div>
+  <div class="mix all icon covered bag fabric">
+    <img src="../img/imgfilters/icon_covered_bag_fabric.jpg"/></div>
+  <div class="mix all icon headless question text">
+    <img src="../img/imgfilters/icon_headless_question_text.jpg"/></div>
+  <div class="mix all icon headless">
+    <img src="../img/imgfilters/icon_headless.jpg"/></div>
+  <div class="mix all mask carneval">
+    <img src="../img/imgfilters/mask_carneval.jpg"/></div>
+  <div class="mix all person computer testo">
+  <img src="../img/imgfilters/person_computer_testo.jpg"/></div>
+  <div class="mix all person covered computer">
+    <img src="../img/imgfilters/person_covered_computer_2.jpg"/></div>
+  <div class="mix all person covered computer">
+    <img src="../img/imgfilters/person_covered_computer.jpg"/></div>
+  <div class="mix all person covered mask carneval text">
+    <img src="../img/imgfilters/person_covered_mask_carneval_text.jpg"/></div>
+  <div class="mix all person covered mask guy computer">
+    <img src="../img/imgfilters/person_covered_mask_guy_computer.jpg"/></div>
+  <div class="mix all person covered mask guy text">
+    <img src="../img/imgfilters/person_covered_mask_guy_text.jpg"/></div>
+  <div class="mix all person covered">
+    <img src="../img/imgfilters/person_covered.jpg"/></div>
+  <div class="mix all photo person covered">
+    <img src="../img/imgfilters/person_covered_1.jpg"/></div>
+  <div class="mix all text">
+    <img src="../img/imgfilters/text_2.jpg"/></div>
+  <div class="mix all text">
+    <img src="../img/imgfilters/text.jpg"/></div>
+  <div class="mix all photo mask guy">
+    <img src="../img/imgfilters/mask_guy.jpg"/></div>
+  <div class="mix all photo animal computer text">
+    <img src="../img/imgfilters/photo_animal_computer_text.jpg"/></div>
+  <div class="mix all photo computer balaclava">
+    <img src="../img/imgfilters/photo_computer_balaclava_.jpg"/></div>
+  <div class="mix all photo person covered bag question">
+    <img src="../img/imgfilters/photo_person_covered_bag_question.jpg"/></div>
+  <div class="mix all photo person covered balaclava computer">
+    <img src="../img/imgfilters/photo_person_covered_balaclava_computer.jpg"/></div>
+  <div class="mix all photo person covered computer">
+    <img src="../img/imgfilters/photo_person_covered_computer.jpg"/></div>
+  <div class="mix all photo person covered mask carneval">
+    <img src="../img/imgfilters/photo_person_covered_mask_carneval.jpg"/></div>
+  <div class="mix all photo person covered mask guy">
+    <img src="../img/imgfilters/photo_person_covered_mask_guy_2.jpg"/></div>
+  <div class="mix all photo person covered mask guy text">
+    <img src="../img/imgfilters/photo_person_covered_mask_guy_text.jpg"/></div>
+  <div class="mix all photo person covered mask guy">
+    <img src="../img/imgfilters/photo_person_covered_mask_guy.jpg"/></div>
+  <div class="mix all photo person covered mask theatral computer">
+    <img src="../img/imgfilters/photo_person_covered_mask_theatral_computer.jpg"/></div>
+  <div class="mix all photo person covered mask thatral">
+    <img src="../img/imgfilters/photo_person_covered_mask_theatral.jpg"/></div>
+  <div class="mix all photo person covered sheet question computer">
+    <img src="../img/imgfilters/photo_person_covered_paper_question_computer.jpg"/></div>
+  <div class="mix all photo person covered sheet question">
+    <img src="../img/imgfilters/photo_person_covered_paper_question.png"/></div>
+  <div class="mix all photo person deleted faceless">
+    <img src="../img/imgfilters/photo_person_deleted_faceless_2.jpg"/></div>
+  <div class="mix all photo person deleted faceless">
+    <img src="../img/imgfilters/photo_person_deleted_faceless.jpg"/></div>
+  <div class="mix all photo person deleted pixel">
+    <img src="../img/imgfilters/photo_person_deleted_pixel.jpg"/></div>
+  <div class="mix all photo robot computer text service">
+    <img src="../img/imgfilters/photo_robot_computer_text_service.jpg"/></div>
+  <div class="mix all icon animal text computer">
+    <img src="../img/imgfilters/icon_animal_text_computer_2.jpg"/></div>
+  <div class="mix all icon animal text computer">
+    <img src="../img/imgfilters/icon_animal_text_computer.jpg"/></div>
+  <div class="mix all person blur">
+    <img src="../img/imgfilters/person_deleted_blur.jpg"/></div>
+  <div class="mix all photo person deleted bar">
+    <img src="../img/imgfilters/photo_person_deleted_bar.jpg"/></div>
+
+  <div class="mix all ">
+    <img src="../img/imgfilters/"/></div>
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+
+<!-- End of filter -->
+</div>
+</div>
+<!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">Anonymous faces</h5><!-- Title of the "chapter"  -->
+<h1>Disassembling and rebuilding: how anonymity is pictured on the web? </h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>Studying the controversy theme through general queries, clearly appeared that the freedom of expression is often used as an example of the good qualities about online anonymity. Google Images is the experimentation field that had been chosen for this fourth chapter.</p>
+
+<p>Which is the general perception about anonymity in its graphic representations? The decision to investigate the iconographic point of view was made to understand if by googling the simple word "anonymity" there would appear in some ways the freedom of expression. The research was made through different countries' Google dominions with the relative translation of the associated query. Are there differences between the phenomena visualization in different countries? </p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>This visualization could be considered as a glossary of  the possible elements used to represent anonymity. Clicking the buttons on the top, the images will appear on the screen. The buttons are a sort of filters through which it's easy to navigate into the visualization to understand which are the possible elements composing the pictures scraped from the first 100 items of each research per country.</p>
+
+<p>In this kind of visualization it was not important to show the differences between countries' results because its purpose is to let the reader understand the type of the images linked to anonymity representation. All the countries selected for this research presented similar results and for this visualization some sample images had been chosen from all the 1100 results avoiding the division into groups. This visualization could be seen as a useful tool to understand how anonymity is pictured on the web and to discover which are the possible combinations of the pictures' elements. </p>
+
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>Studying the images emerged from the queries' formulation some elements were particularly recurring. In order to create this visualization, it has been taken a sample of each image. Each picture has been analyzed disassembling it like a puzzle in which the pieces were the single objects separated from their previous composition.</p>
+
+<p>The element's name has been used as a filter (the buttons on the top) and each element could be added to another filter showing a different result. If the combination gives no results, this means that there is no picture containing both elements. An example could be the following: Clicking "person" all the pictures containing a person will appear; adding the filter "covered face" the visualization shows all the pictures containing a person with the face covered by something; adding the filter "mask" all the images containing a person with the face covered by a mask will be displayed and so on.</p>
+
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>This "picture glossary" is an important instrument to understand the rest of the research. It is useful to understand all the elements which can be used to compose a picture representing anonymity.</p>
+
+<p>What it is easy to see is that a picture from this query formulation can be made representing a person, an animal or a robot. That one of these three subject can be covered by a mask, a shopping bag, a balaclava or something else. Or can be understandable that the subject of the image can be faceless or deleted by pixels or blur; and that there are some elements, as question mark, fingerprints or computers that can accompany some other objects in a picture.</p>
+
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 18/12/2014</h4>
+<h4>Data source: <a href="#">Google Images</a></h4>
+<h4><a href="chapter04_protocol.html">Related Protocol</a></h4>
+<h4><a href="../data/anonymity_googleimages.csv"><i class="fa fa-arrow-circle-o-down"></i> Download data (530KB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Luca Alberton</li>
+<li>Marta Ambrosetti</li>
+<li>Giulia De Rossi</li>
+<li>Cecilia Della Longa</li>
+<li>Valeria Quircio</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+<!-- Filter Images -->
+<script src="../js/jquery.mixitup.min.js"></script>
+<script src="main.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  $('#container').mixItUp({
+    load: {
+      filter: '' 
+    },
+    controls: {
+      toggleFilterButtons: true,
+      toggleLogic: 'and'
+    },
+    callbacks: {
+      onMixEnd: function(state){
+        console.log(state.activeFilter)
+      }
+    }
+  });
+});
+</script>
+
+
+</body>
+
+</html>

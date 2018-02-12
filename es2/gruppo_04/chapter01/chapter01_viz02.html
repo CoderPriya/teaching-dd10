@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/gephi.map.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+
+<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+
+<!-- Fontawesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/style.sp.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- START SIGMA IMPORTS -->
+<script src="../js/sigma/sigma.core.js"></script>
+<script src="../js/sigma/conrad.js"></script>
+<script src="../js/sigma/utils/sigma.utils.js"></script>
+<script src="../js/sigma/utils/sigma.polyfills.js"></script>
+<script src="../js/sigma/sigma.settings.js"></script>
+<script src="../js/sigma/classes/sigma.classes.dispatcher.js"></script>
+<script src="../js/sigma/classes/sigma.classes.configurable.js"></script>
+<script src="../js/sigma/classes/sigma.classes.graph.js"></script>
+<script src="../js/sigma/classes/sigma.classes.camera.js"></script>
+<script src="../js/sigma/classes/sigma.classes.quad.js"></script>
+<script src="../js/sigma/classes/sigma.classes.edgequad.js"></script>
+<script src="../js/sigma/captors/sigma.captors.mouse.js"></script>
+<script src="../js/sigma/captors/sigma.captors.touch.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.canvas.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.webgl.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.svg.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.def.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.edges.def.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.labels.def.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.hovers.def_sara.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.def.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.utils.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.nodes.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.edges.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.edges.curve.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.labels.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.hovers.def.js"></script>
+<script src="../js/sigma/middlewares/sigma.middlewares.rescale.js"></script>
+<script src="../js/sigma/middlewares/sigma.middlewares.copy.js"></script>
+<script src="../js/sigma/misc/sigma.misc.animation.js"></script>
+<script src="../js/sigma/misc/sigma.misc.bindEvents.js"></script>
+<script src="../js/sigma/misc/sigma.misc.bindDOMEvents.js"></script>
+<script src="../js/sigma/misc/sigma.misc.drawHovers.js"></script>
+<script src="../js/sigma/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dashed.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dotted.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.parallel.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.tapered.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dashed.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dotted.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.parallel.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.tapered.js"></script>
+<!-- END SIGMA IMPORTS -->
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4><strong>TITLE II</strong>
+<li><em>#NetNeutrality debate in the US</em></li>
+</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Set the basis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Chapter 1 Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Wikipedia speaks out loud</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">In between ethical and technical</a>
+</li>
+<li>
+<h5 class="text-uppercase">A well-established name</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Chapter 2 Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">News and Blog speak the same language</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Many terms, one meaning</a>
+</li>
+<li>
+<h5 class="text-uppercase">Speeches and reactions</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Chapter 3 Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Vloggers and showmen speak up for NN</a>
+</li>
+<li>
+<h5 class="text-uppercase">#NetNeutrality</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Chapter 4 Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Understanding users patterns</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Do they all speak the same?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Ethical CTAs push  people to share a lot</a>
+</li>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+
+<!-- CONTAINER SIGMA -->
+
+<div id="sigma-container"></div>
+
+<!-- <div class="my-viz"> -->
+<!-- Add your viz here -->
+<!-- </div> -->
+<!-- End of Visualization -->
+
+<!-- LEGENDA  -->
+     <div class="raw">
+
+            
+</div> <!-- FINE LEGENDA  -->
+
+<!-- ZOOM BUTTONS -->
+
+<div class="row network-controls my-viz-sara">
+            <ul class="col-md-2 col-md-offset-2">
+<li style="color:brown;"><i class="fa fa-circle ethical"></i> Ethical-related hashtag </li>
+<li style="color:steelblue;"><i class="fa fa-circle technical"></i> Technical-related hashtag </li>
+</ul>
+<div class="col-md-3 col-md-offset-5"> 
+		<button id="reset" class="btn btn-round btn-default zoom-reset">reset zoom</button> 
+		
+		<button id="out" class="btn btn-round btn-default zoom-out">
+			<i class="fa fa-minus"></i>
+		</button> 
+		<button  class="btn btn-round btn-default zoom-in">
+			<i class="fa fa-plus"></i>
+		</button> 
+		</div> 
+
+</div>
+</div>
+
+
+<!-- Main content  -->
+
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">Set the basis</h5><!-- Title of the "chapter"  -->
+<h1>In between ethics<br>and technical</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>
+    It’s been quite of an year for net neutrality, and the first step in studying the debate about it is to understand what we're really talking about. What we need to understand and, in some way, to demonstrate is that there's a debate going on.
+    Wikipedia, with its 500 million unique visitors each month and more than 22 million accounts seems to be the perfect "enviroment" to begin to study network neutrality.
+</p>
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>The graph above represents the net of connections between the Wikipedia pages related to the net neutrality one. The first thing we can see in this graph is the division in three main clusters (see the image here below).</p>
+<img src="../img/chapter01_viz01_img02.png" class="sara">
+<p> It is easy now to recognize a bigger and more central cluster and two smaller ones. There are also many bridge clusters and external ones, but the most interesting fact is that the <i> Net Neutrality </i> page (in the red circle) doesn't belong to any of these clusters. We can see in the image below how it actually is in between two clusters.</p>
+<img src="../img/chapter01_viz01_img03.png" class="sara">
+<p>The final visualization above presents a further codification: nodes are divided into two different categories, depending on the content of the pages: ethical terms are red, while technical ones are blue.
+Finally, the dimension of the dots depends on their own inDegree, which means that the more a dot the more it was linked by others.</p>
+<p>Clicking on the dots allows to isolate the nodes linking or linked to the one you clicked on. In order to fully understand the graph it's possible to zoom in and out in the visualization to see smaller nodes.</p>
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>The starting point of this visualization are 5 wikipedia pages related to the <i> Net Neutrality </i> issue. In particular we decided to take pages that could describe the topic from different point of view. These are the five starting point: 
+	<ol>
+	<li class="li-sp"> <a href="http://en.wikipedia.org/wiki/Net_neutrality" target="_blank"> Net Neutrality</a>, because it describes the issue;</li>
+	<li class="li-sp"><a href="http://en.wikipedia.org/wiki/Communications_Act_of_1934" target="_blank"> Communication Act of 1934</a>, because it's the Communication Act on which the debate is based on;</li>
+	<li class="li-sp"><a href="http://en.wikipedia.org/wiki/Federal_Communications_Commission" target="_blank"> Federal Communication Commission</a>, because it's the authority in charge of setting the rules on Net Neutrality and it's been a protagonist in the latest goings-on;</li>
+	<li class="li-sp"><a href="http://en.wikipedia.org/wiki/Series_of_tubes" target="_blank"> Series of tubes</a>, because it's been one of the most discussed definition of the internet, in the context of opposing network neutrality;</li>
+	<li class="li-sp"><a href="http://en.wikipedia.org/wiki/Verizon_Communications_Inc._v._Federal_Communications_Commission_%282014%29" target="_blank"> Verizon Communication Inc. vs Federal Communications Commission</a>, because it's the legal case that brought again to light the <i> Net Neutrality </i> issue in 2014</li>
+</ol></p>
+<p>Starting from this five links we obtained all the see also pages connected to them. We then were able to automatically calculate the see also of the see also pages till the third level, thanks to Seealsology tool. The result was an amount of 25000 connections.</p>
+<p>We then imported the file in Gephi and, after cleaning the data, we were able to study and export the graph above.</p>
+<p></p>
+
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>The <a href="#viz">final graph</a> above represents the net of connessions between Wikipedia links. In order to understand fully the graph it's important to take a look at the <a href="#sec1">How to read the visualization</a> paragraph.</p>
+<p>As we've seen in previous paragraphs, the <i>Net Neutrality</i> node is outside the clusters we recognized, in particular it is located in between the central and bigger group and the one in the bottom. Once again: red dots represent Wikipedia pages that focus on ethical issues, while blue ones represent pages with more technical content. What's more interesting here is that <i>Net Neutrality</i> page is right in between a blue and a red area. Although this seems to be a very summary information, it is actually the point of our research. We will eximine this aspect in depth in the next chapters, but what is really important to notice here is that net neutrality stands in the middle between ethical and technical arguments.</p>
+<p></p>
+<p></p>
+
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 13/12/2014 - 13/12/2014</h4>
+<h4>Data source: <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a></h4>
+<h4><a href="chapter01_protocol.html">Related Protocol</a></h4>
+<h4><a href="data/chapter01_viz02_metadata.csv" download><i class="fa fa-arrow-circle-o-down"></i> Download data</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Nicoletta Bruno</li>
+<li>Martina Cocco</li>
+<li>Sara Perozzi</li>
+<li>Jacopo Pompilii</li>
+<li>Andrea Tagliabue</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+<!-- MAPPA DI GEPHI INTERATTIVA -->
+<script>
+  // Add a method to the graph model that returns an
+  // object with every neighbors of a node inside:
+  sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+    var k,
+        neighbors = {},
+        index = this.allNeighborsIndex[nodeId] || {};
+
+    for (k in index)
+      neighbors[k] = this.nodesIndex[k];
+
+    return neighbors;
+  });
+      sigma.parsers.json('data/Net_neutrality.json',
+    {
+      container: 'sigma-container'
+    },
+    function(s) {
+      // We first need to save the original colors of our
+      // nodes and edges, like this:
+      s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+      s.graph.edges().forEach(function(e) {
+        e.originalColor = e.color;
+      });
+
+      // When a node is clicked, we check for each node
+      // if it is a neighbor of the clicked one. If not,
+      // we set its color as grey, and else, it takes its
+      // original color.
+      // We do the same for the edges, and we only keep
+      // edges that have both extremities colored.
+      s.bind('clickNode', function(e) {
+        var nodeId = e.data.node.id,
+            toKeep = s.graph.neighbors(nodeId);
+        toKeep[nodeId] = e.data.node;
+
+        s.graph.nodes().forEach(function(n) {
+          if (toKeep[n.id])
+            n.color = n.originalColor;
+          else
+            n.color = '#e6e6e6';
+        });
+
+        s.graph.edges().forEach(function(e) {
+          if (toKeep[e.source] && toKeep[e.target])
+            e.color = e.originalColor;
+          else
+            e.color = '#fff';
+        });
+
+        // Since the data has been modified, we need to
+        // call the refresh method to make the colors
+        // update effective.
+        s.refresh();
+      });
+
+      // When the stage is clicked, we just color each
+      // node and edge with its original color.
+      s.bind('clickStage', function(e) {
+        s.graph.nodes().forEach(function(n) {
+          n.color = n.originalColor;
+        });
+
+        s.graph.edges().forEach(function(e) {
+          e.color = e.originalColor;
+        });
+
+        // Same as in the previous event:
+        s.refresh();
+      });
+
+      var c = s.camera;
+
+
+            $(".zoom-out").on('click', function(e) {
+
+				 if (c.ratio > s.settings("zoomMax")) return;
+				sigma.misc.animation.camera(c, {
+				  ratio: c.ratio * c.settings('zoomingRatio')
+				}, {
+				  duration: 200
+				});
+            });
+
+            $(".zoom-in").on('click', function(e) {
+            	if (c.ratio < s.settings("zoomMin")) return;
+				sigma.misc.animation.camera(c, {
+				  ratio: c.ratio / c.settings('zoomingRatio')
+				}, {
+				  duration: 200
+				});
+            });
+
+            $(".zoom-reset").on("click", function(e){
+            	sigma.misc.animation.camera(c, {
+			        ratio: 1 ,
+			        x: 0,
+			        y: 0,
+			        angle: 0
+			      }, {
+			        duration: 200
+			      });
+            })
+
+    }
+  );
+</script>
+
+<!-- FINE MAPPA GEPHI INTERATTIVA -->
+
+</body>
+
+</html>

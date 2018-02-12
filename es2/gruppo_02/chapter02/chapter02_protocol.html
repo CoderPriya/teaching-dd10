@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../00_sito/introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+
+<li>
+<h4>Digital Measures</h4>
+</li>
+
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">See Also Analysis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Network</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Corpus Analysis</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Scatterplot</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Google Images</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Amazon Analysis</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Amazon Overview</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Books Covers</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Digital Detox</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Detox Holidays</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Images</a>
+</li>
+
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">Amazon Analysis</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Books Analysis</h3>
+<p>
+<br>
+
+Starting from the queries:
+<br>
+<br>
+
+
+- Internet Addiction<br>
+- Digital Addiction<br>
+- Social Media Addiction (abandoned throughout the analysis) <br>
+<br>
+
+1. Each query has been typed into Amazon.com (using Google Chrome) <br>selecting the voice “books”. The first 200 results have been selected (approximately 20 pages each) <br>in order of relevance for each query<br>
+<br>
+2. Once opened the first results page for each query, <br>the following voices have been created on <a href="https://www.kimonolabs.com/learn/chrome-extension" target="blank"> Kimono</a>: <br>
+<br>
+
+        - Title<br>
+		- Author<br>
+		- Data<br>
+		- Reviews<br>
+		- Image<br>
+<br>
+In “Data Model View”, from the page “Advanced” for each voice,<br> “Including href” has been taken off; selecting “Crawl Setup” has been used “Manual Crawl” <br>and inserted the URL for the 20 following pages; once ended the Crawling the .cvs is dowloaded <br>
+<br>
+
+3. The .csv is opened in <a href="http://www.barebones.com/products/textwrangler/download.html" target="blank">TextWrangler</a>,<br>reworked substituting “,” with “;” (dividers), then saved <br>as “unix (LF)-Unicode (UTF-8)” <br>
+<br>
+
+4. Three tables have been created using Excel (one for each query)<br> keeping the following voices:<br>
+<br>
+        - Title<br>
+		- Author<br>
+		- Data<br>
+		- Reviews<br>
+<br>
+Data cleaned and fixed<br>
+<br>
+
+5. For each result the abstract has been read (Amazon.com) and labeled “relevant" or "non-relevant",<br>
+Three labels have been associated to each voice:<br>
+<br>
+<b>Speaker</b>, who speaks:<br>
+- Medical (1)<br>
+- Non medical (0)<br>
+<br>
+<b>Typology</b>, what kind of text:<br>
+- Manual (1)<br>
+- Essay (2)<br>
+- Narrative (3)<br>
+<br>
+<b>Self help</b>, do-it-yourself remedies:<br>
+- Self Help (1)<br>
+- Others (2)<br>
+<br>
+The resulting file .csv has been sorted like following:<br>
+<br>
+	- Query<br>
+	- Title<br>
+	- Author<br>
+	- Reviews<br>
+	- Year<br>
+	- Relevant<br>
+	- Speaker<br>
+	- Typology<br>
+	- Self Help<br>
+<br>
+
+6. Dataset has been put in <a href="http://raw.densitydesign.org/" target="blank">Raw</a> generating different graphics then <br>arranged to compose the final one
+</p>
+<br>
+<img src="../img/diagrammi-03.png" width="100%">
+</div>
+</div>
+
+
+<div class="section-content-protocol">
+<div> 
+<h3>Book covers</h3>
+<br>
+<p>
+1. For each query a list of urls containing the links has been created on Excel,<br> copied-pasted on TextWrangler and saved as html<br>
+<br>
+
+2. Files have been opened on <a href="https://www.mozilla.org/en-US/firefox/new/" target="blank">Mozilla Firefox</a>; using the plug-in <a href="http://www.downthemall.net/" target="blank">DownThemAll</a> <br>the covers have been downloaded and put in two different folders (one for each query) setting the starting order for the download “normal+slow” (advanced settings > other settings)
+<br>
+<br>
+
+3. Once downloaded the images have been imported on Lightroom:<br> for each query the image hes been exported as 160x160 square and renamed as <br> 001, 002, 003, 004… 200 and then substituted to the original ones
+<br>
+<br>
+4. Each cover has been tagged as following:<br>
+<br>
+
+- Device and technology (yellow)<br>
+- Neutral themes not linkable to any of the other categories (blue) <br>
+- Drugs and other addictions (red) <br>
+- Family and religion (purple) <br>
+- Medicine (green) <br>
+- Without cover (black) <br>
+
+<br>
+
+</p>
+<br>
+<img src="../img/diagrammi-02.png" width="100%">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>20/11/2014 - 15/12/2014</h4>
+<h4>Data source: <br> <a href="http://www.amazon.com/" target="blank">Amazon</a>
+<h4>Tools: <br> <a href="https://chrome.google.com/webstore/detail/kimono/deoaddaobnieaecelinfdllcgdehimih" target="blank">Kimono</a> 
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="../chapter02/chapter02_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/grafici-02.png">
+</div>
+<h4>Amazon Overview</h4>
+</div>
+</a>
+</div>
+</div>
+
+<div>
+<div class="related-viz">
+<a href="../chapter02/chapter02_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/grafici-01.png">
+</div>
+<h4>Books Covers</h4>
+
+</div>
+</div>
+</div>
+
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Project by</h4>
+          <ul>
+            <li></li>
+            <li> <a class="one" href="http://www.nicoloarena.com/" target="_blank">Nicolò Arena</a> </li>
+            <li> <a class="one" href="http://www.claudiofabbro.com/" target="_blank">Claudio Fabbro</a> </li>
+            <li> <a class="one" href="https://www.behance.net/alessandro_malcotti" target="_blank">Alessandro Malcotti</a> </li>
+            <li> <a class="one" href="https://www.behance.net/martamandile" target="_blank">Marta Mandile</a> </li>
+            <li> <a class="one" href="https://www.behance.net/lanitari" target="_blank">Anita Righetto</a> </li>
+          </ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

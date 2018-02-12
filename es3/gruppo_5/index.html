@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Marianna Caserta, Francesca Casnati, Chiara Cingottini, Giulia Sonzogni, Ilaria Tedoldi">
+
+	<title>Keeping an eye on the Eye</title>
+
+	<link rel="icon" type="image/x-icon" href="img/fav.png">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	
+	<script src="js/modernizr.min.js"></script>
+
+	<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+
+	<!-- TITOLI -->
+	<link rel="stylesheet" type="text/css" href="css/wodry.css" />
+
+</head>
+<body id="body">
+
+<!-- facebook button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- DEFINE POP UP -->
+<!-- Pop up 1 -->
+<div class="md-modal md-effect-3" id="modal-3">
+	<div class="md-content">
+		<div>
+			<i class="fa fa-times-circle md-close"></i>
+			<h5>Surveillance Metaphores</h5>
+			<p>To better understand how metaphors are being used in coverage of surveillance, <a href="https://www.pen.org">PEN</a> (an organization that promotes literature and defends freedom of expression) embarked on a study of articles by journalists and bloggers. Over 62 days between december and february 2014, PEN combed through 133 articles by 105 different authors and over 60 news outlets, finding that 91% of the articles contain metaphors about surveillance.</p>
+
+			<div class="button-more-data">
+				<a href="http://www.pen.org/infographic/pen-surveillance-metaphor-mapping-project" target="_blank">
+					<i class="fa fa-arrow-circle-right"></i><p>Explore PEN research</p>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+
+</div>
+
+<!-- Pop up 2 -->
+<div class="md-modal md-effect-3" id="modal-2">
+	<div class="md-content">
+		<div>
+			<i class="fa fa-times-circle md-close"></i>
+			<h5>Why these media?</h5>
+			<p>The purpose of this analysis is to compare two media which inform a large part of the population, even though in different ways. In this case journalists represent information media and telefilm represent entertainment media. 
+			<br><br><span style="color:#1ca58a">TV series</span> / playful field: as revealed by analysis, the TV series episodes mentioning “NSA” have increasingly grown (more than films) in relation to the intensification of surveillance practices after 11 septemper 2001.
+			<br><br><span style="color:#dd002a">Journalists</span> / informative field: they are the main speaker in the online debate according to the results obtained through the search of five selected queries on Google.com.
+			
+</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- FULL PAGE -->
+<div id="fullpage">
+
+	<!-- Section 1 - Counter -->
+	<div class="section" id="section1">
+		<div  class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+				<div class="section-text-small">
+				<p id="p1">Since you opened this page,<br/>the National Security Agency has collected</p>
+			</div>
+		</div>
+	</div>
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div  id="space-cont">
+					</div>
+
+					  <div class="digit d5">
+					  <div class="row"></div>
+					  <div class="horizontal a"></div>
+					  <div class="row vertical b"></div>
+					  <div class="block"></div>
+					  <div class="vertical c"></div>
+					  <div class="row"></div>
+					  <div class="horizontal d"></div>
+					  <div class="row vertical e"></div>
+					  <div class="block"></div>
+					  <div class="vertical f"></div>
+					  <div class="row"></div>
+					  <div class="horizontal g"></div>
+					</div>
+
+					<div class="digit d4">
+					  <div class="row"></div>
+					  <div class="horizontal a"></div>
+					  <div class="row vertical b"></div>
+					  <div class="block"></div>
+					  <div class="vertical c"></div>
+					  <div class="row"></div>
+					  <div class="horizontal d"></div>
+					  <div class="row vertical e"></div>
+					  <div class="block"></div>
+					  <div class="vertical f"></div>
+					  <div class="row"></div>
+					  <div class="horizontal g"></div>
+					</div>
+					<div class="digit d3">
+					  <div class="row"></div>
+					  <div class="horizontal a"></div>
+					  <div class="row vertical b"></div>
+					  <div class="block"></div>
+					  <div class="vertical c"></div>
+					  <div class="row"></div>
+					  <div class="horizontal d"></div>
+					  <div class="row vertical e"></div>
+					  <div class="block"></div>
+					  <div class="vertical f"></div>
+					  <div class="row"></div>
+					  <div class="horizontal g"></div>
+					</div>
+					<div class="digit d2" >
+					  <div class="row"></div>
+					  <div class="horizontal a"></div>
+					  <div class="row vertical b"></div>
+					  <div class="block"></div>
+					  <div class="vertical c"></div>
+					  <div class="row"></div>
+					  <div class="horizontal d"></div>
+					  <div class="row vertical e"></div>
+					  <div class="block"></div>
+					  <div class="vertical f"></div>
+					  <div class="row"></div>
+					  <div class="horizontal g"></div>
+					</div>
+
+					<div  id="point-cont">
+					<div id="point"></div>
+					</div>
+
+					<div class="digit d1">
+					  <div class="row"></div>
+					  <div class="horizontal a"></div>
+					  <div class="row vertical b"></div>
+					  <div class="block"></div>
+					  <div class="vertical c"></div>
+					  <div class="row"></div>
+					  <div class="horizontal d"></div>
+					  <div class="row vertical e"></div>
+					  <div class="block"></div>
+					  <div class="vertical f"></div>
+					  <div class="row"></div>
+					  <div class="horizontal g"></div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">	
+					<!--<div class="clock" style="margin:2em;"></div>-->
+					<h5 id="tb">  terabyte  </h5>
+					<p id="p1-1">of data about Internet users</p>
+					<h5 id="quest"> Do you feel protected or spied?</h5>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5">
+					<div class="next" id="next1">
+						<a href="#secondPage" class="btn btn-circle">
+							<i class="fa fa-angle-double-down"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div><!-- /section1 -->
+
+	<!-- Section 2 -->
+	<div class="section" id="section2">
+		<div class="container">
+			<div class="title">
+				<div class="row">
+					<div class="col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-1">
+						<h1>Keeping</h1>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<h4 id="subtitle">Two opposite views in the debate on mass surveillance</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2">
+						<h1>an eye</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1">
+						<h1>on the Eye</h1>
+					</div>
+				</div> 
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5">
+					<div class="next">
+						<a href="#3rdPage" class="btn btn-circle">
+							<i class="fa fa-angle-double-down"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="rect">
+			</div>
+		</div>
+	</div><!-- /section2 -->
+
+	<!-- Section 3 -->
+	<div class="section" id="section3">
+			<div class="container">
+			
+			<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+				<div id="form-nsa" class="form-nsa">
+					<nav>
+						<ul>
+							<li><div id="tab-nsa"><span>ABOUT THE EYE</span></div></li>
+						</ul>
+					</nav>
+
+					<div class="content">
+						<section id="section-1">
+					<div class="row">
+						<div class="col-md-9 col-sm-9">
+							<small>NAME</small>
+							<h5>NSA (National Security Agency)</h5>
+							<hr>
+							<small>CONSTITUTION</small>
+							<p>1952</p>
+							<hr>
+							<small>DEFINITION</small>
+							<p>A secret body established in the US after  World War II to gather intelligence, deal with coded communications from around the world, and safeguard US transmissions.</p>
+							<small>SOURCE</small><br>
+							<a href="http://www.oxforddictionaries.com/definition/english/National-Security-Agency" target="_blank"><i class="fa fa-arrow-circle-right"></i>Oxford Dictionary</a>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<img src="img/nsa-logo.png" id="logo-nsa" style="width:140px;">
+						</div>
+						</section>
+						
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</div>
+			</div>
+		</div>
+	</div><!-- /section3 -->
+
+	<!-- Section 4 -->
+	<div class="section" id="section4">
+		<div class="section-text">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-1">
+						<h2>Through which</h2><!--Come l'immagine dell'nsa cambia a seconda del punto di vista? / Some of the collective consciousness builders about NSA--><!--Through which lens are people watching the Eye?-->
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12 col-md-offset-3 col-sm-12 col-sm-offset-0">
+						<h2>lens are people</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-2">
+						<h2>watching the Eye?</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /section4 -->
+	
+	<!-- Section 5 -->
+	<div class="section" id="section5">
+			<div class="container">
+			
+			<div class="row">
+
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+
+				<div class="section-text-small"><h5 class="par-title">A PORTRAY OF THE NSA'S PRACTICES</h5></div><!--The portray of the NSA's practice-->
+
+				<div id="form-media" class="form-media">
+					<nav>
+						<ul>
+							<li><a href="#section-1" id="tab-ent"><span>ENTERTAINMENT MEDIA</span></a></li>
+							<li><a href="#section-2" id="tab-news"><span>NEWS MEDIA</span></a></li>
+						</ul>
+					</nav>
+
+					<div class="content background1">
+						<section id="section-1">
+							<div class="row">
+								<div class="col-md-8 col-sm-8">
+									<h5>TV series talk <br>about <span style="color:#1ca58a">surveillance</span></h5>
+								</div>
+
+								<div class="col-md-4 col-sm-4">
+									<div class="button-more-data md-trigger" data-modal="modal-2"><a><i class="fa fa-plus-circle"></i><p>Why we choose these media?</p></a></div>
+								</div>
+							</div>
+
+							<hr>
+							<small>DEFINITION</small>
+							<p>Surveillance is the monitoring of the behavior, activities, or other changing information, usually of people for the purpose of influencing, managing, directing, or protecting them. [...] Surveillance is used for intelligence gathering, the prevention of crime, the protection of a process, person, group or object, or for the investigation of crime.</p>
+							<small>SOURCE</small><br>
+							<a href="http://en.wikipedia.org/wiki/Surveillance" target="_blank"><i class="fa fa-arrow-circle-right"></i>Wikipedia</a>
+						</section>
+
+						<section id="section-2">
+							<div class="row">
+								<div class="col-md-8 col-sm-8">
+									
+									<h5>Journalists talk <br>about <span style="color:#dd002a">mass surveillance</span></h5>
+								</div>
+								
+								<div class="col-md-4 col-sm-4">
+									<div class="button-more-data md-trigger" data-modal="modal-2"><a><i class="fa fa-plus-circle"></i><p>Why we choose these media?</p></a></div>
+								</div>
+
+							</div>
+							<hr>
+							<small>DEFINITION</small>
+							<p>Mass surveillance is the intricate surveillance of an entire or a substantial fraction of a population, often carried out by governments or governmental organizations, but may also be carried out by others corporations. Conversely, mass surveillance has equally as often been criticized for violating privacy rights, limiting civil and political rights and freedoms, and being illegal under some legal or constitutional systems.</p>
+							<small>SOURCE</small></br>
+							<a href="http://en.wikipedia.org/wiki/Mass_surveillance" target="_blank"><i class="fa fa-arrow-circle-right"></i>Wikipedia</a>
+							
+							
+						</section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+				
+			</div>
+			</div>
+		</div>
+	</div><!-- /section5 -->
+
+	<!-- Section 6 -->
+	<div class="section" id="section6">
+		<div class="container">
+			<div class="section-text">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-0">
+							<h5 class="par-title">TV series: a positive view</h5>
+							<p>TV series portray NSA as NSA wants to appear.</p></br>
+							<div class="line"></div>
+							<br>
+							<p>The National Security Agency declares that they will protect national security interests by adhering to the highest standards of behavior.</p>
+							<a href="https://www.nsa.gov/about/index.shtml" target="_blank"><i class="fa fa-arrow-circle-right"></i>NSA Website</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /section6 -->
+
+	<!-- Section 7 -->
+	<div class="section" id="section7">
+		<!-- Video -->
+
+		<video loop id="bgvid">
+			<source src="img/video.mp4" type="video/mp4">
+				<p>Your browser doesn't support HTML5 video.
+      				<a href="https://vimeo.com/115894152" target="_blank">Watch the video on Vimeo.</a>
+    			</p>
+		</video>
+
+		
+
+		<!-- Video Controls -->
+		<div class="container">
+			<div class="row info">
+				<button class="btn btn-default" type="submit" id="vidpause"><i class="fa fa-play"></i></button>
+				<button class="btn btn-default" type="submit" id="vidmute"><i class="fa fa-volume-up"></i></button>
+
+				<a href="https://vimeo.com/115894152" target="_blank"><i class="fa fa-arrow-circle-right"></i>Full Video</a>
+			</div>
+		</div>
+		  
+	</div><!-- /section7 -->
+
+
+	<!-- Section 8 -->
+	<div class="section" id="section8">
+		<div class="container">
+			
+			<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+				<div class="section-text-small"><h5 class="par-title">A NSA fighting for national security</h5></div>
+				<p>In TV series NSA is devoted to provide valuable intelligence on issues of concern to all Americans, such as:</p>
+				<div id="form-serie" class="form-serie">
+					<nav>
+						<ul>
+							<li><a href="#section-1" id="tab-terror"><span>TERRORISM</span></a></li>
+							<li><a href="#section-2" id="tab-cyber"><span>CYBER CRIME</span></a></li>
+							<li><a href="#section-3" id="tab-weapon"><span>WEAPON</span></a></li>
+							<li><a href="#section-4" id="tab-narco"><span>NARCOTICS</span></a></li>
+						</ul>
+					</nav>
+
+					<div class="content">
+						<section id="section-1">
+
+							<br><small>TV SERIES QUOTE</small>
+							<h5>“Terrorists have planned a strike against Los Angeles. NSA thinks it’ll be today”.</h5>
+							</br><hr>
+							<div class="row">
+								<div class="col-md-6">
+									<small>TITLE / EPISODE</small>
+									<p>24 - <i>Day 2, 1p.m.-2p.m.</i></p>
+								</div>
+								<div class="col-md-6">
+									<small>TIME</small>
+									<p>00:26:52</p>
+								</div>
+							</div>
+						</section>
+
+						<section id="section-2">
+							<br><small>TV SERIES QUOTE</small>
+							<h5>“A friend of mine is a headhunter for the NSA. They’re looking for analysts versed in cyber warfare”.</h5>
+							<br>
+							<hr>
+							<div class="row">
+								<div class="col-md-6">
+									<small>TITLE / EPISODE</small>
+									<p>Criminal Minds - <i>Roadkill</i></p>
+								</div>
+								<div class="col-md-6">
+									<small>TIME</small>
+									<p>00:03:49</p>
+								</div>
+							</div>
+						</section>
+
+						<section id="section-3">
+							<br><small>TV SERIES QUOTE</small>
+							<h5>“I just got off a conference call with NSA and Division. It appears there’s a nuclear bomb under terrorist control”.</h5>
+							<br>
+							<hr>
+							<div class="row">
+								<div class="col-md-6">
+									<small>TITLE / EPISODE</small>
+									<p>24 - <i>Day 2, 8a.m.-9a.m.</i></p>
+								</div>
+								<div class="col-md-6">
+									<small>TIME</small>
+									<p>00:27:23</p>
+								</div>
+							</div>
+						</section>
+
+						<section id="section-4">
+							<br><small>TV SERIES QUOTE</small>
+							<h5>“According to NSA and Interpol, Siravo’s enterprise has spread to drug smuggling in Mexico”.</h5>
+							<br>
+							<hr>
+							<div class="row">
+								<div class="col-md-6">
+									<small>TITLE / EPISODE</small>
+									<p>NCIS - <i>Dead Reckoning</i></p>
+								</div>
+								<div class="col-md-6">
+									<small>TIME</small>
+									<p>00:08:11</p>
+								</div>
+							</div>
+						</section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</div>
+			</div>
+		</div>
+	</div><!-- /section8 -->
+
+	<!-- Section 9 -->
+	<div class="section" id="section9">
+		<div class="container">
+			<div class="section-text">
+					
+						<div class="row">
+							<div class="col-md-6 col-sm-10">
+						
+								<h5 class="par-title">NSA: the emblem of protection after the terrorists attacks</h5>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-0">
+								<p>After 9/11 the number of TV series episodes quoting NSA has massively increased.</p>
+								<div class="button-more-data">
+									<a href="./data1.html">
+										<i class="fa fa-plus-circle"></i><p>More data</p>
+									</a>
+								</div>
+
+								<br><br>
+						
+								<p>NSA is mostly represented as a security agency rather than a surveillance organization.</p>
+								<div class="about-data">
+									<i class="fa fa-cog"></i><p>EXPLORING DATA - Data represent how many times "NSA" is mentioned along with "Security" or "Surveillance" in the same speech. Dataset is based on 153 analyzed TV series (603 episodes).</p></div>
+								<div class="button-more-data">
+									<br><a href="./data2.html">
+									<i class="fa fa-plus-circle"></i><p>More data</p>
+									</a>
+								</div>
+								<br>
+								<h3 class="example1" id="dataSept"></h3>
+							</div>
+
+					<div class="col-md-5 col-md-offset-1" id="survSec">
+						
+						<!-- Svg surveillance vs security -->
+						<?xml version="1.0" encoding="utf-8"?>
+							<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+							<svg version="1.1" id="ch-grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="246 131.9 664 480" enable-background="new 246 131.9 664 480" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+
+							<defs>
+    							<pattern id="pat1" x="246" y="131.9" width="664" height="480" patternUnits="userSpaceOnUse">
+        							<image xlink:href="img/bubblesurv.png" x="0" y="0" width="664" height="480" />
+    							</pattern>
+							</defs> <!--define pattern -->
+
+
+							<circle fill="url(#pat1)" stroke="#1CA58A" stroke-width="2" stroke-opacity="0.5" cx="490.5" cy="374.3" r="222.1"/>
+							<circle fill="url(#pat1)" stroke="#dd002a" stroke-width="2" stroke-opacity="0.5" cx="805.7" cy="234.8" r="82.4"/>
+
+							<!--<circle fill="#1CA58A" fill-opacity="0.5" cx="490.5" cy="374.3" r="222.1"/>
+							<circle fill="#dd002a" fill-opacity="0.5" cx="805.7" cy="234.8" r="82.4"/>
+-->
+							<g>
+								<text id="ch-info_14_" transform="matrix(1 0 0 1 785 185)" enable-background="new    ">
+									<tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton'" font-size="22" font-weight="700">NSA</tspan>
+									<tspan x="10" y="22" fill="#FFFFFF" font-family="'Lekton'" font-size="22" font-weight="700">+</tspan>
+									<tspan x="-45" y="45" fill="#FFFFFF" font-family="'Lekton'" font-size="22" font-weight="700">SURVEILLANCE</tspan></text>
+								<text transform="matrix(1 0 0 1 760 285)" fill="#FFFFFF" font-family="'Lekton'" font-size="20" font-weight="700">23 times</text>
+								<rect x="785.7" y="248.9" fill="#FFFFFF" width="40" height="4"/>
+							</g>
+
+							<g>
+								<text id="ch-info_1_" transform="matrix(1 0 0 1 467 320)" enable-background="new    ">
+									<tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton'" font-size="25" font-weight="700">NSA</tspan>
+									<tspan x="12" y="20" fill="#FFFFFF" font-family="'Lekton'" font-size="25" font-weight="700">+</tspan>
+									<tspan x="-25" y="45" fill="#FFFFFF" font-family="'Lekton'" font-size="25" font-weight="700">SECURITY</tspan></text>
+								<text transform="matrix(1 0 0 1 447 425)" fill="#FFFFFF" font-family="'Lekton'" font-size="20" font-weight="700">62 times</text>
+								<rect x="470" y="388.3" fill="#FFFFFF" width="40" height="4"/>
+							</g>
+						</svg>
+					</div><!--/col-->
+				</div><!--/row-->
+			
+			</div>
+		</div>
+	</div><!-- /section9 -->
+
+	<!-- Section 10 -->
+	<div class="section" id="section10">
+		<div class="section-text">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0">
+						<h2>But is this</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2">
+						<h2>the whole scene?</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /section10 -->
+
+	<!-- Section 11 -->
+	<div class="section" id="section11">
+		<div class="container">
+			<div class="section-text">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-0 col-sm-7 col-sm-offset-0">
+
+								<h5 class="par-title">Spreading the truth</h5>
+								<p>Thanks to the Edward Snowden’s disclosures, NSA surveillance programs became a hot topic and the debate started to grow increasingly.</p><br>
+								<div class="line"></div>
+								<br><br>
+						<h3 class="example2"></h3>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div><!-- /section11 -->
+
+	<!-- Section 12 -->
+	<div class="section" id="section12">
+		<div class="container">
+			<div class="section-text-small">
+				<div class="row" id="obama-cit">
+					<div class="col-md-8 col-md-offset-1 col-sm-9 col-sm-offset-0">
+					<h5>“You can’t have 100-percent security and also have 100-percent privacy and zero inconvenience. We’re going to have to make some choices as a society”.</h5>
+					<p>Barack Obama, 2013</p>
+			
+					</div>
+				</div>	
+				<br><br><br><br>
+
+				<div class="row" id="snowden-cit">
+					<div class="col-md-7 col-md-offset-4 col-sm-9 col-sm-offset-2">
+					<h5>“The NSA has built an infrastructure that allows it to intercept almost everything. The vast majority of human communications are automatically ingested without targeting”.</h5><!--If I wanted to see your emails or your wife’s phone, all I have to do is use intercepts. I can get your emails, passwords, phone records, credit cards-->
+					<p>Edward Snowden, 2013</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /section12 -->
+
+	<!-- Section 13 -->
+	<div class="section" id="section13">
+		<div class="container">
+			<div class="section-text">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-0">
+						<h5 class="par-title">Who rules the debate</h5>
+						<p>The analysis shows that journalists are the protagonists of the online debate.</p>
+						<div class="about-data">
+							<i class="fa fa-cog"></i><p>EXPLORING DATA - The graph shows the percentage of speakers emerged from Google results analysis concerning mass surveillance.</p>
+						</div>
+						<div class="button-more-data">
+							<br><a href="./data3.html">
+								<i class="fa fa-plus-circle"></i><p>More data</p>
+							</a>
+						</div>
+					</div>
+
+					<div id="bubble" class="col-md-7">
+						<object id="bubble-chart"> Can't load the graph </object>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div><!-- /section13 -->
+
+	<!-- Section 14 -->
+	<div class="section" id="section14">
+		<div class="container" >
+			<div class="section-text">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-0">
+						<h5 class="par-title">Newspapers: <br/>a negative portrait</h5>
+						<p>Most of the journalists write about the NSA and its practices in a negative way.</p>
+						<div class="button-more-data">
+							<a href="./data4.html">
+								<i class="fa fa-plus-circle"></i><p>More data</p>
+							</a>
+						</div>
+						<br>
+						<div class="about-data">
+						<i class="fa fa-cog"></i><p>Interact with the visualization</p>
+					</div>
+					</div>
+
+<!-- SVG RETTANGOLI -->
+<div id="vizz" class="col-md-7 ">
+				
+	
+<svg id="svgg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 793.46 511.474" enable-background="new 0 0 793.46 511.474"
+	 xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+<g id="shadow">
+</g>
+<g id="shadow_copy" onclick="outAg()">
+	<path fill="#232323" d="M0.392,0.4v511h793V0.4H0.392z M626.392,361.4h-367v-341h367V361.4z"/>
+</g>
+<g id="base">
+	<g>
+		<rect x="259.892" y="370.9" fill="none" stroke="#60A289" stroke-miterlimit="10" width="128" height="128"/>
+		<rect x="267.963" y="404.363" fill="none" width="111.429" height="78.037"/>
+		<text transform="matrix(1 0 0 1 276.6147 414.3677)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="15">IN FAVOUR OF </tspan><tspan x="0" y="18" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="15">SURVEILLANCE</tspan><tspan x="31.5" y="57" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="15">5,8%</tspan></text>
+		<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="313.392" y1="448.4" x2="333.392" y2="448.4"/>
+	</g>
+	<g>
+		<rect x="12.892" y="124.9" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="235" height="235"/>
+		<rect x="37.82" y="208.257" fill="none" width="185.714" height="50.285"/>
+		<text transform="matrix(1 0 0 1 103.3027 218.2622)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="15">NEUTRAL</tspan><tspan x="7.875" y="39" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="15">29,2%</tspan></text>
+		<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="120.392" y1="233.4" x2="140.392" y2="233.4"/>
+	</g>
+</g>
+<g id="rettangoli">
+	<rect x="270.892" y="28.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="147" height="163"/>
+	<rect x="424.892" y="28.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="192" height="80"/>
+	<rect x="424.892" y="114.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="192" height="79"/>
+	<rect x="419.892" y="199.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="121" height="93"/>
+	<rect x="546.892" y="199.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="70" height="93"/>
+	<rect x="576.892" y="299.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="40" height="52"/>
+	<rect x="527.892" y="299.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="42" height="52"/>
+	<rect x="410.892" y="299.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="111" height="52"/>
+	<rect x="269.892" y="299.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="134" height="52"/>
+	<rect x="269.892" y="199.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="142" height="93"/>
+	<rect x="278.716" y="54.401" fill="none" width="132.176" height="114"/>
+	<text transform="matrix(1 0 0 1 322.0542 83.0723)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">privacy </tspan><tspan x="-29.25" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">is a fundamental</tspan><tspan x="-13" y="28" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">human right</tspan><tspan x="6.5" y="55.85" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">22,6%</tspan></text>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="335.392" y1="122.4" x2="353.392" y2="122.4"/>
+	<g>
+		<rect x="278.23" y="210.138" fill="none" width="125.662" height="70.203"/>
+		<text transform="matrix(1 0 0 1 285.811 218.8091)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">surveillance must </tspan><tspan x="9.75" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">be immediately </tspan><tspan x="32.5" y="28" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">stopped</tspan><tspan x="39" y="56" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">13,6%</tspan></text>
+	</g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="332.392" y1="258.4" x2="350.392" y2="258.4"/>
+	<g>
+		<rect x="428.853" y="215.736" fill="none" width="104.123" height="62.605"/>
+		<text transform="matrix(1 0 0 1 441.9146 224.4067)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">surveillance </tspan><tspan x="6.5" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">is illegal</tspan><tspan x="22.75" y="42" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">11,2%</tspan></text>
+	</g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="471.392" y1="249.4" x2="490.392" y2="249.4"/>
+	<g>
+		<rect x="557.818" y="215.169" fill="none" width="49.68" height="62.605"/>
+		<text transform="matrix(1 0 0 1 582.6577 223.8394)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13"> </tspan><tspan x="-3.25" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">1</tspan><tspan x="-13" y="42" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">6,7%</tspan></text>
+	</g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="574.392" y1="248.4" x2="592.392" y2="248.4"/>
+	<g>
+		<rect x="312.478" y="292.9" fill="none" width="49.68" height="57.539"/>
+		<text transform="matrix(1 0 0 1 337.3179 301.5708)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13"> </tspan><tspan x="-3.25" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">2</tspan><tspan x="-13" y="42" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">6,7%</tspan></text>
+	</g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="327.392" y1="325.4" x2="346.392" y2="325.4"/>
+	<g>
+		<rect x="442.124" y="292.9" fill="none" width="49.681" height="57.539"/>
+		<text transform="matrix(1 0 0 1 466.9644 301.5708)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13"> </tspan><tspan x="-3.25" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">3</tspan><tspan x="-13" y="42" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">5,6%</tspan></text>
+	</g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="457.392" y1="325.4" x2="476.392" y2="325.4"/>
+	<g>
+		<rect x="529.234" y="292.9" fill="none" width="40.834" height="57.539"/>
+		<text transform="matrix(1 0 0 1 549.6509 301.5708)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13"> </tspan><tspan x="-3.25" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">4</tspan><tspan x="-13" y="42" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">2,2%</tspan></text>
+	</g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="541.392" y1="325.4" x2="559.392" y2="325.4"/>
+	<g>
+		<rect x="576.873" y="292.9" fill="none" width="40.834" height="57.539"/>
+		<text transform="matrix(1 0 0 1 597.2896 301.5708)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13"> </tspan><tspan x="-3.25" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">5</tspan><tspan x="-13" y="42" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">2,2%</tspan></text>
+	</g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="588.392" y1="325.4" x2="607.392" y2="325.4"/>
+	<rect x="436.104" y="35.43" fill="none" width="171.288" height="72.499"/>
+	<text transform="matrix(1 0 0 1 437.2476 44.104)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">the world need to be aware</tspan><tspan x="22.75" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">of the surveillance </tspan><tspan x="58.5" y="28" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">programs</tspan><tspan x="68.25" y="55.6" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">14,6%</tspan></text>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="512.392" y1="82.4" x2="530.392" y2="82.4"/>
+	<rect x="436.104" y="126.9" fill="none" width="171.288" height="58.836"/>
+	<text transform="matrix(1 0 0 1 446.9976 135.5708)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">tech giant must protect </tspan><tspan x="9.75" y="14" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">their user’s privacy</tspan><tspan x="58.5" y="42" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="13">14,6%</tspan></text>
+	<rect x="659.892" y="118.513" fill="none" width="157" height="36.5"/>
+	<text transform="matrix(1 0 0 1 659.8921 126.5171)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">1-surveillance </tspan><tspan x="0" y="14.4" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">brings no advantages</tspan></text>
+	<rect x="659.892" y="157.263" fill="none" width="157" height="45.75"/>
+	<text transform="matrix(1 0 0 1 659.8921 165.2671)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">2-surveillance </tspan><tspan x="0" y="14.4" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">has negative effects</tspan><tspan x="0" y="28.8" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">on society</tspan></text>
+	<rect x="659.892" y="210.138" fill="none" width="157" height="50.875"/>
+	<text transform="matrix(1 0 0 1 659.8921 218.1421)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">3-nothing to hide</tspan><tspan x="0" y="14.4" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">is not an excuse</tspan><tspan x="0" y="28.8" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">to surveillance</tspan></text>
+	<rect x="659.892" y="261.076" fill="none" width="157" height="46.469"/>
+	<text transform="matrix(1 0 0 1 659.8921 269.0796)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">4-surveillance is</tspan><tspan x="0" y="14.4" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">useless to prevent</tspan><tspan x="0" y="28.8" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">terrorism</tspan></text>
+	<rect x="659.892" y="313.818" fill="none" width="157" height="46.469"/>
+	<text transform="matrix(1 0 0 1 659.8921 321.8218)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">5-disapproval</tspan><tspan x="0" y="14.4" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">of surveillance</tspan><tspan x="0" y="28.8" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="12">technology</tspan></text>
+	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="512.392" y1="159.4" x2="530.392" y2="159.4"/>
+</g>
+<g id="ag">
+	<rect id="sh" onclick="hoverAg()" x="259.392" y="20.4" fill="#232323" width="540" height="343"/>
+	<rect id="aga" x="259.892" y="19.9" fill="none" stroke="#BC002D" stroke-miterlimit="10" width="367" height="340"/>
+	<rect x="340.249" y="158.901" fill="none" width="207.143" height="80.71"/>
+	<text id="against" transform="matrix(1 0 0 1 360.021 169.5732)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="16">AGAINST SURVEILLANCE</tspan><tspan x="63" y="40.2" fill="#FFFFFF" font-family="'Lekton', serif" font-weight="400" font-size="16">65,0%</tspan></text>
+	<line id="lineAg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="433.392" y1="184.4" x2="453.392" y2="184.4"/>
+</g>
+</svg>
+
+
+
+</div>
+				</div> <!-- ROW -->
+			</div>
+
+		
+		</div>
+	</div><!-- /section14 -->
+
+	<!-- Section 15 -->
+	<div class="section" id="section15">
+
+		<div class="container">
+			<div class="section-text">
+				<div class="row">
+					<div class="col-md-11 col-md-offset-0 col-sm-11 col-sm-offset-0">
+						<h5 class="par-title">Headlines generator</h5> <!--Get your title-->
+					</div>
+				</div>
+				
+			</div>
+			<br>
+			<div class="titles">
+				<div class="row">
+					<div class="col-md-2 col-md-offset-0 col-sm-10 col-sm-offset-1">
+			  		
+			  			<div class="wbox"><h6 class="tit">
+			  				<span class="wodryRX">mass|warrantless
+			  				</span></h6> 
+			  			</div>
+	    			</div>
+	    			<div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1">
+			  			<div class="wbox"><h6 class="tit">
+			  			Surveillance
+			  			</h6></div>
+	    			</div>
+	    			<div id="#due" class="col-md-2 col-md-offset-0 col-sm-10 col-sm-offset-1">
+			  			<div class="wbox"><h6 class="tit">
+			  				<span  class="wodryRX1">is&nbsp|is&nbsp&nbsp| is&nbsp&nbsp&nbsp| destroys|kills|violates|impinges&nbspon|has&nbsp|has&nbsp&nbsp|causes 
+			  				</span></h6>
+			  			</div>
+	    			</div>
+	    			<div id="#tre" class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1">
+			  			<div class="wbox"><h6 class="tit">
+			  				<span class="wodryRX1">useless|backfiring&nbspto&nbspcombat&nbspterrorism|corrosive|freedom|privacy&nbsprights|human&nbsprights|privacy&nbsprights&nbsp| chilling&nbspeffects|psychological&nbspeffects| fallout  
+			  				</span></h6>
+			  			</div>
+	    			</div>
+	    		</div> 
+			</div>
+
+			<br><br><br><br><br>
+			<div class="row">
+					<div class="col-md-5 col-md-offset-0 col-sm-6 col-sm-offset-0">
+						<p>Headlines immediately provide the opinion journalists have on NSA: a dramatic, hostile and distopic vision.</p>
+					</div>
+					<div class="col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0">
+						<div class="about-data">
+						<i class="fa fa-cog"></i><p>ABOUT DATA - The visualization is based on the analysis of the titles of the articles against mass surveillance. The main elements of the sentences have been extracted and recombined to highlight the variations used by journalists to discredit mass surveillance and NSA.</p></div>
+					</div>
+				</div>
+
+
+		</div>
+	</div><!-- /section15 -->
+
+	<!-- Section 16 -->
+	<div class="section" id="section16">
+
+			<div id="tabs" class="tabs">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-5 col-md-offset-2 col-sm-10 col-sm-offset-0">
+							<h5 class="par-title">Which metaphores to describe surveillance?</h5>
+				    			<div class="about-data">
+					    			<div class="button-more-data md-trigger" data-modal="modal-3">
+										<br><a><i class="fa fa-plus-circle"></i><p>More about data</p></a>
+									</div>
+					    		</div>
+					    	</div>
+					    </div>
+
+
+						<div class="row">
+
+							<div class="col-md-2 col-sm-2">
+								<div class="content">
+						    		<section id="section-1">
+										<p>Sweep<br>Harvest<br>Glean<br>Gather<br>Scoop<br>Snag<br>Pluck<br>Swath<br>Trap</p>
+									</section>
+									<section id="section-2">
+										<p>Orwell<br>Big Brother<br>Dystopian</p>
+									</section>
+									<section id="section-3">
+										<p>Dragnet<br>Trawling<br>Tentacles<br>Harbor<br>Inundatd<br>Leviathan<br>Net<br>Snagging</p>
+									</section>
+									<section id="section-4">
+										<p>Totalitarian<br>Stasi<br>Nazi Germany<br>PoliceState<br>Purge<br>Propaganda<br>Tyranny</p>
+									</section>
+									<section id="section-5">
+										<p>War of Information<br>Invade<br>Blitz<br>MaginotLine<br>Hostages</p>
+									</section>
+									<section id="section-6">
+										<p>Hemorrhaging<br>Implanting<br>Infect<br>Ingest<br>Inject<br>Stethoscope</p>
+									</section>
+									<section id="section-7">
+										<p>Mining<br>Burrow<br>Dig<br>Goldmine<br>Scooping</p>
+									</section>
+								</div><!-- /content -->
+							</div>
+
+				        	<div class="col-md-5 col-sm-5">
+			    				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg-bar"></svg>
+			    			</div>
+
+			    		</div><!-- /row -->
+
+			    	</div><!-- /container -->
+
+		    	<nav>
+					<ul>
+						<li id="data1"><a href="#section-1" id="sec-1"><span>Collecting</span></a></li>
+						<li id="data2"><a href="#section-2" id="sec-2"><span>Literary</span></a></li>
+						<li id="data3"><a href="#section-3" id="sec-3"><span>Nautical</span></a></li>
+						<li id="data4"><a href="#section-4" id="sec-4"><span>Authoritarian</span></a></li>
+						<li id="data5"><a href="#section-5" id="sec-5"><span>War</span></a></li>
+						<li id="data6"><a href="#section-6" id="sec-6"><span>Medicine</span></a></li>
+						<li id="data7"><a href="#section-7" id="sec-7"><span>Digging</span></a></li>
+					</ul>
+				</nav>
+
+
+			</div><!-- /tabs -->
+
+	</div><!-- /section16 -->
+
+
+
+	<!-- Section 17 -->
+	<div class="section" id="section17">
+		<div class="section-text-form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 col-sm-11 col-sm-offset-0">
+						<h2>Concerning</h2><!--Through which lens are people watching the Eye?-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2">
+						<h2>mass surveillance,</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-3">
+						<h2>how much</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-3 col-sm-12 col-sm-offset-1">
+						<h2>bleary-eyed are you?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1">
+						<h2></h2>
+						
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
+						<a href="#section18" class="btn btn-circle credit">
+							<i class="fa fa-angle-double-down"></i></br>
+							<p>Credits</p>
+						</a>
+						<a href="./academic.html" class="btn btn-circle academic">
+							<p class="plus">+</p></br>
+							<p class="more">In-depth <br> opinion</p>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="share">
+							<br><p>Share</p>
+								<a class="twitter-share-button"
+								  href="https://twitter.com/share"
+								  data-url="#"
+								  data-text="Checking out this page about the Tweet Button">
+								Tweet</i>
+								</a>
+
+								<div class="fb-share-button" data-href="#" data-layout="button_count"></div>
+
+								<!--<a href="https://twitter.com/share" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+								<a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>-->
+							
+							<!--<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>-->
+						</div>
+					</div>
+						
+				</div>
+
+			</div>
+		</div>
+	</div><!-- /section17 -->
+
+	<!-- Section 18 -->
+	<div class="section" id="section18">
+		<div class="section-text-form">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-10 col-sm-10">
+					<p>If you need more information, check the report <a href="#"><i> Metadata in exchange for security</i></a>.<p><br>
+					<p>MORE ABOUT THIS TOPIC</p>
+					<a href="http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded#section/1"><i class="fa fa-arrow-circle-right"></i>NSA Files: Decoded </a><p style="display:inline-block; margin-left: 10px">The Guardian</p><br>
+					<a href="http://projects.washingtonpost.com/top-secret-america/"><i class="fa fa-arrow-circle-right"></i>Top Secret America </a><p style="display:inline-block; margin-left: 10px">A Washington Post Investigation</p><br>
+					<a href="https://citizenfourfilm.com"><i class="fa fa-arrow-circle-right"></i>Citizenfour</a><p style="display:inline-block; margin-left: 10px"> A documentary by Laura Poitras - 2015 Oscar Winner <i class="fa fa-star fa-spin"></i></p>
+				</div>
+			</div>
+					
+			<br>
+			<hr>
+			<br>
+				<div class="row">
+					<div class="col-md-6 col-sm-10">
+						<p>PROJECT BY</p>
+						<table>
+							<tr>
+								<td>Marianna Caserta</td>
+								<td class="col"><a href="https://www.behance.net/MariannaCaserta" target="_blank"><i class="fa fa-behance"></i></a></td>
+								<td class="col"><a href="https://www.linkedin.com/profile/view?id=237727797" target="_blank"><i class="fa fa-linkedin"></i></a></td>
+								<td class="col"><a href="mailto:mariannacaserta@gmail.com"><i class="fa fa-envelope-o"></i></a></td>
+							</tr>
+							<tr>
+								<td>Francesca Casnati</td>
+								<td><a href="https://www.behance.net/francescacasnati" target="_blank"><i class="fa fa-behance"></i></a></td>
+								<td><a href="https://www.linkedin.com/profile/view?id=246173141" target="_blank"><i class="fa fa-linkedin"></i></a></td>
+								<td><a href="mailto:casnati.francesca@gmail.com"><i class="fa fa-envelope-o"></i></a></td>
+							</tr>
+							<tr>
+								<td>Chiara Cingottini</td>
+								<td><a href="https://www.behance.net/cin_goo" target="_blank"><i class="fa fa-behance"></i></a></td>
+								<td><a href="https://www.linkedin.com/profile/view?id=288441593" target="_blank"><i class="fa fa-linkedin"></i></a></td>
+								<td><a href="mailto:chiara.cingottini@gmail.com"><i class="fa fa-envelope-o"></i></a></td>
+							</tr>
+							<tr>
+								<td>Giulia Sonzogni</td>
+								<td><a href="https://www.behance.net/gSonzogni" target="_blank"><i class="fa fa-behance"></i></a></td>
+								<td><a href="https://www.linkedin.com/profile/view?id=391452181" target="_blank"><i class="fa fa-linkedin"></i></a></td>
+								<td><a href="mailto:sonzo91@hotmail.it"><i class="fa fa-envelope-o"></i></a></td>
+							</tr>
+							<tr>
+								<td>Ilaria Tedoldi</td>
+								<td><a href="https://www.behance.net/ilariatedoldi" target="_blank"><i class="fa fa-behance"></i></a></td>
+								<td><a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"><i class="fa fa-linkedin"></i></a></td>
+								<td><a href="mailto:ilaria_tedoldi@hotmail.it"><i class="fa fa-envelope-o"></i></a></td>
+							</tr>
+						</table>
+					</div>
+				
+				
+				<br><br>
+
+				<div class="row">
+					<div class="col-md-2 col-sm-3">
+						<p>FACULTY</p>
+						<p>Paolo Ciuccarelli<br>
+						Marco Fattore<br>
+						Stefano Mandato<br>
+						Donato Ricci<br>
+						Salvatore Zingale</p>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<p>TEACHING ASSISTANT</p>
+						<p>Matteo Azzi<br>
+						Daniele Ciminieri<br>
+						Michele Mauri<br>
+						Azzurra Pini<br>
+						Giorgio Uboldi</p>
+					</div>
+					<div class="col-md-2 col-sm-3">
+						<br><br>
+						<a href="http://www.densitydesign.org" target="_blank"><img src="img/density_logo.png"></a>
+					</div>
+				</div>
+		
+				</div>
+			</div>
+		</div>
+	</div><!-- /section18 -->
+
+</div><!-- /fullpage -->
+
+<!-- Menu -->
+<div class="menu" id="menu">
+
+		<div id="top"><!-- Go to top -->
+			<ul>
+				<a href="#firstPage"><li><i id="topp" class="fa fa-chevron-circle-up"></i></br><p>Top</p></li></a>
+			</ul>
+		</div>
+
+	<div id="plus"><!-- Go to credits/glossary/timeline -->
+		<ul>
+			<a href="#18thPage"><li><i id="credits" class="fa fa-chevron-circle-down"></i></br><p>Credits</p></li></a>
+			<a href="./glossario.html"><div id="glos"><li><i class="fa fa-plus-circle"></i></i></br><p>Glossary</p></li></div></a>
+			<a href="./timeline.html"><li><i class="fa fa-plus-circle"></i><p>Timeline</p></li></a>
+		</ul>
+	</div>
+</div>
+
+<div class="dots-list" id="dots-list"><!-- Dot menu -->
+	<nav id="cd-vertical-nav">
+			<ul>
+				<li><a href="#secondPage">
+					<div class="menu_num" id="uno"></div>
+					<span class="cd-label">Introduction</span>
+				</a></li>
+				<li><a href="#6thPage">
+					<div class="menu_num" id="due"></div>
+					<span class="cd-label">Enterteinment Media</span>
+				</a></li>
+				<li><a href="#10thPage" >
+					<div class="menu_num" id="tre"></div>
+					<span class="cd-label">Turning Point</span>
+				</a></li>
+				<li><a href="#13thPage">
+					<div class="menu_num" id="quattro"></div>
+					<span class="cd-label">News Media</span>
+				</a></li>
+				<li><a href="#17thPage">
+					<div class="menu_num" id="cinque"></div>
+					<span class="cd-label">Conclusion</span>
+				</a></li>
+			</ul>
+	</nav>
+</div>
+
+	<div id="it-en"><!-- Choose language -->
+		<a id="en" href="./index.html">EN</a> / <a id="it" href="./indexit.html" style="opacity:0.6">IT</a>
+	</div>
+
+	<div id="it-en-big">
+		<a id="en" href="./index.html">English Version</a> / <a id="it" href="./indexit.html" style="opacity:0.6">Italian Version</a>
+	</div>
+
+<!-- the overlay element for pop-up-->
+<div class="md-overlay"></div>
+<div class="md-overlay2"></div>
+
+
+<!-- SCRIPT -->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- menu -->
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- run bubble chart -->
+<script type="text/javascript" src="js/bubble.js"></script>
+
+<!-- pop up window -->
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+
+<!-- Scroll Page -->
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+
+<script type="text/javascript" src="js/airport.min.js"></script>
+
+<!-- Cartelline -->
+<script type="text/javascript" src="js/cbpFWTabs.js"></script>
+	<script>
+		new CBPFWTabs( document.getElementById( 'form-nsa' ) );
+		new CBPFWTabs( document.getElementById( 'form-media' ) );
+		new CBPFWTabs( document.getElementById( 'form-serie' ) );
+		new CBPFWTabs( document.getElementById( 'tabs' ) );
+	</script>
+
+<!-- Bar -->
+<script type="text/javascript" src="js/bar.js"></script>
+	 <script type="text/javascript">
+        init();
+    </script>
+
+<script type="text/javascript" src="js/video.js"></script>
+
+<!-- ___________COUNTER___________ -->
+<script>
+
+   var segments = {
+  0:   ['a', 'b', 'c',    'e', 'f', 'g'],
+  1:   [   'c','f'   ],
+  2:   ['a',    'c', 'd', 'e',    'g'],
+  3:   ['a',    'c', 'd',    'f', 'g'],
+  4:   [   'b', 'c', 'd',    'f'   ],
+  5:   ['a', 'b',    'd',    'f', 'g'],
+  6:   ['a', 'b',    'd', 'e', 'f', 'g'],
+  7:   ['a',    'c',   'f'   ],
+  8:   ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+  9:   ['a', 'b', 'c', 'd',    'f', 'g'],
+  'all': ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+  '-':   [     'd'     ]
+};
+ 
+var lightSegments = function(number, clazz) {
+  segments['all'].forEach(function(seg) {
+    $(clazz + '.' + seg).css("background-color", 'white');
+ 
+var opacity = 0.05;
+if ($.inArray(seg, segments[number]) > -1) {
+  opacity = 1;
+}
+$(clazz + '.' + seg).fadeTo(100, opacity);
+  });
+};
+ 
+var i1 = 0;
+var i2 = 0;
+var i3 = 0;
+var i4 = 0;
+var i5 = 0;
+var counter = function () {
+  lightSegments(i1, 'div.d1 div');
+  lightSegments(i2, 'div.d2 div');
+  lightSegments(i3, 'div.d3 div');
+  lightSegments(i4, 'div.d4 div');
+  lightSegments(i5, 'div.d5 div');
+
+ 
+			i1++;
+            if (i1 == 10) {
+                i1 = 0;
+                i2++;
+            }
+            if (i2 == 10) {
+                i2 = 0;
+                i3 ++;
+                
+                
+            }
+            if (i3 == 10) {
+                i3 = 0;
+                i4 ++;
+                
+                
+            }
+            if (i4 == 10) {
+                i4 = 0;
+                i5 ++;
+                
+                
+            }
+
+
+
+};
+ 
+$(document).ready(function () {
+  lightSegments('-', 'div.d1 div');
+  lightSegments('-', 'div.d2 div');
+  lightSegments('-', 'div.d3 div');
+  lightSegments('-', 'div.d4 div');
+  lightSegments('-', 'div.d5 div');
+ 
+  var myTimer = window.setInterval(function () {
+    counter();
+  }, 340); // 1000ms
+});
+
+</script>
+
+<!-- RETTANGOLI -->
+<script type="text/javascript">
+
+function hoverAg() {
+      
+          document.getElementById("against").style.opacity = "0";
+          document.getElementById("sh").style.opacity = "0";
+          document.getElementById("lineAg").style.opacity = "0";
+          document.getElementById("rettangoli").style.display = "block";
+
+      }
+
+function outAg() {
+          document.getElementById("against").style.opacity = "1";
+          document.getElementById("sh").style.opacity = "1";
+          document.getElementById("lineAg").style.opacity = "1";
+           document.getElementById("rettangoli").style.display = "none";
+
+      }
+
+</script>
+
+<!--  TITOLI  -->
+
+ <script type="text/javascript" src="js/wodry.js"></script>
+
+	<script type="text/javascript">
+			$('.wodryRX').wodry({
+		    animation: 'rotateX',
+		    delay: 1500,
+		    animationDuration: 500
+			});
+			</script>
+
+	<script type="text/javascript">
+			$('.wodryRX1').wodry({
+		    animation: 'rotateX',
+		    delay: 1500,
+		    animationDuration: 500
+			});
+	</script>
+
+	<script>
+		window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+	</script>
+
+	<!--  METAFORE  -->
+
+ <script type="text/javascript" src="js/metafore.js"></script>
+
+</body>
+</html>

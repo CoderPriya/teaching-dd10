@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <script src="js/RadarChart.js"></script>
+  <link href="css/radarcss.css" rel="stylesheet">
+
+  </head>
+  <body style="background-color: #dcf0e0">
+ 
+   <div id="radar" class="container-fluid text-center">
+    <div class="row">
+      <div id="opinioniblu" class="col-sm-6 col-md-3 col-lg-3">
+        <div id="opb03" class="opblu"></div>
+        <div id="opb04" class="opblu"></div>
+        <div id="opb05" class="opblu"></div>
+        <div id="opb06" class="opblu"></div>
+        <div id="opb07" class="opblu"></div>
+        <div id="opb08" class="opblu"></div>
+        <div id="opb09" class="opblu"></div>
+        <div id="opb10" class="opblu"></div>
+        <div id="opb11" class="opblu"></div>
+        <div id="opb12" class="opblu"></div>
+        <div id="opb13" class="opblu"></div>
+        <div id="opb14" class="opblu"></div>
+      </div>
+      
+      <div id="opinionirosso" class="col-sm-6 col-md-3 col-md-push-6">
+        <div id="opr02" class="oprosso"></div>
+        <div id="opr04" class="oprosso"></div>
+        <div id="opr05" class="oprosso"></div>
+        <div id="opr06" class="oprosso"></div>
+        <div id="opr07" class="oprosso"></div>
+        <div id="opr08" class="oprosso"></div>
+        <div id="opr09" class="oprosso"></div>
+        <div id="opr10" class="oprosso"></div>
+        <div id="opr11" class="oprosso"></div>
+        <div id="opr12" class="oprosso"></div>
+        <div id="opr13" class="oprosso"></div>
+        <div id="opr14" class="oprosso"></div>
+      </div>
+
+      <div class="chart col-sm-12 col-md-6 col-md-pull-3"></div>
+      
+    </div>
+
+    <div class="row">
+
+      <div id="radarbutt">
+      <svg  id="radarbutton" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="600px" height="222px" viewBox="0 0 600 222" enable-background="new 0 0 600 222" xml:space="preserve">
+          <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="3" y1="105.34" x2="516.987" y2="105.34"/>
+          <rect x="517" y="87" fill="#FFFFFF" width="76" height="36"/>
+          <g>
+            <rect x="522.535" y="97.181" fill="none" width="64.5" height="20"/>
+            <text id="radaranno" transform="matrix(1 0 0 1 533.3418 111.3818)" fill="#868686" font-size="20" font-family="'Europa', sans-serif">2002</text>
+          </g>
+          <g id="rb02" class="radarpoint">
+            <rect id="_x32_002" class="radarret" x="24.253" y="78.46" fill="#FFFFFF" width="35.854" height="27.166"/>
+            <rect x="41.284" y="87.459" fill="#F85F55" width="2.3" height="5.001"/>
+          </g>
+          <g id="rb03" class="radarpoint">
+            <rect id="_x32_003" class="radarret" x="60.477" y="106" opacity="0" fill="#FFFFFF" width="35.854" height="41.166"/>
+            <rect x="77.253" y="118.293" fill="#248BFF" width="2.3" height="18.999"/>
+          </g>
+          <g id="rb04" class="radarpoint">
+            <rect id="_x32_004" class="radarret" x="96.598" y="56.333" opacity="0" fill="#FFFFFF" width="35.854" height="80.959"/>
+            <rect x="113.374" y="118.293" fill="#248BFF" width="2.3" height="9.999"/>
+            <rect x="113.026" y="64.46" fill="#F85F55" width="2.3" height="28"/>
+          </g>
+          <g id="rb05" class="radarpoint">
+            <rect id="_x32_005" class="radarret" x="132.441" y="81" opacity="0" fill="#FFFFFF" width="35.854" height="56.293"/>
+            <rect x="149.218" y="118.293" fill="#248BFF" width="2.3" height="10"/>
+            <rect x="148.905" y="88.459" fill="#F85F55" width="2.3" height="4.001"/>
+          </g>
+          <g id="rb06" class="radarpoint">
+            <rect id="_x32_006" class="radarret" x="168.105" y="76.083" opacity="0" fill="#FFFFFF" width="35.854" height="56.583"/>
+            <rect x="185.111" y="118.293" fill="#248BFF" width="2.399" height="5"/>
+            <rect x="184.832" y="83.46" fill="#F85F55" width="2.4" height="9"/>
+          </g>
+          <g id="rb07" class="radarpoint">
+            <rect id="_x32_007" class="radarret" x="204.428" y="70.167" opacity="0" fill="#FFFFFF" width="35.854" height="94.333"/>
+            <rect x="221.154" y="118.293" fill="#248BFF" width="2.4" height="34"/>
+            <rect x="220.91" y="78.459" fill="#F85F55" width="2.4" height="14"/>
+          </g>
+          <g id="rb08" class="radarpoint">
+            <rect id="_x32_008" class="radarret" x="240.161" y="70.167" opacity="0" fill="#FFFFFF" width="35.854" height="70.333"/>
+            <rect x="257.147" y="118.293" fill="#248BFF" width="2.3" height="10"/>
+            <rect x="256.938" y="78.46" fill="#F85F55" width="2.3" height="14"/>
+          </g>
+          <g id="rb09" class="radarpoint">
+            <rect id="_x32_009" class="radarret" x="276.214" y="63.333" opacity="0" fill="#FFFFFF" width="35.854" height="101.167"/>
+            <rect x="292.991" y="118.293" fill="#248BFF" width="2.3" height="34"/>
+            <rect x="292.815" y="73.46" fill="#F85F55" width="2.301" height="19"/>
+          </g>
+          <g id="rb10" class="radarpoint">
+            <rect id="_x32_010" class="radarret" x="311.569" y="38.46" opacity="0" fill="#FFFFFF" width="35.854" height="149.29"/>
+            <rect x="328.834" y="118.293" fill="#248BFF" width="2.299" height="57.999"/>
+            <rect x="328.694" y="49.459" fill="#F85F55" width="2.3" height="43.001"/>
+          </g>
+          <g id="rb11" class="radarpoint">
+            <rect id="_x32_011" class="radarret" x="347.899" y="46.932" opacity="0" fill="#FFFFFF" width="35.854" height="120.5"/>
+            <rect x="364.676" y="118.293" fill="#248BFF" width="2.301" height="39"/>
+            <rect x="364.572" y="59.459" fill="#F85F55" width="2.301" height="33.001"/>
+          </g>
+          <g id="rb12" class="radarpoint">
+            <rect id="_x32_012" class="radarret" x="383.475" y="19.459" opacity="0" fill="#FFFFFF" width="35.854" height="162.708"/>
+            <rect x="400.52" y="118.293" fill="#248BFF" width="2.299" height="53"/>
+            <rect x="400.449" y="29.46" fill="#F85F55" width="2.301" height="63"/>
+          </g>
+          <g id="rb13" class="radarpoint">
+            <rect id="_x32_013" class="radarret" x="419.313" y="27" opacity="0" fill="#FFFFFF" width="35.854" height="183.709"/>
+            <rect x="436.312" y="118.293" fill="#248BFF" width="2.199" height="81.999"/>
+            <rect x="436.277" y="38.46" fill="#F85F55" width="2.199" height="54"/>
+          </g>
+          <g id="rb14" class="radarpoint">
+            <rect id="_x32_014" class="radarret" x="455.068" y="6.709" opacity="0" fill="#FFFFFF" width="35.854" height="204"/>
+            <polyline fill="#248BFF" points="474.305,118.293 472.004,118.293 472.004,200.292 474.305,200.293  "/>
+            <rect x="472.004" y="19.459" fill="#F85F55" width="2.301" height="73.001"/>
+          </g>
+      </svg>
+
+      <div id="radarprot">
+        <div id="prot"></div>
+          <svg id="radarpuls" style="cursor:pointer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 163.8 32.2" enable-background="new 0 0 163.8 32.2" xml:space="preserve">
+          <rect x="38.6" y="8.2" fill="none" width="87" height="16.2"/>
+          <g >
+            <text transform="matrix(1 0 0 1 39.3206 23.8118)" fill="#868686" font-family="'Helvetica'" font-size="21.4704">PROTOCOL</text>
+            <g>
+              <polygon fill="#868686" points="30.8,13.3 21.2,13.3 21.2,3.7 15.2,3.7 15.2,13.3 5.6,13.3 5.6,19.3 15.2,19.3 15.2,28.9 
+                21.2,28.9 21.2,19.3 30.8,19.3     "/>
+              <circle fill="none" cx="18.2" cy="16.3" r="12.9"/>
+            </g>
+          </g>
+          </svg>
+          <p id="hoverradar" style="color: #868686; font-size: 11px;"> Click on the histogram to turn on the quotes</p>
+      </div>
+
+      </div>
+
+
+    </div>
+
+
+   </div>
+ 
+    <script type="text/javascript" src="js/RadarScript.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/gephi.map.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+
+<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+
+<!-- Fontawesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- START SIGMA IMPORTS -->
+<script src="../js/sigma/sigma.core.js"></script>
+<script src="../js/sigma/conrad.js"></script>
+<script src="../js/sigma/utils/sigma.utils.js"></script>
+<script src="../js/sigma/utils/sigma.polyfills.js"></script>
+<script src="../js/sigma/sigma.settings.js"></script>
+<script src="../js/sigma/classes/sigma.classes.dispatcher.js"></script>
+<script src="../js/sigma/classes/sigma.classes.configurable.js"></script>
+<script src="../js/sigma/classes/sigma.classes.graph.js"></script>
+<script src="../js/sigma/classes/sigma.classes.camera.js"></script>
+<script src="../js/sigma/classes/sigma.classes.quad.js"></script>
+<script src="../js/sigma/classes/sigma.classes.edgequad.js"></script>
+<script src="../js/sigma/captors/sigma.captors.mouse.js"></script>
+<script src="../js/sigma/captors/sigma.captors.touch.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.canvas.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.webgl.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.svg.js"></script>
+<script src="../js/sigma/renderers/sigma.renderers.def.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.edges.def.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+<script src="../js/sigma/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.labels.def_jp.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.hovers.def_jp.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.def.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+<script src="../js/sigma/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.utils.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.nodes.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.edges.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.edges.curve.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.labels.def.js"></script>
+<script src="../js/sigma/renderers/svg/sigma.svg.hovers.def.js"></script>
+<script src="../js/sigma/middlewares/sigma.middlewares.rescale.js"></script>
+<script src="../js/sigma/middlewares/sigma.middlewares.copy.js"></script>
+<script src="../js/sigma/misc/sigma.misc.animation.js"></script>
+<script src="../js/sigma/misc/sigma.misc.bindEvents.js"></script>
+<script src="../js/sigma/misc/sigma.misc.bindDOMEvents.js"></script>
+<script src="../js/sigma/misc/sigma.misc.drawHovers.js"></script>
+<script src="../js/sigma/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dashed.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dotted.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.parallel.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.tapered.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dashed.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dotted.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.parallel.js"></script>
+<script src="../js/sigma/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.tapered.js"></script>
+<!-- END SIGMA IMPORTS -->
+</head>
+
+<body>
+
+        <div id="sigma-container"></div>
+
+
+<!-- CONTAINER SIGMA -->
+
+
+<!-- <div class="my-viz"> -->
+<!-- Add your viz here -->
+<!-- </div> -->
+<!-- End of Visualization -->
+
+<!-- ZOOM BUTTONS -->
+
+<div class="row network-controls my-viz-sara">
+<ul class="col-md-2 col-md-offset-2">
+<li style="color:brown;"><i class="fa fa-circle ethical"></i> Ethical-related hashtag </li>
+<li style="color:steelblue;"><i class="fa fa-circle technical"></i> Technical-related hashtag </li>
+</ul>
+<div class="col-md-4"><div class="form-group"></div></div>
+<div class="col-md-3 col-md-offset-5"> 
+		<button id="reset" class="btn btn-round btn-default zoom-reset">reset zoom</button> 
+		
+		<button id="out" class="btn btn-round btn-default zoom-out">
+			<i class="fa fa-minus"></i>
+		</button> 
+		<button  class="btn btn-round btn-default zoom-in">
+			<i class="fa fa-plus"></i>
+		</button> 
+		</div> 
+
+</div>
+
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+<!-- MAPPA DI GEPHI INTERATTIVA -->
+<script>
+  // Add a method to the graph model that returns an
+  // object with every neighbors of a node inside:
+  sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+    var k,
+        neighbors = {},
+        index = this.allNeighborsIndex[nodeId] || {};
+
+    for (k in index)
+      neighbors[k] = this.nodesIndex[k];
+
+    return neighbors;
+  });
+
+	sigma.parsers.json('data/influent.json',
+    {
+      container: 'sigma-container'
+    },
+    function(s) {
+      // We first need to save the original colors of our
+      // nodes and edges, like this:
+      s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+      s.graph.edges().forEach(function(e) {
+        e.originalColor = e.color;
+      });
+
+      // When a node is clicked, we check for each node
+      // if it is a neighbor of the clicked one. If not,
+      // we set its color as grey, and else, it takes its
+      // original color.
+      // We do the same for the edges, and we only keep
+      // edges that have both extremities colored.
+      s.bind('clickNode', function(e) {
+        var nodeId = e.data.node.id,
+            toKeep = s.graph.neighbors(nodeId);
+        toKeep[nodeId] = e.data.node;
+
+        s.graph.nodes().forEach(function(n) {
+          if (toKeep[n.id])
+            n.color = n.originalColor;
+          else
+            n.color = '#e6e6e6';
+        });
+
+        s.graph.edges().forEach(function(e) {
+          if (toKeep[e.source] && toKeep[e.target])
+            e.color = e.originalColor;
+          else
+            e.color = '#fff';
+        });
+
+        // Since the data has been modified, we need to
+        // call the refresh method to make the colors
+        // update effective.
+        s.refresh();
+      });
+
+      // When the stage is clicked, we just color each
+      // node and edge with its original color.
+      s.bind('clickStage', function(e) {
+        s.graph.nodes().forEach(function(n) {
+          n.color = n.originalColor;
+        });
+
+        s.graph.edges().forEach(function(e) {
+          e.color = e.originalColor;
+        });
+
+        // Same as in the previous event:
+        s.refresh();
+      });
+
+      var c = s.camera;
+
+
+            $(".zoom-out").on('click', function(e) {
+
+				 if (c.ratio > s.settings("zoomMax")) return;
+				sigma.misc.animation.camera(c, {
+				  ratio: c.ratio * c.settings('zoomingRatio')
+				}, {
+				  duration: 200
+				});
+            });
+
+            $(".zoom-in").on('click', function(e) {
+            	if (c.ratio < s.settings("zoomMin")) return;
+				sigma.misc.animation.camera(c, {
+				  ratio: c.ratio / c.settings('zoomingRatio')
+				}, {
+				  duration: 200
+				});
+            });
+
+            $(".zoom-reset").on("click", function(e){
+            	sigma.misc.animation.camera(c, {
+			        ratio: 1 ,
+			        x: 0,
+			        y: 0,
+			        angle: 0
+			      }, {
+			        duration: 200
+			      });
+            })
+
+    }
+  );
+
+$(window).load(function() {
+    console.log( "ready333!" );
+});
+
+</script>
+
+<!-- FINE MAPPA GEPHI INTERATTIVA -->
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../00_sito/introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+
+<li>
+<h4>Digital Measures</h4>
+</li>
+
+
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">See Also Analysis</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Network</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Corpus Analysis</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Scatterplot</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Google Images</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Amazon Analysis</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Amazon Overview</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Books Covers</a>
+</li>
+
+<li>
+<h5 class="text-uppercase">Digital Detox</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Detox Holidays</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Images</a>
+</li>
+
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<!-- Visualization-->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+<div class="my-viz">
+<!-- Add your viz here -->
+
+<img src="../img/grafici-03.png" width="100%">
+
+</div>
+</div><!-- End of Visualization -->
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row">
+
+<!-- Side scrolling menu  -->
+<div class="col-md-3 text-uppercase" id="leftCol">
+<ul class="nav nav-stacked affix-top hidden-sm hidden-xs" id="sidebar">
+<li><a href="#sec0">Introduction</a></li>
+<li><a href="#sec1">How to read it</a></li>
+<li><a href="#sec2">How it has been done</a></li>
+<li><a href="#sec3">Findings</a></li>
+<li><a href="#sec4">Metadata</a></li>
+</ul>
+</div><!-- End of Side scrolling menu -->
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<h5 class="text-uppercase">See Also Analysis</h5><!-- Title of the "chapter"  -->
+<h1>Starting the Analysis: Wikipedia See Also Network</h1>
+
+<!-- Intro  -->
+<div class="section-content" id="sec0">
+<div class="section-text">
+<h3>Introduction</h3>
+<p>We started going <b>deep</b> in the topic by analysing Wikipedia. Starting with five pages linked to our theme, we found a network of connections and then tried to figure out how themes were linked to each others and to our main topic, the Internet Addiction. The five pages (Internet Addiction Disorder, Digital Addict, DSM, Internet Addiction, Online Identity) have been chosen in order to have the most clear and <b>complete overview</b> of the phenomenon.</p>
+
+</div>
+</div><!-- End of intro -->
+
+<!-- How to read  -->
+<div class="section-content" id="sec1">
+<div class="section-text">    
+<h3>How to read the visualization</h3>
+<p>The visualisation represents the network of four <i>see also</i> levels of the five Wikipedia pages we started our analysis with. Each circle represents a <b>knot</b>, which is a specific Wikipedia page, and its dimension varies according to the number of <b>links</b> shared with other knots (the bigger the knot is, the more links it is connected with). Each circle has a colour assigned corresponding to the <b>cluster</b> or main topic it refers to. The lines connecting the circles represent a direct link between two Wikipedia pages; arrows indicate a direction. <b>The further knots and clusters are, the less they are related to the main theme</b>.</p>
+
+</div>
+</div><!-- End of how to read  -->
+
+<!-- How it has been done  -->
+<div class="section-content" id="sec2">
+<div class="section-text">    
+<h3>How it has been done</h3>
+<p>The visualisation is associated to a dataset where the four <i>see also</i>levels from the five Wikipedia pages are sorted. Each <i>see also</i> has been identified using Seealsology, after manually taking the first level. Once gathered all links together, Gephi has been used to visualise them: the .csv has been imported and applied the “force atlas 2” algorithm. An editable file has been downloaded and reworked on Illustrator.</p>
+
+</div>
+</div><!-- End of how it has been done  -->
+
+<!-- Findings  -->
+<div class="section-content" id="sec3">
+<div class="section-text">   
+<h3>Findings</h3>
+<p>The first evidence is about the formation of the <b>two main clusters</b>: in the middle there is a group with both <b>Social Media and behavioural addiction themes</b>. Detached from this group, there is the <b>medical/psychiatrical</b> cluster. Smaller clusters such has Computer Crime and Economy, orbiting around the main cluster, have not been considered because not relevant in terms of the research.</p>
+
+<p>The linking topics between social clusters and medical ones are the <b>self-help</b> and the <b>personal medicine</b>.</p>
+
+<p>The unique map configuration led us to a deeper research both in the social and medical spheres, aiming to a better understanding of how the two worlds are related and interact with each other (<i>see the image below</i>). </p>
+
+<p>
+</br>
+<img src="../img/grafici-04.png" width="100%"> 
+</p>
+
+</div>
+</div><!-- End of findings  -->
+
+<!-- Metadata  -->
+<div class="section-content" id="sec4">
+<div class="section-text"> 
+<h3>Metadata</h3>
+<h4>Timestamp: 20/11/2014 - 30/11/2014</h4>
+<h4>Data source: <a href="http://en.wikipedia.org/" target="_blank">Wikipedia</a> </h4>
+<h4><a href="../chapter01/chapter01_protocol.html">Related Protocol</a></h4>
+<h4><a href="https://docs.google.com/spreadsheets/d/1DKFS8lnZAahMtbdx3PD8UZI2qpgXKC2vt-SqT6DBzLU/edit#gid=0" target="blank"><i class="fa fa-arrow-circle-o-down"></i> Download data (4MB)</a></h4>
+</div>
+</div><!-- End of Metadata  --> 
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+<!-- Footer - Add your names here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Project by</h4>
+          <ul>
+            <li></li>
+            <li> <a class="one" href="http://www.nicoloarena.com/" target="_blank">Nicolò Arena</a> </li>
+            <li> <a class="one" href="http://www.claudiofabbro.com/" target="_blank">Claudio Fabbro</a> </li>
+            <li> <a class="one" href="https://www.behance.net/alessandro_malcotti" target="_blank">Alessandro Malcotti</a> </li>
+            <li> <a class="one" href="https://www.behance.net/martamandile" target="_blank">Marta Mandile</a> </li>
+            <li> <a class="one" href="https://www.behance.net/lanitari" target="_blank">Anita Righetto</a> </li>
+          </ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

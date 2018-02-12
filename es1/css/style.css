@@ -1,0 +1,174 @@
+.starter{
+	padding-top: 200px;
+}
+
+.starter h1{
+	font-size: 40pt;
+	font-family: 'Karla',sans-serif;
+}
+
+.starter p{
+	font-family: 'Georgia';
+}
+
+.base{
+	background-color: #f1f1f1;
+	color:#111;
+}
+
+.base h2{
+	padding-bottom: 0px;
+	font-weight: bold;
+}
+
+.base hr{
+	border-color: black;
+	margin-top: 60px;
+}
+
+.nomi{
+	padding-top: 226px;
+	margin-left: 77%;
+	font-family: 'Georgia';
+	font-size: 10pt;
+	line-height:14pt;
+	font-style: italic;
+	opacity:0.7;
+}
+
+
+.nomi6{
+	padding-top: 207px;
+	margin-left: 77%;
+	font-family: 'Georgia';
+	font-size: 10pt;
+	line-height:14pt;
+	font-style: italic;
+	opacity:0.7;
+}
+
+.nomixs{
+	font-family: 'Georgia';
+	font-size: 10pt;
+	line-height:14pt;
+	font-style: italic;
+}
+
+.shape{
+	width: 100%px;
+	height: 230px;
+	margin-top: -260px;
+    border: 1px solid black;
+ }
+
+ .shape h3{
+	font-family: 'Karla',sans-serif;
+	font-size: 18pt !important;
+	font-weight: 700 !important;
+}
+
+ .base h1 {
+	font-family: 'Karla', sans-serif;
+	font-weight:700;
+	font-size: 40pt;
+	line-height: 35pt;
+}
+
+.base h3 {
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+	font-size: 15pt;
+	padding-bottom: 20px;
+	margin-top: -5px;
+}
+
+.foto:hover {
+	opacity: 0.8;
+	
+}
+
+.foto2:hover {
+	opacity: 0.6;
+	
+}
+
+
+/*Footer*/
+.footer{
+    background-color: #111; /* Palette */
+    color:#fff; /* Palette */
+    font-family: 'Karla', sans-serif;
+    bottom:0;
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.footer h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+@media (max-width: 2000px) {
+
+		.nomixs{
+				display:none;
+			}
+}
+
+@media (max-width: 1200px) {
+		.nomi{
+				padding-top: 168px;
+			}
+
+		.nomi6{
+				padding-top: 151px;
+			}
+
+		.nomixs{
+				display:none;
+			}
+}
+
+@media (max-width: 992px) {
+		.nomi{
+				padding-top: 134px;
+			}
+
+		.nomi6{
+				padding-top: 117px;
+			}
+
+		.nomixs{
+			    display:none;
+			}
+}
+
+@media (max-width: 768px) {
+		.nomi{
+				display:none;
+			}
+
+		.nomi6{
+				display:none;
+			}
+
+		.nomixs{
+			    margin-top: 20px;
+			    display:block;
+				opacity:0.7;
+			}
+}

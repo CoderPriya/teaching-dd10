@@ -1,0 +1,73 @@
+<div class="item" id="slide4">
+              <div class="container">
+                <div class="row">
+                  <!-- Tabella -->
+                    <h2>Titolo di questa tabella di merda</h2>
+                      <div class="col-md-2">                       
+                        <h4>1. Information</h4>
+                        <h5>1.1 Browsing, searching and filtering information </h5>
+                          <p>To access and search for online information, to articulate information needs, to find relevant information, to select resources effectively, to navigate between online sources, to create personal information strategies.</p>
+                        <h5>1.2 Evaluating Information</h5>
+                          <p>To gather, process, understand and critically evaluate information.</p>
+                        <h5>1.3 Storing and retrieving information</h5> 
+                          <p>To manipulate and store information and content for easier retrieval, to organise information and data.<p>
+                      </div>
+
+                      <div class="col-md-2">
+                        <h4>2. Communication</h4>
+                          <h5>2.1 Interacting through technologies</h5>
+                            <p>To interact through a variety of digital devices and applications, to understand how digital communication is distributed, displayed and managed, to understand appropriate ways of communicating through digital means, to refer to different communication formats, to adapt communication modes and strategies to the specific audience.</p>
+                          <h5>2.2 Sharing information and content</h5>
+                            <p>To share with others the location and content of information found, to be willing and able to share knowledge, content and resources, to act as an intermediary, to be proactive in the spreading of news, content and resources, to know about citation practices and to integrate new information into an existing body of knowledge.</p>
+                          <h5>2.3 Engaging in online citizenship</h5>
+                            <p>To participate in society through online engagement, to seek opportunities for self-development and empowerment in using technologies and digital environments, to be aware of the potential of technologies for citizen participation.</p>
+                          <h5>2.4 Collaborating through digital channels</h5>
+                            <p>To use technologies and media for team work, collaborative processes and co-construction and co-creation of resources, knowledge and content.</p>
+                          <h5>2.5 Netiquette</h5>
+                            <p>To have the knowledge and know-how of behavioural norms in online/virtual interactions, to be aware of cultural diversity aspects, to be able to protect self and others from possible online dangers (e.g. cyber bullying), to develop active strategies to discover inappropriate behaviour.</p>
+                          <h5>2.6 Managing digital identity</h5>
+                            <p>To create, adapt and manage one or multiple digital identities, to be able to protect one's e-reputation, to deal with the data that one produces through several accounts and applications.</p>
+                        </div>
+    
+                      <div class="col-md-2">
+                        <h4>3. Content Creation</h4>
+                          <h5>3.1 Developing content</h5>
+                            <p>To create content in different formats including multimedia, to edit and improve content that s/he has created or that others have created, to express creatively through digital media and technologies.</p>
+                          <h5>3.2 Integrating and re-elaborating</h5>
+                            <p>To modify, refine and mash-up existing resources to create new, original and relevant content and knowledge.</p>
+                          <h5>3.3 Copyright and Licences</h5>
+                            <p>To understand how copyright and licences apply to information and content.</p>
+                          <h5>3.4 Programming</h5>
+                            <p>To apply settings, programme modification, programme applications, software, devices, to understand the principles of programming, to understand what is behind a programme.</p>   
+                      </div>
+
+                      <div class="col-md-2">
+                        <h4>4. Safety</h4>
+                          <h5>4.1 Protecting devices </h5>
+                            <p>To protect own devices and to understand online risks and threats, to know about safety and security measures.</p>
+                          <h5>4.2 Protecting personal data </h5>
+                            <p>To understand common terms of service, active protection of personal data, understanding other people privacy, to protect self from online fraud and threats and cyber bullying.</p>
+                          <h5>4.3 Protecting health </h5>
+                            <p>To avoid health-risks related with the use of technology in terms of threats to physical and psychological well-being.</p>
+                          <h5>4.4 Protecting the environment</h5>
+                            <p>To be aware of the impact of ICT on the environment.</p>
+                      </div>
+
+                        <div class="col-md-2">
+                          <h4>5. Problem Solving</h4>
+                            <h5>5.1 Solving technical problems</h5> 
+                              <p>To identify possible problems and solve them (from trouble-shooting to solving more complex problems) with the help of digital means.</p>
+                            <h5>5.2 Identifying needs and technological responses</h5> 
+                              <p>To assess own needs in terms of resources, tools and competence development, to match needs with possible solutions, adapting tools to personal needs, to critically evaluate possible solutions and digital tools.</p>  
+                            <h5>5.3 Innovating and creatively using technology</h5>
+                              <p>To innovate with technology, to actively participate in collaborative digital and multimedia production, to express oneself creatively through digital media and technologies, to create knowledge and solve conceptual problems with the support of digital tools.</p>
+                            <h5>5.4 Identifying digital competence gaps </h5>
+                              <p>To understand where own competence needs to be improved or updated, to support others in the development of their digital competence, to keep up-to-date with new developments.</p>
+                        </div>    
+
+                      <a id="button" data-target="#framework" data-slide-to="0" href="#">Go to Slide One</a>
+
+                  </div><!-- .col-md-12 -->
+                </div><!-- /.row -->
+              </div><!-- /.container -->
+            </div><!-- /.item -->

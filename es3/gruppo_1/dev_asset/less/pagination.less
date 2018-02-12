@@ -1,0 +1,108 @@
+// ------------------------------------------------------------------
+//
+// [pagination.less]
+//
+// Project:			admin-wip_1.3.2
+//
+// Description:   	pagination
+//
+// First change:     03/12/2013
+//
+// Based on:        HTML5 Boilerplate pimped by Wip
+// Copyright:       2014 Wip Italia S.r.l.
+// Author URI:      http://www.wipitalia.it/
+//
+// Credits notes:
+//
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, the H5BP dev community and team, and @mdo and @fat for bootstrap.
+//
+// -------------------------------------------------------------------
+// this file is minimized and inport by style.less
+// ------------------------------------------------------------------
+
+// ------------------- ------- ---------------------
+// ----------------- PAGINATION -------------------
+// ------------------- ------- ---------------------
+	.pagination {
+		position:relative;
+		display:block;
+		width:100%;
+		background: lighten(black, 95%);
+		padding: 6px 0 20px 0;
+		text-align: center;
+		margin-top:20px;
+		.clearfix();
+
+		ul {
+			text-align:center;
+		}
+
+		li {
+			font-size:1em;
+			display:inline;
+		}
+
+		a {
+			padding: 0.7em 0.3em;
+			display:inline;
+			color:#666666;
+			width:36px;
+			text-align:center;
+			text-decoration:none;
+			list-style:none;
+		}
+
+		a:hover {
+			font-weight:normal;
+			color:@red;
+			background: lighten(black, 90%);
+			.box-shadow(0 1px 1px 1px #C1C7D3 inset);
+			//.box-shadow(0px 2px 3px #bfbfbf);
+
+
+		}
+		.active a,
+		a:active,
+		a.active {
+			background-color:white;
+			background-image:none;
+			color:@red; 
+			.rounded(0 0 4px 4px); 
+			.box-shadow(0px 4px 3px #bfbfbf);
+		}
+		.prev a,
+		.next a{
+			width:auto;
+			color:#666666;
+			background-color:#ECEDF1;
+			background-image:none;
+			.rounded(4px); 
+			.box-shadow(0 1px 1px 1px #C1C7D3 inset);
+			font-weight:normal;
+			.transition(all 200ms  ease-out);
+			margin: 0.4em 0.2em;
+			padding:0.3em 1.1em;
+		}
+		.prev a:hover,
+		.next a:hover{
+			font-weight:normal;
+			text-indent:1em; 
+			//padding:0.7em 1.3em;
+			color: @red;
+		}
+		.disabled a,
+		a:disabled,
+		a.disabled,
+		.disabled a:hover,
+		a:disabled:hover,
+		a.disabled:hover,
+		.disabled a:active,
+		a:disabled:active,
+		a.disabled:active {
+			cursor:text;
+			background-color:#fff;//add for RCS
+			border: 1px solid #F5F5F5;
+		}
+	}

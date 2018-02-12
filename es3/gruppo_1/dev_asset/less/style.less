@@ -1,0 +1,1056 @@
+// ------------------------------------------------------------------
+//
+// [style.less] to [style.min.css]
+//
+// Project:			WEB ISOLATION
+//
+/* Description:     Main CSS for all device
+ *
+ * Start on:		feb.2015
+ */
+// Based on:        HTML5 Boilerplate pimped by Wip
+// Copyright:       2014 Wip Italia S.r.l.
+// Author URI:      http://www.wipitalia.it/ilfinoz
+//
+// Credits notes:
+//
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, the H5BP dev community and team, and @mdo and @fat for bootstrap.
+//
+// -------------------------------------------------------------------
+// this file is minimized and inport by head.html include
+// -------------------------------------------------------------------
+
+// CSS Reset - Normalize and Utility classes
+@import url("reset.less");
+// Core variables and mixins
+@import url("main.less");
+@import url("variables.less");
+// Grid system and base CSS
+@import url("form.less");
+@import url("typography.less");
+@import url("notification.less");
+@import url("pagination.less");
+@import url("usefull.less");
+@import url(../fonts/webkit/style.css);
+
+// ------------------- ------- ----------------------
+// ----------- BASIC AND GLOBAL STYLES --------------
+// ------------------- ------- ----------------------
+
+	@mare: #77C4D3;
+	@marescuro: #69AAB2;
+	
+	@mono: 'apercumono';
+	@rounded: 'static';
+
+	// html reset
+	html {
+		font-family: @mono;
+		font-size: 14px;
+		line-height: 1;
+		background-color: @mare;
+		color: white;
+		word-wrap: break-word;// aggiunto per mobile
+		direction: ltr;
+		//text-rendering: optimizelegibility;
+		//.outline(0 none);
+	}
+
+	//link
+	a {
+		//a:link, a:visited
+		color: @marescuro;
+		text-decoration: none;
+		.outline();
+		//.transition(@property:all, @duration:0.2s, @ease:ease-out);
+		//.transition(color 0.3s ease-in);
+	}
+
+	a:hover,
+	a:active {
+		color:@marescuro;
+		text-decoration: underline;
+		//text-decoration: underline;
+		.outline();
+		//.transition(all 0 ease-in);
+	}
+
+	// ------------------- ------- ----------------------
+	// ------------------- LAYOUT -----------------------
+	// ------------------- ------- ----------------------
+	
+	#loader{
+		background-image: url('../images/loader.gif');
+		background-repeat: no-repeat;
+		background-position: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: white;
+		background-color: @mare;
+		z-index: 999;
+		text-align: center;
+	}
+
+	#maretta{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: @mare;
+		z-index: 0;
+		img{
+			position: absolute;
+			width: 40px;
+			&#o1{
+				top: 3%;
+				left: 63%;
+			}
+			&#o2{
+				top: 39%;
+				left: 39%;
+			}
+			&#o3{
+				top: 13%;
+				left: 9%;
+			}
+		}
+	}
+
+	// ------------------- testi ----------------------
+
+	
+	.main-title{
+		font-family: @rounded;
+		font-size: 3em;
+		padding: 0.5em 0;
+		text-transform: uppercase;
+		border: 3px solid white;
+		.rounded(3px);
+		margin: 30% auto 0.5em auto;
+		width: 70%;
+		max-width: 768px;
+	}
+
+	.main-subtitle{
+		font-family: @rounded;
+		font-size: 1.2em;
+		margin:  0 auto;
+		width: 70%;
+		max-width: 768px;
+	}
+
+	.testo-wrap{
+		position: absolute;
+		width: 480px;
+		top: 10%;
+		left: 50%;
+		margin-left: -240px;
+		color: white;
+		.testo{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		p{
+			font-family: @mono;
+			font-size: 1em;
+			text-align: center;		
+			line-height: 1.4;
+			font-weight: 300;
+			margin: 0;
+		}
+		.big-num{
+			font-family: @rounded;
+			width: 60px;
+			line-height: 60px;
+			background-color: black;
+			margin: 0 auto 90px; 
+			font-size: 2em;
+			.rounded(50%);
+		}
+		&.clean-text{
+			top: 21%;
+		}
+	}
+
+	// ------------------- ------- ----------------------
+	.wrap {
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	#main{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	#force_nav{
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: white;
+		background-color: rgba(255, 255, 255, 0.8);
+		z-index: 30;
+		text-align: center;
+		.transition(top 800ms ease);
+		&.aperto{
+			top: 0;
+		}
+		.inner-nav{
+			padding:4em;
+			li{
+				display: block;
+				padding-bottom: 1em;
+				a{
+					font-size: 2em;
+					z-index: 20;
+				}
+			}
+		}
+	}
+
+	#trigger_menu{
+		position: fixed;
+		top: 1em;
+		right: 1em;
+		color: white;
+		font-weight: bold;
+		font-size: 0.9em;
+		z-index: 10;
+	}
+
+	#main_nav{
+		position: fixed;
+		bottom: 40px;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		text-align: center;
+		#ff,.ascheda{
+			position: relative;
+			display: none;
+			//display: inline-block;
+			width: 44px;
+			height: 44px;
+			.opacity(0);
+		}
+		#suggestions{
+			position: relative;
+			display: none;
+			pointer-events: none;
+			.opacity(0);
+			//display: inline-block;
+		}
+	}
+
+	.slide{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		overflow: hidden;
+		&#slide_0{
+			top: 0;
+		}
+	}
+
+	/*
+	*STEP 1
+	*/
+
+	.nave{
+		position: absolute;
+		top: -80px;
+		left: 0;
+		width: 130px;
+		height: 130px;
+		z-index: 2;
+		left: -840px;
+		&#nave1{
+			top: 40px;
+			img{
+				position: absolute;
+				&.fronte{
+					top: -6px;
+					left: 42px;
+				}
+				&.fianco{
+					top: 24px;
+					left: -30px;
+				}
+			}
+		}
+		&#nave2{
+			top: 280px;
+			img{
+				position: absolute;
+				&.fronte{
+					top: -6px;
+					left: 42px;
+				}
+				&.fianco{
+					top: 24px;
+					left: -30px;
+				}
+			}
+		}
+		&#nave3{
+			top: 160px;
+			img{
+				position: absolute;
+				&.fronte{
+					top: -6px;
+					left: 42px;
+				}
+				&.fianco{
+					top: 24px;
+					left: -30px;
+				}
+			}
+		}
+	}
+
+	.porto{
+		position: absolute;
+		top: 0;
+		right: -100px;
+		width: 52px;
+		&#pt1{
+			top: 10px;
+			z-index: 1;
+		}
+		&#pt1a{
+			top: 100px;
+			z-index: 2;
+		}
+		&#pt2{
+			top: 130px;
+			z-index: 1;
+		}
+		&#pt2a{
+			top: 220px;
+			z-index: 2;
+		}
+		&#pt3{
+			top: 250px;
+			z-index: 1;
+		}
+		&#pt3a{
+			top: 340px;
+			z-index: 2;
+		}
+	}
+
+	#tutteboe{
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		width: 480px;
+		height: 420px;
+		margin: -200px 0 0 -240px;
+	}
+	.boa{
+		position: relative;
+		float: left;
+		width: 60px;
+		height: 60px;
+		display: block;
+		z-index: 1;
+		img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			&.sopra{
+				margin: -7px 0 0 -7px;
+				z-index: 2;
+			}
+			&.sotto{
+				margin: -11px 0 0 -11px;
+				z-index: 1;
+			}
+		}
+	}
+
+
+	/*
+	*STEP 2
+	*/
+
+	.arcipelago{
+		position: absolute;
+		top: 90px;
+		left: 50%;
+		margin-left: -320px;
+		width: 640px;
+		height: 1100px;
+		z-index: 2;
+		.marone{
+			z-index: 1;
+			position: absolute;
+			.transition(opacity 400ms ease);
+			.opacity(0);
+			.transition-delay(600ms);
+			&.sx{
+				top: 27px;
+				left: 0;
+			}
+			&.dx{
+				top: 0;
+				right: 0;
+			}
+		}
+		&.infilato{
+			.marone{
+				.opacity(1);
+			}
+			.zoomed{
+				/*
+				faccio sparire del tutto le linee e i box della fase zoomata 
+				*/
+				display: none;
+				z-index: -1;
+			}
+		}
+	}
+
+	.testo-isola{
+		position: absolute;
+		top: 4%;
+		width: 94%;
+		text-align: left;
+		left: 120%;
+		z-index: 5;
+		.transition(left 1200ms ease);
+		&.presente{
+			left: 2%;
+		}
+		&.svolto{
+			.contenuto{
+				.opacity(1);
+			}
+		}
+
+		.col{
+			position: relative;
+			float: left;
+			width: 32%;
+			&+.col{
+				width: 66%;
+				margin-left: 2%;
+			}
+		}
+		.title{
+			margin: 0;
+			padding: 0.5em;
+			background-color: black;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.subtitle{
+			margin: 0.4em 0 0 0;
+		}
+		.num{
+			font-size: 2.2em;
+			float: left;
+		}
+		.legenda{
+			float: left;
+			display: block;
+			font-size: 0.8em;
+			margin-left: 1em;
+		}
+		.contenuto{
+			.opacity(0);
+			.transition(opacity 400ms ease);
+			line-height: 1.4;
+			p{
+				margin: 0;
+			}
+			li{
+				list-style-position: inside;
+				list-style-type: disc;
+			}
+		}
+	}
+
+	#approfondimenti{
+		position: fixed;
+		top: 120%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		&.dentro1{
+			#scheda1{
+				top: -120%;
+				overflow-y: auto;
+				> img{
+					margin: 1em 0;
+				}
+			}
+		}
+		&.dentro2{
+			#scheda2{
+				top: -120%;
+			}
+		}
+		.scheda{
+			.transition(all 800ms ease);
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: white;
+			text-align: center;
+			color: black;
+			.chiudi{
+				padding: 0.3em;
+				margin: 0;
+				display: block;
+			}
+			> img{
+				height: 90%;
+			}
+		}
+	}
+
+	.isola{
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		.transition(all 800ms ease);
+		&.composta,
+		&.sparisci{
+			.transition(all 2000ms ease);
+		}
+		&.sx{
+			left: 0;
+			&.sparisci{
+				left: -1800px !important;
+			}
+		}
+		&.dx{
+			right: 0;
+		}
+		img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			.transition(opacity 400ms ease);
+			&.strade{
+				z-index: 4;
+				.opacity(1);
+			}
+			&.base{
+				z-index: 3;
+				.opacity(1);
+			}
+			&.mare{
+				z-index: 2;
+				.opacity(1);
+				.transition-delay(400ms);
+			}
+			&.wire{
+				z-index: 1;
+				.opacity(0);
+			}
+		}
+		&.spenta{
+			img{
+				&.strade{
+					.opacity(0);
+					.transition-delay(400ms);
+				}
+				&.base{
+					.opacity(0);
+					.transition-delay(400ms);
+				}
+				&.mare{
+					.opacity(0);
+					.transition-delay(0);
+				}
+				&.wire{
+					.opacity(0.4);
+					.transition-delay(400ms);
+				}
+			}
+		}
+		&.vicina, &.composta{
+			img.mare{
+				.opacity(0);
+			}
+		}
+		&#isola1_sx{
+			width: 108px;
+			height: 60px;
+			top: 19px;
+			left: 203px;
+			&.vicina{
+				left:236px;
+			}
+		}
+		&#isola1_dx{
+			width: 159px;
+			height: 133px;
+			top: 0;
+			right: 137px;
+			&.vicina{
+				right: 170px;
+			}
+			&.composta{
+				top: 91px;
+				right: 260px;
+			}
+		}
+
+		&#isola2_sx{
+			width: 110px;
+			height: 138px;
+			top: 159px;
+			left: 187px;
+			&.vicina{
+				left:236px;
+			}
+		}
+		&#isola2_dx{
+			width: 133px;
+			height: 186px;
+			top: 158px;
+			right: 150px;
+			&.vicina{
+				right: 196px;
+			}
+			&.composta{
+				top: 119px;
+				right: 324px;
+			}
+		}
+
+		&#isola3_sx{
+			width: 108px;
+			height: 85px;
+			top: 368px;
+			left: 188px;
+			&.vicina{
+				left: 241px;
+			}
+		}
+		&#isola3_dx{
+			width: 106px;
+			height: 133px;
+			top: 369px;
+			right: 164px;
+			&.vicina{
+				right: 236px;
+			}
+			&.composta{
+				top: 222px;
+				right: 290px;
+			}
+		}
+
+		&#isola4_sx{
+			width: 186px;
+			height: 174px;
+			top: 544px;
+			left: 96px;
+			&.vicina{
+				left: 168px;
+			}
+		}
+		&#isola4_dx{
+			width: 159px;
+			height: 159px;
+			top: 563px;
+			right: 85px;
+			&.vicina{
+				right: 195px;
+			}
+			&.composta{
+				top: 123px;
+				right: 168px;
+			}
+		}
+
+		&#isola5_sx{
+			width: 156px;
+			height: 130px;
+			top: 768px;
+			left: 76px;
+			z-index: 3;
+			&.vicina{
+				left: 192px;
+			}
+		}
+		&#isola5_dx{
+			width: 104px;
+			height: 87px;
+			top: 768px;
+			right: 64px;
+			&.vicina{
+				right: 242px;
+			}
+			&.composta{
+				top: 243px;
+				right: 214px;
+			}
+		}
+
+		&#isola6_sx{
+			width: 133px;
+			height: 133px;
+			top: 963px;
+			left: 0;
+			z-index: 3;
+			&.vicina{
+				left: 270px;
+			}
+		}
+		&#isola6_dx{
+			width: 62px;
+			height: 41px;
+			top: 965px;
+			right: -9px;
+			&.vicina{
+				right: 242px;
+			}
+			&.composta{
+				top: 186px;
+				right: 291px;
+			}
+		}
+
+		/**** ISOLISSIMA ********/
+
+		&#isolissima{
+			display: none;
+			width: 366px;
+			height: 307px;
+			left: 50%;
+			margin-left: -184px;
+			top: 25%;
+			z-index: 1;
+			.grigio{
+				.opacity(0);
+				z-index: 5;
+				&#g1{
+					top: 35px;
+					left: 67px;
+				}
+				&#g2{
+					top: 168px;
+					left: 86px;
+				}
+				&#g3{
+					top: 205px;
+					left: 124px;
+				}
+				&#g4{
+					top: 205px;
+					left: 217px;
+				}
+				&#g5{
+					top: 225px;
+					left: 143px;
+				}
+				&#g6{
+					top: 243px;
+					left: 162px;
+				}
+			}
+		}
+
+
+	}// fine isola
+
+	//aereo
+
+	.aereo-wrap{
+		position: absolute;
+		width: 72px;
+		z-index: 8;
+		display: none;
+		.opacity(0);
+		img{
+			width: 100%;
+		}
+		.aereo{
+			position: relative;
+			z-index: 2;
+		}
+		.ombra{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+		&#air1{
+			top: 40px;
+			right: 140px;
+		}
+		&#air2{
+			top: 230px;
+			right: 150px;
+		}
+		&#air3{
+			top: 410px;
+			right: 150px;
+		}
+		&#air4{
+			top: 610px;
+			right: 110px;
+		}
+		&#air5{
+			top: 750px;
+			right: 70px;
+		}
+		&#air6{
+			top: 960px;
+			right: -20px;
+		}
+	}
+
+	.pacco{
+		position: absolute;
+		z-index: 7;
+		display: none;
+		.opacity(0);
+		img{
+			width: 32px;
+		}
+		&#pack1{
+			top: -10px;
+			left: 260px;
+		}
+		&#pack2{
+			top: 182px;
+			left: 209px;
+		}
+		&#pack3{
+			top: 336px;
+			left: 254px;
+			img{
+				width: 16px;
+			}
+		}
+		&#pack4{
+			top: 510px;
+			left: 198px;
+		}
+		&#pack5{
+			top: 805px;
+			left: 120px;
+			img{
+				width: 16px;
+			}
+		}
+		&#pack6{
+			top: 1008px;
+			left: 42px;
+			img{
+				width: 16px;
+			}
+		}
+	}
+
+	//info box!
+	.line-wrap{
+		.opacity(0);
+		z-index: 4;
+		max-width: none;
+		position: absolute;
+		overflow: hidden;
+		width: 640px;
+		height: 200px;
+		pointer-events: none;
+		&#lw1{
+			top: 0;
+			left: 30px;
+		}
+		&#lw2{
+			top: 160px;
+			left: 28px;
+		}
+		&#lw3{
+			top: 360px;
+			left: 17px;
+		}
+		&#lw4{
+			top: 522px;
+			left: 4px;
+		}
+		&#lw5{
+			top: 760px;
+			left: 10px;
+		}
+		&#lw6{
+			top: 960px;
+			left: 8px;
+		}
+		&.scaled{
+			display: none;
+		}
+		&.unito{
+			display: none;
+			z-index: 6;
+			&.attivo{
+				display: block;
+				.opacity(1);
+				.transition(opacity 400ms ease);
+				.transition-delay(400ms);
+			}
+			&#lw1tot{
+				top: 20px;
+				left: 47px;
+				height: 330px;
+			}
+			&#lw2tot{
+				top: 150px;
+				left: 70px;
+				height: 200px;
+			}
+			&#lw3tot{
+				top: 190px;
+				left: 106px;
+				height: 160px;
+			}
+			&#lw4tot{
+				top: 190px;
+				left: 200px;
+				height: 160px;
+			}
+			&#lw5tot{
+				top: 205px;
+				left: 126px;
+				height: 145px;
+			}
+			&#lw6tot{
+				top: 226px;
+				left: 146px;
+				height: 124px;
+			}
+		}
+	}
+
+	.info-special{
+		position: absolute;
+		.opacity(0);
+		bottom: 1em;
+		z-index: 5;
+		pointer-events: none;
+		&.sx{
+			left: 1em;
+		}
+		&.dx{
+			right: 1em;
+		}
+	}
+
+	.info-wrap{
+		.opacity(0);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+		text-align: left;
+		pointer-events: none;
+		.info-box{
+			max-width: none;
+			position: relative;
+			text-align: left;
+			padding-bottom: 1em;
+			&.sx{
+				margin-left: 2em;
+			}
+			&.dx{
+				margin-right: 2em;
+				float: right;
+			}
+		}
+		&.outer{
+			display: none;
+			top: auto;
+			bottom: 1em;
+			//lo tengo sotto così non si sovrappone alle isole
+			z-index: 1;
+		}
+		&.unito{
+			display: none;
+			z-index: 6;
+			top: 350px;
+			left: 180px;
+			&.attivo{
+				display: block;
+				.opacity(1);
+				.transition(opacity 400ms ease);
+				.transition-delay(400ms);
+			}
+		}
+	}
+
+	#distanze{
+		display: none;
+		.opacity(0);
+		.transition(opacity 400ms ease);
+		.transition-delay(400ms);
+		&.visibile{
+			display: block;
+			.opacity(1);
+		}
+		img{
+			position: absolute;
+			z-index: 3;
+			&#dist1{
+				top: 40px;
+				left: 300px;
+			}
+			&#dist2{
+				top: 240px;
+				left: 280px;
+			}
+			&#dist3{
+				top: 420px;
+				left: 278px;
+			}
+			&#dist4{
+				top: 620px;
+				left: 260px;
+			}
+			&#dist5{
+				top: 820px;
+				left: 212px;
+			}
+			&#dist6{
+				top: 996px;
+				left: 116px;
+			}
+		}
+	}
+
+	.inner-footer{
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		margin-top: -190px; 
+	}

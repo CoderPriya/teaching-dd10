@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "gruppo_5",
+    "file": "",
+    "link": ""
+  },
+  "text": {
+    "title": "Who talks about whom",
+    "more": "The most cited authors and case law by the academic sources (Google Scholar papers) analyzed, about Mass surveillance controversy.",
+    "intro": "References and links, the most cited actors\n"
+  },
+  "legend": {
+    "edgeLabel": "Citations",
+    "colorLabel": "Author/Case law",
+    "nodeLabel": "Author/Case law"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "myColor",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": "Id",
+    "groupByEdgeDirection": true
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}

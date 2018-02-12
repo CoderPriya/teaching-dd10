@@ -1,0 +1,508 @@
+[
+    {
+        "key": "ADAPTIVE INTERMEDIA",
+        "a": 16,
+        "b": 7
+    },
+    {
+        "key": "ADVERTISER",
+        "a": 2,
+        "b": 32
+    },
+    {
+        "key": "AIM PERSONALIZATION",
+        "a": 166,
+        "b": 55
+    },
+    {
+        "key": "AMAZON",
+        "a": 51,
+        "b": 12
+    },
+    {
+        "key": "ANALYSIS PREDICTIVE",
+        "a": 64,
+        "b": 22
+    },
+    {
+        "key": "ANALYSIS SOCIAL NETWORK",
+        "a": 89,
+        "b": 15
+    },
+    {
+        "key": "ANALYTIC DATUM",
+        "a": 17,
+        "b": 61
+    },
+    {
+        "key": "ANNOTATION FEEDBACK",
+        "a": 91,
+        "b": 4
+    },
+    {
+        "key": "BEHAVIOR ONLINE",
+        "a": 38,
+        "b": 33
+    },
+    {
+        "key": "BUSINESS LOGIC",
+        "a": 13,
+        "b": 35
+    },
+    {
+        "key": "CATEGORY CONTENT",
+        "a": 70,
+        "b": 17
+    },
+    {
+        "key": "CONTENT PERSONALIZED",
+        "a": 86,
+        "b": 68
+    },
+    {
+        "key": "CONTROL",
+        "a": 56,
+        "b": 17
+    },
+    {
+        "key": "CUSTOMIZED EXPERIENCE",
+        "a": 31,
+        "b": 51
+    },
+    {
+        "key": "DATUM USER",
+        "a": 117,
+        "b": 55
+    },
+    {
+        "key": "DIGITAL INFORMATION",
+        "a": 8,
+        "b": 14
+    },
+    {
+        "key": "DIVERSIFICATION PERSONALIZATION",
+        "a": 173,
+        "b": 110
+    },
+    {
+        "key": "DIVERSITY",
+        "a": 63,
+        "b": 55
+    },
+    {
+        "key": "E-COMMERCE",
+        "a": 94,
+        "b": 25
+    },
+    {
+        "key": "EXPLICIT PERSONALIZATION",
+        "a": 96,
+        "b": 112
+    },
+    {
+        "key": "FACEBOOK",
+        "a": 13,
+        "b": 93
+    },
+    {
+        "key": "GOOGLE",
+        "a": 43,
+        "b": 40
+    },
+    {
+        "key": "GOOGLE NEWS",
+        "a": 82,
+        "b": 164
+    },
+    {
+        "key": "HYBRID PERSONALIZATION",
+        "a": 92,
+        "b": 109
+    },
+    {
+        "key": "IMPLICIT PERSONALIZATION",
+        "a": 96,
+        "b": 112
+    },
+    {
+        "key": "INDIVIDUALIZED APPROACH",
+        "a": 38,
+        "b": 3
+    },
+    {
+        "key": "INTERNET ISSUE PRIVACY",
+        "a": 2,
+        "b": 9
+    },
+    {
+        "key": "KNOWLEDGE",
+        "a": 74,
+        "b": 69
+    },
+    {
+        "key": "NETFLIX",
+        "a": 45,
+        "b": 7
+    },
+    {
+        "key": "NEWS FEED",
+        "a": 31,
+        "b": 129
+    },
+    {
+        "key": "NEWSPAPER",
+        "a": 1,
+        "b": 17
+    },
+    {
+        "key": "PANDORA RADIO",
+        "a": 13,
+        "b": 15
+    },
+    {
+        "key": "PARADOX",
+        "a": 3,
+        "b": 15
+    },
+    {
+        "key": "PERSONALIZATION STRATEGY",
+        "a": 98,
+        "b": 7
+    },
+    {
+        "key": "PERSONALIZATION USER",
+        "a": 102,
+        "b": 159
+    },
+    {
+        "key": "PERSONALIZED NEWS",
+        "a": 185,
+        "b": 168
+    },
+    {
+        "key": "PERSONALIZED SEARCH",
+        "a": 115,
+        "b": 90
+    },
+    {
+        "key": "PRIVACY",
+        "a": 75,
+        "b": 20
+    },
+    {
+        "key": "PRIVACY POLICY",
+        "a": 58,
+        "b": 13
+    },
+    {
+        "key": "QUERY",
+        "a": 196,
+        "b": 442
+    },
+    {
+        "key": "RANKING",
+        "a": 71,
+        "b": 28
+    },
+    {
+        "key": "RECOMMENDATION SYSTEM",
+        "a": 104,
+        "b": 55
+    },
+    {
+        "key": "RESPONSIBILITY",
+        "a": 7,
+        "b": 21
+    },
+    {
+        "key": "RESULT SEARCH",
+        "a": 108,
+        "b": 79
+    },
+    {
+        "key": "SERENDIPITY",
+        "a": 21,
+        "b": 81
+    },
+    {
+        "key": "STRATEGY",
+        "a": 73,
+        "b": 20
+    },
+    {
+        "key": "TRANSPARENCY",
+        "a": 38,
+        "b": 22
+    },
+    {
+        "key": "TWITTER",
+        "a": 9,
+        "b": 6
+    },
+    {
+        "key": "YAHOO",
+        "a": 33,
+        "b": 22
+    },
+    {
+        "key": "ACQUISITION KNOWLEDGE",
+        "a": 173,
+        "b": 0
+    },
+    {
+        "key": "ACTION RULE",
+        "a": 177,
+        "b": 0
+    },
+    {
+        "key": "ACTIVE USER",
+        "a": 73,
+        "b": 0
+    },
+    {
+        "key": "CF-BASED TECHNIQUE",
+        "a": 79,
+        "b": 0
+    },
+    {
+        "key": "CONTACT INFORMATION",
+        "a": 25,
+        "b": 0
+    },
+    {
+        "key": "COOKIE",
+        "a": 29,
+        "b": 0
+    },
+    {
+        "key": "DYNAMIC PERSONALIZATION",
+        "a": 79,
+        "b": 0
+    },
+    {
+        "key": "ELGESEM",
+        "a": 1,
+        "b": 0
+    },
+    {
+        "key": "FOCUS STRATEGY",
+        "a": 133,
+        "b": 0
+    },
+    {
+        "key": "INTRONA AND NISSENBAUM",
+        "a": 2,
+        "b": 0
+    },
+    {
+        "key": "KM STRATEGY",
+        "a": 101,
+        "b": 0
+    },
+    {
+        "key": "KNNMD METHOD",
+        "a": 103,
+        "b": 0
+    },
+    {
+        "key": "MARKETING STORM",
+        "a": 50,
+        "b": 0
+    },
+    {
+        "key": "NEW OPPORTUNITY",
+        "a": 1,
+        "b": 0
+    },
+    {
+        "key": "NON-ISOLATED USER",
+        "a": 341,
+        "b": 0
+    },
+    {
+        "key": "OPEN WEB",
+        "a": 34,
+        "b": 0
+    },
+    {
+        "key": "PAGERANK",
+        "a": 176,
+        "b": 0
+    },
+    {
+        "key": "PERSONALIZATION WEB",
+        "a": 109,
+        "b": 0
+    },
+    {
+        "key": "PINTEREST",
+        "a": 14,
+        "b": 0
+    },
+    {
+        "key": "PROFILE USER",
+        "a": 70,
+        "b": 0
+    },
+    {
+        "key": "SEMANTIC SYNTHESIS",
+        "a": 159,
+        "b": 0
+    },
+    {
+        "key": "SEO",
+        "a": 125,
+        "b": 0
+    },
+    {
+        "key": "STATISTICAL TESTING",
+        "a": 64,
+        "b": 0
+    },
+    {
+        "key": "TARGET USER",
+        "a": 188,
+        "b": 0
+    },
+    {
+        "key": "TECHNIQUE USER-BASED",
+        "a": 79,
+        "b": 0
+    },
+    {
+        "key": "TRACK USER",
+        "a": 64,
+        "b": 0
+    },
+    {
+        "key": "ALGORITHMICALLY CHERRY-PICKING CONTENT",
+        "a": 0,
+        "b": 50
+    },
+    {
+        "key": "ALGORITHMS COMPLEX",
+        "a": 0,
+        "b": 9
+    },
+    {
+        "key": "BEHAVIOR INSURANCE RISK",
+        "a": 0,
+        "b": 21
+    },
+    {
+        "key": "BUBBLE EFFECT",
+        "a": 0,
+        "b": 56
+    },
+    {
+        "key": "DATA OR ANALYTICS MODELS",
+        "a": 0,
+        "b": 64
+    },
+    {
+        "key": "DIAZ",
+        "a": 0,
+        "b": 2
+    },
+    {
+        "key": "DIGITAL TRACE",
+        "a": 0,
+        "b": 17
+    },
+    {
+        "key": "ECHO CHAMBER",
+        "a": 0,
+        "b": 4
+    },
+    {
+        "key": "ELI PARISER",
+        "a": 0,
+        "b": 43
+    },
+    {
+        "key": "EMBED SERENDIPITY",
+        "a": 0,
+        "b": 68
+    },
+    {
+        "key": "ETHICAL QUESTIO",
+        "a": 0,
+        "b": 20
+    },
+    {
+        "key": "FILTER BUBBLE",
+        "a": 0,
+        "b": 167
+    },
+    {
+        "key": "GUARDIAN",
+        "a": 0,
+        "b": 7
+    },
+    {
+        "key": "HALPERN",
+        "a": 0,
+        "b": 1
+    },
+    {
+        "key": "HINMAN",
+        "a": 0,
+        "b": 4
+    },
+    {
+        "key": "HISTORY SEARCH",
+        "a": 0,
+        "b": 82
+    },
+    {
+        "key": "INFORMATION SEEKER",
+        "a": 0,
+        "b": 56
+    },
+    {
+        "key": "LESSIG",
+        "a": 0,
+        "b": 0
+    },
+    {
+        "key": "MODEL THINK",
+        "a": 0,
+        "b": 39
+    },
+    {
+        "key": "MORAL QUESTION",
+        "a": 0,
+        "b": 17
+    },
+    {
+        "key": "MOROZOV",
+        "a": 0,
+        "b": 1
+    },
+    {
+        "key": "NY TIMES",
+        "a": 0,
+        "b": 11
+    },
+    {
+        "key": "PERSONALIZATION VS PRIVACY",
+        "a": 0,
+        "b": 56
+    },
+    {
+        "key": "PERSONALIZED QUERY SUGGESTION",
+        "a": 0,
+        "b": 239
+    },
+    {
+        "key": "REAL DANGER",
+        "a": 0,
+        "b": 2
+    },
+    {
+        "key": "SUNSTEIN",
+        "a": 0,
+        "b": 1
+    }
+    
+]

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>A trip into the Deep</h4>
+</li>
+<li>
+<a href="../index.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">Scanning the knowledge</h5><h5 class="text-uppercase" style="padding-top:0px">(Wikipedia analysis)</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">"See also" network</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz02.html">Building and vandalizing</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz03.html">Geolocalizing vandals</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz04.html">Author's map</a>
+</li>
+<li>
+<h5 class="text-uppercase">The Onion core </h5><h5 class="text-uppercase" style="padding-top:0px">(Gitweb’s Tor analysis)</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html"> Tor Project's main actors</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Best actors' activities</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Mapping the Onion</a>
+</li>
+<li>
+<h5 class="text-uppercase">Words matter </h5><h5 class="text-uppercase" style="padding-top:0px">(Google queries text analysis)</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Queries composition and results</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz03.html">Distribution of terms between queries</a>
+</li>
+<li>
+<h5 class="text-uppercase">People’s contribution </h5><h5 class="text-uppercase" style="padding-top:0px">(Youtube analysis)</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">Differences between queries</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Between quantity and activity</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Between typology, category and language</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz04.html">The “hot topics” </a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz05.html">Supporter, opponent or neutral?</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz06.html">Deep Web and Tor Browser imaginary</a>
+</li>
+</div>
+<!-- /#sidebar-wrapper -->
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">THE ONION CORE (GITWEB’S TOR ANALYSIS)</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>The aim of this protocol is to understand where and when the Tor browser was created. We have 
+analyzed the Tor repository on Gitweb (site where the creators of Tor are publically 
+working). Tor browser's creators are continuously updating the software, making it faster, 
+easier to use and more stable, but it is possible to use the code produced since now to 
+understand who is behind this project.</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>First step</h3>
+<p>We have used an internet crawler to download from https://gitweb.torproject.org/ every commit 
+has been done in the Tor repository (the main repository, where the browser code is built): 
+who made the commit, when and how many files he or she has added, deleted or modified.
+We have made clusters of same day commits (at first they were divided by minute)
+After this, we have analyzed the data using Microsoft Excel searching the most productive 
+coder (an Index of Activity has been created by the sum of files modified, added or deleted 
+in a single day).
+Then, having seen the first 3 people had made a lot more code than every other one, we have 
+visualized their Index of Activity in a timeline, looking for possible spikes of 
+productivity. After this we have seen the comments on the spike of productivity day looking 
+for the cause of the spike of productivity. </p>
+<img src="Protocol/Pro_1.jpg">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+<h3>Second step</h3>
+<p>The majority of people who made commits on the repository had a nickname or a personal name 
+so it was easy to search, using Google search engine, from where they were coding. Using 
+Microsoft Excel we have made clusters of same nation activities and we have visualized them
+using Cartodb. In the end we have crossed the data found with the quantity of Tor browser 
+exit node in every nation in a determined day (we have seen, comparing different dataset 
+taken in different times and days, that in average there was no difference in the location of
+exit node) using Cartodb.</p>
+<img src="Protocol/Pro_2.jpg">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>28/11/2014 - 02/12/2014</h4>
+<h4>Data source: <br> <a href="https://gitweb.torproject.org/tor.git/">Gitweb.torproject</a>, <a href="https://www.google.com">Google</a>, <a href="https://www.dan.me.uk/tornodes">Dan.me.uk</a></h4>
+<h4>Tools: <br> <a href="https://www.kimonolabs.com/">Kimono</a>, <a href="http://products.office.com/it-IT/excel">Microsoft Excel</a>, <a href="http://cartodb.com/">Cartodb</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="chapter02_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="Img/Img/Img01.svg">
+</div>
+<h4>Tor Project's main actors</h4>
+</div>
+</a>
+<a href="chapter02_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="Img/Img/Img02.svg">
+</div>
+<h4>Best actors' activities</h4>
+</div>
+</a>
+<a href="chapter02_viz03.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="Img/Img/Img03.png">
+</div>
+<h4>Mapping the Onion</h4>
+</div>
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Alessio Candido</li>
+<li>Susanna Castelli</li>
+<li>Marco Colombo</li>
+<li>Agnese Cunsolo</li>
+<li>Giorgia Volinia</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

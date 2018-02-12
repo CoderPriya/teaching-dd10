@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "G7",
+    "file": "",
+    "link": ""
+  },
+  "text": {
+    "title": "Wiki Connections",
+    "more": "This graph represents the network created by a two level crawling on the See Also of Wikipedia\u0027s Right to be forgotten page. It can be easily seen how the most relevant topics are connected in the major central cluster: Internet censorship, Freedom of information, Internet privacy and Digital rights.",
+    "intro": "See Also of Wikipedia\u0027s Right to be forgotten page."
+  },
+  "legend": {
+    "edgeLabel": "Links between pages",
+    "colorLabel": "Clusters based on modularity class",
+    "nodeLabel": "Right to be forgotten - See Also"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "color",
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}

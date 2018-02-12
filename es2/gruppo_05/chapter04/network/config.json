@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "",
+    "file": "",
+    "link": ""
+  },
+  "text": {
+    "title": "Speech context",
+    "more": "This network graph shows how keywords are connected the one with the others. All the keywords represented are stricktly related to the NSA and the surveillance/security at-large. It is interesting recognise a central nucleus of word with an higher in-degree and an external sphere of less relevant words.\nIn the network graph the keywords, represented with a colored circle, are connected through an edge (connecting line) if they are mentioned in the same dialogue at least once. The size of the nodes represents the frequency, that is all the times a word appear in the whole corpus of the 153 series\u0027 subtitles. Nodes are colored according to Gephi’s modularity class, which is one measure of the structure of graphs and it was designed to measure the strength of division of a network into groups. The network is spatialised by the algorithm Force Atlas 2 which draw closer the nodes that are more connected. Through the window on the left it\u0027s possible to select one group from a list of six and discover all the words belonging to it. Whereas choosing one node in the network it\u0027s possible to see only the keywords which are connected to the selected word.",
+    "intro": "Keywords of the context around \"NSA\" moment."
+  },
+  "legend": {
+    "edgeLabel": "Connections",
+    "colorLabel": "Groups",
+    "nodeLabel": "Keywords"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "Label",
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}

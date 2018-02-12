@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Marianna Caserta, Francesca Casnati, Chiara Cingottini, Giulia Sonzogni, Ilaria Tedoldi">
+
+	<title>Approfondimento 2</title>
+
+	<link rel="icon" type="image/x-icon" href="img/fav.png" />
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/style-scroll.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<!--JS for tip-->
+	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	
+
+</head>
+<body>
+
+<!-- Back button 
+	<div class="back">
+		<a href="index.html#9thPage" class="btn btn-circle">
+			<i class="fa fa-angle-left"></i>
+		</a>
+	</div>-->
+
+
+<div class="container">
+
+	<a href="./indexit.html#9thPage"><i class="fa fa-arrow-circle-left"></i>Indietro</a><br><br><br>
+
+	<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<h5>Le parole chiave che accompagnano l'NSA</h5>
+			</div>
+	
+			<div class="col-md-4 col-sm-6">
+				<p>Ciascuna bolla rappresenta una parola chiave. La dimensione mostra la frequenza con cui ciascuna parola compare in ciascun dialogo. Il dialogo è composto dalla frase contenente la parola NSA e le due frasi antecedenti e successive.</p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p>La <i>bubble chart</i> mette in luce l'importanza della parola "sicurezza" in contrapposizione alla parola "sorveglianza".</p>
+				<div class="about-data">
+				<br><i class="fa fa-cog"></i><p>DATI ESTRATTI DA: <a href="http://www.subzin.com">Subzin</a>.<br> Totale dialoghi analizzati: 1075</p>
+				</div>
+			</div>
+		</div>
+	<br>
+
+	<!-- Legenda 
+	<div class="row">
+		<div class="col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-1">
+				<br><br>
+				<p>TOTAL SPEECHES ANALYSED: 1075</p>
+		</div>
+		<div class="col-md-3 col-sm-5 ">
+				<br><br>
+				<p>TOTAL NSA: 1075</p>
+		</div>
+	</div>-->
+
+	<!-- Viz1 -->
+	<div class="viz-area">
+		<br><br>
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<p>NSA + SICUREZZA = 62 volte</p>
+			<br>
+			<div class="bubble-single2"><p>Security</p></div>
+	
+			<br><br><br><br>
+
+			<p>NSA + SORVEGLIANZA = 23 volte</p>
+			<br>
+			<div class="bubble-single1"><p>Surv</p></div>
+		</div>
+		<div class="col-md-8 col-sm-12">
+			<p>NSA + ALTRE PAROLE CHIAVE</p>
+			<div class="viz1">	
+			</div>
+		</div>
+	</div> 
+	</div><!-- End of Visualization -->
+
+
+
+
+
+    <br><br>
+	<!-- Spiegazione 2 -->
+		
+		
+		<br><br>
+		<hr><br><br>
+
+		<div class="row">
+			<div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+				<h5>Analisi visiva del contesto nel quale l'NSA è citata</h5>
+			</div>
+		
+			<div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
+				<p>L'obiettivo di questa sezione è quello di capire se l'NSA è più frequentemente rappresentata come un'agenzia di sicurezza piuttosto che come un organo per la sorveglianza. L'analisi visiva è stata realizzata attraverso i clip dell'istante in cui l'NSA è nominata. I 10 episodi sono stati selezionati tra quelli delle serie in cui l'NSA è citata più spesso.</p>
+			</div>
+			<div class="col-md-4 col-sm-5">
+				<p>Lista degli episodi analizzati: Day 2: 8.00 a.m.-9 a.m. da <i>24</i>, Chuck versus the Helicopter da <i>Chuck</i>, Jerry 2.0 da <i>Jake 2.0</i>, Endgame da <i>NCIS: Los Angeles</i>, Finders Keepers da <i>Numb3rs</i>, No good deed da <i>Person of Interest</i>, Transition da <i>The West Wing</i>, Monsters and men da <i>NCIS: Naval Criminal Investigative Service</i>, Second double da <i>Alias</i>, Hard out da <i>Burn Notice</i>.</p>
+			</div>
+			
+	</div>
+		
+		<!-- Button viz2 -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0">
+				<div class="button-viz">
+				  <br><br>
+				  <button class="btn btn-default" id="btn-act" onclick="level1()" type="submit">NSA activity</button>
+				  <button class="btn btn-default" id="btn-clip" onclick="notl1()" type="submit">Clips</button>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<br><br>
+				<p>EPISODI TOTALI: 10</p>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<br><br>
+				<p>CLIPS TOTALI: 66</p>
+			</div>
+			<div class="col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0">
+				<br><br>
+				<a href="https://vimeo.com/115894152" target="_blank"><i class="fa fa-arrow-circle-right"></i>Video completo</a>
+			</div>
+		</div>
+
+</div><!-- End of container -->
+
+<div class="container-fluid">
+	<!-- viz2 -->
+	<div class="row">
+		<div class="col-md-12 col-md-offset-0 ">
+			<div class="viz2">
+			<?xml version="1.0" encoding="utf-8"?>
+			<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+			<svg id="news_svg2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 1280 550" enable-background="new 0 0 1280 580" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+
+			<image id="photo" visibility="hidden" xlink:href="img/clip.png" x="0" y="0" height="553px" width="1280px"/>
+
+			<g id="l1">
+				<rect x="115" y="44.6" display="inline" fill="#1ca58a" width="18" height="18"/>
+				<rect x="115" y="67.6" display="inline" fill="#dd002a" width="18" height="18"/>
+				<rect x="138.7" y="49.9" display="inline" fill="none" width="45.7" height="10.3"/>
+				
+					<text transform="matrix(1 0 0 1 138.6709 56.7536)" display="inline" fill="#FFFFFF" font-family= "'Lekton', sans-serif" font-weight="400" font-size="14">Sicurezza</text>
+				<rect x="139.3" y="83.9" display="inline" fill="none" width="70.3" height="8.7"/>
+				
+					<text transform="matrix(1 0 0 1 139.3321 80.7518)" display="inline" fill="#FFFFFF" font-family= "'Lekton', sans-serif" font-weight="400" font-size="14">Sorveglianza</text>
+
+				<rect x="114" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="114" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="114" y="242.6" display="inline" fill="#1ca58a" width="87" height="46"/>
+				<rect x="114" y="299.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="114" y="358.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="114" y="416.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="211" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="211" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="211" y="242.6" display="inline" fill="#1ca58a" width="87" height="46"/>
+				<rect x="211" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="211" y="358.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="211" y="416.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="308" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="308" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="308" y="242.6" display="inline" fill="#1ca58a" width="87" height="46"/>
+				<rect x="308" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="308" y="358.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="308" y="416.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="405" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="405" y="183.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="405" y="242.6" display="inline" fill="#1ca58a" width="87" height="46"/>
+				<rect x="405" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="405" y="358.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="405" y="416.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="502" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="502" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="502" y="242.6" display="inline" fill="#dd002a" width="87" height="46"/>
+				<rect x="502" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="502" y="358.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="502" y="416.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="599" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="599" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="599" y="242.6" display="inline" fill="#dd002a" width="87" height="46"/>
+				<rect x="599" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="599" y="358.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="599" y="416.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="696" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="696" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="696" y="242.6" display="inline" fill="#1ca58a" width="87" height="46"/>
+				<rect x="696" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="696" y="358.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="696" y="416.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="793" y="125.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="793" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="793" y="242.6" display="inline" fill="#dd002a" width="87" height="46"/>
+				<rect x="793" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="793" y="358.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="793" y="416.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="890" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="890" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="890" y="242.6" display="inline" fill="#1ca58a" width="87" height="46"/>
+				<rect x="890" y="299.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="890" y="358.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="890" y="416.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="987" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="987" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="987" y="242.6" display="inline" fill="#dd002a" width="87" height="46"/>
+				<rect x="987" y="299.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="987" y="358.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="987" y="416.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="1084" y="125.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="1084" y="183.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="1084" y="242.6" display="inline" fill="#1ca58a" width="87" height="46"/>
+				<rect x="1084" y="299.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+				<rect x="1084" y="358.6" display="inline" fill="#dd002a" width="87" height="47"/>
+				<rect x="1084" y="416.6" display="inline" fill="#1ca58a" width="87" height="47"/>
+			</g>
+
+			</svg>
+			</div>
+
+		</div>
+	</div>
+</div><!-- /container-fluid -->
+	
+
+<div class="container">
+	<a href="./indexit.html#9thPage"><i class="fa fa-arrow-circle-left"></i>Indietro</a><br><br><br>
+</div><!-- /container -->
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<script>
+	var //margin = {top: 200}; 
+    width = screen.width,
+    height = 600,
+    format = d3.format(",d"),
+    color = d3.scale.ordinal()
+        .range(["#ccc"]); //"#6D7573", "#1ca58a", "#dd002a",  
+
+	width = $(".viz1").width()
+	console.log(width)
+
+	var bubble = d3.layout.pack()
+	    .sort(null)
+	    .size([width, height])
+	    .padding(10);
+
+	var svg = d3.select(".viz1").append("svg") //seleziona il div dove deve andare
+	    .attr("width", width)
+	    .attr("height", height)
+	    .attr("class", "bubble");
+
+	// add the tooltip area to the webpage
+	var tip = d3.tip()
+	  .attr('class', 'd3-tip')
+	  .offset([-7, 0])
+	  .html(function(d) {
+	    return d.className +  ": " + d.value;
+	  })
+
+	svg.call(tip);
+
+	d3.json("data/data2a.json", function(error, root) {
+	  var node = svg.selectAll(".node")
+	      .data(bubble.nodes(classes(root))
+	      .filter(function(d) { return !d.children; }))
+	      .enter().append("g")
+	      .attr("class", "node")
+	      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+	//label onMouseOver
+	  node.append("circle")
+	      .on('mouseover', tip.show)
+	      .on('mouseout', tip.hide)
+	      .attr("r", function(d) { return d.r; })
+	      .style("fill", function(d) { return color(d.packageName); });
+
+	//text into bubble
+	  node.append("text")
+	      .attr("dy", ".3em")
+	      .style("text-anchor", "middle")
+	      .style("fill", "#000")
+	      .style("font-size", "10px")
+	      .style("font-weight", "400")
+	      .text(function(d) { return d.className.substring(0, d.r / 3); });
+	});
+
+
+	// Returns a flattened hierarchy containing all leaf nodes under the root.
+	function classes(root) {
+	  var classes = [];
+
+	  function recurse(name, node) {
+	    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+	    else classes.push({packageName: name, className: node.name, value: node.size});
+	  }
+
+	  recurse(null, root);
+	  return {children: classes};
+	}
+
+	d3.select(self.frameElement).style("height", diameter + "px");
+
+
+
+
+
+	function level1() {
+        document.getElementById("l1").style.visibility = "visible";
+        document.getElementById("photo").style.visibility = "hidden";
+        document.getElementById("btn-clip").style.opacity = "0.7";
+        document.getElementById("btn-act").style.opacity = "1";
+      }
+
+      function notl1() {
+      	document.getElementById("l1").style.visibility = "hidden";
+        document.getElementById("photo").style.visibility = "visible";
+        document.getElementById("btn-clip").style.opacity = "1";
+        document.getElementById("btn-act").style.opacity = "0.7";
+      }
+
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

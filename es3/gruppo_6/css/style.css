@@ -1,0 +1,443 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(223,243,227);
+	font-family: 'Europa', sans-serif;
+	color: #f85f55;
+	text-align: left;
+	height: 100%;
+}
+
+.sfondo {
+	background: url("../img/Petri_main.png");
+	background-size: 1200px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.8em;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+p {
+	font-size: 1.2em;
+	text-align: left;
+}
+
+
+
+/* Bootstrap customization */
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 10;
+}
+
+
+/* Fixed section */
+
+#fix {
+	display: none;
+	z-index: 20;
+}
+
+
+#fix2 {
+	display: none;
+	z-index: 20;
+}
+
+#start {
+	margin-top: 35%;
+
+}
+
+@media screen and (max-width: 900px) { 
+
+.scrollto{
+	visibility: hidden;
+}
+}
+
+#statement {
+	opacity: 0;
+	margin-top: 40%;
+}
+
+#bl2 {
+	margin-top: -37px;
+	background-color: white;
+	height: 40px;
+	width: 432px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: -1;
+}
+
+
+/* General */
+
+.sez {
+}
+
+
+/* Sezione 0 - Homepage */
+
+#sez0 {
+	padding-top: 10%;
+	background: url("../img/Petri_main1.png");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#tit {
+	margin-top: 15%;
+	margin-left: 10%;
+	text-align: left;
+	position: absolute;
+	z-index: 2;
+}
+
+#tit h1 {
+	display: inline-block;
+	text-align: left;
+}
+
+#bl1 {
+	position: absolute;
+	display: inline;
+	top: 38px;
+	left: 80px;
+	height: 89px;
+	width: 135px;
+	background-color: white;
+	z-index: -1;
+}
+
+#subtitle {
+	border: 4px solid #f85f55;
+	margin-top: 55%;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 10%;
+	padding: 30px 80px 0 30px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+#logo {
+	margin-bottom: 10%;
+}
+
+
+
+
+/* Sezione 1 */
+
+#sez1 .row {
+	margin-top: 40%;
+} 
+
+#statement1 {
+	opacity: 1;
+}
+
+#def {
+	opacity: 1;
+	margin-top: 3%;
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+	background-color: rgba(223,243,228,0.7);
+}
+
+#def p{
+		text-align: right;
+}
+
+/* Sezione 2 */
+
+#statement3 {
+	opacity: 0;
+	margin-top: 40%;
+}
+
+#def2 {
+	opacity: 1;
+	margin: 100px 0 100px 0;
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+	background-color: rgba(223,243,228,0.7);
+}
+
+#bl3 {
+	opacity: 0;
+	margin-top: -37px;
+	background-color: white;
+	height: 40px;
+	width: 432px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: -1;
+}
+
+
+/* Sezione 3 - Timeline*/
+
+
+
+#sez3 {
+	margin-top: -20%;
+	
+}
+
+#dubbio {
+	margin-top: 55%;
+	display: none;
+}
+
+
+/* Sezione 4 */
+
+#sez4 {
+	display: none;
+}
+
+
+/* Sezione 5 */
+
+#sez5 {
+	margin-bottom: 100px;
+}
+
+#chap1 {
+	margin-top: 200px;
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+	background-color: rgba(223,243,228,0.7);
+}
+
+@media screen and (max-width: 900px) { 
+#chap1 {
+	margin-top: -100px;
+}
+
+}
+
+#just h1 {
+	text-align: left;
+}
+
+/* Sezione 6 */
+
+#sez6 {
+	margin-top: 3%;
+}
+
+#opinioniblu, #opinionirosso {
+	opacity: 0;
+}
+
+/* Sezione 7 */
+
+#chap2 {
+	margin-top: 130px;
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+}
+
+.cita {
+	display: none;
+}
+
+#chap3 {
+	margin-top: 150px;
+	margin-bottom: 100px;
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+}
+
+#harm {
+	padding: 0;
+}
+
+#harm h1 {
+	margin-top: 17%;
+	text-align: right;
+	margin-bottom: 44%;
+}
+
+/* Sezione 8 */
+
+#chap4 {
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+}
+
+#chap5 {
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+}
+
+#dubtit h1{
+	margin-top: 5px;
+	text-align: right;
+}
+
+/* Sezione 9 */
+
+#contr{
+	margin-top: -100px;
+}
+
+@media screen and (max-width: 900px) { 
+
+#contr{
+	margin-top: -20px;
+}
+}
+
+#sez9 {min-height: 1000px;}
+
+
+/* Sezione 10 */
+
+#sez10 {
+	margin-top: -500px;
+}
+
+@media screen and (max-width: 900px) { 
+
+#contb{
+	margin-top: 80px;
+}
+}
+
+#chap6 {
+	margin: 100px 0 0 0;
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+}
+
+@media screen and (max-width: 900px) { 
+
+#chap6 {
+	margin: 400px 0 0 0;
+}
+}
+
+/* Sezione 11 */
+
+
+/* Sezione 12 */
+
+#where h1{
+	text-align: right;
+}
+
+#chap8 {
+	margin: 40px 0 10px 0;
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+}
+
+/* Sezione 13 */
+
+#sez13 {
+
+	background: url("../img/Petri_main.png");
+	background-size: 1200px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Sezione 14 */
+
+
+
+#time3 {
+	background: url("../img/Petri_main.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ultimaanim{
+	margin-top: 9%;
+}
+
+/* Sezione 15 */
+
+@media screen and (max-width: 900px) {
+
+#ultimaanim{
+	margin-top: 37%;
+}
+
+#sez15 {
+	opacity: 0;
+	margin-top: 2%;
+	margin-bottom: 10%;
+}
+
+}
+
+#chap10 {
+	padding: 15px 10px 10px 15px;
+	border: 4px solid #f85f55;
+	background-color: rgba(223,243,228,0.7);
+}
+
+
+
+@media screen and (max-width: 900px) {
+#hoverradar{
+	margin-top: 70px;
+}
+
+	#chap10 {
+	opacity: 1;
+}
+
+	#chap3 {
+		margin-bottom: 50px;
+	}
+
+	#dubtit {
+		text-align: left;
+		margin-top: 50px;
+		padding: 0;
+	}
+
+	.sfondo {
+	background: url("../img/Petri_main.png");
+	background-size: 900px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#sez13 {
+
+	background: url("../img/Petri_main.png");
+	background-size: 900px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+}

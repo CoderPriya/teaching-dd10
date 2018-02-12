@@ -1,0 +1,808 @@
+body {
+	background-color: #FFFAF6;
+}
+
+
+h1, h2, h3, h4{
+font-family: 'Economica', sans-serif;
+text-transform: uppercase;
+font-weight: 700;
+color: #569ea6;
+}
+
+p{
+	font-size: 13px;
+	padding-top: 23px;
+	font-family: 'Open Sans', sans-serif;
+	color:#444433;
+}
+
+span {
+
+	font-size: 13px;
+	padding-top: 23px;
+	font-family: 'Open Sans', sans-serif;
+	color:#444433;
+	font-weight: 700;
+}
+
+
+
+/* CSS grafici - FRA */
+.legenda1 {
+	font-size: 1em;
+	display: inline-block;
+	vertical-align: text-top;
+
+	position: absolute;
+	z-index: 30;
+	right: 70px;
+	margin-top: 7px;
+}
+
+#intern, #users {
+	width: 20px;
+	height: 2px;
+    margin: 3px;
+}
+
+.legenda {
+	position: absolute;
+	z-index: 30;
+	right: 70px;
+	margin-top: 7px;
+	opacity: 0;
+}
+
+.column {
+	font-size: 0.9em;
+	display: inline-block;
+	vertical-align: text-top;
+	padding: 10px 10px 0 0;
+}
+
+.column div {
+	display: inline-block;
+	margin: 0 5px 10px 5px;
+}
+
+
+#elem {
+	background-color: #621B19;
+	margin: 0 0 0 0;
+}
+
+#medie {
+	background-color: #E9D1D2;
+	margin: 0 0 0 0;
+}
+
+#super {
+	background-color: #C21B22;
+	margin: 0 0 0 0;
+}
+
+#bach {
+	margin: 0 0 0 0;
+	background-color: #D27076;
+}
+
+#dott {
+	margin: 0 0 0 0;
+	background-color: #911F1F;
+}
+
+
+.quad {
+	width: 10px;
+	height: 10px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+.titol {
+	margin: 100px 0 0 100px;
+	height: 500px;
+}
+
+.intera {
+	position: absolute;
+	background-color: white;
+	opacity: 0;
+	z-index: 31;
+	width: 600px;
+	height: 385px;
+	margin-top: -1px;
+	text-align: center;
+}
+
+.showtit {
+	position: absolute;
+	z-index: 23;
+	width: 57px;
+	height: 384px;
+	top: 100px;
+	left: 205px;
+	background-color: #A6C3C8;
+	opacity: 0;
+}
+
+.giovini {
+	position: absolute;
+	z-index: 25;
+	width: 120px;
+	height: 100px;
+	margin-top: -75px;
+	margin-left: 58px;
+	color: #569ea6;
+	font-size: 12px;
+	text-align: center;
+	opacity: 0;
+}
+
+.intera p {
+	margin-top: 150px;
+	color: #666;
+}
+
+#numb {
+	margin-left: -35px;
+	margin-top: 2px;
+	position: absolute;
+	width: 634px;
+	z-index: 19;
+}
+
+#base {
+	position: absolute;
+	width: 600px;
+	z-index: 20;
+}
+
+#anag {
+	position: absolute;
+	width: 600px;
+	z-index: 21;
+}
+
+#tit {
+	position: absolute;
+	width: 600px;
+	z-index: 24;
+	height: 0px;
+	top: 488px;
+	opacity: 0;
+}
+
+.sezioni{
+		background-color: #FFFAF6;
+		padding-top: 20px;
+}
+
+::selection {
+  background: #FFDFA5; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #FFDFA5; /* Gecko Browsers */
+}
+
+/*
+
+*/
+
+.intro {
+	padding-top: 100px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.lead{
+	width: 40%;
+	margin-left:auto;
+	margin-right: auto;
+	font-size: 14px;
+	padding-top: 8px;
+	font-family: 'Open Sans', sans-serif;
+	color:#444433;
+}
+
+#indexa {
+	background: url("../img/AnimazioneP2Pconmask.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin-top: 1%; /* ///////////////////////////////////MODIFICATA LA PERCENTUALE/////////////////*/
+	margin-right: auto;
+	margin-left: auto;
+
+	min-height: 700px;
+}
+
+#sec1 {
+	width: 100%;
+}
+
+#sec2{
+	min-height: 900px;
+}
+
+#secondo{
+	padding-top: 4%;
+}
+
+#sec3{
+	min-height: 900px;
+}
+
+#sec4{
+	min-height: 900px;
+	margin-top: 20px;
+}
+
+#sec5{
+	min-height: 1100px;
+	margin-top: -90px;
+}
+
+#sec6{
+	min-height: 900px;
+}
+
+#sec7{
+	margin-top:100px;
+
+}
+
+#sec8 {
+	margin-top: 100px;
+
+}
+
+
+.viz1{
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+	height: 800px;
+	margin-top: 0px;
+z-index: 10;
+
+}
+
+
+/* grafico regioni e barre */
+
+.viz3{
+	background: url("../img/italia_1.png");
+	background-size: 92% auto;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin-top: 90px;
+	z-index: 5;
+	max-height: 600px;
+	max-width: 400px;
+}
+
+.viz3_1{
+
+	background: url("../img/italia_2.png");
+	background-size: 92% auto;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin-top: -600px;
+	opacity:0;
+	max-height: 600px;
+	max-width: 400px;
+
+}
+
+.viz3_2{
+
+	background: url("../img/italia_3.png");
+	background-size: 92% auto;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin-top: -600px;
+	opacity:0;
+	max-height: 600px;
+	max-width: 400px;
+
+}
+
+.viz3_3{
+
+	background: url("../img/italia_4.png");
+	background-size: 92% auto;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin-top: -600px;
+	opacity:0;
+	max-height: 600px;
+	max-width: 400px;
+
+}
+
+
+.viz32{
+	background: url("../img/barre 1-06-05.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 552px;
+	margin-top: 50px;
+	z-index: 1000;
+}
+ 
+
+.viz32_1{
+	background: url("../img/barre 2.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin-top: -640px;
+	opacity:0;
+	float:right;
+	z-index: 1000;
+}
+
+.viz32_2{
+	background: url("../img/barre 3.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin-top: -640px;
+	float:right;
+	opacity:0;
+	z-index: 1000;
+}
+
+.viz32_3{
+	background: url("../img/barre 4.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin-top: -640px;
+	float:right;
+	opacity:0;
+	z-index: 1000;
+
+}
+
+/*fine grafico regioni e barre*/
+
+
+.viz4{
+	background: url("../img/3-01.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 976px;
+	margin-top: -120px;
+	z-index: 1;
+}
+
+
+
+
+.viz5{
+	background: url("../img/rombiEuropa-02.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 1000px;
+	margin-top: 0px;
+}
+
+.viz6{
+	background: url("../img/ruota-03.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 676px;
+	margin-top: 30px;
+}
+
+
+
+.viz7{
+	width:800px;
+	background: url("../img/Confronto Tutti e Giovani EU-01.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 800px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.viz7_2{
+	width:800px;
+	background: url("../img/Confronto Tutti e Giovani EU-02.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 800px;
+	margin-top: -800px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity:0;
+}
+
+.viz7_3{
+	width:800px;
+	background: url("../img/Confronto Tutti e Giovani EU-04.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 800px;
+	margin-top: -800px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity:0;
+}
+
+.viz7_4{
+	width:800px;
+	background: url("../img/Confronto Tutti e Giovani EU-03.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 800px;
+	margin-top: -800px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity:0;
+}
+
+
+.viz_8{
+
+	background: url("../img/conclusione-02.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 400px;
+	height:201px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+
+}
+
+
+.fine{
+
+	font-size: 14px
+}
+
+.viz_9{
+
+	background: url("../img/Animazionefinale.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 350px;
+	height:350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 100px;
+
+}
+
+
+/* grafico software e media */
+.pagsm {
+
+}
+
+
+#grap {
+	position: absolute;
+	z-index: 1;
+	width: 791px;
+	height: 999px;
+}
+
+.diagramd {
+	position: absolute;
+	z-index: 10;
+	top: 263px;
+	left: 26px;
+	width: 317px;
+	height: 163px;
+	border-radius: 100%;
+}
+
+.softd {
+	position: absolute;
+	background-color: #F39BA0;
+	opacity: 0.63;
+	border-radius: 100%;
+	width: 136px;
+	height: 136px;
+	margin-top: 14px;
+	margin-left: 0px;
+	z-index: 20;
+}
+
+.mediad {
+	position: absolute;
+	background-color: #E30613;
+	opacity: 0.71;
+	border-radius: 100%;
+	width: 163px;
+	height: 163px;
+	margin-left: 153px;
+	z-index: 19;
+}
+
+.totd {
+	position: absolute;
+	z-index: 30;
+	opacity: 0;
+	text-align: center;
+	width: 100%;
+	padding-top: 16px;
+	font-size: 2em;
+	font-family: Open Sans;
+	color: white;
+}
+
+.totd p{
+	color:white;
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+.sd {
+	opacity: 1;
+	text-align: center;
+	width: 100%;
+	height: 50%;
+	padding-top: 34%;
+	padding-left: 2%;
+	font-size: 2em;
+	font-family: Open Sans;
+	color: white;
+}
+
+
+.md {
+	opacity: 1;
+	text-align: center;
+	width: 100%;
+	height: 50%;
+	padding-top: 36%;
+	padding-left: 2%;
+	font-size: 2em;
+	font-family: Open Sans;
+	color: white;
+}
+	
+.diagramu {
+	position: absolute;
+	z-index: 10;
+	top: 263px;
+	left: 421px;
+	width: 336px;
+	height: 163px;
+	border-radius: 100%;
+}
+
+.softu {
+	position: absolute;
+	background-color: #F39BA0;
+	opacity: 0.63;
+	border-radius: 100%;
+	width: 155px;
+	height: 155px;
+	margin-top: 4px;
+	margin-left: 0px;
+	z-index: 20;
+}
+
+.mediau {
+	position: absolute;
+	background-color: #E30613;
+	opacity: 0.71;
+	border-radius: 100%;
+	width: 163px;
+	height: 163px;
+	margin-left: 173px;
+}
+
+.totu {
+	position: absolute;
+	z-index: 30;
+	opacity: 0;
+	text-align: center;
+	width: 100%;
+	padding-top: 14px;
+	padding-left: 9px;
+	font-size: 2em;
+	font-family: Open Sans;
+	color: white;
+}
+
+.totu p {
+	color: white;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.su {
+	opacity: 1;
+	text-align: center;
+	height: 50%;
+	width: 100%;
+	padding-top: 36%;
+	padding-left: 2%;
+	font-size: 2em;
+	font-family: Open Sans;
+	color: white;
+}
+
+
+.mu {
+	opacity: 1;
+	text-align: center;
+	height: 50%;
+	width: 100%;
+	padding-top: 36%;
+	padding-left: 2%;
+	font-size: 2em;
+	font-family: Open Sans;
+	color: white;
+}
+
+
+/*bottoni ranking*/
+
+.bottIns{
+	width: 300px;
+	height:30px;
+	cursor: pointer;
+	margin-bottom:5px;
+	}
+
+#bottCont{
+
+	position: absolute;
+	top: 25%;
+}
+
+.bottText{
+	padding-top: 7px;
+	font-family: 'Open Sans', sans-serif;
+	color:#444433;
+}
+
+.bottRank{
+	float:left;
+	background-color: red;
+	width:12px;
+	height:12px;
+	text-align:center;
+	position: relative;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-top:10px;
+	margin-right:15px;
+}
+
+#allRank{
+	background-color: #bbbbbb;
+}
+
+#cosRank{
+	background-color: black;
+}
+#hiRank{
+	background-color: #569ea6;
+}
+#lowRank{
+	background-color: #e3101c;
+}
+/* fine bottoni ranking*/
+
+
+
+/*div clickabili*/
+#centro{
+	background-color: red;
+	position:relative;
+	height: 160px;
+	width: 200px;
+	margin-top:90px;
+   opacity: 0;
+    filter: alpha(opacity=0);
+
+}
+
+#sardegna{
+	background-color: red;
+	position:relative;
+	height: 90px;
+	width: 50px;
+	margin-top:40px;
+	margin-left:40px;
+   opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#nord{
+	background-color: red;
+	position:relative;
+	height: 80px;
+	width: 150px;
+	margin-top:-300px;
+	margin-left:50px;
+   opacity: 0;
+    filter: alpha(opacity=0);
+}
+#lazio{
+	background-color: red;
+	position:relative;
+	height: 60px;
+	width: 60px;
+	margin-top:70px;
+	margin-left:140px;
+   opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.sud{
+	background-color: red;
+	position:relative;
+	height: 240px;
+	width: 130px;
+	margin-top:-70px;
+	margin-left:190px;
+   opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+/*div clickabili*/
+
+
+
+.goto3 {
+	margin-top: 50px;
+	text-align: center; 
+}
+
+.goto3 a {
+	color: #569ea6;
+}
+
+
+
+/*navbar*/
+.circle{
+	width:8px;
+	height:8px;
+	text-align:center;
+	background:#000;
+	margin: 20px;
+	cursor: pointer;
+	background-color: #569ea6;
+	position: relative;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	padding:0;
+	margin-left:-50px;
+}
+
+/*.circle:hover{
+
+	background-color: #11756F;
+}*/
+
+#navbars{
+	width:1px;
+	z-index: 10000000;
+	position:fixed;
+	display: block;
+	margin-top:80px;
+	right: 0;
+	top: 20%;
+	margin-right: 25px;
+	}
+
+/*navbar*/

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Forget me, net</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../introduction.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Right to be forgotten</h4>
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">01 | Wiki connections</h5>
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Gephi wiki net</a>
+</li>
+<li>
+<h5 class="text-uppercase"> 02 | Googling the controversy</h5>
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Which side are you on?</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">N-grams</a>
+</li>
+<li>
+<h5 class="text-uppercase">03 | World wide wiki</h5>
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">Wiki evolution</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Wiki editors</a>
+</li>
+<li>
+<h5 class="text-uppercase">04 | Streisand effect</h5>
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">The other side of the coin</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Costeja in the limelight</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">Streisand effect</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>For the first visualization, namely “The other side of the coin” in order to verify if the so called “Streisand Effect” actually happened, we used the tool Google Trends. Thanks to it we were able to visualize either the single trends or them altogether. <br>
+For the second visualization, the one called “Costeja in the limelight” we analysed each and every single result given by Google once we entered the query “Mario Gonzales Costeja”. We then were able to order them by year or by type of result, in order to get a full overview of how much and in what way the web talks about him.</p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Step of the procotol - The other side of the coin</h3>
+<p>We chose to analyze the search trends of specific people based on their occurrence during our research and, if in their country a specific fact regarding Right to be forgotten happened, on their nationality too:</p>
+<ol class="date">Mario Gonzales Costeja<br>
+	Nikki Catsouras<br>
+	Dougie McDonald<br>
+	Walter Sedlmayr<br>
+	Virginia Da Cunha</ol>
+
+<p>We then put these names on Google Trend in order to analyse them in two ways: an absolute analysis and a relative analysis.<br>
+For the first one we entered all the names at the same time and, once Google Trends provided us the visualization, downloaded the .csv file. We then generated a dataset with one shared column (Time) and one dedicated to each person containing the Value of the searches (from 0 to 100, where 100 is the max value belonging to Nikki Catsouras).</p>
+<p>For the second one we proceeded in the same way, except for the fac that this time we entered the name one by one and downloaded each .csv separately. This way each .csv will have only two columns: Time and Value (from 0 to 100).<br>
+Finally, we proceeded to our two visualizations.</p>
+<img src="../protocol_jpg/protocol_vizTrends1_diagram.png">
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div> 
+<h3>Step of the procotol - Costeja in the limelight</h3>
+<p>in order to quantify where and how much the case of Mario Costeja Gonzalez is discussed throughout the web, we proceeded to use as a query in Google.com, without any account logged in, his name “Mario Costeja Gonzaléz”.<br>
+ All the links of the results have been opened and checked if the date in the metadata from the results page was correct and afterwards we wrote down into a dataset the link of each single page, the date of creation and the topic discussed in the website.<br>
+The topics we chose to cover the majority of resulting links are:<br>
+<ol class="date">News sites<br>
+Academics<br>
+Online laws and rights<br>
+Informatic and digital themes<br>
+General personal blog<br>
+Social<br>
+Public institutions<br>
+Wikipedia pages<br>
+Others</ol></p>
+<img src="../protocol_jpg/protocol_vizTrends2_diagram.png">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>14/12/2014 - 18/12/2014</h4>
+<h4>Data source: <br> <a href="http://www.google.com/trends/">Google Trends</a>, <a href="http://www.google.com">Google</a></h4>
+<h4>Tools: <br> <a href="https://office.live.com/start/Excel.aspx">Excel</a>, <a href="http://www.google.com/sheets/about/">Google sheets</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="../chapter04/chapter04_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/trend_cover2.jpg">
+</div>
+<h4>The other side of the coin</h4>
+</div>
+
+<div> 
+<a href="../chapter04/chapter04_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/searches_cover.jpg">
+</div>
+<h4>Costeja in the limelight</h4>
+</div>
+
+</a>
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+	<hr style="border-top-width: 1px; border-top-style: solid; border-top-color: #c6c5c5; margin-bottom: 40px">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo3.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo3.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Roberto Catanese</li>
+<li>Daniele De Pietri</li>
+<li>Enrica Lo Cicero</li>
+<li>Ludovica Lorenzelli</li>
+<li>Cecilia Nuñez</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>

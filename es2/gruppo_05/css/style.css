@@ -1,0 +1,1570 @@
+/* Typography */
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+
+body{
+    background-color: #333; /* Palette OK*/
+    color: #fff; /* Palette OK*/
+}
+
+
+p{
+    font-family:'Merriweather', serif;
+    line-height: 160%;
+    font-size: 1.2em;
+}
+
+h1{
+    font-family:'Merriweather', serif;
+    line-height: 115%;
+    font-size: 2.8em; 
+    font-weight: 600;
+    padding-top: 0px;
+}
+
+h2,h3,h4,h5,li {
+    font-family:'Karla', sans-serif;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00a0ae; /* Palette OK*/
+}
+
+h5{
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+a{
+    color: #00a0ae; /* Palette OK*/
+}
+
+a:focus, a:hover {
+    color: #00a0ae; /* Palette OK*/
+}
+
+iframe {
+ border: 0px;
+}
+
+/* Viz page */
+.my-viz{
+    background-color: #333333;  /* background-color viz OK*/
+    min-height:  650px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    font-family: 'Karla', sans-serif;
+    font-size: 11px;
+}
+
+.my-viz5{
+    background-color: #333333;  /* background-color viz OK*/
+    min-height:  650px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    font-family: 'Karla', sans-serif;
+    font-size: 11px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.my-viz6{
+    background-color: #333333;  /* background-color viz OK*/ 
+    min-height:  650px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    font-family: 'Karla', sans-serif;
+    font-size: 11px;
+    /*padding-top: 50px;
+    padding-bottom: 70px;*/
+}
+
+
+.affix-top,.affix{
+    position: static;
+    border:0 #ccc solid;
+    border-top-width:1px;
+}
+
+@media (min-width: 979px) {
+    #sidebar.affix-top {
+        position: static;
+        margin-top:215px;
+        width:228px;
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:70px;
+        width:228px;
+    }
+}
+
+#sidebar li {
+    border:0 #ccc solid;
+    border-bottom-width:1px;
+    letter-spacing: 1px;
+}
+
+
+#sidebar li.active {
+    font-weight: 800;
+    padding-left: 5px;
+}
+
+.main-content{
+    margin-bottom: 400px;
+}
+
+.section-content{
+    padding-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+.section-text{
+    border:0 #d7d1c4 solid; /* Palette OK*/
+    border-top-width: 2px;
+}
+
+
+.nav>li>a:hover, .nav>li>a:active, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/* Introduction */
+
+.my-cover{
+    min-height:  540px;
+    margin-bottom: 50px;
+    background: url("../img/copertina.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.introduction {
+    margin-top:-350px;
+    background: #333;
+    padding-top: 50px;
+}
+
+.introduction h1{
+    font-size: 5em;
+    padding-top: 40px
+}
+
+.introduction h5{
+    font-family:'Merriweather', serif;
+    color: #00a0ae; /* Palette OK*/
+}
+
+.introduction h3{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.introduction img{
+    max-width: 100%;
+}
+
+.section-text-introduction{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    padding-top: 50px;
+}
+
+.chapters{
+    border:0 #d7d1c4 solid; /* Palette OK*/
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-bottom: 0px;
+}
+
+.chapters h1{
+    font-size: 2.5em;
+}
+
+.chapters h2{
+    font-size: 1.5em;
+}
+
+.chapters ul{
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.chapters li{
+    padding: 0;
+    list-style: none;
+    font-size: 1.2em; 
+}
+
+.chapters-thumb{
+    padding-left: 0;
+}
+
+/* Protocol */
+
+.my-protocol{
+    /*background-color: #ccc;  /* Togliere questo */
+    min-height:  450px;
+    margin-bottom: 50px;
+}
+
+.protocol-title{
+    margin-top: 50px;
+}
+
+.section-content-protocol{
+    padding-top: 70px;
+    margin-bottom: 10px;
+}
+
+.section-content-protocol img{ 
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+/*---------------->  PROTOCOL img  <-------------------*/
+
+#protocol_01 {
+    width:130%;
+    }
+
+#protocol_01_03 {
+    width:110%;
+    margin-bottom: 70px;
+    }
+#survPrograms {
+    width:100%;
+    margin-bottom: 50px;
+    
+}
+
+#survPrograms_container{
+   margin-top: 80px;
+}
+
+
+
+.section-text-protocol{
+    border:0 #d7d1c4 solid; /* Palette OK*/
+    border-top-width: 1px;
+}
+
+.related-viz{
+    margin-top: 70px;
+}
+
+.related-viz-container{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.related-viz-container:hover{
+    background-color: #f7f7f7;
+}
+
+.related-viz-container{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.related-viz-container h4{
+    color:#00a0ae;
+    padding:5px 10px 5px 10px;
+}
+
+.related-viz-container h4:hover{
+    color: #2d8294!important; /* Palette */
+
+}
+
+.related-viz-image img{
+    max-width:100%;
+    height: auto;
+}
+
+
+/* Sidebar menu */
+
+#menu-toggle {
+}
+
+.menu-sidebar {    
+    background-color: #cc1534; /* Palette */
+    position: fixed;
+    z-index: 1000;
+}
+
+.menu-sidebar i{
+    padding: 19px!important;
+    font-size: 2em;
+    color: #fff;
+    background-color: #cc1534; /* Palette OK*/
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #424242; /* Palette OK*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -350px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-brand {
+    margin-bottom: 50px;
+    height:100px;
+    background-color: #cc1534; /* Palette OK*/
+    font-family:'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.sidebar-brand a{
+    padding-left: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff!important;
+}
+
+.sidebar-brand a:hover{
+    color: #ccc!important;
+}
+
+.sidebar-nav h4{
+    padding-top: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.sidebar-nav h5{
+    padding-top: 20px;
+    color: #fff; /* Palette */
+}
+
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    padding-left: 20px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav li a:active{
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 350px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 350px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/*Footer*/
+.footer{
+    background-color: #d7d1c4; /* Palette OK*/
+    color:#333; /* Palette OK*/
+    font-family: 'Karla', sans-serif;
+    bottom:0;
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.footer h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width : 420px) {
+    .footer h4{
+        margin-top: 30px;
+    }    
+
+    .chapters-thumb{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+    .section-text-introduction{
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+        padding-top: 0px;
+    }
+
+    .introduction h1{
+        font-size: 2.5em;
+        padding-top: 40px
+    }
+
+    .chapters-thumb{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .chapters{
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/*Buttons and UI*/
+.btn{
+    font-family:'Karla', sans-serif;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    color: #fff;/* Palette */
+    background-color: #428bca;/* Palette */
+    border-color: #357ebd;/* Palette */         
+}
+
+.btn-success {
+    color: #fff;/* Palette */
+    background-color: #5cb85c;/* Palette */
+    border-color: #4cae4c;/* Palette */
+}
+
+.btn-info {
+    color: #fff;/* Palette */
+    background-color: #5bc0de;/* Palette */
+    border-color: #46b8da;/* Palette */
+}
+
+.btn-warning {
+    color: #fff;/* Palette */
+    background-color: #f0ad4e;/* Palette */
+    border-color: #eea236;/* Palette */
+}
+
+.btn-danger {
+    color: #fff;/* Palette */
+    background-color: #d9534f;/* Palette */
+    border-color: #d43f3a;/* Palette */
+}
+
+/*Label for Series section - graph5*/
+.d3-tip {
+  line-height: 0.4;
+  font-family: 'Karla', sans-serif;
+  font-size: 11px;
+  padding: 12px;
+  background: rgba(215, 209, 196, 1);
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box; 
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(215, 209, 196, 1);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+/*graph 4*/
+#group1:hover .g {
+    fill: #CC1534;
+    }
+#group1:hover .ga {
+    fill: #00A0AE;
+    }
+#group1:hover .gb {
+    fill: #FFF;
+    }
+
+#group2:hover .g {
+    fill: #CC1534;
+    }
+#group2:hover .ga {
+    fill: #00A0AE;
+    }
+#group2:hover .gb {
+    fill: #FFF;
+    }
+
+#group3:hover .g {
+    fill: #CC1534;
+    }
+#group3:hover .ga {
+    fill: #00A0AE;
+    }
+#group3:hover .gb {
+    fill: #FFF;
+    }
+
+#group4:hover .g {
+    fill: #CC1534;
+    }
+#group4:hover .ga {
+    fill: #00A0AE;
+    }
+#group4:hover .gb {
+    fill: #FFF;
+    }
+
+/*-------GRAPH 1-------*/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #d7d1c4;
+  shape-rendering: crispEdges;
+  font: 10px sans-serif;
+}
+
+.dot {
+  fill-opacity: .7;
+}
+
+#info {
+  font-size: 12px;
+  position: absolute;
+  top: 125px;
+  left: 140px;
+  color: #FFF;
+}
+
+#controls {
+  font-size: 12px;
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  color: #fff;
+}
+
+#buttonEp {
+  font-size: 12px;
+  position: absolute;
+  top: 30px;
+  left: 180px;
+}
+
+#buttonSe {
+  font-size: 12px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+}
+
+.title {
+  fill: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.legend {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  fill: #fff;
+}
+
+
+/*chapter 2 VIZ01 css corretto */
+#journalist_2_1:hover .journalist_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#academic_2_1:hover .academic_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#contributor_2_1:hover .contributor_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#techexpert_2_1:hover .techexpert_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#aa_2_1:hover .aa_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#bb_2_1:hover .bb_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#cc_2_1:hover .cc_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#dd_2_1:hover .dd_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#ee_2_1:hover .ee_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#ff_2_1:hover .ff_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#gg_2_1:hover .gg_2_1 {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+
+/*chapter 2 VIZ02 -- css corretto */
+#guardian_2_2:hover .guardian_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#penamerica_2_2:hover .penamerica_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#popular_2_2:hover .popular_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#eletronic_2_2:hover .eletronic_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#softpedia_2_2:hover .softpedia_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#cbs_2_2:hover .cbs_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#commond_2_2:hover .commond_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#techdirt_2_2:hover .techdirt_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#newyork_2_2:hover .newyork_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#aclu_2_2:hover .aclu_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#mother_2_2:hover .mother_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#daily_2_2:hover .daily_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#unitednation_2_2:hover .unitednation_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#huffing_2_2:hover .huffing_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#international_2_2:hover .international_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#wired_2_2:hover .wired_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#reddit_2_2:hover .reddit_2_2 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+/*chapter 2 VIZ03*/
+#clar2_3:hover .clar2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#rights2_3:hover .rights2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#terrorism2_3:hover .terrorism2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#disclosure2_3:hover .disclosure2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#society2_3:hover .society2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#law2_3:hover .law2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#mov2_3:hover .mov2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#not2_3:hover .not2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#technology2_3:hover .technology2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#tech2_3:hover .tech2_3 {
+    fill:#D7D1C4;  stroke:#D7D1C4;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+
+/*chapter2 VIZ04 css lasciato così */
+#government:hover .government {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#privacy:hover .privacy {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#nsa:hover .nsa {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#warrantless:hover .warrantless {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#people:hover .people {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#data:hover .data {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#law:hover .law {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#security:hover .security {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#us:hover .us {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#access:hover .access {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#right:hover .right {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#report:hover .report {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#freedom:hover .freedom {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#communication:hover .communication {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#collection:hover .collection {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#program:hover .program {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#conspiracy:hover .conspiracy {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#snowden:hover .snowden {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#company:hover .company {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#possibleuses:hover .possibleuses {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#issue:hover .issue {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#bill:hover .bill {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#eu:hover .eu {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#debate:hover .debate {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#power:hover .power {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#society:hover .society {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#argument:hover .argument {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#reform:hover .reform {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#drone:hover .drone {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#digital:hover .digital {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#constitution:hover .constitution {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#amendment:hover .amendment {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#nsadoc:hover .nsadoc {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#insight:hover .insight {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#publicopinion:hover .publicopinion {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#justice:hover .justice {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#medium:hover .medium {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#moglen:hover .moglen {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#cunliffe:hover .cunliffe {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#suspicio:hover .suspicio {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#court:hover .court {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#secret:hover .secret {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#welfare:hover .welfare {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#president:hover .president {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#meaning:hover .meaning {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#phone:hover .phone {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#dragnet:hover .dragnet {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#FISC:hover .FISC {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#abuse:hover .abuse {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#personal:hover .personal {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#wams:hover .wams {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#citizen:hover .citizen {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#online:hover .online {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#arbit:hover .arbit {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#effect:hover .effect {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#tecno:hover .tecno {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#asio:hover .asio {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#activity:hover .activity {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#superstr:hover .superstr {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#internet:hover .internet {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#gchq:hover .gchq {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#judge:hover .judge {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#glopri:hover .glopri {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#fisa:hover .fisa {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#kimdot:hover .kimdot {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#sustain:hover .sustain {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#opport:hover .opport {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#committee:hover .committee {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#protest:hover .protest {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#largsc:hover .largsc {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#computer:hover .computer {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#site:hover .site {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#bush:hover .bush {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#kreiss:hover .kreiss {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#research:hover .research {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#user:hover .user {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#assurance:hover .assurance {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#agency:hover .agency {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#violation:hover .violation {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#term:hover .term {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#request:hover .request {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#action:hover .action {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#intelligence:hover .intelligence {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#practice:hover .practice {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#privsurg:hover .privsurg {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#scary:hover .scary {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#helenc:hover .helenc {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#dams:hover .dams {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#national:hover .national {
+    fill:#CC1534;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+/*chapter2 VIZ05*/
+#academic2_5:hover .academic2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#activist2_5:hover .activist2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#contributor2_5:hover .contributor2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#journalist2_5:hover .journalist2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#leak2_5:hover .leak2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#nonprofit2_5:hover .nonprofit2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#org2_5:hover .org2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#political2_5:hover .political2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#tech2_5:hover .tech2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#tv2_5:hover .tv2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#wiki2_5:hover .wiki2_5 {
+    fill:#00A0AE;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+/*chapter3 VIZ02*/
+#uno3_2:hover .uno3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#due3_2:hover .due3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#tre3_2:hover .tre3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#quattro3_2:hover .quattro3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#cinque3_2:hover .cinque3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#sei3_2:hover .sei3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#sette3_2:hover .sette3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#otto3_2:hover .otto3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#nove3_2:hover .nove3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+#dieci3_2:hover .dieci3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+#undici3_2:hover .undici3_2 {
+    fill:#009999;
+    -webkit-transition:0.2s ease-in-out all;
+    transition:0.2s ease-in-out all;
+}
+
+/*dimensione viz02 nel testo*/
+.viz302 {
+    max-width: 100%;
+}
+
+
+/*chapeter 4 VIZ03b*/
+.d3-tip {
+  line-height: 0.4;
+  font-family: 'Karla', sans-serif;
+  font-size: 11px;
+  padding: 12px;
+  background: rgba(215, 209, 196, 1);
+  color: #000;
+  border-radius: 5px;
+}
+
+.d3-tip:after {
+  box-sizing: border-box; 
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(215, 209, 196, 1);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/*chapter 02 VIZ01b*/
+.viz01b {
+    max-width: 100%;
+}
+
+#viz02_a{
+    margin-top: 70px;
+   max-width: 100%; 
+   margin-bottom: -30px;
+}
+
+#viz02_b{
+    margin-top: 70px;
+    margin-left: -13px;
+   max-width: 105%; 
+}

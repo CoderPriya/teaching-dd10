@@ -1,0 +1,450 @@
+speaker;media
+blog;tv personality
+blog;tv personality
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;tech expert
+blog;political sphere
+blog;political sphere
+blog;nonprofit organization
+blog;nonprofit organization
+blog;nonprofit organization
+blog;leak source
+blog;leak source
+blog;leak source
+blog;journalist
+blog;journalist
+blog;journalist
+blog;journalist
+blog;journalist
+blog;journalist
+blog;journalist
+blog;journalist
+blog;journalist
+blog;journalist
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;contributor
+blog;activist
+blog;activist
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+blog;academic
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;tech expert
+community;political sphere
+community;organization
+community;journalist
+community;journalist
+community;journalist
+community;journalist
+community;journalist
+community;journalist
+community;journalist
+community;journalist
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;contributor
+community;activist
+community;activist
+community;activist
+community;activist
+community;academic
+community;academic
+community;academic
+community;academic
+community;academic
+community;academic
+community;academic
+community;academic
+community;academic
+community;academic
+community;academic
+news site;tech expert
+news site;tech expert
+news site;tech expert
+news site;tech expert
+news site;tech expert
+news site;tech expert
+news site;political sphere
+news site;political sphere
+news site;political sphere
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;journalist
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;contributor
+news site;activist
+news site;activist
+news site;activist
+news site;academic
+news site;academic
+news site;academic
+news site;academic
+news site;academic
+news site;academic
+news site;academic
+news site;academic
+news site;academic
+news site;academic
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;journalist
+newspaper;contributor
+newspaper;contributor
+newspaper;contributor
+newspaper;contributor
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+newspaper;academic
+nonprofit-organization site;tech expert
+nonprofit-organization site;political sphere
+nonprofit-organization site;organization
+nonprofit-organization site;nonprofit organization
+nonprofit-organization site;nonprofit organization
+nonprofit-organization site;nonprofit organization
+nonprofit-organization site;nonprofit organization
+nonprofit-organization site;nonprofit organization
+nonprofit-organization site;journalist
+nonprofit-organization site;journalist
+nonprofit-organization site;activist
+nonprofit-organization site;academic
+organization site;tech expert
+organization site;political sphere
+organization site;political sphere
+organization site;political sphere
+organization site;political sphere
+organization site;political sphere
+organization site;political sphere
+organization site;organization
+organization site;organization
+organization site;organization
+organization site;organization
+organization site;organization
+organization site;nonprofit organization
+organization site;nonprofit organization
+organization site;nonprofit organization
+organization site;nonprofit organization
+organization site;nonprofit organization
+organization site;journalist
+organization site;journalist
+organization site;journalist
+organization site;journalist
+organization site;journalist
+organization site;contributor
+organization site;activist
+organization site;activist
+organization site;activist
+organization site;activist
+organization site;activist
+organization site;activist
+organization site;activist
+organization site;activist
+organization site;academic
+organization site;academic
+organization site;academic
+organization site;academic
+organization site;academic
+organization site;academic
+organization site;academic
+organization site;academic
+other;tech expert
+other;tech expert
+other;contributor
+other;academic
+other;academic
+other;journalist
+other;academic
+other;academic
+other;academic
+other;journalist
+other;academic
+other;organization
+other;contributor
+other;contributor
+other;political sphere
+other;political sphere
+other;political sphere
+other;political sphere
+other;leak source
+petition site;tech expert
+petition site;activist
+petition site;activist
+petition site;activist
+petition site;activist
+petition site;academic
+petition site;academic
+research centre/initiative site;tech expert
+research centre/initiative site;political sphere
+research centre/initiative site;activist
+research centre/initiative site;academic
+research centre/initiative site;academic
+research centre/initiative site;academic
+research centre/initiative site;academic
+research centre/initiative site;academic
+research centre/initiative site;academic
+research centre/initiative site;academic
+research centre/initiative site;academic
+tv/radio channel;journalist
+tv/radio channel;journalist
+tv/radio channel;journalist
+tv/radio channel;journalist
+tv/radio channel;journalist
+tv/radio channel;journalist
+tv/radio channel;journalist
+tv/radio channel;journalist
+tv/radio channel;academic
+university site;academic
+university site;academic
+university site;academic
+university site;academic
+university site;academic
+university site;academic
+university site;academic
+university site;academic
+university site;academic
+university site;academic
+wikipedia;wikipedia
+wikipedia;wikipedia
+wikipedia;wikipedia
+wikipedia;wikipedia
+wikipedia;wikipedia
+wikipedia;wikipedia
+wikipedia;wikipedia
+wikipedia;wikipedia
+wikipedia;wikipedia
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;

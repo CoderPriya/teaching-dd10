@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>DensityDesign 2014/2015</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+<!-- Sidebar Menu - Don't change the existing URLs, just add if you have more chapters of visualizations-->
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav">
+<div class="sidebar-brand">
+<a href="../index.html" class="text-uppercase"> 
+<i class="fa fa-home"></i> Home page
+</a>
+</div>
+<li>
+<h4>Metadata in exchange for security</h4> <!--Title of the group work-->
+</li>
+<li>
+<a href="../introduction.html">Introduction</a>
+</li>
+<li>
+<h5 class="text-uppercase">See also network</h5><!--Chapter01 title-->
+</li>
+<li>
+<a href="../chapter01/chapter01_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter01/chapter01_viz01.html">Delineation of the operating area</a><!--Title of the viz01-->
+</li>
+<li>
+<h5 class="text-uppercase">Queries Analysis</h5><!--Chapter02 title-->
+</li>
+<li>
+<a href="../chapter02/chapter02_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz01.html">Main speakers</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz02.html">Focus on people</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz03.html">Polarizations</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz04.html">Speaker and relevant words</a>
+</li>
+<li>
+<a href="../chapter02/chapter02_viz05.html">Where the debate is</a>
+</li>
+<li>
+<h5 class="text-uppercase">A Technical Viewpoint</h5><!--Chapter03 title-->
+</li>
+<li>
+<a href="../chapter03/chapter03_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz01.html">About speakers: who, where and how</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz02.html">Different viewpoints and possible solutions</a>
+</li>
+<li>
+<a href="../chapter03/chapter03_viz03.html">Who talks about who</a>
+</li>
+<li>
+<h5 class="text-uppercase">NSA in Tv Series</h5><!--Chapter04 title-->
+</li>
+<li>
+<a href="../chapter04/chapter04_protocol.html">Protocol</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz01.html">First look</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz02.html">Genres and years</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz03.html">Speech context</a>
+</li>
+<li>
+<a href="../chapter04/chapter04_viz04.html">Visual context</a>
+</li>
+</ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="viz">
+<a href="#menu-toggle" class="menu-sidebar" id="menu-toggle"><i class="fa fa-bars"></i></span></a>
+</div>
+
+<!-- Main content  -->
+<div id="page-content-wrapper">
+<div class="container">
+<div class="row protocol-title">
+<div class="col-md-12">
+<h5 class="text-uppercase">NSA in the Tv Series</h5><!-- Title of the "chapter"  -->
+<h1>Protocol</h1>
+</div>
+
+<!-- Text  -->
+<div class="col-md-9 main-content">
+<!-- Intro  -->
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Introduction</h3>
+<p>TV series are part of the daily television viewers' consumption by now, an environment which has lately revealed unconventional and rich in creativity. This section enquires into how and how much the mass surveillance is represented in the series' world and the type of scenery that is built around it; exploring how the the NSA, probably the most popular and discussed surveillance agency in the world, is portrayed in the episodes of the series, particularly produced in the Usa. </p>
+</div>
+</div>
+
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Steps of the procotol</h3>
+<p>The first main source of information is the website Subzin, in which it's possible to find out all those films and TV series, whose subtitles contain the researched query. Here it's achievable to obtain a complete list of the TV shows which name the NSA, the Usa surveillance agency. Initially three queries were used: "NSA", "surveillance" and "privacy". However the latest two provided results that were too wide, both in terms of quantity and quality, so they are eliminated. Moreover it's necessary to specify that: if "surveillance" takes care of a quite wide scenery, the "NSA" delimits this scenery with precision and in a univocal way. Through the employment of Kimono for Google Chrome, it's possible to turn the list realised by Subzin into a structured dataset, which is made of:</br>
+-the title of all the series that mention the NSA;</br>
+-the title of the episodes;</br>
+-the years of the episodes' release;</br>
+-the sentence containing the word "NSA";</br>
+-a link for every sentence through which it's possible to access to a page with the contest, that means with the two sentences mentioned before and the two sentences mentioned after. </br>At this point the episodes and the sentences with the word "NSA" for every TV shows are counted.
+</p>
+<p>In order to have some more detailed information about the series of interest, it's necessary to use the website IMDb. Here all the 153 series' schedules are researched. As consequence, always using Kimono, an API is realised. It contains:</br>
+-the title;</br>
+-the genre;</br>
+-the country in which it is made;</br>
+-the years in which it is broadcasted.</p>
+<p>Using all these informations, it's possible to count the number of episodes by genre by year and the number of episodes by country.</p>
+<img src="../img/chapter4_protocol1.png">
+
+<p>The second part of this work takes into account the context. Indeed the first part is merely quantitative while the second one is qualitative.</br> Using Kimono, it's possible to gather part of the dialogue which constitute the context of every sentence containing the word "NSA" (1075 sentences containing this word with the relative link to the contest) from the links grouped before on Subzin. These links are inserted in Kimono and the crawl is activated. The result is a datatest in which in every line there is a sentence (5375 total sentences). All those sentences are copied in the website textalyser.com, which allows to have a list with the most common words with the number of times they appear in the text. Only those with a frequency major than 6 have been selected. Then these ones have been divided in one of these two categories: "connected to NSA" or "other words".</p> 
+<p>At this point a script, created with the programming language Python, search inside each dialogue all the keywords and if they appear together the script creates a line in a chart: the first column (source) is filled with a keywords, and the second one (target) with one other keyword found in the same dialogue. Therefore in the chart a line is created everytime two keywords are together in the same dialogue and each line can appear twice or more, that is everytime the two words are found together in a dialogue.</p>
+<p>Finally a visual analysis is achieved through the clips containing the instant in which the NSA is mentioned. 10 episodes are selected between the TV shows in which the Security Agency appears more frequently, so a video is created using 66 clips. To explain all the elements that appear watching the video, each clip is described using five guidelines:</br>
+	- the purpose of the NSA's activity that more clearly appear to the audience (security or surveillance),</br>
+	- the scene description (calm, tense, agitated and very agitated),</br>
+	- the location (outdoor, car, indoor, office),</br>
+	- the main two colors,</br>
+	- the presence of a phone or a prisoner, two characteristic elements recognized in many clips.
+</p><!--This table is used to create a map with Gephi: each circle is a keyword and if two keywords are in the same speech, they are connected with a line.-->
+<img src="../img/chapter4_protocol2.png">
+<!-- Add As many steps as u want  -->
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 main-content">
+<!-- Metadata  -->
+<div class="section-content-protocol">
+<div class="section-text-protocol"> 
+<h3>Metadata</h3>
+<h4>Timestamp: <br>24/11/2014 - 20/12/2014</h4>
+<h4>Data source: <br> <a href="http://www.subzin.com">Subzin</a>, <a href="http://www.imdb.com">IMDb</a></h4>
+<h4>Tools: <br> <a href="https://www.kimonolabs.com">Kimono</a>, <a href="https://code.google.com/p/google-refine/">Google Refine</a>, <a href="http://textalyser.net/">Textalyser</a>, <a href="http://raw.densitydesign.org">Raw</a></h4>
+</div>
+</div>
+<div class="related-viz">
+<div> 
+<h3>Related Visualizations</h3>
+<a href="../chapter04/chapter04_viz01.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/chapter4_thumb1.png">
+</div>
+<h4>First look</h4>
+</div>
+</a>
+
+<a href="../chapter04/chapter04_viz02.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/chapter4_thumb2.png">
+</div>
+<h4>Genres and years</h4>
+</div>
+</a>
+
+<a href="../chapter04/chapter04_viz03.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/chapter4_thumb3.png">
+</div>
+<h4>Speech context</h4>
+</div>
+</a>
+
+<a href="../chapter04/chapter04_viz04.html"><div class="related-viz-container">
+<div class="related-viz-image">
+<img src="../img/chapter4_thumb4.png">
+</div>
+<h4>Visual context</h4>
+</div>
+</a>
+
+</div>
+</div>
+</div><!-- End of Metadata  --> 
+
+</div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.densitydesign.org/"><img src="../img/density_logo.png"></a>  
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<a href="http://www.dipartimentodesign.polimi.it/"><img src="../img/dip_logo.png"></a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>project by</h4>
+<ul>
+<li>Marianna Caserta</li>
+<li>Francesca Casnati</li>
+<li>Chiara Cingottini</li>
+<li>Giulia Sonzogni</li>
+<li>Ilaria Tedoldi</li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+<h4>Faculty</h4>
+<ul>
+<li>Paolo Ciuccarelli</li>
+<li>Marco Fattore</li>
+<li>Stefano Mandato</li>
+<li>Donato Ricci</li>
+<li>Salvatore Zingale</li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-2 col-xs-12">
+<h4>Teaching Assistants</h4>
+<ul>
+<li>Matteo Azzi</li>
+<li>Daniele Ciminieri</li>
+<li>Michele Mauri</li>
+<li>Azzurra Pini</li>
+<li>Giorgio Uboldi</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+
+<!-- Sidemenu and scroll -->
+<script src="../js/scroll.js"></script>
+<script src="../js/sidemenu.js"></script>
+
+</body>
+
+</html>
